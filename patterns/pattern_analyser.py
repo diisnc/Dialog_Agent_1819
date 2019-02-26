@@ -52,7 +52,7 @@ language_dic = {    1: 'PT',
                     3: 'ES',
                     4: 'DE',
                     5: 'FR',
-                    6:'RU'
+                    6: 'RU'
                 }
 
 typeQ_dic = {   1: 'greetingsI',
@@ -61,9 +61,8 @@ typeQ_dic = {   1: 'greetingsI',
                 4: 'subdomain',
                 5: 'doubt',
                 6: 'bye',
-                7:'timeout'
+                7: 'timeout'
                 }
-
 
 
 
@@ -128,19 +127,20 @@ class Pat_Analyser:
     def get_user(self):
         return self.__user
 
-    def toString(self):
-        return "nome: {}, dominio: {}, subd: {}, skill: {}, perf: {}, ling: {}, tipoQuestao: {}. \n".format(self.__user,self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language,self.__typeQ)
+    def string_pat(self):
+        return '{},{},{},{},{},{},{}'.format(self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language,self.__typeQ,self.__user)
 
 ######### MAIN
-
-patt = [4,3,2,85,57,3, 1]
+'''
+patt = [4,3,2,85,57,3,1]
 
 p_analys = Pat_Analyser()
-
-print(p_analys.get_user())
 
 p_analys.pat_parser(patt)
 
 print(p_analys.get_user())
 
-print(p_analys.toString())
+print(p_analys.string_pat())
+
+print(p_analys.string_pat().split(","))
+'''

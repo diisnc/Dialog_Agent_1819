@@ -1,5 +1,5 @@
 Pattern Configuration 
-	[id_user,domain,subdomain,skill,performance,language]
+	[id_user,domain,subdomain,skill,performance,language, typeQ]
 
 Ranges
 	id_user: 00000-99999 - [id_user: 1 - Gil, 2 - Diana, 3 - Luis, 4 - Raul, 5 - Kiko] 5 users
@@ -8,6 +8,7 @@ Ranges
 	skill: 00-99 - [skill: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-99 ]
 	performance: 00-99 [performance: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-99 ]
 	language: 0-9 [language 1-PT, 2-UK, 3-ES, 4-DE, 5-FR, 6-RU] 6 languages
+	typeQ: 00-99 [greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, bye-6, timeout-7]
 
 Example 
-	[00004, 03, 12, 85, 57, 3]
+	[4,3,12,85,57,3,1]
