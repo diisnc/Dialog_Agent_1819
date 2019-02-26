@@ -1,15 +1,15 @@
 {
-"olá":["viva","oi","saudações"],
-"jovem":["artista", "muchacho(a)"],
-"bom dia":["boa tarde", "boa noite"],
-"precisas":["necessitas"],
-"caramelo":["artista", "muchacho(a)"],
-"adeus":["tchau"],
-"boa":["muito bem"],
-"escolhe":["seleciona", "indica"],
-"subtema":["subdomínio", "subárea"],
-"subdomínio":["subtema", "subárea"],
-"difícil":["complicado", "complexo", "árduo", "crítico", "arriscado"],
-"seleciona":["indica", "escolhe"],
-"indica":["escolhe", "seleciona"]
+"olá":["viva","oi","saudações", "olá"],
+"jovem":["artista", "muchacho(a)", "jovem"],
+"bom dia":["bom dia", "boa tarde", "boa noite"],
+"precisas":["necessitas", "precisas"],
+"caramelo":["artista", "muchacho(a)", "caramelo"],
+"adeus":["tchau", "adeus"],
+"boa":["muito bem", "boa"],
+"escolhe":["seleciona", "indica", "escolhe"],
+"subtema":["subdomínio", "subárea", "subtema"],
+"subdomínio":["subtema", "subárea", "subdomínio"],
+"difícil":["complicado", "complexo", "árduo", "crítico", "arriscado", "difícil"],
+"seleciona":["indica", "escolhe", "seleciona"],
+"indica":["escolhe", "seleciona", "indica"]
 }
