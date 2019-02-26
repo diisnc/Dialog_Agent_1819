@@ -1,10 +1,16 @@
 {
   "type": {   
-    "greetings":{
+    "greetingsI":{
       "Olá jovem, já estudaste?" : ["Sim","Não","Estudar? Há teste?"],
       "Bom dia. Pronto para trabalhar, caramelo?" : ["Sempre","Nem por isso...","Chamaste caramelo a quem?"],
       "Olá. Pronto para o teste?": ["Sim, claro.","Não...","Há nota mínima?"],
       "Então, por aqui?" : ["Aqui estou. Preparado!","Aparentemente...","Enganei-me,*miss click*."]
+    },
+    "greetingsA":{
+      "Olá jovem, já estudaste?" : ["Sim","Não","Estudar? Há teste?"],
+      "Então, aqui outra vez?" : ["Cá estou eu!", "Realmente foi um erro...", "Infelizmente."],
+      "Não desistes fácil..." : ["Estou preparado para trabalhar!", "Pensando melhor, 'té logo...", "Estou a pensar nisso..."],
+      "Encontramo-nos de novo?": ["Sim.","Enganei-me.","Infelizmente."]
     },
     "doubt":{
       "Tens a certeza que queres iniciar o teste?" : ["Sim","Não"],

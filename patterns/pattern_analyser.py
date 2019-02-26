@@ -1,9 +1,15 @@
 import os
 import random
 import sys
+'''
+- O padrao é atualizado ao longo do tempo? se sim, no 
+padrao vem o tema (saudaçao, etc) da pergunta?
+
+- Podemos usar o nome, posteriormente, nas frases do dialogo
+
+'''
 
 
-# podemos usar o nome, posteriormente, nas frases do dialogo
 users_dic = {   1: 'Gil',
                 2: 'Diana',
                 3: 'Luis',
@@ -42,12 +48,22 @@ perf_dic = {
     }
 
 language_dic = {    1: 'PT',
-                    2: 'UK',
+                    2: 'EN',
                     3: 'ES',
                     4: 'DE',
                     5: 'FR',
                     6:'RU'
                 }
+
+typeQ_dic = {   1: 'greetingsI',
+                2: 'greetingsA',
+                3: 'domain',
+                4: 'subdomain',
+                5: 'doubt',
+                6: 'bye',
+                7:'timeout'
+                }
+
 
 
 
@@ -59,15 +75,17 @@ class Pat_Analyser:
     __skill = ""
     __performance = ""
     __language = ""
+    __typeQ = ""
 
     '''
-    def __init__(self, user, domain, subdomain, skill, performance, language):
+    def __init__(self, user, domain, subdomain, skill, performance, language, typeQ):
         self.__user= user
         self.__domain_= domain
         self.__subdomain = subdomain
         self.__skill = skill
         self.__performance = performance
         self.__language = language
+         __typeQ = typeQ
     '''
 
     def __init__(self):
@@ -77,10 +95,11 @@ class Pat_Analyser:
         self.__skill = ""
         self.__performance = ""
         self.__language = ""
+        self.__typeQ = ""
 
     def pat_parser(self, p):
         
-        for x in range(0, 6):
+        for x in range(0, 7):
             if x == 0:
                 self.__user = users_dic[p[x]]
             
@@ -102,16 +121,19 @@ class Pat_Analyser:
             
             elif x == 5:
                 self.__language = language_dic[p[x]]
+            
+            elif x == 6:
+                self.__typeQ = typeQ_dic[p[x]]
 
     def get_user(self):
         return self.__user
 
     def toString(self):
-        return "nome: {}, dominio:{}, subd: {}, skill:{}, perf:{}, ling:{}. \n".format(self.__user,self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language)
+        return "nome: {}, dominio: {}, subd: {}, skill: {}, perf: {}, ling: {}, tipoQuestao: {}. \n".format(self.__user,self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language,self.__typeQ)
 
 ######### MAIN
 
-patt = [4,3,2,85,57,3]
+patt = [4,3,2,85,57,3, 1]
 
 p_analys = Pat_Analyser()
 
