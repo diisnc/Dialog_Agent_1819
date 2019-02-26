@@ -1,0 +1,39 @@
+{
+  "type": {   
+    "greetings":{
+      "Olá jovem, já estudaste?" : ["Sim","Não","Estudar? Há teste?"],
+      "Bom dia. Pronto para trabalhar, caramelo?" : ["Sempre","Nem por isso...","Chamaste caramelo a quem?"],
+      "Olá. Pronto para o teste?": ["Sim, claro.","Não...","Há nota mínima?"],
+      "Então, por aqui?" : ["Aqui estou. Preparado!","Aparentemente...","Enganei-me,*miss click*."]
+    },
+    "doubt":{
+      "Tens a certeza que queres iniciar o teste?" : ["Sim","Não"],
+      "Precisas de estudar mais?": ["Não, estou preparado","Sim, quero sair"],
+      "É para ficar para o ano?": ["Não, quero fazer o teste!","Para o ano há mais."]
+    },
+    "bye":{
+      "Não":["Até para a próxima","Vemo-nos mais tarde!", "Vai estudar, caramelo","Adeus!"],
+      "Mau desempenho":["Não pescas nada disto!","Andamos a brincar? Shame on you...","The force is not with you","Vai estudar jovem."],
+      "Bom desempenho":["Nada mal ;)","Bom trabalho! Onde estão as cábulas?","É para o 20.","Boa!"]
+    },
+    "domain":[
+      "Escolhe o tema para avaliação:",
+      "O que é que queres estudar hoje?",
+      "Aqui está a ementa, escolhe o prato.",
+      "O que é que queres tentar hoje?"
+    ],
+    "subdomain":[
+      "Boa escolha. Escolhe agora um subtema",
+      "Estás tramado... Escolhe um subdomínio",
+      "Seleciona a área de avaliação",
+      "Isso parece difícil. Escolhe um subtema"
+    ],
+    "timeout":[
+      "Oh jovem, é para hoje?",
+      "Hello?, Estás ai?",
+      "O lanchinho está bom?",
+      "Entretanto adormeço jovem...",
+      "Então? ¯\\_(-_-)_/¯"
+    ]
+  }
+}
