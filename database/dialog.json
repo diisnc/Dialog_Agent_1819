@@ -1,25 +1,29 @@
 {
   "type": {   
     "greetingsI":{
-      "Olá jovem, já estudaste?" : ["Sim","Não","Estudar? Há teste?"],
-      "Bom dia. Pronto para trabalhar, caramelo?" : ["Sempre","Nem por isso...","Chamaste caramelo a quem?"],
-      "Olá. Pronto para o teste?": ["Sim, claro.","Não...","Há nota mínima?"],
-      "Então, por aqui?" : ["Aqui estou. Preparado!","Aparentemente...","Enganei-me,*miss click*."]
+      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye1", "Answer": "Não"},{"Type": "doubt", "Answer": "Estudar? Há teste?"}],
+      "Bom dia. Pronto para trabalhar, caramelo?" : [{"Type": "domain", "Answer": "Sempre"}, {"Type": "bye1", "Answer": "Nem por isso..."},{"Type": "doubt", "Answer": "Chamaste caramelo a quem?"}],
+      "Olá. Pronto para o teste?": [{"Type" : "domain", "Answer": "Sim, claro."},{"Type": "bye1", "Answer": "Não..."},{"Type": "doubt", "Answer": "Há nota mínima?"}],
+      "Então, por aqui?" : [{"Type": "domain", "Answer": "Aqui estou. Preparado!"},{"Type": "domain","Answer": "Aparentemente..."},{"Type": "bye1", "Answer": "Enganei-me,*miss click*."}]
     },
     "greetingsA":{
-      "Olá jovem, já estudaste?" : ["Sim","Não","Estudar? Há teste?"],
-      "Então, aqui outra vez?" : ["Cá estou eu!", "Realmente foi um erro...", "Infelizmente."],
-      "Não desistes fácil..." : ["Estou preparado para trabalhar!", "Pensando melhor, 'té logo...", "Estou a pensar nisso..."],
-      "Encontramo-nos de novo?": ["Sim.","Enganei-me.","Infelizmente."]
+      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye1", "Answer": "Não"},{"Type": "doubt", "Answer" : "Estudar? Há teste?"}],
+      "Então, aqui outra vez?" : [{"Type" : "domain", "Answer" : "Cá estou eu!"}, {"Type": "bye1", "Answer" : "Realmente foi um erro..."},{"Type" : "doubt", "Answer": "Infelizmente."}],
+      "Não desistes fácil..." : [{"Type": "domain", "Answer": "Estou preparado para trabalhar!"}, {"Type": "bye1", "Answer": "Pensando melhor, 'té logo..."}, {"Type": "doubt", "Answer": "Estou a pensar nisso..."}],
+      "Encontramo-nos de novo?": [{"Type": "domain", "Answer": "Sim."},{"Type": "bye1", "Answer": "Enganei-me."},{"Type": "doubt", "Answer": "Infelizmente."}]
     },
     "doubt":{
-      "Tens a certeza que queres iniciar o teste?" : ["Sim","Não"],
-      "Precisas de estudar mais?": ["Não, estou preparado","Sim, quero sair"],
-      "É para ficar para o ano?": ["Não, quero fazer o teste!","Para o ano há mais."]
+      "Tens a certeza que queres iniciar o teste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye1", "Answer": "Não"}],
+      "Precisas de estudar mais?": [{"Type": "domain", "Answer": "Não, estou preparado"},{"Type": "bye1","Answer": "Sim, quero sair"}],
+      "É para ficar para o ano?": [{"Type": "domain", "Answer": "Não, quero fazer o teste!"},{"Type": "bye1", "Answer": "Para o ano há mais."}]
     },
-    "bye":{
-      "Não":["Até para a próxima","Vemo-nos mais tarde!", "Vai estudar, caramelo","Adeus!"],
-      "Mau desempenho":["Não pescas nada disto!","Andamos a brincar? Shame on you...","The force is not with you","Vai estudar jovem."],
+    "bye1":{
+      "Não":["Até para a próxima","Vemo-nos mais tarde!", "Vai estudar, caramelo","Adeus!"]
+    },
+    "bye2":{
+      "Mau desempenho":["Não pescas nada disto!","Andamos a brincar? Shame on you...","The force is not with you","Vai estudar jovem."]
+    },
+    "bye3":{
       "Bom desempenho":["Nada mal ;)","Bom trabalho! Onde estão as cábulas?","É para o 20.","Boa!"]
     },
     "domain":[
