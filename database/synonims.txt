@@ -1,0 +1,15 @@
+{
+"olá":["viva","oi","saudações"],
+"jovem":["artista", "muchacho(a)"],
+"bom dia":["boa tarde", "boa noite"],
+"precisas":["necessitas"],
+"caramelo":["artista", "muchacho(a)"],
+"adeus":["tchau"],
+"boa":["muito bem"],
+"escolhe":["seleciona", "indica"],
+"subtema":["subdomínio", "subárea"],
+"subdomínio":["subtema", "subárea"],
+"difícil":["complicado", "complexo", "árduo", "crítico", "arriscado"],
+"seleciona":["indica", "escolhe"],
+"indica":["escolhe", "seleciona"]
+}
