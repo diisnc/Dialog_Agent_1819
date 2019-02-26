@@ -1,9 +1,15 @@
 import os
 import random
 import sys
+'''
+- O padrao é atualizado ao longo do tempo? se sim, no 
+padrao vem o tema (saudaçao, etc) da pergunta?
+
+- Podemos usar o nome, posteriormente, nas frases do dialogo
+
+'''
 
 
-# podemos usar o nome, posteriormente, nas frases do dialogo
 users_dic = {   1: 'Gil',
                 2: 'Diana',
                 3: 'Luis',
@@ -42,7 +48,7 @@ perf_dic = {
     }
 
 language_dic = {    1: 'PT',
-                    2: 'UK',
+                    2: 'EN',
                     3: 'ES',
                     4: 'DE',
                     5: 'FR',
