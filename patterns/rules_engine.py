@@ -4,6 +4,7 @@ from pattern_analyser import *
 from random import choice
 
 
+# Pattern Fact
 # no need for user
 class Pattern(Fact):  
 
@@ -12,6 +13,7 @@ class Pattern(Fact):
     '''
     pass
 
+# Question Fact
 # admite-se que se recebe o tema da pergunta no padrao
 class Question(Fact):
     '''
@@ -19,12 +21,16 @@ class Question(Fact):
     '''
     pass
 
+### Rules Engine ###
 class RulesEngine(KnowledgeEngine):
+    
+    ## Declare initial facts
     @DefFacts()
     def dialog_maker(self):
         yield Pattern(domain='Futebol',subdomain='Cenas',skill='Good',performance='Average',language='EN')
         #yield Question(typeQ = 'greetingsI')
 
+    ## Declare rules
     @Rule(Question(typeQ='greetingsI'))
     def teste1 (self):
         print('Saudaçao inicial')
@@ -36,26 +42,25 @@ class RulesEngine(KnowledgeEngine):
     def teste2 (self):
         print('Secção Duvidas')
 
-# PATTERN PARSER
+
+
+### PATTERN PARSER ###
 
 # pattern
 patt = [4,3,2,15,57,3,1]
-
 # pattern analyser
 p_analys = Pat_Analyser()
-
+# pattern conversion
 p_analys.pat_parser(patt)
-
 # print user
 print(p_analys.get_user())
-
 # array w/ pattern fields (domain,subdomain,skill,performance,language,user,typeQ)
-str_pat = p_analys.string_pat().split(",")
-# print it
+str_pat = p_analys.pat_string().split(",")
+# print array above
 print(str_pat)
 
-
-# MAIN
+### MAKE DECISION - by converting pattern into a fact and filtering it with rules previously declared in the program ###
+# Init rules engine
 watch('RULES', 'FACTS')   
 aux = RulesEngine()   
 aux.reset() 
