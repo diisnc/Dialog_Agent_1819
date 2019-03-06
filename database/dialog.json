@@ -1,7 +1,7 @@
 {
     "greetingsI":{
-      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye", "Answer": "Não"},{"Type": "doubt", "Answer": "Estudar? Há teste?"}],
-      "Bom dia. Pronto para trabalhar, caramelo?" : [{"Type": "domain", "Answer": "Sempre"}, {"Type": "bye", "Answer": "Nem por isso..."},{"Type": "doubt", "Answer": "Chamaste caramelo a quem?"}],
+      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Não."},{"Type": "doubt", "Answer": "Estudar? Há teste?"}],
+      "Bom dia. Pronto para trabalhar, caramelo?" : [{"Type": "domain", "Answer": "Sempre!"}, {"Type": "bye", "Answer": "Nem por isso..."},{"Type": "doubt", "Answer": "Chamaste caramelo a quem?"}],
       "Olá. Pronto para o teste?": [{"Type" : "domain", "Answer": "Sim, claro."},{"Type": "bye", "Answer": "Não..."},{"Type": "doubt", "Answer": "Há nota mínima?"}],
       "Então, por aqui?" : [{"Type": "domain", "Answer": "Aqui estou. Preparado!"},{"Type": "domain","Answer": "Aparentemente..."},{"Type": "bye", "Answer": "Enganei-me,*miss click*."}]
     },
@@ -12,28 +12,37 @@
       "Encontramo-nos de novo?": [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Enganei-me."},{"Type": "doubt", "Answer": "Infelizmente."}]
     },
     "doubt":{
-      "Tens a certeza que queres iniciar o teste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye", "Answer": "Não"}],
-      "Precisas de estudar mais?": [{"Type": "domain", "Answer": "Não, estou preparado"},{"Type": "bye","Answer": "Sim, quero sair"}],
+      "Tens a certeza que queres iniciar o teste?" : [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Não."}],
+      "Precisas de estudar mais?": [{"Type": "domain", "Answer": "Não, estou preparado."},{"Type": "bye","Answer": "Sim, quero sair."}],
       "É para ficar para o ano?": [{"Type": "domain", "Answer": "Não, quero fazer o teste!"},{"Type": "bye", "Answer": "Para o ano há mais."}]
     },
-    "bye":[
-      "Até para a próxima",
-      "Vemo-nos mais tarde!", 
-      "Vai estudar, caramelo",
-      "Adeus!"
-    ],
-    "badPerformance":[
-      "Não pescas nada disto!",
-      "Andamos a brincar? Shame on you...",
-      "The force is not with you",
-      "Vai estudar jovem."
-    ],
-    "goodPerformance":[
-      "Nada mal ;)",
-      "Bom trabalho! Onde estão as cábulas?",
-      "É para o 20.",
-      "Boa!"
-    ],
+
+    "farewell":{
+	    "bye":[
+	      "Até para a próxima.",
+	      "Vemo-nos mais tarde!", 
+	      "Vai estudar, caramelo.",
+	      "Adeus!",
+	    ],
+	    "badP":[
+	      "Não pescas nada disto!",
+	      "Andamos a brincar? Shame on you...",
+	      "The force is not with you.",
+	      "Vai estudar jovem."
+	    ],
+	    "goodP":[
+	      "Nada mal ;)",
+	      "Bom trabalho! Onde estão as cábulas?",
+	      "É para o 20.",
+	      "Boa!"
+	    ],
+	    "averagePerformance":[
+	      "Não está bom... Mas também não está mau. Até à proxima!",
+	      "Meeh, podia ser melhor. Ciao.",
+	      "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
+	      "Calma jovem, com trabalho chegas lá. Boa sorte para a próxima!"
+	    ],
+	},
     "domain":[
       "Escolhe o tema para avaliação:",
       "O que é que queres estudar hoje?",
@@ -41,21 +50,21 @@
       "O que é que queres tentar hoje?"
     ],
     "subdomain":[
-      "Boa escolha. Escolhe agora um subtema",
-      "Estás tramado... Escolhe um subdomínio",
-      "Seleciona a área de avaliação",
-      "Isso parece difícil. Escolhe um subtema"
+      "Boa escolha. Escolhe agora um subtema.",
+      "Estás tramado... Escolhe um subdomínio.",
+      "Seleciona a área de avaliação.",
+      "Isso parece difícil. Escolhe um subtema."
     ],
-    "timeout":[
-      "Oh jovem, é para hoje?",
-      "Hello?, Estás ai?",
-      "O lanchinho está bom?",
-      "Entretanto adormeço jovem...",
-      "Então? ¯\\_(-_-)_/¯"
-    ],
-    "toosoon":[
-    	"Carregaste sem querer?",
-    	"Isto não é para responder à sorte!"
-    	"Ou és muito bom ou essa resposta foi à sorte."
-    ]
-  }
+    "time":{
+    	"timeout":{
+    		"goodP":["Estavas a ir tão bem e agora estás a demorar tanto...", "Tanto trabalho para agora adormeceres?", "De certeza que ainda és tu?", "Bloqueas-te?"],
+    		"badP":["Hello?, Estás ai?", "O lanchinho está bom?",  "Entretanto adormeço jovem..."],
+    		"aveP":["Oh jovem, é para hoje?","Então? ¯\\_(-_-)_/¯"]
+    	},
+    	"toosoon":{
+    		"goodP":["Ou és muito bom ou essa resposta foi à sorte.", "Estás on fire, começo a duvidar..."],
+    		"badP":["Isto não é para responder à sorte!", "Não comeces a javardar e a responder à toa!"],
+    		"aveP":["Carregaste sem querer?", "Miss click?"]
+    	}
+  	}
+}
