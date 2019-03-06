@@ -1,20 +1,23 @@
 Pattern Configuration 
-	[id_user,domain,subdomain,skill,performance,language, typeQ, time]
+	[id_user | language | typeQ | domain |subdomain | question | answer | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time]
 
-Ranges (8 characteristics)
-	id_user: 		00000-99999 	[id_user: 1 - Gil, 2 - Diana, 3 - Luis, 4 - Raul, 5 - Kiko] 								---> 5 users
-	domain: 		00-99 			[domain: 1 - Base Dados, 2 - Biologia, 3 - Fisica, 4 - Informatica, 5 - Enfermagem] 		---> 5 domains
-	subdomain: 		00-99 			[subdomain: BD - a,b,c ; Bio - d,e,f ; Fis - g,h,i ;  Info - j,k,l ; Enf - m,n,o] 			---> 15 subdomains
-	skill: 			00-99 			[skill: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-99 ] 				---> 5 skills
-	performance: 	00-99 			[performance: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-99 ] 		---> 5 performances
-	language: 		1-9 			[language: 1-PT, 2-UK, 3-ES, 4-DE, 5-FR, 6-RU] 												---> 6 languages
-	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, bye-6, timeout-7, toosoon-8]	---> 7 types
+Ranges (12 characteristics)
+	id_user: 		String 			
+	language: 		1-9 			[language: PT, EN, ES, DE, FR, RU] 																---> 6 languages
+	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, farewell(bye)-6, time-7, answer-8]	---> 8 types
+	domain: 		00-99 			[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
+	subdomain: 		00-99 			[subdomain: 'A','B','C','D','E',...] 			
+	question:		String			
+	answer:			0-1				[0 - falhou, 1 - acertou] 
+	skill: 			00-150 segundos	[skill: TERRIBLE 120-150, BAD 90-120, AVERAGE 60-90, GOOD 30-60, EXCELLENT 00-30 ] (igual escala para domínios e subdomínios) 																												 ---> 5 skills
+	performance: 	00-100 percentagem [performance: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-100 ] 	---> 5 performances
 	time: 			00-90 segundos 	[0-5 segundos: SOON, 5-30 segundos: GOOD, 30-60 segundos: BAD, 60-90 segundos: TERRIBLE ] 	---> 4 times
 
 Example 
-	[4,3,12,85,57,3,1,28]
+	['John','PT', 3, 'BD', 'Modelos ER', 'Qual é coisa qual é ela?', 1, 33, 43, 53, 63, 20]
 
 
 - Skill (destreza) : média do tempo global que o utilizador demora a responder às questões (em percentagem)
 
 - Time (tempo) : tempo, em segundos, que o utilizador demorou a responder à pergunta naquele instante
+

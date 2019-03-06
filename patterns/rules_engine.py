@@ -9,6 +9,7 @@ from random import choice
 class Pattern(Fact):  
 
     '''
+    Pattern(id_user, language, typeQ, domain, subdomain, question, answer, skill_domain, performance_domain, skill_subdomain, performance_subdomain, time)
     Pattern(domain, subdomain, skill, performance, time, language)
     '''
     pass
@@ -55,7 +56,7 @@ class RulesEngine(KnowledgeEngine):
 ### PATTERN PARSER ###
 
 # pattern
-patt = [4,3,2,25,27,3,1,31]
+patt = ['John','PT',3,'BD','Modelos ER','Qual é coisa qual é ela?',1,33,43,53,63,20]
 # pattern analyser
 p_analys = Pat_Analyser()
 # pattern conversion
