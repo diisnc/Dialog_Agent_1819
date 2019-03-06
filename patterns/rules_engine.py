@@ -9,7 +9,7 @@ from random import choice
 class Pattern(Fact):  
 
     '''
-    Pattern(domain, subdomain, skill, performance, language)
+    Pattern(domain, subdomain, skill, performance, time, language)
     '''
     pass
 
@@ -27,7 +27,7 @@ class RulesEngine(KnowledgeEngine):
     ## Declare initial facts
     @DefFacts()
     def dialog_maker(self):
-        yield Pattern(domain='Futebol',subdomain='Cenas',skill='Good',performance='Average',language='EN')
+        yield Pattern(domain='Futebol',subdomain='Cenas',skill='Good',performance='Average',time="Good",language='EN')
         #yield Question(typeQ = 'greetingsI')
 
     ## Declare rules
@@ -42,12 +42,20 @@ class RulesEngine(KnowledgeEngine):
     def teste2 (self):
         print('Secção Duvidas')
 
+    @Rule(AND(   
+            Pattern(skill = L('Terrible') | L('Bad')),
+            Pattern(performance = L('Terrible') | L('Bad')),
+            Pattern(performance = L('Terrible') | L('Bad'))
+            ))
+    def teste3 (self):
+        print('Secção Duvidas 2')
+
 
 
 ### PATTERN PARSER ###
 
 # pattern
-patt = [4,3,2,15,57,3,1]
+patt = [4,3,2,25,27,3,1,31]
 # pattern analyser
 p_analys = Pat_Analyser()
 # pattern conversion
@@ -69,7 +77,7 @@ aux.reset()
 aux.declare(Question(typeQ = 'greetingsI'))
 
 # declare facts with pattern recieved
-p = Pattern(domain= str_pat[0], subdomain= str_pat[1], skill= str_pat[2], performance= str_pat[3], language= str_pat[4])
+p = Pattern(domain= str_pat[0], subdomain= str_pat[1], skill= str_pat[2], performance= str_pat[3], language= str_pat[4], time=str_pat[6])
 q = Question(typeQ = str_pat[5])
 
 aux.declare(p)

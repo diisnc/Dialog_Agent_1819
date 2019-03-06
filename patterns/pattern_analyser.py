@@ -3,8 +3,6 @@ import random
 import sys
 
 '''
-- O padrao é atualizado ao longo do tempo? se sim, no 
-padrao vem o tema (saudaçao, etc) da pergunta?
 
 - Podemos usar o nome, posteriormente, nas frases do dialogo
 
@@ -70,7 +68,15 @@ typeQ_dic = {   1: 'greetingsI',
                 4: 'subdomain',
                 5: 'doubt',
                 6: 'bye',
-                7: 'timeout'
+                7: 'timeout',
+                8: 'toosoon'
+                }
+
+# TIME
+time_dic = {    range(0,6) : 'Soon',
+                range(6,31) : 'Good',
+                range(31,61) : 'Bad',
+                range(61, 91) :'Terrible'
                 }
 
 
@@ -85,6 +91,7 @@ class Pat_Analyser:
     __performance = ""
     __language = ""
     __typeQ = ""
+    __time = ""
 
     '''
     def __init__(self, user, domain, subdomain, skill, performance, language, typeQ):
@@ -105,6 +112,7 @@ class Pat_Analyser:
         self.__performance = ""
         self.__language = ""
         self.__typeQ = ""
+        self.__time = ""
 
     # pat_parser : converts the recieved pattern into the respective fields (user,domain,subdomain,etc), and sets those parameters into class Pattern Analyser.
     def pat_parser(self, p):
@@ -118,14 +126,21 @@ class Pat_Analyser:
         for key in skill_dic:
             if p[3] in key:
                 self.__skill = skill_dic[key]
+                break
 
         for key in perf_dic:
             if p[4] in key:
                 self.__performance = perf_dic[key]
+                break
 
         self.__language = language_dic[p[5]]
 
         self.__typeQ = typeQ_dic[p[6]]
+
+        for key in time_dic:
+            if p[7] in key:
+                self.__time = time_dic[key]
+                break
 
     # Get the pattern's user
     def get_user(self):
@@ -133,13 +148,13 @@ class Pat_Analyser:
 
     # Displays fields into a string (separated by ','). The string is used to declare a fact, which represents the pattern, in the Rules Engine.
     def pat_string(self):
-        return '{},{},{},{},{},{},{}'.format(self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language,self.__typeQ,self.__user)
+        return '{},{},{},{},{},{},{},{}'.format(self.__domain,self.__subdomain,self.__skill,self.__performance,self.__language,self.__typeQ,self.__time,self.__user)
 
 
 ######### MAIN
 '''
 # pattern
-patt = [4,3,2,85,57,3,1]
+patt = [4,3,2,85,57,3,1,21]
 # class
 p_analys = Pat_Analyser()
 # pattern conversion
