@@ -57,7 +57,7 @@
     ],
     "time":{
     	"timeout":{
-    		"goodP":["Estavas a ir tão bem e agora estás a demorar tanto...", "Tanto trabalho para agora adormeceres?", "De certeza que ainda és tu?", "Bloqueas-te?"],
+    		"goodP":["Estavas a ir tão bem e agora estás a demorar tanto...", "Tanto trabalho para agora adormeceres?", "De certeza que ainda és tu?", "Bloqueaste?"],
     		"badP":["Hello?, Estás ai?", "O lanchinho está bom?",  "Entretanto adormeço jovem..."],
     		"aveP":["Oh jovem, é para hoje?","Então? ¯\\_(-_-)_/¯"]
     	},
