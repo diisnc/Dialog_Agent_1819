@@ -66,5 +66,21 @@
     		"badP":["Isto não é para responder à sorte!", "Não comeces a javardar e a responder à toa!"],
     		"aveP":["Carregaste sem querer?", "Miss click?"]
     	}
+  	},
+  	"answer":{
+  		"yes":[
+  			"Nice one!",
+  			"Está certooo! *Cristina Ferreira voice*",
+  			"Boa jovem!",
+  			"Not bad ;)",
+  			"Certo!"
+  		],
+  		"no":[
+  			"Resposta errada...",
+  			"Não era bem isso.",
+  			"Está mal!",
+  			"Parece que precisas de estudar...",
+  			"A sério? -.-"
+  		]
   	}
 }
