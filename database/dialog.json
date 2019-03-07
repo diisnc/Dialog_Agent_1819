@@ -1,12 +1,12 @@
 {
     "greetingsI":{
-      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Não."},{"Type": "doubt", "Answer": "Estudar? Há teste?"}],
+      "Olá patanisca, já estudaste?" : [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Não."},{"Type": "doubt", "Answer": "Estudar? Há teste?"}],
       "Bom dia. Pronto para trabalhar, caramelo?" : [{"Type": "domain", "Answer": "Sempre!"}, {"Type": "bye", "Answer": "Nem por isso..."},{"Type": "doubt", "Answer": "Chamaste caramelo a quem?"}],
       "Olá. Pronto para o teste?": [{"Type" : "domain", "Answer": "Sim, claro."},{"Type": "bye", "Answer": "Não..."},{"Type": "doubt", "Answer": "Há nota mínima?"}],
       "Então, por aqui?" : [{"Type": "domain", "Answer": "Aqui estou. Preparado!"},{"Type": "domain","Answer": "Aparentemente..."},{"Type": "bye", "Answer": "Enganei-me,*miss click*."}]
     },
     "greetingsA":{
-      "Olá jovem, já estudaste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye", "Answer": "Não"},{"Type": "doubt", "Answer" : "Estudar? Há teste?"}],
+      "Olá patanisca, já estudaste?" : [{"Type": "domain", "Answer": "Sim"},{"Type": "bye", "Answer": "Não"},{"Type": "doubt", "Answer" : "Estudar? Há teste?"}],
       "Então, aqui outra vez?" : [{"Type" : "domain", "Answer" : "Cá estou eu!"}, {"Type": "bye", "Answer" : "Realmente foi um erro..."},{"Type" : "doubt", "Answer": "Infelizmente."}],
       "Não desistes fácil..." : [{"Type": "domain", "Answer": "Estou preparado para trabalhar!"}, {"Type": "bye", "Answer": "Pensando melhor, 'té logo..."}, {"Type": "doubt", "Answer": "Estou a pensar nisso..."}],
       "Encontramo-nos de novo?": [{"Type": "domain", "Answer": "Sim."},{"Type": "bye", "Answer": "Enganei-me."},{"Type": "doubt", "Answer": "Infelizmente."}]
@@ -28,7 +28,7 @@
 	      "Não pescas nada disto!",
 	      "Andamos a brincar? Shame on you...",
 	      "The force is not with you.",
-	      "Vai estudar jovem."
+	      "Vai estudar patanisca."
 	    ],
 	    "goodP":[
 	      "Nada mal ;)",
@@ -40,7 +40,7 @@
 	      "Não está bom... Mas também não está mau. Até à proxima!",
 	      "Meeh, podia ser melhor. Ciao.",
 	      "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
-	      "Calma jovem, com trabalho chegas lá. Boa sorte para a próxima!"
+	      "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!"
 	    ],
 	},
     "domain":[
@@ -58,8 +58,8 @@
     "time":{
     	"timeout":{
     		"goodP":["Estavas a ir tão bem e agora estás a demorar tanto...", "Tanto trabalho para agora adormeceres?", "De certeza que ainda és tu?", "Bloqueaste?"],
-    		"badP":["Hello?, Estás ai?", "O lanchinho está bom?",  "Entretanto adormeço jovem..."],
-    		"aveP":["Oh jovem, é para hoje?","Então? ¯\\_(-_-)_/¯"]
+    		"badP":["Hello?, Estás ai?", "O lanchinho está bom?",  "Entretanto adormeço patanisca..."],
+    		"aveP":["Oh patanisca, é para hoje?","Então? ¯\\_(-_-)_/¯"]
     	},
     	"toosoon":{
     		"goodP":["Ou és muito bom ou essa resposta foi à sorte.", "Estás on fire, começo a duvidar..."],
@@ -71,7 +71,7 @@
   		"yes":[
   			"Nice one!",
   			"Está certooo! *Cristina Ferreira voice*",
-  			"Boa jovem!",
+  			"Boa patanisca!",
   			"Not bad ;)",
   			"Certo!"
   		],
