@@ -1,22 +1,26 @@
 Pattern Configuration 
 	[id_user | language | typeQ | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time]
 
-Ranges (14 characteristics)
+Ranges (15 characteristics)
 	id_user: 		String 			
 	language: 		1-9 			[language: PT, EN, ES, DE, FR, RU] 																---> 6 languages
 	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, farewell(bye)-6, time-7, answer-8]	---> 8 types
-	domain: 		00-99 			[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
-	subdomain: 		00-99 			[subdomain: 'A','B','C','D','E',...] 					
+	domain: 		'XX' 			[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
+	subdomain: 		'<string>' 		[subdomain: 'A','B','C','D','E',...] 					
+	question:		'<string>'		[string exemplo: Gostas de pêras? Sim. Não.]
+					(question envolve perguntas + respostas)
 	answer:			0-1				[0 - falhou, 1 - acertou] 
-
-	// question_lvl, student_lvl, state
-
-	skill: 			00-150 segundos	[skill: TERRIBLE 120-150, BAD 90-120, AVERAGE 60-90, GOOD 30-60, EXCELLENT 00-30 ] (igual escala para domínios e subdomínios) 																												 ---> 5 skills
+	questionlvl:	1-5				[1 - Mais fácil, 5 - Mais difícil]
+	studentlvl:		'A'-'E'			['A' - Melhor nível, 'E' - Pior nível]
+	state 			<nomeProc>	 	[nome do processo ocupante]
+	skill: 			00-150 segundos	[skill: TERRIBLE 120-150, BAD 90-120, AVERAGE 60-90, GOOD 30-60, EXCELLENT 00-30 ] 
+					(igual escala para domínios e subdomínios) 																												 ---> 5 skills
 	performance: 	00-100 percentagem [performance: TERRIBLE 0-20, BAD 20-40, AVERAGE 40-60, GOOD 60-80, EXCELLENT 80-100 ] 	---> 5 performances
+					(igual escala para domínios e subdomínios) 
 	time: 			00-90 segundos 	[0-5 segundos: SOON, 5-30 segundos: GOOD, 30-60 segundos: BAD, 60-90 segundos: TERRIBLE ] 	---> 4 times
 
 Example 
-	['John','PT', 3, 'BD', 'Modelos ER', 'Qual é coisa qual é ela?', 1, 33, 43, 53, 63, 20]
+	['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
 
 
 - Skill (destreza) : média do tempo global que o utilizador demora a responder às questões (em percentagem)
