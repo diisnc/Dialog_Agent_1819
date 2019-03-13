@@ -87,7 +87,7 @@ class Pat_Analyser:
         
         self.__username = p[0]
         self.__language = p[1]
-        self.__typeQ = p[2]
+        self.__typeQ = typeQ_dic[p[2]]
         self.__domain = p[3]
         self.__subdomain = p[4]
         self.__question = p[5]
@@ -137,9 +137,9 @@ class Pat_Analyser:
 
 
 ######### MAIN
-
+'''
 # pattern
-patt = ['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
+patt = ['John001', 'PT', 1, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
 # class
 p_analys = Pat_Analyser()
 # pattern conversion
@@ -150,4 +150,4 @@ print(p_analys.get_user())
 print(p_analys.pat_string())
 # print array of fields
 print(p_analys.pat_string().split(","))
-
+'''

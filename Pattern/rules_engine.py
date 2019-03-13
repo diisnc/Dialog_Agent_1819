@@ -14,8 +14,7 @@ from random import choice
 class Pattern(Fact):  
 
     '''
-    Pattern(id_user, language, typeQ, domain, subdomain, question, answer, skill_domain, performance_domain, skill_subdomain, performance_subdomain, time)
-    Pattern(domain, subdomain, skill, performance, time, language)
+    Pattern(username, language, typeQ, domain, subdomain, question, answer, question_lvl, student_lvl, state, skill_domain, performance_domain, skill_subdomain, performance_subdomain, time)
     '''
     pass
 
@@ -42,26 +41,26 @@ class RulesEngine(KnowledgeEngine):
         print('Saudaçao inicial')
 
     @Rule(OR(   
-            Pattern(skill = L('Terrible') | L('Bad')),
-            Pattern(performance = L('Terrible') | L('Bad'))
+            Pattern(skill_domain = L('Terrible') | L('Bad')),
+            Pattern(performance_domain = L('Terrible') | L('Bad'))
             ))
     def teste2 (self):
-        print('Secção Duvidas')
+        print('Teste 2')
 
     @Rule(AND(   
-            Pattern(skill = L('Terrible') | L('Bad')),
-            Pattern(performance = L('Terrible') | L('Bad')),
-            Pattern(performance = L('Terrible') | L('Bad'))
+            Pattern(skill_subdomain = L('Terrible') | L('Bad')),
+            Pattern(performance_domain = L('Terrible') | L('Bad')),
+            Pattern(performance_subdomain = L('Terrible') | L('Bad'))
             ))
     def teste3 (self):
-        print('Secção Duvidas 2')
+        print('Teste 3')
 
 
 
 ### PATTERN PARSER ###
 
 # pattern
-patt = ['John','PT',3,'BD','Modelos ER','Qual é coisa qual é ela?',1,33,43,53,63,20]
+patt = ['John001', 'PT', 1, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 103, 53, 63, 15, 20]
 # pattern analyser
 p_analys = Pat_Analyser()
 # pattern conversion
@@ -83,8 +82,8 @@ aux.reset()
 aux.declare(Question(typeQ = 'greetingsI'))
 
 # declare facts with pattern recieved
-p = Pattern(domain= str_pat[0], subdomain= str_pat[1], skill= str_pat[2], performance= str_pat[3], language= str_pat[4], time=str_pat[6])
-q = Question(typeQ = str_pat[5])
+p = Pattern(language= str_pat[1], domain= str_pat[3], subdomain= str_pat[4], skill_domain= str_pat[10], performance_subdomain= str_pat[13], time=str_pat[14])
+q = Question(typeQ = str_pat[2])
 
 aux.declare(p)
 aux.declare(q)
