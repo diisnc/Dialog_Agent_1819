@@ -3,7 +3,7 @@ Boas!
 Bom dia!
 Saudações!
 Olá jovem, já estudaste?
-Bom dia. Pronto para trabalhar, caramelo?
+Bom dia. Pronto para trabalhar, patanisca?
 Olá. Pronto para o teste?
 Então, por aqui?
 Então, tudo bem?
@@ -15,10 +15,13 @@ Boas!
 Viva!
 Olá!
 Saudações!
-Bom dia . Pronto para trabalhar, caro(a)?
-Saudações . Pronto para o teste?
-Olá . Pronto para o teste?
+Bom dia. Pronto para trabalhar, caro(a)?
+Saudações. Pronto para o teste?
+Olá. Pronto para o teste?
 Bom dia!
 Saudações!
 Olá!
 Viva!
+Namastê! Pronto para trabalhar?
+Tudo beleza? Vai um teste?
+Tudo jóia? Vai um teste?

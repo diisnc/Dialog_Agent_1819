@@ -14,7 +14,7 @@
         "Answer": "Estudar? Há teste?"
       }
     ],
-    "Bom dia. Pronto para trabalhar, caramelo?": [
+    "Bom dia. Pronto para trabalhar, patanisca?": [
       {
         "Type": "domain",
         "Answer": "Sempre!"
@@ -25,7 +25,7 @@
       },
       {
         "Type": "doubt",
-        "Answer": "Chamaste caramelo a quem?"
+        "Answer": "Chamaste patanisca a quem?"
       }
     ],
     "Olá. Pronto para o teste?": [
@@ -151,7 +151,7 @@
     "bye": [
       "Até para a próxima.",
       "Vemo-nos mais tarde!",
-      "Vai estudar, caramelo.",
+      "Vai estudar, patanisca.",
       "Adeus!"
     ],
     "badP": [
