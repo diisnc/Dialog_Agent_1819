@@ -3,6 +3,11 @@ from pyknow import *
 from pattern_analyser import *
 from random import choice
 
+'''
+
+- Podemos usar o nome, posteriormente, nas frases do dialogo
+
+'''
 
 # Pattern Fact
 # no need for user

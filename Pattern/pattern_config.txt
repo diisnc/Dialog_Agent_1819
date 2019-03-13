@@ -1,8 +1,8 @@
 Pattern Configuration 
-	[id_user | language | typeQ | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time]
+	[username | language | typeQ | domain |subdomain | question | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time]
 
 Ranges (15 characteristics)
-	id_user: 		String 			
+	username: 		String 			
 	language: 		1-9 			[language: PT, EN, ES, DE, FR, RU] 																---> 6 languages
 	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, farewell(bye)-6, time-7, answer-8]	---> 8 types
 	domain: 		'XX' 			[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
@@ -10,8 +10,8 @@ Ranges (15 characteristics)
 	question:		'<string>'		[string exemplo: Gostas de pêras? Sim. Não.]
 					(question envolve perguntas + respostas)
 	answer:			0-1				[0 - falhou, 1 - acertou] 
-	questionlvl:	1-5				[1 - Mais fácil, 5 - Mais difícil]
-	studentlvl:		'A'-'E'			['A' - Melhor nível, 'E' - Pior nível]
+	question_lvl:	1-5				[1 - Mais fácil, 5 - Mais difícil]
+	student_lvl:		'A'-'E'			['A' - Melhor nível, 'E' - Pior nível]
 	state 			<nomeProc>	 	[nome do processo ocupante]
 	skill: 			00-150 segundos	[skill: TERRIBLE 120-150, BAD 90-120, AVERAGE 60-90, GOOD 30-60, EXCELLENT 00-30 ] 
 					(igual escala para domínios e subdomínios) 																												 ---> 5 skills
