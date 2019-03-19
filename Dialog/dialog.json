@@ -5,13 +5,13 @@
       "Type": "Funny",
       "Counter": 0,
       "Answer": {
-        "domain" : "Sim.",
-        "bye" : "Não.",
+        "domain" : "Sim, vamos a isto!",
+        "bye" : "Nem por isso, acho que preciso de mais tempo.",
         "doubt": "Estudar? Há teste?"
       }
     },
     {
-      "Phrase": "Bom dia. Pronto para trabalhar, caramelo?",
+      "Phrase": "@day. Pronto(a) para trabalhar, caramelo?",
       "Type": "Mock",
       "Counter": 0,
       "Answer": {
@@ -21,7 +21,7 @@
       }
     },
     {
-      "Phrase": "Olá. Pronto para o teste?",
+      "Phrase": "Olá. Pronto(a) para o teste?",
       "Type": "Serious",
       "Counter": 0,
       "Answer": {
@@ -35,15 +35,85 @@
       "Type": "Normal",
       "Counter": 0,
       "Answer": {
-        "domain" : "Aqui estou. Preparado!",
+        "domain" : "Aqui estou. Preparado(a)!",
         "bye": "Enganei-me,*miss click*.",
         "doubt": "Aparentemente..."
+      }
+    },
+    {
+      "Phrase": "Então, tudo bem?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto.",
+        "bye": "Não, não está tudo bem.",
+        "doubt": "Meh"
+      }
+    },
+    {
+      "Phrase": "Olá, tudo bem? Vai um teste?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto!",
+        "bye": "Nem por isso, acho que preciso de mais tempo.",
+        "doubt": "Tem de ser, não é?"
+      }
+    },
+    {
+      "Phrase": "Então, como vai isso?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Está tudo bem, vamos fazer um teste!",
+        "bye": "Afinal quero sair.",
+        "doubt": "Tem de ser, não é?"
+      }
+    },
+    {
+      "Phrase": "Então, a que devo a tua visita?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Vim aqui fazer uma avaliação!",
+        "bye": "Afinal quero sair.",
+        "doubt": "Não é obvio?"
+      }
+    },
+    {
+      "Phrase": "Olá, bem acordado(a)?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
+        "bye": "Afinal quero dormir mais um pouco.",
+        "doubt": "Tenho cara de sono?"
+      }
+    },
+    {
+      "Phrase": "Caro(a) @name, vamos começar!",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou preparado(a)!",
+        "bye": "Afinal quero estudar mais um pouco.",
+        "doubt": "Que remédio!"
+      }
+    },
+    {
+      "Phrase": "Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou preparado(a)!",
+        "bye": "Afinal quero estudar mais um pouco.",
+        "doubt": "Que remédio!"
       }
     }
   ],
   "greetingsA": [
     {  
-      "Phrase": "Olá patanisca, já estudaste?",
+      "Phrase": "Oh @name, já estudaste?",
       "Type": "Funny",
       "Counter": 0,
       "Answer": {
@@ -67,7 +137,7 @@
       "Type": "Serious",
       "Counter": 0,
       "Answer": {
-        "domain" : "Estou preparado para trabalhar!",
+        "domain" : "Estou preparado(a) para trabalhar!",
         "bye": "Pensando melhor, 'té logo...",
         "doubt": "Estou a pensar nisso..."
       }
@@ -80,6 +150,206 @@
         "domain" : "Sim.",
         "bye": "Enganei-me.",
         "doubt": "Infelizmente."
+      }
+    },
+    {
+      "Phrase": "Então, como estão a correr as aulas?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Bem! Vamos a isto.",
+        "bye": "Não quero falar disso... Vou-me embora.",
+        "doubt": "Não tens nada a ver com isso."
+      }
+    },
+    {
+      "Phrase": "Então, por aqui?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Aqui estou. Preparado(a)!",
+        "bye": "Enganei-me,*miss click*.",
+        "doubt": "Aparentemente..."
+      }
+    },
+    {
+      "Phrase": "Então, tudo bem?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto.",
+        "bye": "Não, não está tudo bem.",
+        "doubt": "Meh"
+      }
+    },
+    {
+      "Phrase": "Olá, tudo bem? Vai um teste?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto!",
+        "bye": "Nem por isso, acho que preciso de mais tempo.",
+        "doubt": "Tem de ser, não é?"
+      }
+    },
+    {
+      "Phrase": "Então, como vai isso?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Está tudo bem, vamos fazer um teste!",
+        "bye": "Afinal quero sair.",
+        "doubt": "Tem de ser, não é?"
+      }
+    },
+    {
+      "Phrase": "Olá, bem acordado(a)?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
+        "bye": "Afinal quero dormir mais um pouco.",
+        "doubt": "Tenho cara de sono?"
+      }
+    },
+    {
+      "Phrase": "Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou preparado(a)!",
+        "bye": "Afinal quero estudar mais um pouco.",
+        "doubt": "Que remédio!"
+      }
+    },
+    {
+      "Phrase": "Então, vens agora chatear-me?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Preciso de avaliar!",
+        "bye": "Peço desculpa, adeus...",
+        "doubt": "Não me fales assim!"
+      }
+    },
+    {
+      "Phrase": "Já estás melhor preparado(a)?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto!",
+        "bye": "Ainda não...",
+        "doubt": "Espero que sim..."
+      }
+    },
+    {
+      "Phrase": "Olá! (outra vez...)",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "É verdade, vamos a isto!",
+        "bye": "Olá e adeus...",
+        "doubt": "Qual é o problema?"
+      }
+    },
+    {
+      "Phrase": "@day. Pronto(a) para trabalhar, desta vez a sério?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, estou pronto(a).",
+        "bye": "Nem por isso, adeus...",
+        "doubt": "Trabalhar? Hmm..."
+      }
+    },
+    {
+      "Phrase": "Bons olhos te vejam, pensei já não precisas de vir mais!",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Preciso de me avaliar.",
+        "bye": "Tens razão, adeus!",
+        "doubt": "Não é que queria muito..."
+      }
+    },
+    {
+      "Phrase": "Saudações. Pronto para o teste (agora a sério...)?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Bora lá.",
+        "bye": "Afinal não quero...",
+        "doubt": "Ui, \"a sério\"? Sendo assim..."
+      }
+    },
+    {
+      "Phrase": "Tudo bem? Vamos a mais um teste?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, estou preparado(a).",
+        "bye": "Afinal não quero...",
+        "doubt": "Se tem de ser, tem de ser."
+      }
+    },
+    {
+      "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim!",
+        "bye": "Afinal não ...",
+        "doubt": "Saudades?? Eu não tive!"
+      }
+    },
+    {
+      "Phrase": "Por cá outra vez? Isso é que é empenho!",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim!",
+        "bye": "Ups, não queria falar contigo.",
+        "doubt": "Se tem de ser, tem de ser."
+      }
+    },
+    {
+      "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Siga!",
+        "bye": "Não tenho muita vontade...",
+        "doubt": "Que remédio!"
+      }
+    },
+    {
+      "Phrase": "Viva! Outra vez por cá?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "É verdade, vamos a isto!",
+        "bye": "Enganei-me, adeus.",
+        "doubt": "Que remédio!"
+      }
+    },
+    {
+      "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "É verdade, vamos a isto!",
+        "bye": "Hmm, pensado melhor... Adeus.",
+        "doubt": "Saudades? Não sei se acredito"
+      }
+    },
+     {
+      "Phrase": "Então Einstein, vamos a mais um teste?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Eu sei tudo!",
+        "bye": "Hmm, pensado melhor... Adeus.",
+        "doubt": "Eu respondo a tudo! Agora não sei se é corretamente.."
       }
     }
   ],
@@ -98,17 +368,152 @@
       "Type": "Serious",
       "Counter": 0,
       "Answer": {
-        "domain" : "Não, estou preparado.",
+        "domain" : "Não, estou preparado(a).",
         "bye": "Sim, quero sair."
       }
     },
     {
-      "Phrase": "É para ficar para o ano?",
+      "Phrase": "Fica para o ano?",
       "Type": "Mock",
       "Counter": 0,
       "Answer": {
         "domain" : "Não, quero fazer o teste!",
         "bye": "Para o ano há mais."
+      }
+    },
+    {
+      "Phrase": "Agora a sério, tens a certeza que queres continuar?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, quero fazer o teste!",
+        "bye": "Para o ano há mais."
+      }
+    },
+    {
+      "Phrase": "Estás seguro que queres iniciar o teste?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, bora lá!",
+        "bye": "Afinal não quero fazer o teste."
+      }
+    },
+    {
+      "Phrase": "Queres continuar? Podes sempre voltar mais tarde...",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Tenho a certeza, vamos ao teste!",
+        "bye": "Afinal não quero."
+      }
+    },
+    {
+      "Phrase": "Sabia que não ias aguentar a pressão... Queres continuar?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos continuar.",
+        "bye": "Vemo-nos na próxima vez."
+      }
+    },
+    {
+      "Phrase": "Vi logo que ias desistir... Tens a certeza que queres continuar?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Desistir? Nem pensar!",
+        "bye": "Fica para a próxima."
+      }
+    },
+    {
+      "Phrase": "Queres continuar com o teste ou é melhor ires estudar mais, Einstein?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Vamos ao teste!",
+        "bye": "Preciso de estudar mais."
+      }
+    },
+    {
+      "Phrase": "Queres mesmo fazer o teste ou é para ficar para o ano?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Teste, teste, teste!",
+        "bye": "Para o ano, assim tenho mais tempo."
+      }
+    },
+    {
+      "Phrase": "Logo vi que ias ceder à pressão... Desejas continuar?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Desejo sim senhor",
+        "bye": "Não, continuamos para a próxima."
+      }
+    },
+    {
+      "Phrase": "Queres estudar mais um bocado, ou continuas para o teste?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sigo para o teste",
+        "bye": "Estudar mais um pouco não vai fazer mal."
+      }
+    },
+    {
+      "Phrase": "Queres ir procrastinar mais um bocado, ou queres mesmo continuar?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Continuamos.",
+        "bye": "Procrastinar? Não sei o que é, mas parece divertido!"
+      }
+    },
+    {
+      "Phrase": "Estás seguro que queres continuar?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Seguríssimo.",
+        "bye": "Nem por isso."
+      }
+    },
+    {
+      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Vamos continuar para o teste.",
+        "bye": "Nem por isso."
+      }
+    },
+    {
+      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Vamos continuar para o teste.",
+        "bye": "Nem por isso."
+      }
+    },
+    {
+      "Phrase": "Tens a certeza que queres desistir?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Não, vamos continuar para o teste.",
+        "bye": "Sim, quero."
+      }
+    },
+    {
+      "Phrase": "Tens a certeza que queres continuar?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos continuar.",
+        "bye": "Nem por isso... Quero sair."
       }
     }
   ],
@@ -133,6 +538,36 @@
         "Counter": 0
       },
       {
+        "Phrase": "\"See you later, aligator...\"",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Adeus, manda lembrança!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Até para o ano!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Adeus, boa Páscoa",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vai lá, bom Natal.",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
         "Phrase": "Adeus!",
         "Type": "Normal",
  
@@ -146,20 +581,44 @@
  
         "Counter": 0
       },
-      {
-        "Phrase": "Andamos a brincar? Shame on you...",
+      {  
+        "Phrase": "Não percebes nada disto!",
+        "Type": "Mock",
+ 
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Estás reprovado...",
+        "Type": "Serious",
+ 
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Até à próxima. Se houver...",
+        "Type": "Serious",
+ 
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Põe-te a andar!",
         "Type": "Mock",
  
         "Counter": 0
       },
       {
-        "Phrase": "The force is not with you.",
+        "Phrase": "Andamos a brincar? Vergonha...",
+        "Type": "Mock",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "\"The force is not with you.\"",
         "Type": "Funny",
  
         "Counter": 0
       },
       {
-        "Phrase": "Vai estudar melga.",
+        "Phrase": "Vai estudar, melga.",
         "Type": "Funny",
  
         "Counter": 0
@@ -185,6 +644,24 @@
         "Counter": 0
       },
       {
+        "Phrase": "Nice!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Muito bem!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vá, vai-te embora...",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
         "Phrase": "Boa!",
         "Type": "Incentive",
  
@@ -193,7 +670,7 @@
     ],
     "averagePerformance": [
       {  
-        "Phrase": "Não está bom... Mas também não está mau. Até à proxima!",
+        "Phrase": "Não está bom... Mas também não está mau. Até à próxima!",
         "Type": "Incentive",
  
         "Counter": 0
@@ -238,6 +715,11 @@
       "Phrase": "O que é que queres tentar hoje?",
       "Type": "Normal",
       "Counter": 0
+    },
+    {
+      "Phrase": "O que vai ser hoje, caramelo?",
+      "Type": "Mock",
+      "Counter": 0
     }
   ],
   "subdomain": [
@@ -258,6 +740,16 @@
     },
     {
       "Phrase": "Isso parece difícil. Escolhe um subtema.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Ui... Seleciona um subdomínio.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "No que te foste meter... Escolhe um subdomínio.",
       "Type": "Funny",
       "Counter": 0
     }
@@ -288,6 +780,114 @@
           "Type": "Serious",
    
           "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper o teu intervalo?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper a conversa?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "E se gastasses o tempo a responder às perguntas?",
+          "Type": "Mock",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+          "Type": "Mock",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper alguma coisa?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não queres um cafezinho?",
+          "Type": "Mock",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Só estás aqui porque queres, por isso responde.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ninguém te obriga a estar aqui...",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já descobriste?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ainda demoras?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá...",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Mas isto é para hoje?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vais demorar muito?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Há que despachar, que eu tenho mais que fazer.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não tenho o dia todo!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já esta na hora, @name",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "A tua resposta vem a pé?",
+          "Type": "Funny",
+   
+          "Counter": 0
         }
       ],
       "badP": [
@@ -305,7 +905,115 @@
         },
         {
           "Phrase": "Entretanto adormeço...",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper o teu intervalo?",
           "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper a conversa?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "E se gastasses o tempo a responder às perguntas?",
+          "Type": "Mock",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper alguma coisa?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não queres um cafezinho?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Só estás aqui porque queres, por isso responde...",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ninguém te obriga a estar aqui...",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já descobriste?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ainda demoras?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá...",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Mas isto é para hoje?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vais demorar muito?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Há que despachar, que eu tenho mais que fazer.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não tenho o dia todo!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já esta na hora, @name.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "A tua resposta vem a pé?",
+          "Type": "Mock",
    
           "Counter": 0
         }
@@ -318,8 +1026,116 @@
           "Counter": 0
         },
         {  
-          "Phrase":  "Olá?, Estás ai?",
+          "Phrase":  "Olá? Estás ai?",
           "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper o teu intervalo?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper a conversa?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "E se gastasses o tempo a responder às perguntas?",
+          "Type": "Mock",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a interromper alguma coisa?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não queres um cafezinho?",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Só estás aqui porque queres, por isso responde...",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ninguém te obriga a estar aqui...",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já descobriste?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Ainda demoras?",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá...",
+          "Type": "Normal",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Mas isto é para hoje?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vais demorar muito?",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Há que despachar porque eu tenho mais que fazer.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não tenho o dia todo!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já esta na hora, @name.",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Type": "Serious",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "A tua resposta vem a pé?",
+          "Type": "Mock",
    
           "Counter": 0
         }
@@ -334,7 +1150,13 @@
           "Counter": 0
         },
         {
-          "Phrase": "Estás on fire, começo a duvidar...",
+          "Phrase": "Estás \"on fire\", começo a duvidar...",
+          "Type": "Funny",
+   
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem! Mas como sabes, é impossível saberes mais do que eu.",
           "Type": "Funny",
    
           "Counter": 0
@@ -342,7 +1164,7 @@
       ],
       "badP": [
         {  
-          "Phrase": "Isto não é para responder à sorte.",
+          "Phrase": "Isto não é para responder à sorte!",
           "Type": "Serious",
    
           "Counter": 0
@@ -362,7 +1184,7 @@
           "Counter": 0
         },
         {
-          "Phrase": "Miss click?",
+          "Phrase": "\"Miss click\"?",
           "Type": "Funny",
    
           "Counter": 0
@@ -373,32 +1195,158 @@
   "answer": {
     "yes": [
       {
-        "Phrase": "Nice one!",
+        "Phrase": "Soma e segue!",
         "Type": "Incentive",
  
         "Counter": 0
       },
       {
-        "Phrase": "Está certooo!",
+        "Phrase": "Incrível, parece que percebes do assunto!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Temos aqui um Einstein...",
         "Type": "Funny",
  
         "Counter": 0
       },
       {
-        "Phrase": "Boa, melga!",
-        "Type": "Mock",
+        "Phrase": "Isso é sorte ou inteligência?",
+        "Type": "Normal",
  
         "Counter": 0
       },
       {
-        "Phrase": "Not bad ;)",
+        "Phrase": "Uau, parece que estudaste!",
         "Type": "Incentive",
  
         "Counter": 0
       },
       {
-        "Phrase": "Certo!",
+        "Phrase": "Certíssimo, meu caro(a).",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Até perco a fala com tanta inteligência!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Estás a arrasar!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Fiquei emocionado com essa resposta. Certo!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Epá, não brincas em serviço! Muito bem!",
         "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Muito bem!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho...",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Esta era trivial...",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Elementar, meu caro Watson!",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Estás quase um engenheiro...",
+        "Type": "Normal",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Acertaste a esta pergunta?!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Bem jogado @name!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Muito bem, @name!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Bem jogado!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Que craque!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Já merecias mais um valor!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "De onde veio tanta inteligência?",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Uau, não estava à espera!",
+        "Type": "Incentive",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Um relógio quebrado está certo duas vezes por dia!",
+        "Type": "Funny",
+ 
+        "Counter": 0
+      },
+      {
+        "Phrase": "Incrível, parece que estudaste!",
+        "Type": "Funny",
  
         "Counter": 0
       }
@@ -427,6 +1375,126 @@
       {
         "Phrase": "A sério? -.-",
         "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não pescas nada disto...",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Errado!",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Resposta errada.",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "\"Fatal error\"",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "\"Fatal error\"",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "A sério? Cansas-me a beleza.",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Parece que a sorte acabou!",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Que tristeza...",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "A vida não é triste. Tem é momentos tristes e este é um deles...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Fico triste com respostas destas.",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não é bem assim...",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Nem lá perto...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não estudes que não é preciso!",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Esperava mais de ti...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não é essa a resposta, mas estás lá perto.",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Tentaste... Mas sabes que podes sempre dedicar-te à pesca ;)",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não estás atento(a).",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não estudaste nada!",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Nada disso!",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não estudas e depois é isto.",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Claramente não fizeste os tpc's!",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Assim não vais lá...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Estou a perder a esperança.",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Mal!",
+        "Type": "Normal",
         "Counter": 0
       }
     ]
