@@ -2,7 +2,7 @@ Constituição do dialog.json:
 
 -----1) tag "phrase" é a frase
 
------2) tag "type" é o tipo (tipos ironia, incentivo, etc. provavelmente é melhor definirmos um conjunto limitado de tipos)
+-----2) tag "type" é o tipo (funny, mock, serious, normal, incentive)
 
 -----3) tag "synonym" indica se tem sinonimo ou não. estão todos a "yes/no", para depois preenchermos a yes ou nao.
 

@@ -3,7 +3,6 @@
     {  
       "Phrase": "Olá patanisca, já estudaste?",
       "Type": "Funny",
-      "Synonym": "Yes/No",
       "Counter": 0,
       "Answer": {
         "domain" : "Sim.",
@@ -13,8 +12,7 @@
     },
     {
       "Phrase": "Bom dia. Pronto para trabalhar, caramelo?",
-      "Type": "Jocular",
-      "Synonym": "Yes/No",
+      "Type": "Mock",
       "Counter": 0,
       "Answer": {
         "domain" : "Sempre!",
@@ -25,7 +23,6 @@
     {
       "Phrase": "Olá. Pronto para o teste?",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0,
       "Answer": {
         "domain" : "Sim, claro.",
@@ -35,8 +32,7 @@
     },
     {
       "Phrase": "Então, por aqui?",
-      "Type": "Funny",
-      "Synonym": "Yes/No",
+      "Type": "Normal",
       "Counter": 0,
       "Answer": {
         "domain" : "Aqui estou. Preparado!",
@@ -49,7 +45,6 @@
     {  
       "Phrase": "Olá patanisca, já estudaste?",
       "Type": "Funny",
-      "Synonym": "Yes/No",
       "Counter": 0,
       "Answer": {
         "domain" : "Sim.",
@@ -58,9 +53,8 @@
       }
     },
     {
-      "Phrase": "Então, aqui outra vez?",
-      "Type": "Jocular",
-      "Synonym": "Yes/No",
+      "Phrase": "Então, aqui outra vez? (-_-)",
+      "Type": "Mock",
       "Counter": 0,
       "Answer": {
         "domain" : "Cá estou eu!",
@@ -69,9 +63,8 @@
       }
     },
     {
-      "Phrase": "Não desistes fácil...",
-      "Type": "Jocular",
-      "Synonym": "Yes/No",
+      "Phrase": "Não desistes facilmente...",
+      "Type": "Serious",
       "Counter": 0,
       "Answer": {
         "domain" : "Estou preparado para trabalhar!",
@@ -81,8 +74,7 @@
     },
     {
       "Phrase": "Encontramo-nos de novo?",
-      "Type": "Jocular",
-      "Synonym": "Yes/No",
+      "Type": "Normal",
       "Counter": 0,
       "Answer": {
         "domain" : "Sim.",
@@ -95,7 +87,6 @@
     {  
       "Phrase": "Tens a certeza que queres iniciar o teste?",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0,
       "Answer": {
         "domain" : "Sim.",
@@ -105,7 +96,6 @@
     {
       "Phrase": "Precisas de estudar mais?",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0,
       "Answer": {
         "domain" : "Não, estou preparado.",
@@ -114,8 +104,7 @@
     },
     {
       "Phrase": "É para ficar para o ano?",
-      "Type": "Jocular",
-      "Synonym": "Yes/No",
+      "Type": "Mock",
       "Counter": 0,
       "Answer": {
         "domain" : "Não, quero fazer o teste!",
@@ -128,51 +117,51 @@
       {  
         "Phrase": "Até à próxima.",
         "Type": "Serious",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Vemo-nos mais tarde!",
-        "Type": "Serious",
-        "Synonym": "Yes/No",
+        "Type": "Normal",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Vai estudar, caramelo.",
-        "Type": "Funny",
-        "Synonym": "Yes/No",
+        "Type": "Mock",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Adeus!",
-        "Type": "Serious",
-        "Synonym": "Yes/No",
+        "Type": "Normal",
+ 
         "Counter": 0
       }
     ],
     "badP": [
       {  
         "Phrase": "Não pescas nada disto!",
-        "Type": "Funny",
-        "Synonym": "Yes/No",
+        "Type": "Mock",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Andamos a brincar? Shame on you...",
-        "Type": "Jocular",
-        "Synonym": "Yes/No",
+        "Type": "Mock",
+ 
         "Counter": 0
       },
       {
         "Phrase": "The force is not with you.",
         "Type": "Funny",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Vai estudar melga.",
         "Type": "Funny",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       }
     ],
@@ -180,25 +169,25 @@
       {  
         "Phrase":  "Nada mal ;)",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Bom trabalho! Onde estão as cábulas?",
-        "Type": "Jocular",
-        "Synonym": "Yes/No",
+        "Type": "Funny",
+ 
         "Counter": 0
       },
       {
         "Phrase": "É para o 20.",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Boa!",
-        "Type": "Serious",
-        "Synonym": "Yes/No",
+        "Type": "Incentive",
+ 
         "Counter": 0
       }
     ],
@@ -206,25 +195,25 @@
       {  
         "Phrase": "Não está bom... Mas também não está mau. Até à proxima!",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Meeh, podia ser melhor. Ciao.",
-        "Type": "Jocular",
-        "Synonym": "Yes/No",
+        "Type": "Mock",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       }
     ]
@@ -233,51 +222,43 @@
     {  
       "Phrase": "Escolhe o tema para avaliação:",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0
     },
     {
       "Phrase": "O que é que queres estudar hoje?",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0
     },
     {
-      "Phrase": "Aqui está a ementa, escolhe o prato.",
+      "Phrase": "Aqui está a ementa!",
       "Type": "Funny",
-      "Synonym": "Yes/No",
       "Counter": 0
     },
     {
       "Phrase": "O que é que queres tentar hoje?",
-      "Type": "Serious",
-      "Synonym": "Yes/No",
+      "Type": "Normal",
       "Counter": 0
     }
   ],
   "subdomain": [
     {  
       "Phrase": "Boa escolha. Escolhe agora um subtema.",
-      "Type": "Incentive",
-      "Synonym": "Yes/No",
+      "Type": "Normal",
       "Counter": 0
     },
     {
       "Phrase": "Estás tramado... Escolhe um subdomínio.",
       "Type": "Funny",
-      "Synonym": "Yes/No",
       "Counter": 0
     },
     {
       "Phrase": "Seleciona a área de avaliação.",
       "Type": "Serious",
-      "Synonym": "Yes/No",
       "Counter": 0
     },
     {
       "Phrase": "Isso parece difícil. Escolhe um subtema.",
       "Type": "Funny",
-      "Synonym": "Yes/No",
       "Counter": 0
     }
   ],
@@ -286,60 +267,60 @@
       "goodP": [
         {  
           "Phrase": "Estavas a ir tão bem e agora estás a demorar tanto...",
-          "Type": "Incentive",
-          "Synonym": "Yes/No",
+          "Type": "Normal",
+   
           "Counter": 0
         },
         {
           "Phrase": "Tanto trabalho para agora adormeceres?",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Mock",
+   
           "Counter": 0
         },
         {
           "Phrase": "De certeza que ainda és tu?",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Funny",
+   
           "Counter": 0
         },
         {
-          "Phrase": "Bloqueaste?",
-          "Type": "Incentive",
-          "Synonym": "Yes/No",
+          "Phrase": "Então, bloqueaste?",
+          "Type": "Serious",
+   
           "Counter": 0
         }
       ],
       "badP": [
         {  
-          "Phrase":  "Hello?, Estás ai?",
-          "Type": "Incentive",
-          "Synonym": "Yes/No",
+          "Phrase":  "Olá?, Estás ai?",
+          "Type": "Serious",
+   
           "Counter": 0
         },
         {
           "Phrase": "O lanchinho está bom?",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Mock",
+   
           "Counter": 0
         },
         {
           "Phrase": "Entretanto adormeço...",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Funny",
+   
           "Counter": 0
         }
       ],
       "aveP": [
         {  
           "Phrase":  "Oh patanisca, é para hoje?",
-          "Type": "Incentive",
-          "Synonym": "Yes/No",
+          "Type": "Mock",
+   
           "Counter": 0
         },
         {
           "Phrase": "Então? ¯\\_(-_-)_/¯",
-          "Type": "Incentive",
-          "Synonym": "Yes/No",
+          "Type": "Serious",
+   
           "Counter": 0
         }
       ]
@@ -348,42 +329,42 @@
       "goodP": [
         {  
           "Phrase": "Ou és muito bom ou essa resposta foi à sorte.",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Mock",
+   
           "Counter": 0
         },
         {
           "Phrase": "Estás on fire, começo a duvidar...",
-          "Type": "Ironic",
-          "Synonym": "Yes/No",
+          "Type": "Funny",
+   
           "Counter": 0
         }
       ],
       "badP": [
         {  
-          "Phrase": "Isto não é para responder à sorte!",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Phrase": "Isto não é para responder à sorte.",
+          "Type": "Serious",
+   
           "Counter": 0
         },
         {
           "Phrase": "Não comeces a javardar e a responder à toa!",
-          "Type": "Jocular",
-          "Synonym": "Yes/No",
+          "Type": "Mock",
+   
           "Counter": 0
         }
       ],
       "aveP": [
         {
           "Phrase": "Carregaste sem querer?",
-          "Type": "Ironic",
-          "Synonym": "Yes/No",
+          "Type": "Funny",
+   
           "Counter": 0
         },
         {
           "Phrase": "Miss click?",
           "Type": "Funny",
-          "Synonym": "Yes/No",
+   
           "Counter": 0
         }
       ]
@@ -394,63 +375,58 @@
       {
         "Phrase": "Nice one!",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
-        "Phrase": "Está certooo! *Cristina Ferreira voice*",
+        "Phrase": "Está certooo!",
         "Type": "Funny",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
-        "Phrase": "Boa melga!",
-        "Type": "Jocular",
-        "Synonym": "Yes/No",
+        "Phrase": "Boa, melga!",
+        "Type": "Mock",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Not bad ;)",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       },
       {
         "Phrase": "Certo!",
         "Type": "Incentive",
-        "Synonym": "Yes/No",
+ 
         "Counter": 0
       }
     ],
     "no": [
       {
         "Phrase": "Resposta errada...",
-        "Type": "Type",
-        "Synonym": "Yes/No",
+        "Type": "Serious",
         "Counter": 0
       },
       {
         "Phrase": "Não era bem isso.",
         "Type": "Serious",
-        "Synonym": "Yes/No",
         "Counter": 0
       },
       {
         "Phrase": "Está mal!",
         "Type": "Serious",
-        "Synonym": "Yes/No",
         "Counter": 0
       },
       {
         "Phrase": "Parece que precisas de estudar...",
-        "Type": "Incentive",
-        "Synonym": "Yes/No",
+        "Type": "Normal",
         "Counter": 0
       },
       {
         "Phrase": "A sério? -.-",
-        "Type": "Funny",
-        "Synonym": "Yes/No",
+        "Type": "Mock",
         "Counter": 0
       }
     ]
