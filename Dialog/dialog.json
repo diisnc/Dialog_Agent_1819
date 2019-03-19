@@ -291,8 +291,8 @@
         }
       ],
       "badP": [
-        {  
-          "Phrase":  "Olá?, Estás ai?",
+        {
+          "Phrase": "Então? ¯\\_(-_-)_/¯",
           "Type": "Serious",
    
           "Counter": 0
@@ -317,8 +317,8 @@
    
           "Counter": 0
         },
-        {
-          "Phrase": "Então? ¯\\_(-_-)_/¯",
+        {  
+          "Phrase":  "Olá?, Estás ai?",
           "Type": "Serious",
    
           "Counter": 0
