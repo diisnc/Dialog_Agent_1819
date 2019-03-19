@@ -73,11 +73,11 @@ print('A gerar frases...')
 
 file = open(sys.argv[1], "r+", encoding="utf-8")
 
-for i in range(0,50):
+for i in range(0,20):
     sentence = synonyms(generate())+'\n'
     #print(i)
     if sentence in file:
-        print('a')
+        print('igual')
     else: 
         if isinstance(sentence, str) and sentence != '':
             file.write(sentence)
