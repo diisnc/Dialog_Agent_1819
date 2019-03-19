@@ -71,11 +71,17 @@ build()
 
 print('A gerar frases...')
 
-f = open(sys.argv[1], "a", encoding="utf-8")
+file = open(sys.argv[1], "r+", encoding="utf-8")
 
-for i in range(0,10):
-    sentence = synonyms(generate())
-    f.write(sentence + '\n')
+for i in range(0,50):
+    sentence = synonyms(generate())+'\n'
+    #print(i)
+    if sentence in file:
+        print('a')
+    else: 
+        if isinstance(sentence, str) and sentence != '':
+            file.write(sentence)
+    file.seek(0)
 
 print('Concluido!')
 

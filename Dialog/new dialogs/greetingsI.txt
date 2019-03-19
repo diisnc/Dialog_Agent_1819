@@ -1,27 +1,56 @@
+﻿
 Olá!
-Boas!
-Bom dia!
+@day!
 Saudações!
-Olá jovem, já estudaste?
-Bom dia. Pronto para trabalhar, caramelo?
-Olá. Pronto para o teste?
-Então, por aqui?
+Olá melga, já estudaste?
+@day. Pronto para trabalhar, caramelo?
+Pronto para o teste?
 Então, tudo bem?
-Oi jovem, já estudaste?
-Bom dia!
-Oi . Pronto para o teste?
+Olá @name, já estudaste?
 Então, por aqui?
-Boas!
 Viva!
-Olá!
-Saudações!
-Bom dia. Pronto para trabalhar, caro(a)?
+@day. Pronto para trabalhar, caro(a)?
 Saudações. Pronto para o teste?
+Tudo bem? Vai um teste?
+Então, como vai isso?
+Então, a que devo a tua visita?
+Oh @name, já estudaste? 
+Olá, bem acordado?
+Então, como estão a correr as aulas?
+Caro(a) @name, vamos começar!
+Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.
+Então, vens agora chatear-me?
+Pronto para começar o teste?
+Saudações. Pronto para começar o teste?
+Boa noite!
 Olá. Pronto para o teste?
-Bom dia!
-Saudações!
-Olá!
-Viva!
-Namastê! Pronto para trabalhar?
-Tudo beleza? Vai um teste?
-Tudo jóia? Vai um teste?
+Olá, tudo bem? Se não estiver não é preciso dizer, sem problema.
+Olá, por aqui?
+@day . Pronto para o teste?
+@day, como estão a correr as aulas?
+Viva caro(a), já estudaste?
+
+@day. Pronto para trabalhar, caro(a)?
+Pronto para trabalhar, caro(a)?
+Boa noite, vens agora chatear-me?
+Viva . Pronto para começar o teste?
+@day @name, tudo bem? Se não estiver não é preciso dizer, sem problema.
+Viva @name, já estudaste?
+Pronto para trabalhar, cromo(a)?
+Olá caro (a), já estudaste?
+Oh @name, já estudaste?
+Boa tarde, bem acordado?
+Boa noite, como estão a correr as aulas?
+@day. Pronto para trabalhar, artista?
+Boa tarde . Pronto para o teste?
+Boa tarde!
+Olá cromo(a), já estudaste?
+Saudações . Pronto para trabalhar, caro(a)?
+Boa tarde, por aqui?
+Então!
+@day. Pronto para começar o teste?
+Caro (a) @name, vamos começar!
+Então, tudo bem? Se não estiver não é preciso dizer, sem problema.
+@day, por aqui?
+Olá, como vai isso?
+Viva, tudo bem? Se não estiver não é preciso dizer, sem problema.
