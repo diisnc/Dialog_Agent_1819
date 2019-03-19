@@ -1,7 +1,4 @@
 TODO 
-	- pôr tag do tema "ironia", "regular", etc nas frases todas
-	- pôr tag se tem sinónimo (a frase ou palavra?)
-	- pôr tag/contador para os pesos (saber as frases q já foram +/- usadas)
 	- pôr tag para answerYES e answerNO de dificuldade (é diferente errar e a pergunta ser fácil, e errar e ser difícil)
 	
 	- depois dos questionários, recolher respostas, guardar nos ficheiros e executar "sentences_generator.py" para criar mais frases antes de pôr na BD
