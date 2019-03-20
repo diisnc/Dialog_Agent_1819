@@ -1,0 +1,49 @@
+{
+"domain": [
+    {  
+      "Phrase": "Seleciona a área onde queres ser avaliado(a).",
+      "Type": "Serious",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Escolhe o tema para avaliação:",
+      "Type": "Serious",
+      "Counter": 0
+    },
+    {
+      "Phrase": "O que é que queres estudar hoje?",
+      "Type": "Serious",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Aqui está a ementa!",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "O que é que queres tentar hoje?",
+      "Type": "Normal",
+      "Counter": 0
+    },
+    {
+      "Phrase": "O que vai ser hoje, caramelo?",
+      "Type": "Mock",
+      "Counter": 0
+    }
+  ]
+}

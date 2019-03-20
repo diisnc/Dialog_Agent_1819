@@ -1,0 +1,59 @@
+{
+"subdomain": [
+    {  
+      "Phrase": "És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente!",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Boa escolha. Escolhe agora um subtema.",
+      "Type": "Normal",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Estás tramado... Escolhe um subdomínio.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Seleciona a área de avaliação.",
+      "Type": "Serious",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Isso parece difícil. Escolhe um subtema.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "Ui... Seleciona um subdomínio.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {
+      "Phrase": "No que te foste meter... Escolhe um subdomínio.",
+      "Type": "Funny",
+      "Counter": 0
+    }
+  ]
+}

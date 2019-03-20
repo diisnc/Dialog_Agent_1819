@@ -1,0 +1,416 @@
+{
+"answer": {
+    "yes": {
+      "easy": [
+        {
+          "Phrase": "Ok, deste uma vista de olhos à matéria...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem! Sabes o básico",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Esta era fácil, mas leva lá a bicicleta!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Soma e segue!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Uau, parece que estudaste... O básico!",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Certíssimo, meu caro(a).",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas...",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Fiquei emocionado com essa resposta. Certo!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Epá, não brincas em serviço! Muito bem!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Esta era trivial...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Elementar, meu caro Watson!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões...",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Bem jogado @name!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem, @name!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Bem jogado!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Até que não era difícil, mas já merecias mais um valor!",
+          "Type": "Incentive",
+          "Counter": 0
+        }
+      ],
+      "hard": [
+        {
+          "Phrase": "Bem jogado @name!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem, @name!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Bem jogado!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Fiquei emocionado com essa resposta. Certo!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho...",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Acertaste esta pergunta?! Uau...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Que craque!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Incrível, parece que percebes do assunto!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Temos aqui um Einstein...",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Isso é sorte ou inteligência?",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Incrível, parece que estudaste!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Um relógio avariado está certo duas vezes por dia!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Uau, não estava à espera!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "De onde veio tanta inteligência?",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Até perco a fala com tanta inteligência!",
+          "Type": "Funny",
+          "Counter": 0
+        }
+      ]
+  },
+    "no": {
+      "easy": [
+        {
+          "Phrase": "Resposta errada...",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não era bem isso.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Está mal!",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Parece que precisas de estudar... A pergunta era fácil!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A sério? -.-",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não pescas nada disto...",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Errado!",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Resposta errada.",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "\"Fatal error\"",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A sério? Cansas-me a beleza.",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Parece que a sorte acabou!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Que tristeza...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A vida não é triste. Tem é momentos tristes, e este é um deles...",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Fico triste com respostas destas.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não é bem assim...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Nem lá perto...",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não estudes que não é preciso!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Esperava mais de ti... A pergunta era trivial.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não é essa a resposta, mas estás lá perto. Perto de reprovar!",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Tentaste... Mas sabes que podes sempre dedicar-te à pesca ;)",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não estás atento(a).",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não estudaste nada!",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Nada disso!",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não estudas e depois é isto.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Claramente não fizeste os tpc's!",
+          "Type": "Funny",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Assim não vais lá...",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Estou a perder a esperança.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Mal!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Falhanço total...",
+          "Type": "Normal",
+          "Counter": 0
+        }
+      ],
+      "hard": [
+        {
+          "Phrase": "Resposta errada...",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não era bem isso.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Está mal!",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Mal!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Resposta errada... Mas não te critico, era difícil!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não era bem isso. Com mais estudo vais lá.",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
+          "Type": "Incentive",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A pergunta era difícil, e tu fraquejaste.",
+          "Type": "Normal",
+          "Counter": 0
+        },
+       {
+          "Phrase": "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar.",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Errado. Era uma pergunta difícil, não te censuro.",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Falhanço total...",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Errado, mas admito que a pergunta não era fácil... ",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "\"Fatal error\"",
+          "Type": "Normal",
+          "Counter": 0
+        },
+        {
+          "Phrase": "As maiores dificuldades são filhas da preguiça!",
+          "Type": "Mock",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Nada disso!",
+          "Type": "Serious",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não estudas pelo livro e depois é isto.",
+          "Type": "Funny",
+          "Counter": 0
+        }
+      ]
+    }
+  }
+}

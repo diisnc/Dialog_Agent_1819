@@ -668,7 +668,7 @@
     ]
   },
   "domain": [
-        {  
+    {  
       "Phrase": "Seleciona a área onde queres ser avaliado(a).",
       "Type": "Serious",
       "Counter": 0

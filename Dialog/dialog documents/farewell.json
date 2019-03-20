@@ -1,0 +1,152 @@
+{
+  "farewell": {
+    "bye": [
+      {  
+        "Phrase": "Até à próxima.",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vemo-nos mais tarde!",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vai estudar, caramelo.",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "\"See you later, aligator...\"",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Adeus, manda lembrança!",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Até para o ano!",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Adeus, boa Páscoa",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vai lá, bom Natal.",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Adeus!",
+        "Type": "Normal",
+        "Counter": 0
+      }
+    ],
+    "badP": [
+      {  
+        "Phrase": "Não pescas nada disto!",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Não percebes nada disto!",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Estás reprovado...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Até à próxima. Se houver...",
+        "Type": "Serious",
+        "Counter": 0
+      },
+      {  
+        "Phrase": "Põe-te a andar!",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Andamos a brincar? Vergonha...",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "\"The force is not with you.\"",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vai estudar, melga.",
+        "Type": "Funny",
+        "Counter": 0
+      }
+    ],
+    "goodP": [
+      {  
+        "Phrase":  "Nada mal ;)",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Bom trabalho! Onde estão as cábulas?",
+        "Type": "Funny",
+        "Counter": 0
+      },
+      {
+        "Phrase": "É para o 20.",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Nice!",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Muito bem!",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Vá, vai-te embora...",
+        "Type": "Normal",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Boa!",
+        "Type": "Incentive",
+        "Counter": 0
+      }
+    ],
+    "averagePerformance": [
+      {  
+        "Phrase": "Não está bom... Mas também não está mau. Até à próxima!",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Meeh, podia ser melhor. Ciao.",
+        "Type": "Mock",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
+        "Type": "Incentive",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
+        "Type": "Incentive",
+        "Counter": 0
+      }
+    ]
+  }
+}
