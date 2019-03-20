@@ -1,358 +1,330 @@
 {
-  "greetingsI": [
-    {  
-      "Phrase": "Olá patanisca, já estudaste?",
-      "Type": "Funny",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto!",
-        "bye" : "Nem por isso, acho que preciso de mais tempo.",
-        "doubt": "Estudar? Há teste?"
+  "greetingsI": {
+    "Normal":[
+      {
+        "Phrase": "Então, por aqui?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Aqui estou. Preparado(a)!",
+          "bye": "Enganei-me,*miss click*.",
+          "doubt": "Aparentemente..."
+        }
+      },
+      {
+        "Phrase": "Então, tudo bem?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto.",
+          "bye": "Não, não está tudo bem.",
+          "doubt": "Meh"
+        }
+      },
+      {
+        "Phrase": "Olá, tudo bem? Vai um teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto!",
+          "bye": "Nem por isso, acho que preciso de mais tempo.",
+          "doubt": "Tem de ser, não é?"
+        }
+      },
+      {
+        "Phrase": "Então, como vai isso?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Está tudo bem, vamos fazer um teste!",
+          "bye": "Afinal quero sair.",
+          "doubt": "Tem de ser, não é?"
+        }
+      },
+      {
+        "Phrase": "Caro(a) _name_, vamos começar!",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Estou preparado(a)!",
+          "bye": "Afinal quero estudar mais um pouco.",
+          "doubt": "Que remédio!"
+        }
       }
-    },
-    {
-      "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sempre!",
-        "bye": "Nem por isso...",
-        "doubt": "Chamaste caramelo a quem?"
+    ],
+    "Serious":[
+      {
+        "Phrase": "Olá. Pronto(a) para o teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, claro.",
+          "bye": "Não...",
+          "doubt": "Há nota mínima?"
+        }
       }
-    },
-    {
-      "Phrase": "Olá. Pronto(a) para o teste?",
-      "Type": "Serious",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, claro.",
-        "bye": "Não...",
-        "doubt": "Há nota mínima?"
+    ],
+    "Funny":[
+      {  
+        "Phrase": "Olá patanisca, já estudaste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto!",
+          "bye" : "Nem por isso, acho que preciso de mais tempo.",
+          "doubt": "Estudar? Há teste?"
+        }
+      },
+      {
+        "Phrase": "Então, a que devo a tua visita?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Vim aqui fazer uma avaliação!",
+          "bye": "Afinal quero sair.",
+          "doubt": "Não é obvio?"
+        }
+      },
+      {
+        "Phrase": "Olá, bem acordado(a)?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
+          "bye": "Afinal quero dormir mais um pouco.",
+          "doubt": "Tenho cara de sono?"
+        }
       }
-    },
-    {
-      "Phrase": "Então, por aqui?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Aqui estou. Preparado(a)!",
-        "bye": "Enganei-me,*miss click*.",
-        "doubt": "Aparentemente..."
+    ],
+    "Mock":[
+      {
+        "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sempre!",
+          "bye": "Nem por isso...",
+          "doubt": "Chamaste caramelo a quem?"
+        }
+      },
+      {
+        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Estou preparado(a)!",
+          "bye": "Afinal quero estudar mais um pouco.",
+          "doubt": "Que remédio!"
+        }
       }
-    },
-    {
-      "Phrase": "Então, tudo bem?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto.",
-        "bye": "Não, não está tudo bem.",
-        "doubt": "Meh"
+    ]
+  },
+  "greetingsA": {
+    "Normal":[
+      {
+        "Phrase": "Encontramo-nos de novo?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim.",
+          "bye": "Enganei-me.",
+          "doubt": "Infelizmente."
+        }
+      },
+      {
+        "Phrase": "Então, como estão a correr as aulas?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Bem! Vamos a isto.",
+          "bye": "Não quero falar disso... Vou-me embora.",
+          "doubt": "Não tens nada a ver com isso."
+        }
+      },
+      {
+        "Phrase": "Então, por aqui?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Aqui estou. Preparado(a)!",
+          "bye": "Enganei-me,*miss click*.",
+          "doubt": "Aparentemente..."
+        }
+      },
+      {
+        "Phrase": "Então, tudo bem?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto.",
+          "bye": "Não, não está tudo bem.",
+          "doubt": "Meh"
+        }
+      },
+      {
+        "Phrase": "Olá, tudo bem? Vai um teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto!",
+          "bye": "Nem por isso, acho que preciso de mais tempo.",
+          "doubt": "Tem de ser, não é?"
+        }
+      },
+      {
+        "Phrase": "Então, como vai isso?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Está tudo bem, vamos fazer um teste!",
+          "bye": "Afinal quero sair.",
+          "doubt": "Tem de ser, não é?"
+        }
+      },
+      {
+        "Phrase": "Olá, bem acordado(a)?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
+          "bye": "Afinal quero dormir mais um pouco.",
+          "doubt": "Tenho cara de sono?"
+        }
+      },
+      {
+        "Phrase": "Tudo bem? Vamos a mais um teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, estou preparado(a).",
+          "bye": "Afinal não quero...",
+          "doubt": "Se tem de ser, tem de ser."
+        }
+      },
+      {
+        "Phrase": "Por cá outra vez? Isso é que é empenho!",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim!",
+          "bye": "Ups, não queria falar contigo.",
+          "doubt": "Se tem de ser, tem de ser."
+        }
+      },
+      {
+        "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Siga!",
+          "bye": "Não tenho muita vontade...",
+          "doubt": "Que remédio!"
+        }
+      },
+      {
+        "Phrase": "Viva! Outra vez por cá?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "É verdade, vamos a isto!",
+          "bye": "Enganei-me, adeus.",
+          "doubt": "Que remédio!"
+        }
       }
-    },
-    {
-      "Phrase": "Olá, tudo bem? Vai um teste?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto!",
-        "bye": "Nem por isso, acho que preciso de mais tempo.",
-        "doubt": "Tem de ser, não é?"
-      }
-    },
-    {
-      "Phrase": "Então, como vai isso?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Está tudo bem, vamos fazer um teste!",
-        "bye": "Afinal quero sair.",
-        "doubt": "Tem de ser, não é?"
-      }
-    },
-    {
-      "Phrase": "Então, a que devo a tua visita?",
-      "Type": "Funny",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Vim aqui fazer uma avaliação!",
-        "bye": "Afinal quero sair.",
-        "doubt": "Não é obvio?"
-      }
-    },
-    {
-      "Phrase": "Olá, bem acordado(a)?",
-      "Type": "Funny",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
-        "bye": "Afinal quero dormir mais um pouco.",
-        "doubt": "Tenho cara de sono?"
-      }
-    },
-    {
-      "Phrase": "Caro(a) _name_, vamos começar!",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou preparado(a)!",
-        "bye": "Afinal quero estudar mais um pouco.",
-        "doubt": "Que remédio!"
-      }
-    },
-    {
-      "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou preparado(a)!",
-        "bye": "Afinal quero estudar mais um pouco.",
-        "doubt": "Que remédio!"
-      }
-    }
-  ],
-  "greetingsA": [
-    {  
-      "Phrase": "Oh _name_, já estudaste?",
-      "Type": "Funny",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim.",
-        "bye" : "Não.",
-        "doubt": "Estudar? Há teste?"
-      }
-    },
-    {
-      "Phrase": "Então, aqui outra vez? (-_-)",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Cá estou eu!",
-        "bye": "Realmente foi um erro...",
-        "doubt": "Infelizmente."
-      }
-    },
-    {
-      "Phrase": "Não desistes facilmente...",
-      "Type": "Serious",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou preparado(a) para trabalhar!",
-        "bye": "Pensando melhor, 'té logo...",
-        "doubt": "Estou a pensar nisso..."
-      }
-    },
-    {
-      "Phrase": "Encontramo-nos de novo?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim.",
-        "bye": "Enganei-me.",
-        "doubt": "Infelizmente."
-      }
-    },
-    {
-      "Phrase": "Então, como estão a correr as aulas?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Bem! Vamos a isto.",
-        "bye": "Não quero falar disso... Vou-me embora.",
-        "doubt": "Não tens nada a ver com isso."
-      }
-    },
-    {
-      "Phrase": "Então, por aqui?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Aqui estou. Preparado(a)!",
-        "bye": "Enganei-me,*miss click*.",
-        "doubt": "Aparentemente..."
-      }
-    },
-    {
-      "Phrase": "Então, tudo bem?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto.",
-        "bye": "Não, não está tudo bem.",
-        "doubt": "Meh"
-      }
-    },
-    {
-      "Phrase": "Olá, tudo bem? Vai um teste?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto!",
-        "bye": "Nem por isso, acho que preciso de mais tempo.",
-        "doubt": "Tem de ser, não é?"
-      }
-    },
-    {
-      "Phrase": "Então, como vai isso?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Está tudo bem, vamos fazer um teste!",
-        "bye": "Afinal quero sair.",
-        "doubt": "Tem de ser, não é?"
-      }
-    },
-    {
-      "Phrase": "Olá, bem acordado(a)?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
-        "bye": "Afinal quero dormir mais um pouco.",
-        "doubt": "Tenho cara de sono?"
-      }
-    },
-    {
-      "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Estou preparado(a)!",
-        "bye": "Afinal quero estudar mais um pouco.",
-        "doubt": "Que remédio!"
-      }
-    },
-    {
-      "Phrase": "Então, vens agora chatear-me?",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Preciso de avaliar!",
-        "bye": "Peço desculpa, adeus...",
-        "doubt": "Não me fales assim!"
-      }
-    },
-    {
-      "Phrase": "Já estás melhor preparado(a)?",
-      "Type": "Serious",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, vamos a isto!",
-        "bye": "Ainda não...",
-        "doubt": "Espero que sim..."
-      }
-    },
-    {
-      "Phrase": "Olá! (outra vez...)",
-      "Type": "Serious",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "É verdade, vamos a isto!",
-        "bye": "Olá e adeus...",
-        "doubt": "Qual é o problema?"
-      }
-    },
-    {
-      "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
-      "Type": "Serious",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, estou pronto(a).",
-        "bye": "Nem por isso, adeus...",
-        "doubt": "Trabalhar? Hmm..."
-      }
-    },
-    {
-      "Phrase": "Bons olhos te vejam, pensei já não precisas de vir mais!",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Preciso de me avaliar.",
-        "bye": "Tens razão, adeus!",
-        "doubt": "Não é que queria muito..."
-      }
-    },
+    ],
+    "Serious":[
+      {
+        "Phrase": "Já estás melhor preparado(a)?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, vamos a isto!",
+          "bye": "Ainda não...",
+          "doubt": "Espero que sim..."
+        }
+      },
+      {
+        "Phrase": "Olá! (outra vez...)",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "É verdade, vamos a isto!",
+          "bye": "Olá e adeus...",
+          "doubt": "Qual é o problema?"
+        }
+      },
+      {
+        "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, estou pronto(a).",
+          "bye": "Nem por isso, adeus...",
+          "doubt": "Trabalhar? Hmm..."
+        }
+      },
     {
       "Phrase": "Saudações. Pronto para o teste (agora a sério...)?",
-      "Type": "Serious",
       "Counter": 0,
       "Answer": {
         "domain" : "Bora lá.",
         "bye": "Afinal não quero...",
         "doubt": "Ui, \"a sério\"? Sendo assim..."
       }
-    },
-    {
-      "Phrase": "Tudo bem? Vamos a mais um teste?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim, estou preparado(a).",
-        "bye": "Afinal não quero...",
-        "doubt": "Se tem de ser, tem de ser."
-      }
-    },
-    {
-      "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
-      "Type": "Funny",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim!",
-        "bye": "Afinal não ...",
-        "doubt": "Saudades?? Eu não tive!"
-      }
-    },
-    {
-      "Phrase": "Por cá outra vez? Isso é que é empenho!",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Sim!",
-        "bye": "Ups, não queria falar contigo.",
-        "doubt": "Se tem de ser, tem de ser."
-      }
-    },
-    {
-      "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Siga!",
-        "bye": "Não tenho muita vontade...",
-        "doubt": "Que remédio!"
-      }
-    },
-    {
-      "Phrase": "Viva! Outra vez por cá?",
-      "Type": "Normal",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "É verdade, vamos a isto!",
-        "bye": "Enganei-me, adeus.",
-        "doubt": "Que remédio!"
-      }
-    },
-    {
-      "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "É verdade, vamos a isto!",
-        "bye": "Hmm, pensado melhor... Adeus.",
-        "doubt": "Saudades? Não sei se acredito."
-      }
-    },
-     {
-      "Phrase": "Então Einstein, vamos a mais um teste?",
-      "Type": "Mock",
-      "Counter": 0,
-      "Answer": {
-        "domain" : "Eu sei tudo!",
-        "bye": "Hmm, pensado melhor... Adeus.",
-        "doubt": "Eu respondo a tudo! Agora não sei se é corretamente.."
-      }
     }
-  ],
+    ],
+    "Funny":[
+      {  
+        "Phrase": "Oh _name_, já estudaste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim.",
+          "bye" : "Não.",
+          "doubt": "Estudar? Há teste?"
+        }
+      },
+      {
+        "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim!",
+          "bye": "Afinal não ...",
+          "doubt": "Saudades?? Eu não tive!"
+        }
+      }
+    ],
+    "Mock":[
+      {
+        "Phrase": "Então, aqui outra vez? (-_-)",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Cá estou eu!",
+          "bye": "Realmente foi um erro...",
+          "doubt": "Infelizmente."
+        }
+      },
+      {
+        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Estou preparado(a)!",
+          "bye": "Afinal quero estudar mais um pouco.",
+          "doubt": "Que remédio!"
+        }
+      },
+      {
+        "Phrase": "Então, vens agora chatear-me?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Preciso de avaliar!",
+          "bye": "Peço desculpa, adeus...",
+          "doubt": "Não me fales assim!"
+        }
+      },
+      {
+        "Phrase": "Bons olhos te vejam, pensei já não precisas de vir mais!",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Preciso de me avaliar.",
+          "bye": "Tens razão, adeus!",
+          "doubt": "Não é que queria muito..."
+        }
+      },
+      {
+        "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "É verdade, vamos a isto!",
+          "bye": "Hmm, pensado melhor... Adeus.",
+          "doubt": "Saudades? Não sei se acredito."
+        }
+      },
+     {
+        "Phrase": "Então Einstein, vamos a mais um teste?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Eu sei tudo!",
+          "bye": "Hmm, pensado melhor... Adeus.",
+          "doubt": "Eu respondo a tudo! Agora não sei se é corretamente.."
+        }
+      }
+    ]
+  },
   "doubt": [
     {  
       "Phrase": "Tens a certeza que queres iniciar o teste?",
