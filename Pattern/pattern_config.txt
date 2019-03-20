@@ -20,7 +20,7 @@ Ranges (15 characteristics)
 	time: 			00-90 segundos 	[0-5 segundos: SOON, 5-30 segundos: GOOD, 30-60 segundos: BAD, 60-90 segundos: TERRIBLE ] 	---> 4 times
 
 Example 
-	['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
+	['John001', 'PT', 1, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
 
 
 - Skill (destreza) : média do tempo global que o utilizador demora a responder às questões (em percentagem)

@@ -1,0 +1,2 @@
+# git ignore
+**/Pattern/__pycache__

@@ -11,7 +11,7 @@
       }
     },
     {
-      "Phrase": "@day. Pronto(a) para trabalhar, caramelo?",
+      "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
       "Type": "Mock",
       "Counter": 0,
       "Answer": {
@@ -91,7 +91,7 @@
       }
     },
     {
-      "Phrase": "Caro(a) @name, vamos começar!",
+      "Phrase": "Caro(a) _name_, vamos começar!",
       "Type": "Normal",
       "Counter": 0,
       "Answer": {
@@ -101,7 +101,7 @@
       }
     },
     {
-      "Phrase": "Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+      "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
       "Type": "Mock",
       "Counter": 0,
       "Answer": {
@@ -113,7 +113,7 @@
   ],
   "greetingsA": [
     {  
-      "Phrase": "Oh @name, já estudaste?",
+      "Phrase": "Oh _name_, já estudaste?",
       "Type": "Funny",
       "Counter": 0,
       "Answer": {
@@ -213,7 +213,7 @@
       }
     },
     {
-      "Phrase": "Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+      "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
       "Type": "Mock",
       "Counter": 0,
       "Answer": {
@@ -253,7 +253,7 @@
       }
     },
     {
-      "Phrase": "@day. Pronto(a) para trabalhar, desta vez a sério?",
+      "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
       "Type": "Serious",
       "Counter": 0,
       "Answer": {
@@ -339,7 +339,7 @@
       "Answer": {
         "domain" : "É verdade, vamos a isto!",
         "bye": "Hmm, pensado melhor... Adeus.",
-        "doubt": "Saudades? Não sei se acredito"
+        "doubt": "Saudades? Não sei se acredito."
       }
     },
      {
@@ -870,12 +870,12 @@
           "Counter": 0
         },
         {
-          "Phrase": "Já esta na hora, @name",
+          "Phrase": "Já esta na hora, _name_",
           "Type": "Serious",
           "Counter": 0
         },
         {
-          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
           "Type": "Serious",
           "Counter": 0
         },
@@ -977,12 +977,12 @@
           "Counter": 0
         },
         {
-          "Phrase": "Já esta na hora, @name.",
+          "Phrase": "Já esta na hora, _name_.",
           "Type": "Serious",
           "Counter": 0
         },
         {
-          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
           "Type": "Serious",
           "Counter": 0
         },
@@ -1079,12 +1079,12 @@
           "Counter": 0
         },
         {
-          "Phrase": "Já esta na hora, @name.",
+          "Phrase": "Já esta na hora, _name_.",
           "Type": "Serious",
           "Counter": 0
         },
         {
-          "Phrase": "Vamos lá @name, tenho mais que fazer!",
+          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
           "Type": "Serious",
           "Counter": 0
         },
@@ -1213,12 +1213,12 @@
           "Counter": 0
         },
         {
-          "Phrase": "Bem jogado @name!",
+          "Phrase": "Bem jogado _name_!",
           "Type": "Incentive",
           "Counter": 0
         },
         {
-          "Phrase": "Muito bem, @name!",
+          "Phrase": "Muito bem, _name_!",
           "Type": "Incentive",
           "Counter": 0
         },
@@ -1235,12 +1235,12 @@
       ],
       "hard": [
         {
-          "Phrase": "Bem jogado @name!",
+          "Phrase": "Bem jogado _name_!",
           "Type": "Incentive",
           "Counter": 0
         },
         {
-          "Phrase": "Muito bem, @name!",
+          "Phrase": "Muito bem, _name_!",
           "Type": "Incentive",
           "Counter": 0
         },

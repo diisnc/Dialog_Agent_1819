@@ -126,7 +126,7 @@ class Pat_Analyser:
                 break
 
     # Get the pattern's user
-    def get_user(self):
+    def get_username(self):
         return self.__username
 
     # Displays fields into a string (separated by ','). The string is used to declare a fact, which represents the pattern, in the Rules Engine.
@@ -136,7 +136,8 @@ class Pat_Analyser:
 
 
 
-######### MAIN
+######### MAIN #########
+
 '''
 # pattern
 patt = ['John001', 'PT', 1, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
@@ -145,7 +146,7 @@ p_analys = Pat_Analyser()
 # pattern conversion
 p_analys.pat_parser(patt)
 # print username
-print(p_analys.get_user())
+print(p_analys.get_username())
 # print pattern string
 print(p_analys.pat_string())
 # print array of fields
