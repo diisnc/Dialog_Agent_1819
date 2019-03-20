@@ -696,6 +696,26 @@
     ]
   },
   "domain": [
+        {  
+      "Phrase": "Seleciona a área onde queres ser avaliado(a).",
+      "Type": "Serious",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
+      "Type": "Funny",
+      "Counter": 0
+    },
     {  
       "Phrase": "Escolhe o tema para avaliação:",
       "Type": "Serious",
@@ -723,6 +743,40 @@
     }
   ],
   "subdomain": [
+    {  
+      "Phrase": "És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente!",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado.",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    {  
+      "Phrase": "Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?",
+      "Type": "Funny",
+      "Counter": 0
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
     {  
       "Phrase": "Boa escolha. Escolhe agora um subtema.",
       "Type": "Normal",
