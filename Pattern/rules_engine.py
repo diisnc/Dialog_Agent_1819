@@ -39,14 +39,14 @@ list_subdomain = col_dialog.find_one({}, {"subdomain"})["subdomain"]
 list_time = col_dialog.find_one({}, {"time"})["time"]["timeout"]
 # too_soon
 list_time = col_dialog.find_one({}, {"time"})["time"]["toosoon"]
-# answer_yes_easy
-list_answer_yes_easy = col_dialog.find_one({}, {"answer"})["answer"]["yes"]["easy"]
-# answer_yes_hard
-list_answer_yes_hard = col_dialog.find_one({}, {"answer"})["answer"]["yes"]["hard"]
-# answer_no_easy
-list_answer_no_easy = col_dialog.find_one({}, {"answer"})["answer"]["no"]["easy"]
-# answer_no_hard
-list_answer_no_hard = col_dialog.find_one({}, {"answer"})["answer"]["no"]["hard"]
+# answer_right_easy
+list_answer_right_easy = col_dialog.find_one({}, {"answer"})["answer"]["right"]["easy"]
+# answer_right_hard
+list_answer_right_hard = col_dialog.find_one({}, {"answer"})["answer"]["right"]["hard"]
+# answer_wrong_easy
+list_answer_wrong_easy = col_dialog.find_one({}, {"answer"})["answer"]["wrong"]["easy"]
+# answer_wrong_hard
+list_answer_wrong_hard = col_dialog.find_one({}, {"answer"})["answer"]["wrong"]["hard"]
 
 # Function that replaces a word with synonym
 def synonyms(sentence):
@@ -80,6 +80,37 @@ def rep(mystring):
 
     return mystring
 
+
+# Choose dialog having into account the type and counter of the phrase
+def choose_dialog(list_typeQ, typeP):
+    list_typeP = []
+    dialog_list = []
+    max_counter = -1
+
+    if typeP == "All":
+        list_typeP = list_typeQ
+        for elem in list_typeP:
+            if elem["Counter"] > max_counter:
+                max_counter = elem["Counter"]
+    else:
+        for elem in list_typeQ:
+            if elem["Type"] == typeP:
+                list_typeP.append(elem)
+                if elem["Counter"] > max_counter:
+                    max_counter = elem["Counter"]
+        
+    for elem in list_typeP:
+        if elem["Counter"] <= max_counter:
+            dialog_list.append(elem)
+    
+    chosen_elem = random.choice(dialog_list)
+
+    # TODO: ################## INCREMENTAR COUNTER NA MONGO DB = chosen_elem["Counter"]++
+
+    return chosen_elem
+
+
+
 # Pattern Fact
 class Pattern(Fact):  
     '''
@@ -104,37 +135,58 @@ class RulesEngine(KnowledgeEngine):
     # Greeting for the first time
     @Rule(Pattern(typeQ='greetingsI'))
     def greetingsI (self):
-        # selects a random element from the list
-        random_elem = random.choice(list_greetingsI)
-        # selects the phrase and respective answers from the element
-        phrase = random_elem["Phrase"]
-        answers = random_elem["Answer"]
+        # selects an element from the list, having into account its type
+        dialog = choose_dialog(list_greetingsI,"All")
+        # selects the phrase and respective answers from the element dialog
+        phrase = dialog["Phrase"]
+        answers = dialog["Answer"]
         print(rep(synonyms(phrase)))
         print(answers)
 
     # Greeting again
     @Rule(Pattern(typeQ='greetingsA'))
     def greetingsA (self):
-        # selects a random element from the list
-        random_elem = random.choice(list_greetingsA)
-        # selects the phrase and respective answers from the element
-        phrase = random_elem["Phrase"]
-        answers = random_elem["Answer"]
+        dialog = choose_dialog(list_greetingsA,"All")
+        phrase = dialog["Phrase"]
+        answers = dialog["Answer"]
         print(rep(synonyms(phrase)))
         print(answers)
 
-
-    @Rule(AND(   
-            Pattern(answer = '0'),
-            Pattern(question_lvl = L('4') | L('5'))
-            ))
-    def answers_wrong1 (self):
-        # selects a random element from the list
-        random_elem = random.choice(list_answer_no_hard)
-        # selects the phrase and respective answers from the element
-        phrase = random_elem["Phrase"]
+    # Wrong answer, easy question
+    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3')))
+    def wrong_easy (self):
+        dialog = choose_dialog(list_answer_wrong_easy,"All")
+        phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
 
+    # Wrong answer, hard question
+    @Rule(Pattern(answer = '0', question_lvl = L('4') | L('5')))
+    def wrong_hard (self):
+        dialog = choose_dialog(list_answer_wrong_hard,"All")
+        phrase = dialog["Phrase"]
+        print(rep(synonyms(phrase)))
+
+    # Right answer, easy question
+    @Rule(Pattern(answer = '1', question_lvl = L('1') | L('2') | L('3')))
+    def right_easy (self):
+        dialog = choose_dialog(list_answer_right_easy,"All")
+        phrase = dialog["Phrase"]
+        print(rep(synonyms(phrase)))
+
+    # Right answer, hard question
+    @Rule(Pattern(answer = '1', question_lvl = L('4') | L('5')))
+    def right_hard (self):
+        dialog = choose_dialog(list_answer_right_hard,"All")
+        phrase = dialog["Phrase"]
+        print(rep(synonyms(phrase)))
+
+    # Wrong answer, easy question, good student
+    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')))
+    def wrong_easy_goodSt (self):
+        dialog = choose_dialog(list_answer_wrong_easy,"Mock")
+        phrase = dialog["Phrase"]
+        print(rep(synonyms(phrase)))
+    
 
     @Rule(OR(   
             Pattern(skill_domain = L('Terrible') | L('Bad')),
@@ -156,7 +208,7 @@ class RulesEngine(KnowledgeEngine):
 ### PATTERN PARSER ###
 
 # pattern
-patt = ['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 4, 'B', 'processoX', 103, 53, 63, 15, 20]
+patt = ['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'B', 'processoX', 103, 53, 63, 15, 20]
 # pattern analyser
 p_analys = Pat_Analyser()
 # pattern conversion

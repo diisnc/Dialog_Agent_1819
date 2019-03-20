@@ -74,6 +74,34 @@ list_greetingsI = col_dialog.find_one({}, {"greetingsI"}).get("greetingsI")
 # seleciona um elemento random da lista
 random_elem = random.choice(list_greetingsI)
 # seleciona a frase do elemento
-phrase = random_elem["Phrase"]
+phrase = random_elem["Type"]
 
-print(rep(synonyms("_day_")))
+# Choose dialog having into account the type and counter of the phrase
+def choose_dialog(list_typeQ, typeP):
+    list_typeP = []
+    dialog_list = []
+    max_counter = -1
+
+    if typeP == "All":
+        list_typeP = list_typeQ
+        for elem in list_typeP:
+            if elem["Counter"] > max_counter:
+                max_counter = elem["Counter"]
+    else:
+        for elem in list_typeQ:
+            if elem["Type"] == typeP:
+                list_typeP.append(elem)
+                if elem["Counter"] > max_counter:
+                    max_counter = elem["Counter"]
+        
+    for elem in list_typeP:
+        if elem["Counter"] <= max_counter:
+            dialog_list.append(elem)
+    
+    chosen_elem = random.choice(dialog_list)
+
+    # TODO: ################## INCREMENTAR COUNTER NA MONGO DB = chosen_elem["Counter"]++
+
+    return chosen_elem
+
+print(choose_dialog(list_greetingsI,"Funny")["Phrase"])

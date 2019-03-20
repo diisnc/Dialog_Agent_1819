@@ -1140,7 +1140,7 @@
     }
   },
   "answer": {
-    "yes": {
+    "right": {
       "easy": [
         {
           "Phrase": "Ok, deste uma vista de olhos à matéria...",
@@ -1316,7 +1316,7 @@
         }
       ]
   },
-    "no": {
+    "wrong": {
       "easy": [
         {
           "Phrase": "Resposta errada...",
