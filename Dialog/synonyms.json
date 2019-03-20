@@ -50,7 +50,11 @@
 "árduo":["complicado", "complexo", "árduo", "crítico", "arriscado", "difícil"],
 "crítico":["complicado", "complexo", "árduo", "crítico", "arriscado", "difícil"],
 "arriscado":["complicado", "complexo", "árduo", "crítico", "arriscado", "difícil"],
-"difícil":["complicado", "complexo", "árduo", "crítico", "arriscado", "difícil"],
+"difícil":["complicada", "complexa", "arriscada", "difícil"],
 "cá":["cá","aqui"],
-"aqui":["cá","aqui"]
+"aqui":["cá","aqui"],
+"falhanço":["falhanço","falha","erro","engano"],
+"falha":["falhanço","falha","erro","engano"],
+"erro":["falhanço","falha","erro","engano"],
+"engano":["falhanço","falha","erro","engano"]
 }

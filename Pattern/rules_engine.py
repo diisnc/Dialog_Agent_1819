@@ -18,10 +18,35 @@ col_synonyms = mydb["synonyms"]
 
 # col_dialog.find_one({},{"greetingsI"}) = retorna objeto JSON, get("greetingsI") = retorna array (que é o valor da key "greetingsI")
 # greetingsI
-list_greetingsI = col_dialog.find_one({}, {"greetingsI"}).get("greetingsI")
+list_greetingsI = col_dialog.find_one({}, {"greetingsI"})["greetingsI"]
 # greetingsA
-list_greetingsA = col_dialog.find_one({}, {"greetingsA"}).get("greetingsA")
-
+list_greetingsA = col_dialog.find_one({}, {"greetingsA"})["greetingsA"]
+# doubt
+list_doubt = col_dialog.find_one({}, {"doubt"})["doubt"]
+# farewell_bye
+list_farewell_bye = col_dialog.find_one({}, {"farewell"})["farewell"]["bye"]
+# farewell_badP
+list_farewell_badP = col_dialog.find_one({}, {"farewell"})["farewell"]["badP"]
+# farewell_goodP
+list_farewell_goodP = col_dialog.find_one({}, {"farewell"})["farewell"]["goodP"]
+# farewell_avgP
+list_farewell_avgP = col_dialog.find_one({}, {"farewell"})["farewell"]["avgP"]
+# domain
+list_domain = col_dialog.find_one({}, {"domain"})["domain"]
+# subdomain
+list_subdomain = col_dialog.find_one({}, {"subdomain"})["subdomain"]
+# time_out
+list_time = col_dialog.find_one({}, {"time"})["time"]["timeout"]
+# too_soon
+list_time = col_dialog.find_one({}, {"time"})["time"]["toosoon"]
+# answer_yes_easy
+list_answer_yes_easy = col_dialog.find_one({}, {"answer"})["answer"]["yes"]["easy"]
+# answer_yes_hard
+list_answer_yes_hard = col_dialog.find_one({}, {"answer"})["answer"]["yes"]["hard"]
+# answer_no_easy
+list_answer_no_easy = col_dialog.find_one({}, {"answer"})["answer"]["no"]["easy"]
+# answer_no_hard
+list_answer_no_hard = col_dialog.find_one({}, {"answer"})["answer"]["no"]["hard"]
 
 # Function that replaces a word with synonym
 def synonyms(sentence):
@@ -76,25 +101,40 @@ class RulesEngine(KnowledgeEngine):
     '''
 
     ## Declare rules
+    # Greeting for the first time
     @Rule(Pattern(typeQ='greetingsI'))
     def greetingsI (self):
-        # seleciona um elemento random da lista
+        # selects a random element from the list
         random_elem = random.choice(list_greetingsI)
-        # seleciona a frase e respetivas respostas do elemento
+        # selects the phrase and respective answers from the element
         phrase = random_elem["Phrase"]
         answers = random_elem["Answer"]
         print(rep(synonyms(phrase)))
         print(answers)
 
+    # Greeting again
     @Rule(Pattern(typeQ='greetingsA'))
     def greetingsA (self):
-        # seleciona um elemento random da lista
+        # selects a random element from the list
         random_elem = random.choice(list_greetingsA)
-         # seleciona a frase e respetivas respostas do elemento
+        # selects the phrase and respective answers from the element
         phrase = random_elem["Phrase"]
         answers = random_elem["Answer"]
         print(rep(synonyms(phrase)))
         print(answers)
+
+
+    @Rule(AND(   
+            Pattern(answer = '0'),
+            Pattern(question_lvl = L('4') | L('5'))
+            ))
+    def answers_wrong1 (self):
+        # selects a random element from the list
+        random_elem = random.choice(list_answer_no_hard)
+        # selects the phrase and respective answers from the element
+        phrase = random_elem["Phrase"]
+        print(rep(synonyms(phrase)))
+
 
     @Rule(OR(   
             Pattern(skill_domain = L('Terrible') | L('Bad')),
@@ -116,7 +156,7 @@ class RulesEngine(KnowledgeEngine):
 ### PATTERN PARSER ###
 
 # pattern
-patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 103, 53, 63, 15, 20]
+patt = ['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 4, 'B', 'processoX', 103, 53, 63, 15, 20]
 # pattern analyser
 p_analys = Pat_Analyser()
 # pattern conversion
