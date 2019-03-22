@@ -3,7 +3,13 @@ Inicializar Mongo e queries - STEP BY STEP
 1 - Abrir mongod (server)
 
 2 - Abrir cmd e ir para C:\Program Files\MongoDB\Server\3.4\bin
-	2.1 - correr comando mongoimport --db lei --collection dialogs --drop --file dialog.json (se ficheiro está na diretoria em questao)
+	2.1 - correr comandos (se ficheiros estiverem na diretoria em questao):
+	
+		mongoimport --db lei --collection generic_dialog --drop --file generic_dialog.json
+
+		mongoimport --db lei --collection BD_dialog --drop --file BD_dialog.json
+
+		mongoimport --db lei --collection synonyms --drop --file synonyms.json
 
 3 - Abrir mongo (exe) e correr comando 'use lei' (nome da bd criada)
 
