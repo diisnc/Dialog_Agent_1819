@@ -13,40 +13,48 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["lei"]
-col_dialog = mydb["dialogs"]
+col_generic = mydb["generic_dialog"]
+col_BD = mydb["BD_dialog"]
 col_synonyms = mydb["synonyms"]
 
-# col_dialog.find_one({},{"greetingsI"}) = retorna objeto JSON, get("greetingsI") = retorna array (que é o valor da key "greetingsI")
+############################## Dialogs ######################################
+# Generic
+generic_dialog = col_generic.find_one()
+# BD domain
+bd_dialog = col_BD.find_one()
+#############################################################################
+
+# ["greetingsI"] = returns phrases grouped by type (which is the value of key "greetingsI")
 # greetingsI
-list_greetingsI = col_dialog.find_one({}, {"greetingsI"})["greetingsI"]
+list_greetingsI = generic_dialog["greetingsI"]
 # greetingsA
-list_greetingsA = col_dialog.find_one({}, {"greetingsA"})["greetingsA"]
+list_greetingsA = generic_dialog["greetingsA"]
 # doubt
-list_doubt = col_dialog.find_one({}, {"doubt"})["doubt"]
+list_doubt = generic_dialog["doubt"]
 # farewell_bye
-list_farewell_bye = col_dialog.find_one({}, {"farewell"})["farewell"]["bye"]
+#list_farewell_bye = generic_dialog["farewell"]["bye"]
 # farewell_badP
-list_farewell_badP = col_dialog.find_one({}, {"farewell"})["farewell"]["badP"]
+#list_farewell_badP = generic_dialog["farewell"]["badP"]
 # farewell_goodP
-list_farewell_goodP = col_dialog.find_one({}, {"farewell"})["farewell"]["goodP"]
+#list_farewell_goodP = generic_dialog["farewell"]["goodP"]
 # farewell_avgP
-list_farewell_avgP = col_dialog.find_one({}, {"farewell"})["farewell"]["avgP"]
+#list_farewell_avgP = generic_dialog["farewell"]["avgP"]
 # domain
-list_domain = col_dialog.find_one({}, {"domain"})["domain"]
+list_domain = generic_dialog["domain"]
 # subdomain
-list_subdomain = col_dialog.find_one({}, {"subdomain"})["subdomain"]
+list_subdomain = bd_dialog["subdomain"]
 # time_out
-list_time = col_dialog.find_one({}, {"time"})["time"]["timeout"]
+list_time = bd_dialog["time"]["timeout"]
 # too_soon
-list_time = col_dialog.find_one({}, {"time"})["time"]["toosoon"]
+list_time = bd_dialog["time"]["toosoon"]
 # answer_right_easy
-list_answer_right_easy = col_dialog.find_one({}, {"answer"})["answer"]["right"]["easy"]
+list_answer_right_easy = bd_dialog["answer"]["right"]["easy"]
 # answer_right_hard
-list_answer_right_hard = col_dialog.find_one({}, {"answer"})["answer"]["right"]["hard"]
+list_answer_right_hard = bd_dialog["answer"]["right"]["hard"]
 # answer_wrong_easy
-list_answer_wrong_easy = col_dialog.find_one({}, {"answer"})["answer"]["wrong"]["easy"]
+list_answer_wrong_easy = bd_dialog["answer"]["wrong"]["easy"]
 # answer_wrong_hard
-list_answer_wrong_hard = col_dialog.find_one({}, {"answer"})["answer"]["wrong"]["hard"]
+list_answer_wrong_hard = bd_dialog["answer"]["wrong"]["hard"]
 
 # Function that replaces a word with synonym
 def synonyms(sentence):
@@ -69,7 +77,7 @@ def synonyms(sentence):
 def rep(mystring):
     if "_name_" in mystring: 
         mystring = mystring.replace("_name_",p_analys.get_username())
-    if "_day_" in mystring: #admitimos que está sempre no inicio da frase. Depois complicamos isto
+    if "_day_" in mystring:
         now = datetime.now()
         if(now.hour < 6 or now.hour > 20):
             mystring = mystring.replace("_day_","Boa noite")
@@ -81,34 +89,38 @@ def rep(mystring):
     return mystring
 
 
-# Choose dialog having into account the type and counter of the phrase
+# Choose dialog element having into account the type and counter of the phrase
 def choose_dialog(list_typeQ, typeP):
-    list_typeP = []
-    dialog_list = []
-    max_counter = -1
-
-    if typeP == "All":
-        list_typeP = list_typeQ
-        for elem in list_typeP:
-            if elem["Counter"] > max_counter:
-                max_counter = elem["Counter"]
-    else:
-        for elem in list_typeQ:
-            if elem["Type"] == typeP:
-                list_typeP.append(elem)
-                if elem["Counter"] > max_counter:
-                    max_counter = elem["Counter"]
+        chosen_dialogs = []
+        list_typeP = []
         
-    for elem in list_typeP:
-        if elem["Counter"] <= max_counter:
-            dialog_list.append(elem)
-    
-    chosen_elem = random.choice(dialog_list)
+        # If type == "All" then choose random type
+        if typeP == "All":
+            typeP = random.choice(list(list_typeQ.keys()))
 
-    # TODO: ################## INCREMENTAR COUNTER NA MONGO DB = chosen_elem["Counter"]++
+        list_typeP = list_typeQ[typeP]
 
-    return chosen_elem
+        min_counter = list_typeP[0]["Counter"]
 
+        # Getting smallest counter
+        for elem in list_typeP:
+            if elem["Counter"] < min_counter:
+                min_counter = elem["Counter"]
+
+        # Always chooses the phrases with the smallest counter
+        for elem in list_typeP:
+            if elem["Counter"] == min_counter:
+                chosen_dialogs.append(elem)
+
+        # Choose random element from list with elements with smallest counter
+        chosen_elem = random.choice(chosen_dialogs)
+
+        # Increment counter in list
+        chosen_elem["Counter"]+=1
+
+        # TODO: Fazer increment do counter no MONGODB??
+
+        return chosen_elem
 
 
 # Pattern Fact
@@ -119,18 +131,24 @@ class Pattern(Fact):
     '''
     pass
 
+# Rule execution Fact, to manage rules execution: only one rule executes at a time
+class Rule_exe(Fact):  
+    '''
+    Rule_exe(executed = False)
+    '''
+    pass
+
 
 ### Rules Engine ###
 class RulesEngine(KnowledgeEngine):
     
-    '''
+    
     ## Declare initial facts
     @DefFacts()
     def dialog_maker(self):
-        yield Pattern(domain='Futebol',subdomain='Cenas',skill='Good',performance='Average',time="Good",language='EN')
-        yield Question(typeQ = 'greetingsI')
-    '''
-
+        yield Rule_exe(executed = False)
+    
+    
     ## Declare rules
     # Greeting for the first time
     @Rule(Pattern(typeQ='greetingsI'))
@@ -153,41 +171,46 @@ class RulesEngine(KnowledgeEngine):
         print(answers)
 
     # Wrong answer, easy question
-    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3')))
+    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def wrong_easy (self):
         dialog = choose_dialog(list_answer_wrong_easy,"All")
         phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
+        self.modify(self.facts[1], executed= True)
 
     # Wrong answer, hard question
-    @Rule(Pattern(answer = '0', question_lvl = L('4') | L('5')))
+    @Rule(Pattern(answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def wrong_hard (self):
         dialog = choose_dialog(list_answer_wrong_hard,"All")
         phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
+        self.modify(self.facts[1], executed= True)
 
     # Right answer, easy question
-    @Rule(Pattern(answer = '1', question_lvl = L('1') | L('2') | L('3')))
+    @Rule(Pattern(answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def right_easy (self):
         dialog = choose_dialog(list_answer_right_easy,"All")
         phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
+        self.modify(self.facts[1], executed= True)
 
     # Right answer, hard question
-    @Rule(Pattern(answer = '1', question_lvl = L('4') | L('5')))
+    @Rule(Pattern(answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def right_hard (self):
         dialog = choose_dialog(list_answer_right_hard,"All")
         phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
+        self.modify(self.facts[1], executed= True)
 
     # Wrong answer, easy question, good student
-    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')))
+    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
         dialog = choose_dialog(list_answer_wrong_easy,"Mock")
         phrase = dialog["Phrase"]
         print(rep(synonyms(phrase)))
+        self.modify(self.facts[1], executed= True)
     
-
+    '''
     @Rule(OR(   
             Pattern(skill_domain = L('Terrible') | L('Bad')),
             Pattern(performance_domain = L('Terrible') | L('Bad'))
@@ -202,6 +225,17 @@ class RulesEngine(KnowledgeEngine):
             ))
     def teste3 (self):
         print('Teste 3')
+    
+    @Rule(Pattern(language='PT'), Rule_exe(executed = False), salience=1)
+    def teste4 (self):
+        print('Teste 4')
+        self.modify(self.facts[1], executed= True)
+
+    @Rule(Pattern(language='PT', domain='BD'), Rule_exe(executed = False), salience=0)
+    def teste5 (self):
+        print('Teste 5')
+        self.modify(self.facts[1], executed= True)
+        '''
 
 
 
@@ -224,9 +258,6 @@ print('Initializing engine rules')
 watch('RULES', 'FACTS')   
 aux = RulesEngine()   
 aux.reset() 
-
-# example of declaring fact
-#aux.declare(Question(typeQ = 'greetingsI'))
 
 # declare facts with pattern recieved
 p = Pattern(username = str_pat[0], language = str_pat[1] , typeQ = str_pat[2] , domain = str_pat[3] ,subdomain = str_pat[4] , question = str_pat[5] , answer = str_pat[6] , 
