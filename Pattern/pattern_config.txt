@@ -25,5 +25,7 @@ Example
 
 - Skill (destreza) : média do tempo global que o utilizador demora a responder às questões (em percentagem)
 
+- Performance (desempenho) : respostas_certas/perguntas_respondidas
+
 - Time (tempo) : tempo, em segundos, que o utilizador demorou a responder à pergunta naquele instante
 
