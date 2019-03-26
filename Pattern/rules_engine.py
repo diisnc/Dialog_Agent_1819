@@ -13,8 +13,8 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["lei"]
-col_generic = mydb["generic_dialog"]
-col_BD = mydb["BD_dialog"]
+col_generic = mydb["dialog"]
+col_BD = mydb["domain_BD"]
 col_synonyms = mydb["synonyms"]
 
 ############################## Dialogs ######################################
@@ -171,7 +171,7 @@ class RulesEngine(KnowledgeEngine):
         print(answers)
 
     # Wrong answer, easy question
-    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def wrong_easy (self):
         dialog = choose_dialog(list_answer_wrong_easy,"All")
         phrase = dialog["Phrase"]
@@ -179,7 +179,7 @@ class RulesEngine(KnowledgeEngine):
         self.modify(self.facts[1], executed= True)
 
     # Wrong answer, hard question
-    @Rule(Pattern(answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def wrong_hard (self):
         dialog = choose_dialog(list_answer_wrong_hard,"All")
         phrase = dialog["Phrase"]
@@ -187,7 +187,7 @@ class RulesEngine(KnowledgeEngine):
         self.modify(self.facts[1], executed= True)
 
     # Right answer, easy question
-    @Rule(Pattern(answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ='answer', answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def right_easy (self):
         dialog = choose_dialog(list_answer_right_easy,"All")
         phrase = dialog["Phrase"]
@@ -195,7 +195,7 @@ class RulesEngine(KnowledgeEngine):
         self.modify(self.facts[1], executed= True)
 
     # Right answer, hard question
-    @Rule(Pattern(answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ='answer', answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def right_hard (self):
         dialog = choose_dialog(list_answer_right_hard,"All")
         phrase = dialog["Phrase"]
@@ -203,7 +203,7 @@ class RulesEngine(KnowledgeEngine):
         self.modify(self.facts[1], executed= True)
 
     # Wrong answer, easy question, good student
-    @Rule(Pattern(answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
         dialog = choose_dialog(list_answer_wrong_easy,"Mock")
         phrase = dialog["Phrase"]
@@ -226,12 +226,12 @@ class RulesEngine(KnowledgeEngine):
     def teste3 (self):
         print('Teste 3')
     
-    @Rule(Pattern(language='PT'), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(language='PT'), Rule_exe(executed = False), salience=0)
     def teste4 (self):
         print('Teste 4')
         self.modify(self.facts[1], executed= True)
 
-    @Rule(Pattern(language='PT', domain='BD'), Rule_exe(executed = False), salience=0)
+    @Rule(Pattern(language='PT', domain='BD'), Rule_exe(executed = False), salience=1)
     def teste5 (self):
         print('Teste 5')
         self.modify(self.facts[1], executed= True)

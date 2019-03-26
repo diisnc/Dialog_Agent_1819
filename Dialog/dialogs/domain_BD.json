@@ -4,11 +4,27 @@
 				{  
 			      "Phrase": "Boa escolha. Escolhe agora um subtema.",
 			      "Counter": 0
+			    },
+			    {  
+			      "Phrase": "Faz agora um SELECT do subtema",
+			      "Counter": 0
+			    },
+			    {
+			      "Phrase": "Pronto para algumas \"queries\"? Seleciona o subtema.",
+			      "Counter": 0
 			    }
 			],
 			"Serious":[
 				{
 			      "Phrase": "Seleciona a área de avaliação.",
+			      "Counter": 0
+			    },
+			    {  
+			      "Phrase": "Faz agora um SELECT do subtema.",
+			      "Counter": 0
+			    },
+			    {
+			      "Phrase": "Pronto para algumas \"queries\"? Seleciona o subtema.",
 			      "Counter": 0
 			    }
 			],
@@ -49,9 +65,30 @@
 			    {
 			      "Phrase": "No que te foste meter... Escolhe um subdomínio.",
 			      "Counter": 0
+			    },
+			    {  
+			      "Phrase": "Faz agora um SELECT do subtema.",
+			      "Counter": 0
+			    },
+			    {
+			      "Phrase": "Pronto para algumas \"queries\"? Seleciona o subtema.",
+			      "Counter": 0
 			    }
 			],
-			"Mock":[]
+			"Mock":[
+			    {
+			      "Phrase": "Então pensas que sabes muito sobre isto? Escolhe lá um subtema!",
+			      "Counter": 0
+			    },
+			    {
+			      "Phrase": "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!",
+			      "Counter": 0
+			    },
+			    {
+			      "Phrase": "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!",
+			      "Counter": 0
+			    }
+			  ]
 		},
 	"time": {
 		"timeout": {
@@ -67,6 +104,14 @@
 			        },
 			        {
 			          "Phrase": "Vamos lá...",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
 			          "Counter": 0
 			        }
     			],
@@ -111,6 +156,14 @@
 			        {
 			          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
 			        }
 			    ],
 				"Funny":[
@@ -130,6 +183,18 @@
 			        {
 			          "Phrase": "A tua resposta vem a pé?",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
 			        }
 				],
 				"Mock":[
@@ -147,6 +212,18 @@
 			        },
 			        {
 			          "Phrase": "Não queres um cafezinho?",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
 			          "Counter": 0
 			        }
 				]
@@ -167,6 +244,14 @@
 			        },
 			        {
 			          "Phrase": "Vamos lá...",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
 			          "Counter": 0
 			        }
 				],
@@ -207,6 +292,14 @@
 			        {
 			          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
 			        }
 				],
 				"Funny":[
@@ -229,6 +322,18 @@
 			        {
 			          "Phrase": "Não queres um cafezinho?",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
 			        }
 				],
 				"Mock":[
@@ -242,6 +347,18 @@
 			        },
 			        {
 			          "Phrase": "A tua resposta vem a pé?",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
 			          "Counter": 0
 			        }
 				]
@@ -258,6 +375,14 @@
 			        },
 			        {
 			          "Phrase": "Vamos lá...",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
 			          "Counter": 0
 			        }
 				],
@@ -298,6 +423,14 @@
 			        {
 			          "Phrase": "Vamos lá _name_, tenho mais que fazer!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
 			        }
 				],
 				"Funny":[
@@ -320,6 +453,18 @@
 			        {
 			          "Phrase": "Estou a interromper a conversa?",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
 			        }
 				],
 				"Mock":[
@@ -334,14 +479,40 @@
 			        {
 			          "Phrase": "A tua resposta vem a pé?",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Então? A \"query\" bloqueou?",
+			          "Counter": 0
+			        },
+			         {
+			          "Phrase": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			          "Counter": 0
 			        }
 				]
 			}
 		},
 	"toosoon": {
 			"goodP": {
-				"Normal":[],
-				"Serious":[],
+				"Normal":[
+				    {
+			      "Phrase": "Foi bom... bom demais...",
+			      "Counter": 0
+			      },
+			      {
+			      "Phrase": "Esse SELECT foi rápido demais...",
+			      "Counter": 0
+			      }
+				  ],
+				"Serious":[
+				    {
+			      "Phrase": "Não acredito que sejas assim tão rápido a responder...",
+			      "Counter": 0
+			      }
+			     ],
 				"Funny":[
 					{
 			          "Phrase": "Estás \"on fire\", começo a duvidar...",
@@ -350,46 +521,154 @@
 			        {
 			          "Phrase": "Muito bem! Mas como sabes, é impossível saberes mais do que eu.",
 			          "Counter": 0
+			        },
+			        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      },
+			        {
+			          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+			          "Counter": 0
 			        }
 				],
 				"Mock":[
-					 {  
-			          "Phrase": "Ou és muito bom ou essa resposta foi à sorte.",
+					  {  
+  	          "Phrase": "Ou és muito bom ou essa resposta foi à sorte.",
+  	          "Counter": 0
+  	        },
+  	        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      },
+			        {
+			          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
 			          "Counter": 0
-			        }
+			        },
+  	        {  
+  	          "Phrase": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!",
+  	          "Counter": 0
+  	        }
 				]
 			},
 			"badP": {
-				"Normal":[		],
+				"Normal":[
+				    {
+		          "Phrase": "Não vale a pena tentar adivinhar a resposta...",
+		          "Counter": 0
+		        },
+		        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      }
+				  ],
 				"Serious":[
 					{  
 			          "Phrase": "Isto não é para responder à sorte!",
 			          "Counter": 0
-			        }
+			        },
+			        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      }
 				],
-				"Funny":[		],
+				"Funny":[
+    				    {
+    		          "Phrase": "Parece que responder à sorte não está a funcionar!",
+    		          "Counter": 0
+    		        },
+    		        {
+    			      "Phrase": "Esse SELECT foi muito rápido!",
+    			      "Counter": 0
+    			      },
+  			        {
+  			          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+  			          "Counter": 0
+  			        },
+    	        {  
+    	          "Phrase": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!",
+    	          "Counter": 0
+    	        }
+		        ],
 				"Mock":[
-					{
-			          "Phrase": "Não comeces a javardar e a responder à toa!",
+					  {
+		          "Phrase": "Não comeces a javardar e a responder à toa!",
+		          "Counter": 0
+		        },
+		        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      },
+			        {
+			          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
 			          "Counter": 0
-			        }	
+			        },
+  	        {  
+  	          "Phrase": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!",
+  	          "Counter": 0
+  	        }
     			]
 			},
 			"aveP": {
-				"Normal":[		],
-				"Serious":[		],
+				"Normal":[
+				    {
+		          "Phrase": "Não comeces a javardar e a responder à toa!",
+		          "Counter": 0
+		        },
+		        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      }
+				  ],
+				"Serious":[
+				    {
+		          "Phrase": "Responder à sorte não vale a pena...",
+		          "Counter": 0
+		        },
+		        {
+  			      "Phrase": "Esse SELECT foi muito rápido!",
+  			      "Counter": 0
+  			      }
+				  ],
 				"Funny":[
 					{
-			          "Phrase": "Carregaste sem querer?",
-			          "Counter": 0
-			        },
-			        {
-			          "Phrase": "\"Miss click\"?",
-			          "Counter": 0
-			        }
+	          "Phrase": "Carregaste sem querer?",
+	          "Counter": 0
+	        },
+	        {
+	          "Phrase": "\"Miss click\"?",
+	          "Counter": 0
+	        },
+	        {
+			      "Phrase": "Esse SELECT foi muito rápido!",
+			      "Counter": 0
+			      },
+		        {
+		          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+		          "Counter": 0
+		        },
+	        {  
+	          "Phrase": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!",
+	          "Counter": 0
+	        }
 				],
-				"Mock":[	],
-				"Incentive":[	]
+				"Mock":[
+      				  {
+      	          "Phrase": "Oh artista, sabias mesmo a resposta?",
+      	          "Counter": 0
+      	        },
+      	        {
+    			      "Phrase": "Esse SELECT foi muito rápido!",
+    			      "Counter": 0
+    			      },
+  			        {
+  			          "Phrase": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+  			          "Counter": 0
+  			        },
+    	        {  
+    	          "Phrase": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!",
+    	          "Counter": 0
+    	        }
+				    ]
 			}
 		}
 	},
@@ -406,15 +685,16 @@
 			          "Counter": 0
 			        },
 			        {
-			          "Phrase": "Esta era trivial...",
-			          "Counter": 0
-			        },
-			        {
 			          "Phrase": "Elementar, meu caro Watson!",
 			          "Counter": 0
 			        }
 				],
-				"Serious":[		],
+				"Serious":[
+				    {
+			          "Phrase": "Esta era trivial...",
+			          "Counter": 0
+			        }
+				  ],
 				"Funny":[
 					{
 			          "Phrase": "Esta era fácil, mas leva lá a bicicleta!",
@@ -429,7 +709,7 @@
 			          "Counter": 0
 			        },
 			        {
-			          "Phrase": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
+			          "Phrase": "Caracteres não conseguem expressar o tamanho da minha felicidade!",
 			          "Counter": 0
 			        },
 			        {
@@ -489,7 +769,16 @@
 			          "Counter": 0
 			        }
 				],
-				"Serious":[		],
+				"Serious":[
+				    {
+		          "Phrase": "Com esta fiquei surpreendido.",
+		          "Counter": 0
+		        },
+		        {
+		          "Phrase": "Nada mau, nada mau mesmo.",
+		          "Counter": 0
+		        }
+				  ],
 				"Funny":[
 					{
 			          "Phrase": "Fiquei emocionado com essa resposta. Certo!",
@@ -509,14 +798,6 @@
 			          "Counter": 0
 			        },
 			        {
-			          "Phrase": "Um relógio avariado está certo duas vezes por dia!",
-			          "Counter": 0
-			        },
-			        {
-			          "Phrase": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho...",
-			          "Counter": 0
-			        },
-			        {
 			          "Phrase": "De onde veio tanta inteligência?",
 			          "Counter": 0
 			        },
@@ -525,7 +806,16 @@
 			          "Counter": 0
 			        }
 				],
-				"Mock":[	],
+				"Mock":[
+				    {
+			          "Phrase": "Um relógio avariado está certo duas vezes por dia!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho...",
+			          "Counter": 0
+			        }
+				  ],
 				"Incentive":[
 					 {
 			          "Phrase": "Bem jogado _name_!",
@@ -584,6 +874,14 @@
 			        {
 			          "Phrase": "Parece que precisas de estudar... A pergunta era fácil!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
 			        }
 				],
 				"Serious":[
@@ -636,10 +934,18 @@
 			          "Phrase": "Nem lá perto...",
 			          "Counter": 0
 			        },
-					{        
+					    {        
 			          "Phrase": "Esperava mais de ti... A pergunta era trivial.",
 			          "Counter": 0
-		        	}
+		        	},
+		        	{
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
+			        }
 				],
 				"Funny":[
 					{
@@ -656,6 +962,18 @@
 			        },
 			          {
 			          "Phrase": "Claramente não fizeste os tpc's!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!",
 			          "Counter": 0
 			        }
 				],
@@ -679,9 +997,34 @@
 			        {
 			          "Phrase": "Tentaste... Mas sabes que podes sempre dedicar-te à pesca ;)",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!",
+			          "Counter": 0
 			        }
 				],
-				"Incentive":[	]
+				"Incentive":[
+				    {
+			          "Phrase": "Esta era fácil, estavas distraído? Na próxima consegues acertar.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte ;)",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!",
+			          "Counter": 0
+			        }
+				  ]
 			},
 			"hard": {
 				"Normal":[
@@ -720,6 +1063,14 @@
 			        {
 			          "Phrase": "Resposta errada... Mas não te critico, era difícil!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
 			        }
 				],
 				"Serious":[
@@ -742,11 +1093,31 @@
 			        {
 			          "Phrase": "Nada disso!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
 			        }
 				],
 				"Funny":[
 					{
 			          "Phrase": "Não estudas pelo livro e depois é isto.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!",
 			          "Counter": 0
 			        }
 				],
@@ -754,11 +1125,31 @@
 					{
 			          "Phrase": "As maiores dificuldades são filhas da preguiça!",
 			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Essa tua resposta deu-me TRIGGER!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!",
+			          "Counter": 0
 			        }
 				],
 				"Incentive":[
-					{
+					    {
 			          "Phrase": "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Esta era dificil, não te sintas mal. A próxima vai correr melhor!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!",
 			          "Counter": 0
 			        }
 				]

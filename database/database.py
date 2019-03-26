@@ -11,8 +11,8 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["lei"]
-col_generic = mydb["generic_dialog"]
-col_BD = mydb["BD_dialog"]
+col_generic = mydb["dialog"]
+col_BD = mydb["domain_BD"]
 col_synonyms = mydb["synonyms"]
 
 ###### Dialogs ######
