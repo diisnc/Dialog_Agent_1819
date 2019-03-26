@@ -56,6 +56,24 @@
           "bye": "Não...",
           "doubt": "Há nota mínima?"
         }
+      },
+      {
+        "Phrase": "Boas. Vamos trabalhar?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim, oupa!",
+          "bye": "Não me apetece, QUERO VOLTAR ATRÁS!",
+          "doubt": "Tenho mesmo que continuar?"
+        }
+      },
+      {
+        "Phrase": "Vamos começar?",
+        "Counter": 0,
+        "Answer": {
+          "domain" : "Sim.",
+          "bye": "No way...",
+          "doubt": "Que trabalho..."
+        }
       }
     ],
     "Funny":[
@@ -297,7 +315,7 @@
         }
       },
       {
-        "Phrase": "Bons olhos te vejam, pensei já não precisas de vir mais!",
+        "Phrase": "Bons olhos te vejam, pensei já não precisavas de vir mais!",
         "Counter": 0,
         "Answer": {
           "domain" : "Preciso de me avaliar.",
@@ -496,16 +514,50 @@
         }
       ],
       "badP": [
-        
+        {
+          "Phrase": "Precisas de estudar mais, até à próxima!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A tua performance não foi muito boa... Vê se melhoras!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Isto não foi lá muito bom... Tens que estudar mais!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Tchau, estuda mais para a próxima!",
+          "Counter": 0
+        }
       ],
       "goodP": [
         {
-          "Phrase": "Vá, vai-te embora...",
+          "Phrase": "Vá, és muito bom, vai-te embora...",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Uau, quero ver se para a próxima te corre tão bem!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Muito bem, quando queres estudas. Adeus!",
           "Counter": 0
         }
       ],
       "avgP": [
-          
+          {
+          "Phrase": "Isto não foi nem bom nem mau... Estuda mais na próxima para ver se chegas ao meu nível",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Se estudasses pelo livro isto tinha sido melhor... Adeus!",
+          "Counter": 0
+        },
+       {
+          "Phrase": "Meeh, podia ser pior. Bye!",
+          "Counter": 0
+       }
       ]
     },
     "Serious": {
@@ -513,6 +565,14 @@
 
         {  
           "Phrase": "Até à próxima.",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Vemo-nos depois.",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Tchau.",
           "Counter": 0
         }
       ],
@@ -524,13 +584,43 @@
         {  
           "Phrase": "Até à próxima. Se houver...",
           "Counter": 0
+        },
+        {  
+          "Phrase": "Isto foi péssimo, adeus!",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Nem vou comentar este teste, adeus.",
+          "Counter": 0
         }
       ],
       "goodP": [
-
+        {  
+          "Phrase": "Muito bem, adeus!",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Boa performance, see ya!",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Bom teste, até à próxima.",
+          "Counter": 0
+        }
       ],
       "avgP": [
-          
+        {  
+          "Phrase": "Devias estudar mais, adeus.",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Podia ser pior, até à próxima!",
+          "Counter": 0
+        },
+        {  
+          "Phrase": "Dá para melhorar, talvez numa próxima.",
+          "Counter": 0
+        }
       ]
     },
     "Funny": {
@@ -546,6 +636,14 @@
         {
           "Phrase": "Vai lá, bom Natal.",
           "Counter": 0
+        },
+        {
+          "Phrase": "\"See you later, aligator...\"",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Até à próxima caramelo!",
+          "Counter": 0
         }
       ],
       "badP": [
@@ -556,22 +654,73 @@
         {
           "Phrase": "Vai estudar, melga.",
           "Counter": 0
+        },
+        {
+          "Phrase": "Terrível, nem vou comentar manz!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Pior teste que já vi, vai estudar artista.",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Para os dias bons: sorrisos. Para os dias maus: paciência. Para todos os dias: fé. Despeço-me com votos de muita fé e paciência para ti.",
+          "Counter": 0
         }
       ],
       "goodP": [
         {
           "Phrase": "Bom trabalho! Onde estão as cábulas?",
           "Counter": 0
+        },
+        {
+          "Phrase": "És muita bom, quero ver se na próxima repetes a proeza!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Corre riscos. Se der certo, felicidade. Se não, sabedoria. Deves estar muito feliz com este teste, adeus!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Viver não é esperar a tempestade passar. É aprender a dançar na chuva. Até fizeste break dance neste teste! Até à próxima.",
+          "Counter": 0
         }
       ],
       "avgP": [
-          
+        {
+          "Phrase": "Se for pra desistir, desiste de ser fraco. Mas não desistas destes testes porque estás quase lá!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Se queres ter algo que nunca tiveste, faz algo que nunca fizeste. Para a próxima estuda mais para ver aquele 20 que nunca viste...",
+          "Counter": 0
+        },
+        {
+          "Phrase": "A determinação de hoje é o sucesso de amanhã. Mas só de amanhã, porque hoje não foi grande coisa. Até à próxima!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Até que nem foi mau artista! See ya.",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vai do jeito que puderes, mas não deixes de vir! Para a próxima é melhor artista.",
+          "Counter": 0
+        }
       ]
     },
     "Mock": {
       "bye": [
         {
-          "Phrase": "Vai estudar, caramelo.",
+          "Phrase": "Estava ver que nunca mais me via livre de ti, adeus!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Já estavas a demorar a ir embora...",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Vou ter saudades tuas...",
           "Counter": 0
         }
       ],
@@ -594,21 +743,66 @@
         } 
       ],
       "goodP": [
-
+        {
+          "Phrase": "Epa, és muita bom. Adeus!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Para a próxima não permito que acertes tantas perguntas, niguém é melhor do que eu!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Tchau aí einstein!",
+          "Counter": 0
+        } 
       ],
       "avgP": [
         {
           "Phrase": "Meeh, podia ser melhor. Ciao.",
           "Counter": 0
-        }          
+        },
+        {
+          "Phrase": "Eu não sei como, mas vais chegar lá em breve. Adeus.",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Amanhã é dia de conquistar mais do que hoje. Espero eu, porque isto não foi grande coisa.",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Isto nem foi carne, nem foi peixe. Vai estudar caramelo(a).",
+          "Counter": 0
+        }
       ]
     },
     "Incentive": {
       "bye": [
-
+        {
+          "Phrase": "Até à próxima!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Prometes que me voltas a visitar, please?",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Até amanhã. Vens amanhã, certo?",
+          "Counter": 0
+        }
       ],
       "badP": [
-        
+        {
+          "Phrase": "Isto não te correu muito bem, mas para a próxima corre melhor!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Proibido desistir. Respira fundo e volta!",
+          "Counter": 0
+        },
+        {
+          "Phrase": "Não desistas, se leres o livro isto vai correr bem.",
+          "Counter": 0
+        }
       ],
       "goodP": [
         {  
@@ -644,7 +838,11 @@
         {
           "Phrase": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
           "Counter": 0
-        }          
+        },
+        {
+          "Phrase": "Erros são provas de que estás a tentar. Não desistas!",
+          "Counter": 0
+        }
       ]
     }
   },
@@ -652,6 +850,14 @@
     "Normal":[
       {
         "Phrase": "O que é que queres tentar hoje?",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Queres ser avaliado(a) em que área?",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Qual é a tua escolha hoje?",
         "Counter": 0
       }
     ],
@@ -690,6 +896,18 @@
     "Mock":[
       {
         "Phrase": "O que vai ser hoje, caramelo?",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!",
+        "Counter": 0
+      },
+      {
+        "Phrase": "Então caramelo, o que vais escolher?",
         "Counter": 0
       }
     ]
