@@ -164,6 +164,7 @@ class RulesEngine(KnowledgeEngine):
     # Greeting for the first time
     @Rule(Pattern(typeQ = 'greetingsI'))
     def greetingsI (self):
+        self.modify(self.facts[1], executed= True)
         # selects an element from the list, having into account its type
         dialog = choose_dialog(list_greetingsI,"All")
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
@@ -172,30 +173,29 @@ class RulesEngine(KnowledgeEngine):
 
     # Greeting again
     @Rule(Pattern(typeQ = 'greetingsA'), Rule_exe(executed = False))
-    def greetingsA (self):
+    def greetingsA_geral (self):
+        self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_greetingsA,"All")
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
     # [TEST] Greeting again, student_lvl = E ou student_lvl = D  [OUTPUT: funny]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D'), Rule_exe(executed = False), salience=1))
-    def greetingsA (self):
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D')), Rule_exe(executed = False), salience=1)
+    def greetingsA_BadSt (self):
+        self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_greetingsA,"Funny")
-        phrase = dialog["Phrase"]
-        answers = dialog["Answer"]
-        print(rep(synonyms(phrase)))
-        print(answers)
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
 
     # [TEST] Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B'), Rule_exe(executed = False), salience=1))
-    def greetingsA (self):
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    def greetingsA_goodSt (self):
+        self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_greetingsA,"Mock")
-        phrase = dialog["Phrase"]
-        answers = dialog["Answer"]
-        print(rep(synonyms(phrase)))
-        print(answers)
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
 
     # Wrong answer, easy question

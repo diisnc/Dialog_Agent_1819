@@ -61,7 +61,7 @@ class Dialog_Agent:
 ### PATTERN PARSER ###
 
 # pattern
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'B', 'processoX', 103, 53, 63, 15, 20]
+patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
 
 # dialog agent
 agent = Dialog_Agent(patt)
