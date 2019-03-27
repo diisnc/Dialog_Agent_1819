@@ -171,7 +171,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Greeting again
-    @Rule(Pattern(typeQ = 'greetingsA'))
+    @Rule(Pattern(typeQ = 'greetingsA'), Rule_exe(executed = False))
     def greetingsA (self):
         dialog = choose_dialog(list_greetingsA,"All")
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
@@ -179,7 +179,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # [TEST] Greeting again, student_lvl = E ou student_lvl = D  [OUTPUT: funny]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D')))
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D'), Rule_exe(executed = False), salience=1))
     def greetingsA (self):
         dialog = choose_dialog(list_greetingsA,"Funny")
         phrase = dialog["Phrase"]
@@ -189,7 +189,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # [TEST] Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B')))
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B'), Rule_exe(executed = False), salience=1))
     def greetingsA (self):
         dialog = choose_dialog(list_greetingsA,"Mock")
         phrase = dialog["Phrase"]
