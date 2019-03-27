@@ -5,8 +5,8 @@
 "então":["então", "olá","_day_"],
 "ora":["viva","saudações","então", "olá","_day_", "ora"],
 "_day_":["viva","saudações","então", "olá","_day_"],
-"precisas":["necessitas", "precisas", "pretendes"],
-"necessitas":["necessitas", "precisas", "pretendes"],
+"precisas":["necessitas", "precisas"],
+"necessitas":["necessitas", "precisas"],
 "pretendes":["necessitas", "precisas", "pretendes"],
 "caramelo":["artista","caramelo", "caro(a)", "melga", "_name_", "cromo(a)", "einstein", "patanisca"],
 "artista":["artista","caramelo", "caro(a)", "melga", "_name_", "cromo(a)", "einstein", "patanisca"],
@@ -36,7 +36,7 @@
 "seleciona":["seleciona", "indica", "escolhe", "decide", "assinala"],
 "decide":["seleciona", "indica", "escolhe", "decide", "assinala"],
 "assinala":["seleciona", "indica", "escolhe", "decide", "assinala"],
-"aponta":["seleciona", "indica", "escolhe", "decide", "aponta", "assinala",],
+"aponta":["seleciona", "indica", "escolhe", "decide", "aponta", "assinala"],
 "tema":["domínio", "tema"],
 "domínio":["domínio", "tema"],
 "subdomínio":["subdomínio", "subtema"],
@@ -58,5 +58,10 @@
 "pronto":["preparado", "pronto"],
 "preparado":["preparado", "pronto"],
 "iniciar":["iniciar", "começar"],
-"começar":["iniciar", "começar"]
+"começar":["iniciar", "começar"],
+"triste":["triste", "aborrecido", "descontente", "desanimado", "deprimido"],
+"aborrecido":["triste", "aborrecido", "descontente", "desanimado", "deprimido"],
+"descontente":["triste", "aborrecido", "descontente", "desanimado", "deprimido"],
+"desanimado":["triste", "aborrecido", "descontente", "desanimado", "deprimido"],
+"deprimido":["triste", "aborrecido", "descontente", "desanimado", "deprimido"]
 }

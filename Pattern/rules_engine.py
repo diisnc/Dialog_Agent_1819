@@ -1,12 +1,12 @@
-import re
-from pyknow import *
-from pattern_analyser import *
-from random import choice
+import random
 from datetime import datetime
+# PyKnow Rules Engine
+from pyknow import *
 # pprint library is used to make the output look more pretty
 import pymongo
 from pprint import pprint
 # nltk package
+import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 
@@ -17,12 +17,11 @@ col_generic = mydb["dialog"]
 col_BD = mydb["domain_BD"]
 col_synonyms = mydb["synonyms"]
 
-############################## Dialogs ######################################
+############################## Dialogs MongoDB ######################################
 # Generic
 generic_dialog = col_generic.find_one()
 # BD domain
 bd_dialog = col_BD.find_one()
-#############################################################################
 
 # ["greetingsI"] = returns phrases grouped by type (which is the value of key "greetingsI")
 # greetingsI
@@ -32,13 +31,13 @@ list_greetingsA = generic_dialog["greetingsA"]
 # doubt
 list_doubt = generic_dialog["doubt"]
 # farewell_bye
-#list_farewell_bye = generic_dialog["farewell"]["bye"]
+list_farewell_bye = generic_dialog["farewell"]["bye"]
 # farewell_badP
-#list_farewell_badP = generic_dialog["farewell"]["badP"]
+list_farewell_badP = generic_dialog["farewell"]["badP"]
 # farewell_goodP
-#list_farewell_goodP = generic_dialog["farewell"]["goodP"]
+list_farewell_goodP = generic_dialog["farewell"]["goodP"]
 # farewell_avgP
-#list_farewell_avgP = generic_dialog["farewell"]["avgP"]
+list_farewell_avgP = generic_dialog["farewell"]["avgP"]
 # domain
 list_domain = generic_dialog["domain"]
 # subdomain
@@ -56,6 +55,8 @@ list_answer_wrong_easy = bd_dialog["answer"]["wrong"]["easy"]
 # answer_wrong_hard
 list_answer_wrong_hard = bd_dialog["answer"]["wrong"]["hard"]
 
+
+################################### Auxiliar Functions ###################################
 # Function that replaces a word with synonym
 def synonyms(sentence):
     words = word_tokenize(sentence)
@@ -74,9 +75,9 @@ def synonyms(sentence):
     return output
 
 # Funtion that replaces _name_ and _day_ by username and day
-def rep(mystring):
+def rep(mystring, username):
     if "_name_" in mystring: 
-        mystring = mystring.replace("_name_",p_analys.get_username())
+        mystring = mystring.replace("_name_", username)
     if "_day_" in mystring:
         now = datetime.now()
         if(now.hour < 6 or now.hour > 20):
@@ -123,7 +124,7 @@ def choose_dialog(list_typeQ, typeP):
         return chosen_elem
 
 
-# Pattern Fact
+############## Pattern Fact ##############
 class Pattern(Fact):  
     '''
     Pattern(language , typeQ , domain ,subdomain , question , answer , question_lvl , student_lvl , state , 
@@ -131,7 +132,7 @@ class Pattern(Fact):
     '''
     pass
 
-# Rule execution Fact, to manage rules execution: only one rule executes at a time
+############## Rule execution Fact, to manage rules execution: only one rule executes at a time 
 class Rule_exe(Fact):  
     '''
     Rule_exe(executed = False)
@@ -139,10 +140,19 @@ class Rule_exe(Fact):
     pass
 
 
-### Rules Engine ###
+############## Rules Engine ##############
 class RulesEngine(KnowledgeEngine):
+
+    __username = ""
+    __result = ""
+
     
-    
+    def __init__(self,username):
+        __username = username
+        __result = ""
+        super().__init__()
+
+
     ## Declare initial facts
     @DefFacts()
     def dialog_maker(self):
@@ -155,61 +165,63 @@ class RulesEngine(KnowledgeEngine):
     def greetingsI (self):
         # selects an element from the list, having into account its type
         dialog = choose_dialog(list_greetingsI,"All")
-        # selects the phrase and respective answers from the element dialog
-        phrase = dialog["Phrase"]
-        answers = dialog["Answer"]
-        print(rep(synonyms(phrase)))
-        print(answers)
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
     # Greeting again
     @Rule(Pattern(typeQ='greetingsA'))
     def greetingsA (self):
         dialog = choose_dialog(list_greetingsA,"All")
-        phrase = dialog["Phrase"]
-        answers = dialog["Answer"]
-        print(rep(synonyms(phrase)))
-        print(answers)
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
     # Wrong answer, easy question
     @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def wrong_easy (self):
-        dialog = choose_dialog(list_answer_wrong_easy,"All")
-        phrase = dialog["Phrase"]
-        print(rep(synonyms(phrase)))
         self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_easy,"All")
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+        
 
     # Wrong answer, hard question
     @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def wrong_hard (self):
-        dialog = choose_dialog(list_answer_wrong_hard,"All")
-        phrase = dialog["Phrase"]
-        print(rep(synonyms(phrase)))
         self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_hard,"All")
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
     # Right answer, easy question
     @Rule(Pattern(typeQ='answer', answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def right_easy (self):
-        dialog = choose_dialog(list_answer_right_easy,"All")
-        phrase = dialog["Phrase"]
-        print(rep(synonyms(phrase)))
         self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_easy,"All")
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
     # Right answer, hard question
     @Rule(Pattern(typeQ='answer', answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def right_hard (self):
-        dialog = choose_dialog(list_answer_right_hard,"All")
-        phrase = dialog["Phrase"]
-        print(rep(synonyms(phrase)))
         self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_hard,"All")
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
 
     # Wrong answer, easy question, good student
     @Rule(Pattern(typeQ='answer', answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
-        dialog = choose_dialog(list_answer_wrong_easy,"Mock")
-        phrase = dialog["Phrase"]
-        print(rep(synonyms(phrase)))
         self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_easy,"Mock")
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
     
+    def getResult(self):
+        return self.__result
+
+    def getUsername(self):
+       return self.__username
+
     '''
     @Rule(OR(   
             Pattern(skill_domain = L('Terrible') | L('Bad')),
@@ -235,37 +247,4 @@ class RulesEngine(KnowledgeEngine):
     def teste5 (self):
         print('Teste 5')
         self.modify(self.facts[1], executed= True)
-        '''
-
-
-
-### PATTERN PARSER ###
-
-# pattern
-patt = ['John001', 'PT', 3, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'B', 'processoX', 103, 53, 63, 15, 20]
-# pattern analyser
-p_analys = Pat_Analyser()
-# pattern conversion
-p_analys.pat_parser(patt)
-# array w/ pattern fields (domain,subdomain,skill,performance,language,user,typeQ)
-str_pat = p_analys.pat_string().split(",")
-# print array above
-print(str_pat)
-
-### MAKE DECISION - by converting pattern into a fact and filtering it with rules previously declared in the program ###
-# Init rules engine
-print('Initializing engine rules')
-watch('RULES', 'FACTS')   
-aux = RulesEngine()   
-aux.reset() 
-
-# declare facts with pattern recieved
-p = Pattern(username = str_pat[0], language = str_pat[1] , typeQ = str_pat[2] , domain = str_pat[3] ,subdomain = str_pat[4] , question = str_pat[5] , answer = str_pat[6] , 
-            question_lvl = str_pat[7] , student_lvl = str_pat[8] , state = str_pat[9] , skill_domain = str_pat[10] , performance_domain = str_pat[11] ,
-            skill_subdomain = str_pat[12] , performance_subdomain = str_pat[13], time = str_pat[14])
-aux.declare(p)
-
-# run engine
-aux.run()
-aux.facts
-
+    '''

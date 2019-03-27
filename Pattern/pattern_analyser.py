@@ -1,10 +1,7 @@
 import os
-import random
 import sys
 
-
 ### DATA ###
-
 
 # SKILLS
 skill_dic = {
@@ -45,7 +42,7 @@ time_dic = {    range(0,6) : 'Soon',
 
 ### PATTERN ANALYSER ###
 
-class Pat_Analyser:
+class Patt_Analyser:
 
     __username= ""
     __language = ""
@@ -82,8 +79,8 @@ class Pat_Analyser:
         self.__performance_subdomain = ""
         self.__time = ""
 
-    # pat_parser : converts the recieved pattern into the respective fields (user,domain,subdomain,etc), and sets those parameters into class Pattern Analyser.
-    def pat_parser(self, p):
+    # patt_parser : converts the recieved pattern into the respective fields (user,domain,subdomain,etc), and sets those parameters into class Pattern Analyser.
+    def patt_parser(self, p):
         
         self.__username = p[0]
         self.__language = p[1]
@@ -126,29 +123,9 @@ class Pat_Analyser:
                 break
 
     # Get the pattern's user
-    def get_username(self):
+    def getUsername(self):
         return self.__username
 
     # Displays fields into a string (separated by ','). The string is used to declare a fact, which represents the pattern, in the Rules Engine.
-    def pat_string(self):
+    def patt_string(self):
         return f'{self.__username},{self.__language},{self.__typeQ},{self.__domain},{self.__subdomain},{self.__question},{self.__answer},{self.__question_lvl},{self.__student_lvl},{self.__state},{self.__skill_domain},{self.__performance_domain},{self.__skill_subdomain},{self.__performance_subdomain},{self.__time}'
-
-
-
-
-######### MAIN #########
-
-'''
-# pattern
-patt = ['John001', 'PT', 1, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 3, 'B', 'processoX', 53, 53, 63, 75, 20]
-# class
-p_analys = Pat_Analyser()
-# pattern conversion
-p_analys.pat_parser(patt)
-# print username
-print(p_analys.get_username())
-# print pattern string
-print(p_analys.pat_string())
-# print array of fields
-print(p_analys.pat_string().split(","))
-'''
