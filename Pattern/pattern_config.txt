@@ -4,7 +4,7 @@ Pattern Configuration
 Ranges (15 characteristics)
 	username: 		String 			
 	language: 		1-9 			[language: PT, EN, ES, DE, FR, RU] 																---> 6 languages
-	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, domain-3, subdomain-4, doubt-5, farewell(bye)-6, time-7, answer-8]	---> 8 types
+	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, doubt-3, bye-4, farewell(bye)-5, domain-6, subdomain-7, time-8, answer-9]	---> 8 types
 	domain: 		'XX' 			[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
 	subdomain: 		'<string>' 		[subdomain: 'A','B','C','D','E',...] 					
 	question:		'<string>'		[string exemplo: Gostas de pêras? Sim. Não.]

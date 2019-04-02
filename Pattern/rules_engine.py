@@ -43,9 +43,9 @@ list_domain = generic_dialog["domain"]
 # subdomain
 list_subdomain = bd_dialog["subdomain"]
 # time_out
-list_time = bd_dialog["time"]["timeout"]
+list_time_out = bd_dialog["time"]["timeout"]
 # too_soon
-list_time = bd_dialog["time"]["toosoon"]
+list_time_soon = bd_dialog["time"]["toosoon"]
 # answer_right_easy
 list_answer_right_easy = bd_dialog["answer"]["right"]["easy"]
 # answer_right_hard
@@ -91,15 +91,18 @@ def rep(mystring, username):
 
 
 # Choose dialog element having into account the type and counter of the phrase
-def choose_dialog(list_typeQ, typeP):
+def choose_dialog(list_typeQ, typesP):
         chosen_dialogs = []
         list_typeP = []
         
         # If type == "All" then choose random type
-        if typeP == "All":
-            typeP = random.choice(list(list_typeQ.keys()))
+        if typesP[0] == "All":
+            type = random.choice(list(list_typeQ.keys()))
+        else:
+            type = random.choice(typesP)
 
-        list_typeP = list_typeQ[typeP]
+
+        list_typeP = list_typeQ[type]
 
         min_counter = list_typeP[0]["Counter"]
 
@@ -166,7 +169,7 @@ class RulesEngine(KnowledgeEngine):
     def greetingsI (self):
         self.modify(self.facts[1], executed= True)
         # selects an element from the list, having into account its type
-        dialog = choose_dialog(list_greetingsI,"All")
+        dialog = choose_dialog(list_greetingsI,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
@@ -175,73 +178,355 @@ class RulesEngine(KnowledgeEngine):
     @Rule(Pattern(typeQ = 'greetingsA'), Rule_exe(executed = False))
     def greetingsA_geral (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_greetingsA,"All")
+        dialog = choose_dialog(list_greetingsA,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # [TEST] Greeting again, student_lvl = E ou student_lvl = D  [OUTPUT: funny]
+    # Greeting again, student_lvl = E ou student_lvl = D  [OUTPUT: funny]
     @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D')), Rule_exe(executed = False), salience=1)
     def greetingsA_BadSt (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_greetingsA,"Funny")
+        dialog = choose_dialog(list_greetingsA,["Funny"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # [TEST] Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
+    # Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
     @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
     def greetingsA_goodSt (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_greetingsA,"Mock")
+        dialog = choose_dialog(list_greetingsA,["Mock"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # Wrong answer, easy question
+    # Doubt 
+    @Rule(Pattern(typeQ = 'doubt'), Rule_exe(executed = False))
+    def doubt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_doubt,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Farewell bye
+    @Rule(Pattern(typeQ = 'bye'), Rule_exe(executed = False))
+    def bye (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_farewell_bye,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Farewell badP
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience = 1)
+    def f_badP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_farewell_badP,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+     # Farewell avgP
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = 'C'), Rule_exe(executed = False), salience = 1)
+    def f_avgP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_farewell_avgP,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Farewell goodP
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience = 1)
+    def f_goodP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_farewell_goodP,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Domain
+    @Rule(Pattern(typeQ = 'domain'), Rule_exe(executed = False))
+    def domain (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_domain,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Subdomain
+    @Rule(Pattern(typeQ = 'subdomain'), Rule_exe(executed = False))
+    def subdomain (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_subdomain,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    '''
+    time = bad | terrible -> timeout
+    time = bad -> Normal | Funny
+    time = terrible -> Serious | Mock
+    skill_subdomain = Bad | Terrible -> BadP
+    skill_subdomain = Avg -> AvgP
+    skill_subdomain = Good | Excellent -> GoodP
+    '''
+
+    # Time - timeout
+    @Rule(Pattern(typeQ = 'time', time=L('Bad') | L('Terrible')), Rule_exe(executed = False))
+    def timeout (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Time - timeout - terrible time - BadP
+    @Rule(Pattern(typeQ = 'time', time='Terrible', skill_subdomain=L('Bad') | L('Terrible')), Rule_exe(executed = False), salience = 1)
+    def timeout_terrible_badP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out['badP'],["Serious","Mock"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Time - timeout - bad time - BadP
+    @Rule(Pattern(typeQ = 'time', time='Bad', skill_subdomain=L('Bad') | L('Terrible')), Rule_exe(executed = False), salience = 1)
+    def timeout_bad_badP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out['badP'],["Normal","Funny"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Time - timeout - terrible time - AvgP
+    @Rule(Pattern(typeQ = 'time', time='Terrible', skill_subdomain='Average'), Rule_exe(executed = False), salience = 1)
+    def timeout_terrible_avgP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out['avgP'],["Serious","Mock"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Time - timeout - bad time - AvgP
+    @Rule(Pattern(typeQ = 'time', time='Bad', skill_subdomain='Average'), Rule_exe(executed = False), salience = 1)
+    def timeout_bad_avgP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out['avgP'],["Normal","Funny"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Time - timeout - GoodP
+    @Rule(Pattern(typeQ = 'time', time=L('Bad') | L('Terrible'), skill_subdomain=L('Good') | L('Excellent')), Rule_exe(executed = False), salience = 1)
+    def timeout_goodP (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_out['goodP'],["Incentive"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    '''
+    time = soon -> toosoon
+    skill_subdomain = Bad | Terrible -> BadP
+    skill_subdomain = Avg -> AvgP
+    skill_subdomain = Good | Excellent -> GoodP
+    '''
+
+    # Time - too soon
+    @Rule(Pattern(typeQ = 'time', time=L('Soon')), Rule_exe(executed = False))
+    def toosoon (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_soon,["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Time - too soon - terrible - badP
+    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain='Terrible'), Rule_exe(executed = False), salience = 1)
+    def toosoon_terrible (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_soon['badP'],["Serious","Mock"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Time - too soon - bad - badP
+    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain='Bad'), Rule_exe(executed = False), salience = 1)
+    def toosoon_bad (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_soon['badP'],["Normal","Funny"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Time - too soon - goodP
+    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain="Average"), Rule_exe(executed = False), salience = 1)
+    def toosoon_avg (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_soon['avgP'],["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+    
+    # Time - too soon - goodP
+    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain=L('Good') | L('Excellent')), Rule_exe(executed = False), salience = 1)
+    def toosoon_good (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_time_soon['goodP'],["All"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    '''
+    wrong answer, easy question:
+    - student level = A, B -> Mock, Serious
+    - student level = C -> Incentive
+    - student level = D, E -> Normal, Funny
+
+    wrong answer, hard question:
+    - student level = A, B -> Normal, Funny
+    - student level = C -> Incentive
+    - student level = D, E -> Serious, Mock
+
+    right answer, easy question:
+    - student level = A, B -> Mock, Normal
+    - student level = C -> Funny, Serious
+    - student level = D, E -> Incentive
+
+    right answer, hard question:
+    - student level = A, B -> Serious, Funny
+    - student level = C -> Incentive, Serious, Mock
+    - student level = D, E -> Incentive, Normal
+
+    '''
+
+
+    # Answer - Wrong answer, easy question
     @Rule(Pattern(typeQ = 'answer', answer = '0', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def wrong_easy (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_answer_wrong_easy,"All")
+        dialog = choose_dialog(list_answer_wrong_easy, ["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         
 
-    # Wrong answer, hard question
-    @Rule(Pattern(typeQ = 'answer', answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
+    # Answer - Wrong answer, hard question
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def wrong_hard (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_answer_wrong_hard,"All")
+        dialog = choose_dialog(list_answer_wrong_hard,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # Right answer, easy question
-    @Rule(Pattern(typeQ = 'answer', answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
+    # Answer - Right answer, easy question
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3')), Rule_exe(executed = False))
     def right_easy (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_answer_right_easy,"All")
+        dialog = choose_dialog(list_answer_right_easy,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # Right answer, hard question
-    @Rule(Pattern(typeQ = 'answer', answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
+    # Answer - Right answer, hard question
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5')), Rule_exe(executed = False))
     def right_hard (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_answer_right_hard,"All")
+        dialog = choose_dialog(list_answer_right_hard,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
 
-    # Wrong answer, easy question, good student
-    @Rule(Pattern(typeQ = 'answer', answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    # Answer - Wrong answer, easy question, good student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_answer_wrong_easy,"Mock")
+        dialog = choose_dialog(list_answer_wrong_easy,["Mock","Serious"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - Wrong answer, easy question, avg student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    def wrong_easy_avgSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_easy,["Incentive"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - Wrong answer, easy question, bad student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    def wrong_easy_badSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_easy,["Normal","Funny"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - Wrong answer, hard question, good student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    def wrong_hard_goodSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_hard,["Normal","Funny"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - Wrong answer, hard question, avg student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    def wrong_hard_avgSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_hard,["Incentive"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - Wrong answer, hard question, bad student
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    def wrong_hard_badSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_wrong_hard,["Serious","Mock"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - right answer, easy question, good student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    def right_easy_goodSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_easy,["Mock","Normal"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - right answer, easy question, avg student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    def right_easy_avgSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_easy,["Funny","Serious"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+    # Answer - right answer, easy question, bad student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    def right_easy_badSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_easy,["Incentive"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Answer - right answer, hard question, bad student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    def right_hard_goodSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_hard,["Serious","Funny"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
     
+    # Answer - right answer, hard question, avg student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    def right_hard_avgSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_hard,["Incentive","Serious","Mock"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
+
+    # Answer - right answer, hard question, bad student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    def right_hard_badSt (self):
+        self.modify(self.facts[1], executed= True)
+        dialog = choose_dialog(list_answer_right_hard,["Incentive","Normal"])
+        dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
+        self.__result = dialog
+
 
     def getResult(self):
         return self.__result
@@ -250,29 +535,3 @@ class RulesEngine(KnowledgeEngine):
     def getUsername(self):
        return self.__username
 
-    '''
-    @Rule(OR(   
-            Pattern(skill_domain = L('Terrible') | L('Bad')),
-            Pattern(performance_domain = L('Terrible') | L('Bad'))
-            ))
-    def teste2 (self):
-        print('Teste 2')
-
-    @Rule(AND(   
-            Pattern(skill_subdomain = L('Terrible') | L('Bad')),
-            Pattern(performance_domain = L('Terrible') | L('Bad')),
-            Pattern(performance_subdomain = L('Terrible') | L('Bad'))
-            ))
-    def teste3 (self):
-        print('Teste 3')
-    
-    @Rule(Pattern(language='PT'), Rule_exe(executed = False), salience=0)
-    def teste4 (self):
-        print('Teste 4')
-        self.modify(self.facts[1], executed= True)
-
-    @Rule(Pattern(language='PT', domain='BD'), Rule_exe(executed = False), salience=1)
-    def teste5 (self):
-        print('Teste 5')
-        self.modify(self.facts[1], executed= True)
-    '''

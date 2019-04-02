@@ -1087,10 +1087,6 @@
 			          "Counter": 0
 			        },
 			        {
-			          "Phrase": "Não era bem isso. Com mais estudo vais lá.",
-			          "Counter": 0
-			        },
-			        {
 			          "Phrase": "Nada disso!",
 			          "Counter": 0
 			        },
@@ -1140,8 +1136,12 @@
 			        }
 				],
 				"Incentive":[
-					    {
+					{
 			          "Phrase": "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
+			          "Counter": 0
+			        },
+			        {
+			          "Phrase": "Não era bem isso. Com mais estudo vais lá.",
 			          "Counter": 0
 			        },
 			        {

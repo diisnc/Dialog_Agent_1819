@@ -37,9 +37,10 @@ class Dialog_Agent:
         aux.reset() 
 
         # declare facts with pattern recieved
-        p = Pattern(username = str_pat[0], language = str_pat[1] , typeQ = str_pat[2] , domain = str_pat[3] ,subdomain = str_pat[4] , question = str_pat[5] , answer = str_pat[6] , 
-                    question_lvl = str_pat[7] , student_lvl = str_pat[8] , state = str_pat[9] , skill_domain = str_pat[10] , performance_domain = str_pat[11] ,
-                    skill_subdomain = str_pat[12] , performance_subdomain = str_pat[13], time = str_pat[14])
+        p = Pattern(username = str_pat[0], language = str_pat[1] , typeQ = str_pat[2] , domain = str_pat[3] ,subdomain = str_pat[4] ,
+                    question = str_pat[5] , answer = str_pat[6] , question_lvl = str_pat[7] , student_lvl = str_pat[8] , state = str_pat[9] ,
+                    skill_domain = str_pat[10] , performance_domain = str_pat[11] ,skill_subdomain = str_pat[12] , 
+                    performance_subdomain = str_pat[13], time = str_pat[14])
         aux.declare(p)
 
         # run engine
@@ -71,13 +72,13 @@ patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 
 patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 1, 1, 'D', 'processoX', 103, 53, 63, 15, 20]
 
 '''
-patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
+patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'A', 'processoX', 103, 53, 95, 15, 35]
 
 # dialog agent
 agent = Dialog_Agent(patt)
 agent.run()
 dialog = agent.getDialog()
 if dialog:
-    print(dialog)
+    pprint(dialog)
 else:
     print("No dialog found")

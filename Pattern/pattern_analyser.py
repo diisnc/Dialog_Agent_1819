@@ -24,12 +24,13 @@ perf_dic = {
 # QUESTION TYPES
 typeQ_dic = {   1: 'greetingsI',
                 2: 'greetingsA',
-                3: 'domain',
-                4: 'subdomain',
-                5: 'doubt',
-                6: 'farewell',
-                7: 'time',
-                8: 'answer'
+                3: 'doubt',
+                4: 'bye',
+                5: 'farewell',
+                6: 'domain',
+                7: 'subdomain',
+                8: 'time',
+                9: 'answer'
                 }
 
 # TIME
