@@ -1,4 +1,17 @@
-TODO 
-	- pôr tag para answerYES e answerNO de dificuldade (é diferente errar e a pergunta ser fácil, e errar e ser difícil)
-	
-	- depois dos questionários, recolher respostas, guardar nos ficheiros e executar "sentences_generator.py" para criar mais frases antes de pôr na BD
+﻿TODO 
+
+	- Não há strings no padrão, só identificadores ( teremos acesso à base de dados )
+	- É necessário guardar o histórico do utilizador ( frases anteriormente ditas e último login )
+	- Fazer um padrão json generico em que assumimos os seus atributos ( sempre entre 0 e 5 - modificar o typeQ )
+	- Quantificar o grau de ironia ( 0 - 5 )
+	- Ficheiro config
+		- ser capaz de alterar as regras atraves do modelo de config
+		- ficheiro json
+		- existe a possíbilidade de nao querer um certo tipo de diálogo para um determinado domínio ( orientado ao domínio )
+	- Coleção tem de seguir a seguinte estrutura  \dialog	\geral
+								\dominio1
+								\dominio2
+
+	- Colocar identificador em cada frase
+	- Colocar frases no greetings que sejam de acordo com o last login
+		
