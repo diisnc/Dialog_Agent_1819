@@ -11,7 +11,9 @@
 	- Coleção tem de seguir a seguinte estrutura  \dialog	\geral
 								\dominio1
 								\dominio2
-
 	- Colocar identificador em cada frase
 	- Colocar frases no greetings que sejam de acordo com o last login --> noção tempo, mandar frases dieferentes consoante se passou umas horas ou uns dias da ultima vez que utilizou o chat
-		
+	
+	
+
+	- Manager tem de modificar o typeQ do padrão de acordo com a resposta do utilizador	

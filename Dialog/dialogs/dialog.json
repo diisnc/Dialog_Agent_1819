@@ -199,33 +199,6 @@
           "bye": "Afinal não quero...",
           "doubt": "Se tem de ser, tem de ser."
         }
-      },
-      {
-        "Phrase": "Por cá outra vez? Isso é que é empenho!",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "Sim!",
-          "bye": "Ups, não queria falar contigo.",
-          "doubt": "Se tem de ser, tem de ser."
-        }
-      },
-      {
-        "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "Siga!",
-          "bye": "Não tenho muita vontade...",
-          "doubt": "Que remédio!"
-        }
-      },
-      {
-        "Phrase": "Viva! Outra vez por cá?",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "É verdade, vamos a isto!",
-          "bye": "Enganei-me, adeus.",
-          "doubt": "Que remédio!"
-        }
       }
     ],
     "Serious":[
@@ -275,27 +248,9 @@
           "bye" : "Não.",
           "doubt": "Estudar? Há teste?"
         }
-      },
-      {
-        "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "Sim!",
-          "bye": "Afinal não ...",
-          "doubt": "Saudades?? Eu não tive!"
-        }
       }
     ],
     "Mock":[
-      {
-        "Phrase": "Então, aqui outra vez? (-_-)",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "Cá estou eu!",
-          "bye": "Realmente foi um erro...",
-          "doubt": "Infelizmente."
-        }
-      },
       {
         "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
         "Counter": 0,
@@ -324,24 +279,122 @@
         }
       },
       {
-        "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
-        "Counter": 0,
-        "Answer": {
-          "domain" : "É verdade, vamos a isto!",
-          "bye": "Hmm, pensado melhor... Adeus.",
-          "doubt": "Saudades? Não sei se acredito."
-        }
-      },
-     {
         "Phrase": "Então Einstein, vamos a mais um teste?",
         "Counter": 0,
         "Answer": {
           "domain" : "Eu sei tudo!",
           "bye": "Hmm, pensado melhor... Adeus.",
-          "doubt": "Eu respondo a tudo! Agora não sei se é corretamente.."
+          "doubt": "Eu respondo a tudo! Agora não sei se é corretamente..."
         }
       }
     ]
+  },
+  "greetingsT": {
+    "Normal": {
+        "soon":[
+        {
+          "Phrase": "Por cá outra vez? Isso é que é empenho!",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Sim!",
+            "bye": "Ups, não queria falar contigo.",
+            "doubt": "Se tem de ser, tem de ser."
+          }
+        },
+        {
+          "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Siga!",
+            "bye": "Não tenho muita vontade...",
+            "doubt": "Que remédio!"
+          }
+        },
+        {
+          "Phrase": "Viva! Outra vez por cá?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "É verdade, vamos a isto!",
+            "bye": "Enganei-me, adeus.",
+            "doubt": "Que remédio!"
+          }
+        },
+        {
+          "Phrase": "Então, aqui outra vez? (-_-)",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Cá estou eu!",
+            "bye": "Realmente foi um erro...",
+            "doubt": "Infelizmente."
+          }
+        }
+      ],
+      "late":[
+        {
+          "Phrase": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Sim!",
+            "bye": "Não deveria ter voltado... Adeus.",
+            "doubt": "Voltei, mas não sei se estou pronto..."
+          }        
+        },
+        {
+          "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Sim!",
+            "bye": "Afinal não ...",
+            "doubt": "Saudades?? Eu não tive!"
+          }
+        },
+        {
+          "Phrase": "Pensei que tinhas morrido! Vieste para trabalhar?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Sim, pronto para trabalhar!",
+            "bye": "Ainda não!",
+            "doubt": "Tem de ser..."
+          }
+        },
+        {
+          "Phrase": "Então, foste de ferias? Vamos lá praticar!",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Estou pronto!",
+            "bye": "Ainda não estudei suficiente!",
+            "doubt": "Infelizmente..."
+          }
+        },
+        {
+          "Phrase": "Ao tempo _name_! Vamos trabalhar?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Vamos lá!",
+            "bye": "Vou ter de sair, ocorreu um imprevisto!",
+            "doubt": "Pode ser..."
+          }
+        },
+        {
+          "Phrase": "Ao tempo que não te via! Que tens andado a fazer? Estou a brincar, não quero saber! Vamos trabalhar?",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "Voltei para trabalhar!",
+            "bye": "Vou ter de sair!",
+            "doubt": "Já que insistes..."
+          }
+        },
+        {
+          "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
+          "Counter": 0,
+          "Answer": {
+            "domain" : "É verdade, vamos a isto!",
+            "bye": "Hmm, pensado melhor... Adeus.",
+            "doubt": "Saudades? Não sei se acredito."
+          }
+        }
+      ]
+    }
   },
   "doubt": {
     "Normal":[
