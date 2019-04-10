@@ -2,12 +2,13 @@ import random
 from datetime import datetime
 # PyKnow Rules Engine
 from pyknow import *
+from pprint import pprint
 # nltk package
 import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Collector Module
-import * from Collector
+from collector import *
 
 
 ############################## Dialogs MongoDB ######################################

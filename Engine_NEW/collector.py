@@ -1,8 +1,7 @@
 import random
 from datetime import datetime
-from rules_engine import *
-from dialog_agent import *
 import json
+import pymongo
 
 # Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -50,47 +49,47 @@ list_answer_wrong_easy = bd_dialog["answer"]["wrong"]["easy"]
 list_answer_wrong_hard = bd_dialog["answer"]["wrong"]["hard"]
 
 
-def getGreetingsI(self):
+def getGreetingsI():
     return list_greetingsI
 
-def getGreetingsA(self):
+def getGreetingsA():
     return list_greetingsA
 
-def getDoubt(self):
+def getDoubt():
     return list_doubt
 
-def getFarewellBye(self):
+def getFarewellBye():
     return list_farewell_bye
 
-def getFarewellBadP(self):
+def getFarewellBadP():
     return list_farewell_badP
 
-def getFarewellGoodP(self):
+def getFarewellGoodP():
     return list_farewell_goodP
 
-def getFarewellAvgP(self):
+def getFarewellAvgP():
     return list_farewell_avgP
 
-def getDomain(self):
+def getDomain():
     return list_domain
 
-def getSubdomain(self):
+def getSubdomain():
     return list_subdomain
 
-def getTimeout(self):
+def getTimeout():
     return list_time_out
 
-def getTimesoon(self):
+def getTimesoon():
     return list_time_soon
 
-def getAnswerRightEasy(self):
+def getAnswerRightEasy():
     return list_answer_right_easy
 
-def getAnswerRightHard(self):
+def getAnswerRightHard():
     return list_answer_right_hard
 
-def getAnswerWrongEasy(self):
+def getAnswerWrongEasy():
     return list_answer_wrong_easy
 
-def getAnswerWrongHard(self):
+def getAnswerWrongHard():
     return list_answer_wrong_hard
