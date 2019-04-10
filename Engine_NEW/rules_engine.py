@@ -16,6 +16,10 @@ from collector import *
 list_greetingsI = getGreetingsI()
 # greetingsA
 list_greetingsA = getGreetingsA()
+# greetingsTSoon
+list_greetingsTSoon = getGreetingsTSoon()
+# greetingsTLate
+list_greetingsTLate = getGreetingsTLate()
 # doubt
 list_doubt = getDoubt()
 # farewell_bye
@@ -152,7 +156,7 @@ class RulesEngine(KnowledgeEngine):
     
     ## Declare rules
     # Greeting for the first time
-    @Rule(Pattern(typeQ = 'greetingsI'))
+    @Rule(Pattern(typeQ = 'greetingsI'), Rule_exe(executed = False))
     def greetingsI (self):
         self.modify(self.facts[1], executed= True)
         # selects an element from the list, having into account its type
@@ -170,20 +174,19 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
 
-    # Greeting again, student_lvl = 1 ou student_lvl = 2  [OUTPUT: funny]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
-    def greetingsA_BadSt (self):
+    # Greeting again, lastLogin = from 5 minutes to 1 hour later
+    @Rule(Pattern(typeQ = 'greetingsTSoon'), Rule_exe(executed = False))
+    def greetingsTSoon (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_greetingsA,["Funny"])
+        dialog = choose_dialog(list_greetingsTSoon,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
-
-    # Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
-    def greetingsA_goodSt (self):
+    # Greeting again, lastLogin = from one week later 
+    @Rule(Pattern(typeQ = 'greetingsTLate'), Rule_exe(executed = False))
+    def greetingsTLate (self):
         self.modify(self.facts[1], executed= True)
-        dialog = choose_dialog(list_greetingsA,["Mock"])
+        dialog = choose_dialog(list_greetingsTLate,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 

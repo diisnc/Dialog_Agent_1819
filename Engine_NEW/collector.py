@@ -21,6 +21,10 @@ bd_dialog = col_BD.find_one()
 list_greetingsI = generic_dialog["greetingsI"]
 # greetingsA
 list_greetingsA = generic_dialog["greetingsA"]
+# greetingsA_Soon
+list_greetingsTSoon = generic_dialog["greetingsT"]["soon"]
+# greetingsA_Late
+list_greetingsTLate = generic_dialog["greetingsT"]["late"]
 # doubt
 list_doubt = generic_dialog["doubt"]
 # farewell_bye
@@ -54,6 +58,12 @@ def getGreetingsI():
 
 def getGreetingsA():
     return list_greetingsA
+
+def getGreetingsTSoon():
+    return list_greetingsTSoon
+
+def getGreetingsTLate():
+    return list_greetingsTLate
 
 def getDoubt():
     return list_doubt

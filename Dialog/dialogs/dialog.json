@@ -290,8 +290,8 @@
     ]
   },
   "greetingsT": {
-    "Normal": {
-        "soon":[
+    "soon": {
+      "Normal" : [
         {
           "Phrase": "Por cá outra vez? Isso é que é empenho!",
           "Counter": 0,
@@ -328,8 +328,10 @@
             "doubt": "Infelizmente."
           }
         }
-      ],
-      "late":[
+      ]
+    },
+    "late": {
+      "Normal" : [
         {
           "Phrase": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
           "Counter": 0,

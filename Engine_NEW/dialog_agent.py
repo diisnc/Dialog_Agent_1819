@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 from rules_engine import *
 import json
 
@@ -6,23 +7,24 @@ import json
 def pattern_reader(file):
     input_file = open (file)
     json_array = json.load(input_file)
-    # [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3, 'greetingsI']
-    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    # [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3, 'greetingsI',"last ChatTime"]
+    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-    patt[0] = int(json_array['username'])
-    patt[1] = int(json_array['language'])
-    patt[2] = int(json_array['domain'])
-    patt[3] = int(json_array['subdomain'])
-    patt[4] = int(json_array['answer'])
-    patt[5] = int(json_array['question_lvl'])
-    patt[6] = int(json_array['student_lvl'])
-    patt[7] = int(json_array['state'])
-    patt[8] = int(json_array['skill_domain'])
-    patt[9] = int(json_array['performance_domain'])
-    patt[10] = int(json_array['skill_domain'])
-    patt[11] = int(json_array['performance_subdomain'])
-    patt[12] = int(json_array['time'])
+    patt[0] = json_array['username']
+    patt[1] = json_array['language']
+    patt[2] = json_array['domain']
+    patt[3] = json_array['subdomain']
+    patt[4] = json_array['answer']
+    patt[5] = json_array['question_lvl']
+    patt[6] = json_array['student_lvl']
+    patt[7] = json_array['state']
+    patt[8] = json_array['skill_domain']
+    patt[9] = json_array['performance_domain']
+    patt[10] = json_array['skill_domain']
+    patt[11] = json_array['performance_subdomain']
+    patt[12] = json_array['time']
     patt[13] = json_array['typeQ']
+    patt[14] = json_array['lastChatTime']
 
     return patt
 
@@ -33,11 +35,14 @@ class Dialog_Agent:
     __pattern = []
     __dialog = ""
     __username = ""
+    __lastChatTime = ""
 
     def __init__(self, patt):
-        self.__pattern = self.getTypeQ(patt)
         self.__dialog = ""
-        self.__username = ""
+        self.__username = patt[0]
+        self.__lastChatTime = patt[14]
+        self.__pattern = self.getTypeQ(patt)
+        
 
     def getTypeQ(self,patt):
         if patt[8] == 0:
@@ -45,7 +50,17 @@ class Dialog_Agent:
         else:
             typeQ = "greetingsA"
 
+        
+        diff = (datetime.now() - datetime.strptime(self.__lastChatTime,'%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+        diff = diff / 60 # seconds to minutes
+# typeQ = greetingsT if last ChatTime (diff) between 5 minutes and 1 hour (60 minutes) later, or 1 (7 days = 7 * 24 * 60 min = 10.080) week later
+        if (diff>=5 and diff <= 60):
+            typeQ = "greetingsTSoon"
+        elif(diff >= 10080):
+            typeQ = "greetingsTLate"
+
         patt[13]=typeQ
+
         return patt
 
     def run(self):
@@ -88,16 +103,9 @@ Patterns for testing
 patt = [1, 1, 1, 1, 1, 3, 4, 123443, 0, 0, 0, 0, 0]
 patt = [1, 1, 1, 1, 1, 3, 4, 123443, 2, 2, 2, 2, 1]
 patt = [1, 1, 1, 1, 1, 3, 4, 123443, 2, 2, 2, 2, 4]
-patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 5, 'B', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 1, 'D', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 1, 5, 'B', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 1, 1, 'D', 'processoX', 103, 53, 63, 15, 20]
-
-
-patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
 
 '''
+
 # pattern
 patt = pattern_reader("pattern_example.json")
 

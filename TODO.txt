@@ -1,8 +1,6 @@
-﻿TODO 
-
-	- Não há strings no padrão, só identificadores ( teremos acesso à base de dados )
+TODO 
+	- Fazer sequência de padrões para teste
 	- É necessário guardar o histórico do utilizador ( frases anteriormente ditas e último login ) --> noção do tempo
-	- Fazer um padrão json generico em que assumimos os seus atributos ( sempre entre 1 e 5 - modificar o typeQ )
 	- Quantificar o grau de ironia ( 1 - 5 = Serious - Mock )
 	- Ficheiro config
 		- ser capaz de alterar as regras atraves do modelo de config
