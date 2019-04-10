@@ -1,7 +1,30 @@
 import random
 from pattern_analyser import * 
 from rules_engine import *
+import json
 
+#JSON pattern reader
+def pattern_reader(file):
+    input_file = open (file)
+    json_array = json.load(input_file)
+    
+    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+    patt[0] = int(json_array['username'])
+    patt[1] = int(json_array['language'])
+    patt[2] = int(json_array['domain'])
+    patt[3] = int(json_array['subdomain'])
+    patt[4] = int(json_array['answer'])
+    patt[5] = int(json_array['question_lvl'])
+    patt[6] = int(json_array['student_lvl'])
+    patt[7] = int(json_array['state'])
+    patt[8] = int(json_array['skill_domain'])
+    patt[9] = int(json_array['performance_domain'])
+    patt[10] = int(json_array['skill_domain'])
+    patt[11] = int(json_array['performance_subdomain'])
+    patt[12] = int(json_array['time'])
+
+    return(patt)
 
 ###### Dialog Agent ######
 
