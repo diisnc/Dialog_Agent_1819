@@ -227,6 +227,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+
      # Farewell avgP
     @Rule(Pattern(typeQ = 'farewell', student_lvl = '3'), Rule_exe(executed = False), salience = 1)
     def f_avgP (self):
@@ -270,67 +271,67 @@ class RulesEngine(KnowledgeEngine):
     # skill_subdomain = Avg -> AvgP
     # skill_subdomain = Good | Excellent -> GoodP
 
-
-
-    # 1: SOON, 2: GOOD, 3: GOOD, 4: BAD, 5: TERRIBLE
     # Time - timeout
-    @Rule(Pattern(typeQ = 'time', time=L('Bad') | L('Terrible')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ = 'time', time = L('4') | L('5')), Rule_exe(executed = False))
     def timeout (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
-
+    
     # Time - timeout - terrible time - BadP
-    @Rule(Pattern(typeQ = 'time', time='Terrible', skill_subdomain=L('Bad') | L('Terrible')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '5', skill_subdomain=L('2') | L('1')), Rule_exe(executed = False), salience = 1)
     def timeout_terrible_badP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out['badP'],["Serious","Mock"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+    
     # Time - timeout - bad time - BadP
-    @Rule(Pattern(typeQ = 'time', time='Bad', skill_subdomain=L('Bad') | L('Terrible')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '4', skill_subdomain=L('2') | L('1')), Rule_exe(executed = False), salience = 1)
     def timeout_bad_badP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out['badP'],["Normal","Funny"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+
     # Time - timeout - terrible time - AvgP
-    @Rule(Pattern(typeQ = 'time', time='Terrible', skill_subdomain='Average'), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '5', skill_subdomain='3'), Rule_exe(executed = False), salience = 1)
     def timeout_terrible_avgP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out['avgP'],["Serious","Mock"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+    
     # Time - timeout - bad time - AvgP
-    @Rule(Pattern(typeQ = 'time', time='Bad', skill_subdomain='Average'), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '4', skill_subdomain='3'), Rule_exe(executed = False), salience = 1)
     def timeout_bad_avgP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out['avgP'],["Normal","Funny"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+
     # Time - timeout - GoodP
-    @Rule(Pattern(typeQ = 'time', time=L('Bad') | L('Terrible'), skill_subdomain=L('Good') | L('Excellent')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = L('4') | L('5'), skill_subdomain=L('4') | L('5')), Rule_exe(executed = False), salience = 1)
     def timeout_goodP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_out['goodP'],["Incentive"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
-
     
     # time = soon -> toosoon
     # skill_subdomain = Bad | Terrible -> BadP
     # skill_subdomain = Avg -> AvgP
     # skill_subdomain = Good | Excellent -> GoodP
-
+    
     # Time - too soon
-    @Rule(Pattern(typeQ = 'time', time=L('Soon')), Rule_exe(executed = False))
+    @Rule(Pattern(typeQ = 'time', time = '1'), Rule_exe(executed = False))
     def toosoon (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_soon,["All"])
@@ -339,15 +340,16 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Time - too soon - terrible - badP
-    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain='Terrible'), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '1', skill_subdomain='1'), Rule_exe(executed = False), salience = 1)
     def toosoon_terrible (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_soon['badP'],["Serious","Mock"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+    
     # Time - too soon - bad - badP
-    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain='Bad'), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '1', skill_subdomain='2'), Rule_exe(executed = False), salience = 1)
     def toosoon_bad (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_soon['badP'],["Normal","Funny"])
@@ -356,15 +358,16 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Time - too soon - goodP
-    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain="Average"), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '1', skill_subdomain="3"), Rule_exe(executed = False), salience = 1)
     def toosoon_avg (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_soon['avgP'],["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
     
+
     # Time - too soon - goodP
-    @Rule(Pattern(typeQ = 'time', time=L('Soon'), skill_subdomain=L('Good') | L('Excellent')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'time', time = '1', skill_subdomain=L('4') | L('5')), Rule_exe(executed = False), salience = 1)
     def toosoon_good (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_time_soon['goodP'],["All"])
