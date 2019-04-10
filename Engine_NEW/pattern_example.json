@@ -7,9 +7,10 @@
   "question_lvl": "3",
   "student_lvl": "4",
   "state": "123456",
-  "skill_domain": "4",
+  "skill_domain": "0",
   "performance_domain": "4",
   "skill_subdomain": "3",
   "performance_subdomain": "4",
-  "time": "3"
+  "time": "3",
+  "typeQ": ""
 }

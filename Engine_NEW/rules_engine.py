@@ -130,8 +130,8 @@ def choose_dialog(list_typeQ, typesP):
 ############## Pattern Fact ##############
 class Pattern(Fact):  
     '''
-    Pattern(language, typeQ, domain, subdomain, question, answer, question_lvl, 
-            student_lvl, state, skill_domain, performance_domain, skill_subdomain, 
+    Pattern(typeQ, domain, subdomain, answer, question_lvl, student_lvl,
+            skill_domain, performance_domain, skill_subdomain, 
             performance_subdomain, time)
     '''
     pass
@@ -183,8 +183,8 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
 
-    # Greeting again, student_lvl = E ou student_lvl = D  [OUTPUT: funny]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('E') | L('D')), Rule_exe(executed = False), salience=1)
+    # Greeting again, student_lvl = 1 ou student_lvl = 2  [OUTPUT: funny]
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
     def greetingsA_BadSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_greetingsA,["Funny"])
@@ -193,7 +193,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Greeting again, student_lvl = A ou student_lvl = B  [OUTPUT: mock]
-    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'greetingsA', student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
     def greetingsA_goodSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_greetingsA,["Mock"])
@@ -218,8 +218,9 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+
     # Farewell badP
-    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience = 1)
     def f_badP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_farewell_badP,["All"])
@@ -227,15 +228,16 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
      # Farewell avgP
-    @Rule(Pattern(typeQ = 'farewell', student_lvl = 'C'), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = '3'), Rule_exe(executed = False), salience = 1)
     def f_avgP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_farewell_avgP,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
+   
     # Farewell goodP
-    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience = 1)
     def f_goodP (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_farewell_goodP,["All"])
@@ -260,15 +262,17 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
 
-    '''
-    time = bad | terrible -> timeout
-    time = bad -> Normal | Funny
-    time = terrible -> Serious | Mock
-    skill_subdomain = Bad | Terrible -> BadP
-    skill_subdomain = Avg -> AvgP
-    skill_subdomain = Good | Excellent -> GoodP
-    '''
 
+    # time = bad | terrible -> timeout
+    # time = bad -> Normal | Funny
+    # time = terrible -> Serious | Mock
+    # skill_subdomain = Bad | Terrible -> BadP
+    # skill_subdomain = Avg -> AvgP
+    # skill_subdomain = Good | Excellent -> GoodP
+
+
+
+    # 1: SOON, 2: GOOD, 3: GOOD, 4: BAD, 5: TERRIBLE
     # Time - timeout
     @Rule(Pattern(typeQ = 'time', time=L('Bad') | L('Terrible')), Rule_exe(executed = False))
     def timeout (self):
@@ -319,12 +323,11 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
 
-    '''
-    time = soon -> toosoon
-    skill_subdomain = Bad | Terrible -> BadP
-    skill_subdomain = Avg -> AvgP
-    skill_subdomain = Good | Excellent -> GoodP
-    '''
+    
+    # time = soon -> toosoon
+    # skill_subdomain = Bad | Terrible -> BadP
+    # skill_subdomain = Avg -> AvgP
+    # skill_subdomain = Good | Excellent -> GoodP
 
     # Time - too soon
     @Rule(Pattern(typeQ = 'time', time=L('Soon')), Rule_exe(executed = False))
@@ -369,28 +372,26 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
 
-    '''
-    wrong answer, easy question:
-    - student level = A, B -> Mock, Serious
-    - student level = C -> Incentive
-    - student level = D, E -> Normal, Funny
 
-    wrong answer, hard question:
-    - student level = A, B -> Normal, Funny
-    - student level = C -> Incentive
-    - student level = D, E -> Serious, Mock
+    # wrong answer, easy question:
+    #   - student level = A, B -> Mock, Serious
+    #   - student level = C -> Incentive
+    #   - student level = D, E -> Normal, Funny
 
-    right answer, easy question:
-    - student level = A, B -> Mock, Normal
-    - student level = C -> Funny, Serious
-    - student level = D, E -> Incentive
+    # wrong answer, hard question:
+    #   - student level = A, B -> Normal, Funny
+    #   - student level = C -> Incentive
+    #   - student level = D, E -> Serious, Mock
 
-    right answer, hard question:
-    - student level = A, B -> Serious, Funny
-    - student level = C -> Incentive, Serious, Mock
-    - student level = D, E -> Incentive, Normal
+    # right answer, easy question:
+    #   - student level = A, B -> Mock, Normal
+    #   - student level = C -> Funny, Serious
+    #   - student level = D, E -> Incentive
 
-    '''
+    # right answer, hard question:
+    #   - student level = A, B -> Serious, Funny
+    #   - student level = C -> Incentive, Serious, Mock
+    #   - student level = D, E -> Incentive, Normal
 
 
     # Answer - Wrong answer, easy question
@@ -430,7 +431,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Answer - Wrong answer, easy question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_easy,["Mock","Serious"])
@@ -438,7 +439,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - Wrong answer, easy question, avg student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = '3'), Rule_exe(executed = False), salience=1)
     def wrong_easy_avgSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_easy,["Incentive"])
@@ -446,7 +447,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - Wrong answer, easy question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
     def wrong_easy_badSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_easy,["Normal","Funny"])
@@ -454,7 +455,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - Wrong answer, hard question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
     def wrong_hard_goodSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_hard,["Normal","Funny"])
@@ -462,7 +463,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - Wrong answer, hard question, avg student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = '3'), Rule_exe(executed = False), salience=1)
     def wrong_hard_avgSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_hard,["Incentive"])
@@ -470,7 +471,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - Wrong answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
     def wrong_hard_badSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_wrong_hard,["Serious","Mock"])
@@ -478,7 +479,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - right answer, easy question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
     def right_easy_goodSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_easy,["Mock","Normal"])
@@ -486,7 +487,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - right answer, easy question, avg student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = '3'), Rule_exe(executed = False), salience=1)
     def right_easy_avgSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_easy,["Funny","Serious"])
@@ -494,7 +495,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
 
     # Answer - right answer, easy question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
     def right_easy_badSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_easy,["Incentive"])
@@ -503,7 +504,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Answer - right answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('A') | L('B')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
     def right_hard_goodSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_hard,["Serious","Funny"])
@@ -511,7 +512,7 @@ class RulesEngine(KnowledgeEngine):
         self.__result = dialog
     
     # Answer - right answer, hard question, avg student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = 'C'), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = '3'), Rule_exe(executed = False), salience=1)
     def right_hard_avgSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_hard,["Incentive","Serious","Mock"])
@@ -520,7 +521,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Answer - right answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('D') | L('E')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
     def right_hard_badSt (self):
         self.modify(self.facts[1], executed= True)
         dialog = choose_dialog(list_answer_right_hard,["Incentive","Normal"])
@@ -534,4 +535,3 @@ class RulesEngine(KnowledgeEngine):
 
     def getUsername(self):
        return self.__username
-

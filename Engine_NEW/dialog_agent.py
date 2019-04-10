@@ -1,5 +1,4 @@
 import random
-from pattern_analyser import * 
 from rules_engine import *
 import json
 
@@ -7,8 +6,8 @@ import json
 def pattern_reader(file):
     input_file = open (file)
     json_array = json.load(input_file)
-    
-    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    # [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3, 'greetingsI']
+    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
     patt[0] = int(json_array['username'])
     patt[1] = int(json_array['language'])
@@ -23,8 +22,9 @@ def pattern_reader(file):
     patt[10] = int(json_array['skill_domain'])
     patt[11] = int(json_array['performance_subdomain'])
     patt[12] = int(json_array['time'])
+    patt[13] = json_array['typeQ']
 
-    return(patt)
+    return patt
 
 ###### Dialog Agent ######
 
@@ -35,23 +35,20 @@ class Dialog_Agent:
     __username = ""
 
     def __init__(self, patt):
-        self.__pattern = patt
+        self.__pattern = self.getTypeQ(patt)
         self.__dialog = ""
         self.__username = ""
 
+    def getTypeQ(self,patt):
+        if patt[8] == 0:
+            typeQ = "greetingsI"
+        else:
+            typeQ = "greetingsA"
+
+        patt[13]=typeQ
+        return patt
+
     def run(self):
-        # pattern analyser
-        p_analys = Patt_Analyser()
-        # pattern conversion
-        p_analys.patt_parser(self.__pattern)
-        # username
-        self.__username = p_analys.getUsername()
-        # array w/ pattern fields (domain,subdomain,skill,performance,language,user,typeQ)
-        str_pat = p_analys.patt_string().split(",")
-        # print array above
-        # print(str_pat)
-
-
         ### MAKE DECISION - by converting pattern into a fact and filtering it with rules previously declared in the program ###
         # Init rules engine
         print('Initializing engine rules')
@@ -60,11 +57,12 @@ class Dialog_Agent:
         aux.reset() 
 
         # declare facts with pattern recieved
-        p = Pattern(username = str_pat[0], language = str_pat[1] , typeQ = str_pat[2] , domain = str_pat[3] ,subdomain = str_pat[4] ,
-                    question = str_pat[5] , answer = str_pat[6] , question_lvl = str_pat[7] , student_lvl = str_pat[8] , state = str_pat[9] ,
-                    skill_domain = str_pat[10] , performance_domain = str_pat[11] ,skill_subdomain = str_pat[12] , 
-                    performance_subdomain = str_pat[13], time = str_pat[14])
+        p = Pattern(username = self.__pattern[0], language = self.__pattern[1], domain = self.__pattern[2] ,subdomain = self.__pattern[3],
+                    answer = self.__pattern[4], question_lvl = self.__pattern[5], student_lvl = self.__pattern[6], state = self.__pattern[7],
+                    skill_domain = self.__pattern[8], performance_domain = self.__pattern[9], skill_subdomain = self.__pattern[10], 
+                    performance_subdomain = self.__pattern[11], time = self.__pattern[12], typeQ = self.__pattern[13])
         aux.declare(p)
+
 
         # run engine
         aux.run()
@@ -99,10 +97,9 @@ patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 
 
 patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
 
-
 '''
 # pattern
-patt = [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3]
+patt = pattern_reader("pattern_example.json")
 
 # dialog agent
 agent = Dialog_Agent(patt)
