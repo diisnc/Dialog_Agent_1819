@@ -2,59 +2,45 @@ import random
 from datetime import datetime
 # PyKnow Rules Engine
 from pyknow import *
-# pprint library is used to make the output look more pretty
-import pymongo
-from pprint import pprint
 # nltk package
 import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
+# Collector Module
+import * from Collector
 
-# Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["lei"]
-col_generic = mydb["dialog"]
-col_BD = mydb["domain_BD"]
-col_synonyms = mydb["synonyms"]
 
 ############################## Dialogs MongoDB ######################################
-# Generic
-generic_dialog = col_generic.find_one()
-# BD domain
-bd_dialog = col_BD.find_one()
-
-# ["greetingsI"] = returns phrases grouped by type (which is the value of key "greetingsI")
 # greetingsI
-list_greetingsI = generic_dialog["greetingsI"]
+list_greetingsI = getGreetingsI()
 # greetingsA
-list_greetingsA = generic_dialog["greetingsA"]
+list_greetingsA = getGreetingsA()
 # doubt
-list_doubt = generic_dialog["doubt"]
+list_doubt = getDoubt()
 # farewell_bye
-list_farewell_bye = generic_dialog["farewell"]["bye"]
+list_farewell_bye = getFarewellBye()
 # farewell_badP
-list_farewell_badP = generic_dialog["farewell"]["badP"]
+list_farewell_badP = getFarewellBadP()
 # farewell_goodP
-list_farewell_goodP = generic_dialog["farewell"]["goodP"]
+list_farewell_goodP = getFarewellGoodP()
 # farewell_avgP
-list_farewell_avgP = generic_dialog["farewell"]["avgP"]
+list_farewell_avgP = getFarewellAvgP()
 # domain
-list_domain = generic_dialog["domain"]
+list_domain = getDomain()
 # subdomain
-list_subdomain = bd_dialog["subdomain"]
+list_subdomain = getSubdomain()
 # time_out
-list_time_out = bd_dialog["time"]["timeout"]
+list_time_out = getTimeout()
 # too_soon
-list_time_soon = bd_dialog["time"]["toosoon"]
+list_time_soon = getTimesoon()
 # answer_right_easy
-list_answer_right_easy = bd_dialog["answer"]["right"]["easy"]
+list_answer_right_easy = getAnswerRightEasy()
 # answer_right_hard
-list_answer_right_hard = bd_dialog["answer"]["right"]["hard"]
+list_answer_right_hard = getAnswerRightHard()
 # answer_wrong_easy
-list_answer_wrong_easy = bd_dialog["answer"]["wrong"]["easy"]
+list_answer_wrong_easy = getAnswerWrongEasy()
 # answer_wrong_hard
-list_answer_wrong_hard = bd_dialog["answer"]["wrong"]["hard"]
-
+list_answer_wrong_hard = getAnswerWrongHard()
 
 ################################### Auxiliar Functions ###################################
 # Function that replaces a word with synonym
