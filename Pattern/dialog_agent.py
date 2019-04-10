@@ -61,18 +61,16 @@ class Dialog_Agent:
 
 ### PATTERN PARSER ###
 
-# pattern
 '''
 Patterns for testing
 
-patt = ['John001', 'PT', 2, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'C', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 5, 'B', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 1, 'D', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 1, 5, 'B', 'processoX', 103, 53, 63, 15, 20]
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 1, 1, 'D', 'processoX', 103, 53, 63, 15, 20]
+patt = [1, 1, 1, 1, 1, 3, 4, 123443, 0, 0, 0, 0, 0]
+patt = [1, 1, 1, 1, 1, 3, 4, 123443, 2, 2, 2, 2, 1]
+patt = [1, 1, 1, 1, 1, 3, 4, 123443, 2, 2, 2, 2, 4]
 
 '''
-patt = ['John001', 'PT', 8, 'BD', 'Modelos ER', 'Gostas de pêras? Sim. Não.', 0, 2, 'A', 'processoX', 103, 53, 95, 15, 35]
+# pattern
+patt = [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3]
 
 # dialog agent
 agent = Dialog_Agent(patt)

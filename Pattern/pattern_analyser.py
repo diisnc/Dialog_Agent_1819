@@ -5,20 +5,20 @@ import sys
 
 # SKILLS
 skill_dic = {
-    range(121,151) : 'Terrible',
-    range(91,121) : 'Bad',
-    range(61, 91) : 'Average',
-    range(31, 61) :'Good',
-    range(0, 31) : 'Excellent'
+    1 : 'Terrible',
+    2 : 'Bad',
+    3 : 'Average',
+    4 :'Good',
+    5 : 'Excellent'
     }
 
 # PERFORMANCE
 perf_dic = {
-    range(0,21) : 'Terrible',
-    range(20,41) : 'Bad',
-    range(40,61) : 'Average',
-    range(60, 81) :'Good',
-    range(80, 100) : 'Excellent'
+    1 : 'Terrible',
+    2 : 'Bad',
+    3 : 'Average',
+    4 :'Good',
+    5 : 'Excellent'
     }
 
 # QUESTION TYPES
@@ -34,10 +34,12 @@ typeQ_dic = {   1: 'greetingsI',
                 }
 
 # TIME
-time_dic = {    range(0,6) : 'Soon',
-                range(6,31) : 'Good',
-                range(31,61) : 'Bad',
-                range(61, 91) :'Terrible'
+# Aqui a ordem não corresponde ao 1 - pior , 5 - melhor
+time_dic = {    1 : 'Soon', 
+                2 : 'Good',
+                3 : 'Good',
+                4 : 'Bad',
+                5 :'Terrible'
                 }
 
 
