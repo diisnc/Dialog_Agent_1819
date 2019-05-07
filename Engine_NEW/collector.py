@@ -9,12 +9,15 @@ mydb = myclient["lei"]
 col_generic = mydb["dialog"]
 col_BD = mydb["domain_BD"]
 col_synonyms = mydb["synonyms"]
+col_userHist = mydb["userHist"]
 
 ############################## Dialogs MongoDB ######################################
 # Generic
 generic_dialog = col_generic.find_one()
 # BD domain
 bd_dialog = col_BD.find_one()
+# User historic
+user_hist = col_userHist.find_one()
 
 # ["greetingsI"] = returns phrases grouped by type (which is the value of key "greetingsI")
 # greetingsI
@@ -103,3 +106,6 @@ def getAnswerWrongEasy():
 
 def getAnswerWrongHard():
     return list_answer_wrong_hard
+
+def getUserHist():
+    return user_hist

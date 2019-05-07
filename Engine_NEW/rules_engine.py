@@ -95,25 +95,10 @@ def choose_dialog(list_typeQ, typesP):
 
         list_typeP = list_typeQ[type]
 
-        min_counter = list_typeP[0]["Counter"]
+        # TODO: Fazer increment do counter no MONGODB !!
 
-        # Getting smallest counter
-        for elem in list_typeP:
-            if elem["Counter"] < min_counter:
-                min_counter = elem["Counter"]
-
-        # Always chooses the phrases with the smallest counter
-        for elem in list_typeP:
-            if elem["Counter"] == min_counter:
-                chosen_dialogs.append(elem)
-
-        # Choose random element from list with elements with smallest counter
-        chosen_elem = random.choice(chosen_dialogs)
-
-        # Increment counter in list
-        chosen_elem["Counter"]+=1
-
-        # TODO: Fazer increment do counter no MONGODB??
+        # Choose random element from list
+        chosen_elem = random.choice(list_typeP)
 
         return chosen_elem
 
@@ -207,6 +192,8 @@ class RulesEngine(KnowledgeEngine):
         dialog = choose_dialog(list_farewell_bye,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
+        #last login
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
 
 
     # Farewell badP
@@ -216,6 +203,8 @@ class RulesEngine(KnowledgeEngine):
         dialog = choose_dialog(list_farewell_badP,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
+        #last login
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
 
 
      # Farewell avgP
@@ -225,6 +214,8 @@ class RulesEngine(KnowledgeEngine):
         dialog = choose_dialog(list_farewell_avgP,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
+        #last login
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
 
    
     # Farewell goodP
@@ -234,6 +225,8 @@ class RulesEngine(KnowledgeEngine):
         dialog = choose_dialog(list_farewell_goodP,["All"])
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
+        #last login
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
 
 
     # Domain
@@ -367,24 +360,24 @@ class RulesEngine(KnowledgeEngine):
 
 
     # wrong answer, easy question:
-    #   - student level = A, B -> Mock, Serious
-    #   - student level = C -> Incentive
-    #   - student level = D, E -> Normal, Funny
+    #   - student level = A(1), B(2) -> Mock, Serious
+    #   - student level = C(3) -> Incentive
+    #   - student level = D(4), E(5) -> Normal, Funny
 
     # wrong answer, hard question:
-    #   - student level = A, B -> Normal, Funny
-    #   - student level = C -> Incentive
-    #   - student level = D, E -> Serious, Mock
+    #   - student level = A(1), B(2) -> Normal, Funny
+    #   - student level = C(3) -> Incentive
+    #   - student level = D(4), E(5) -> Serious, Mock
 
     # right answer, easy question:
-    #   - student level = A, B -> Mock, Normal
-    #   - student level = C -> Funny, Serious
-    #   - student level = D, E -> Incentive
+    #   - student level = A(1), B(2) -> Mock, Normal
+    #   - student level = C(3) -> Funny, Serious
+    #   - student level = D(4), E(5) -> Incentive
 
     # right answer, hard question:
-    #   - student level = A, B -> Serious, Funny
-    #   - student level = C -> Incentive, Serious, Mock
-    #   - student level = D, E -> Incentive, Normal
+    #   - student level = A(1), B(2) -> Serious, Funny
+    #   - student level = C(3) -> Incentive, Serious, Mock
+    #   - student level = D(4), E(5) -> Incentive, Normal
 
 
     # Answer - Wrong answer, easy question
