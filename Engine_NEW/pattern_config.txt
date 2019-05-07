@@ -1,5 +1,5 @@
 Pattern Configuration 
-	[username | language | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time | (typeQ)]
+	[username | language | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time | (typeQ) | lastChatTime]
 
 Ranges (15 characteristics)
 	username: 		INT 			
@@ -15,10 +15,11 @@ Ranges (15 characteristics)
 	performance: 	1-5 			[performance: TERRIBLE 1, BAD 2, AVERAGE 3, GOOD 4, EXCELLENT 5 ] 	---> 5 performances
 					(igual escala para domínios e subdomínios) 
 	time: 			1-5 			[1: SOON, 2: GOOD, 3: GOOD, 4: BAD, 5: TERRIBLE ] 	---> 4 times
-	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, doubt-3, bye-4, farewell(bye)-5, domain-6, subdomain-7, time-8, answer-9]	---> 8 types
+	typeQ: 			00-99 			[greetingsI-1, greetingsA-2, doubt-3, bye-4, farewell-5, domain-6, subdomain-7, time-8, answer-9]	---> 8 types
+	lastChatTime	TIMESTAMP
 
 Example 
-	[1, 1, 1 , 1, 1, 3, 4, 123456, 4, 4, 3, 4, 3]
+	[1, 1, 1 , 1, 1, 3, 4, 123456, 4, 4, 3, 4, 3, 0, "2019-04-10 22:49:29.786997"]
 
 
 - Skill (destreza) : média do tempo global que o utilizador demora a responder às questões (em percentagem)
