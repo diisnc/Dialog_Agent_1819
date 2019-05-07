@@ -11,6 +11,8 @@ Inicializar Mongo e queries - STEP BY STEP
 
 		mongoimport --db lei --collection synonyms --drop --file synonyms.json
 
+		criar coleção userHist na lei - MongoDB 
+
 3 - Abrir mongo (exe) e correr comando 'use lei' (nome da bd criada)
 
 4 - Executar query 'db.dialogs.find({}).pretty()' para ver conteúdo da base de dados

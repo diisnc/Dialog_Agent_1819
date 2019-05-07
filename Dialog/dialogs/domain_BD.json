@@ -70,7 +70,7 @@
 			        "4": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
 			        "5": "Então? A \"query\" bloqueou?",
 			        "6": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-				},
+				}
 			},
 			"badP": {
 				"Normal": {
@@ -174,7 +174,7 @@
   			      	"1": "Esse SELECT foi muito rápido!",
 			        "2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
   	          		"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-				},
+				}
 			},
 			"badP": {
 				"Normal": {
@@ -282,7 +282,7 @@
 			        "2": "Bem jogado!",
 			        "3": "Que craque!",
 			        "4": "Incrível, parece que percebes do assunto!",
-			        "5": "Uau, não estava à espera!",
+			        "5": "Uau, não estava à espera!"
 			    }
 			}
 		},

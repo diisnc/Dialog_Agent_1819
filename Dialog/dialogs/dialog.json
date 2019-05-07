@@ -655,30 +655,30 @@
         "2": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
         "3": "Erros são provas de que estás a tentar. Não desistas!"    
       }
+    }
+  },
+  "domain": {
+    "Normal":{
+      "0": "O que é que queres tentar hoje?",
+      "1": "Queres ser avaliado(a) em que área?",
+      "2": "Qual é a tua escolha hoje?"
     },
-    "domain": {
-      "Normal":{
-        "0": "O que é que queres tentar hoje?",
-        "1": "Queres ser avaliado(a) em que área?",
-        "2": "Qual é a tua escolha hoje?"
-      },
-      "Serious":{  
-        "0": "Escolhe o tema para avaliação:",
-        "1": "O que é que queres estudar hoje?",
-        "2": "Seleciona a área onde queres ser avaliado(a)."
-      },
-      "Funny": {  
-        "0": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
-        "1": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
-        "2": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
-        "3": "Aqui está a ementa!"
-      },
-      "Mock": {
-        "0": "O que vai ser hoje, caramelo?",
-        "1": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!",
-        "2": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!",
-        "3": "Então caramelo, o que vais escolher?"
-      }
+    "Serious":{  
+      "0": "Escolhe o tema para avaliação:",
+      "1": "O que é que queres estudar hoje?",
+      "2": "Seleciona a área onde queres ser avaliado(a)."
+    },
+    "Funny": {  
+      "0": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
+      "1": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
+      "2": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
+      "3": "Aqui está a ementa!"
+    },
+    "Mock": {
+      "0": "O que vai ser hoje, caramelo?",
+      "1": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!",
+      "2": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!",
+      "3": "Então caramelo, o que vais escolher?"
     }
   }
 }

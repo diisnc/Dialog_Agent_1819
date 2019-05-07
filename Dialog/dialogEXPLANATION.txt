@@ -9,3 +9,11 @@ Constituição do dialog.json:
 -----4) tag "counter" está em todas as frases a 0, é aquela que vai servir para os pesos
 
 -----5) tag "answer" no greetingsI, greetingsA e doubt que indica o tipo de resposta e o link conforme a resposta.
+
+
+Constituição do user collection:
+-----1) iduser - id do utilizador
+	-----1.1) idphrase - id da frase
+		-----1.1.1) counter - counter da frase
+	-----1.2) begin_chattime[] - lista de timestamps de quando o utilizador iniciou o chat
+	-----1.3) end_chattime[last_chat1,last_chat2,last_chat3] - lista de timestamps de quando o utilizador saiu do chat
