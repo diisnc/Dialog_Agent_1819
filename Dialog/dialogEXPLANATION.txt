@@ -12,8 +12,9 @@ Constituição do dialog.json:
 
 
 Constituição do user collection:
------1) iduser - id do utilizador
-	-----1.1) idphrase - id da frase
-		-----1.1.1) counter - counter da frase
-	-----1.2) begin_chattime[] - lista de timestamps de quando o utilizador iniciou o chat
-	-----1.3) end_chattime[last_chat1,last_chat2,last_chat3] - lista de timestamps de quando o utilizador saiu do chat
+
+-----1) userID - id do utilizador
+-----2) phrases [{idphrase:counter},...] - idphrase = tag+"|"+type+"|"+pID
+-----3) chatTime
+	-----3.1) begin[...] - lista de timestamps de quando o utilizador iniciou o chat
+	-----3.2) end[last_chat1,last_chat2,last_chat3] - lista de timestamps de quando o utilizador saiu do chat

@@ -1,34 +1,6 @@
-import random
-from datetime import datetime
 from rules_engine import *
-import json
-# Collector Module
-from collector import *
+from auxiliary import *
 
-
-#JSON pattern reader
-def pattern_reader(file):
-    input_file = open (file)
-    json_array = json.load(input_file)
-    # [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3, 'greetingsI']
-    patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-    patt[0] = json_array['username']
-    patt[1] = json_array['language']
-    patt[2] = json_array['domain']
-    patt[3] = json_array['subdomain']
-    patt[4] = json_array['answer']
-    patt[5] = json_array['question_lvl']
-    patt[6] = json_array['student_lvl']
-    patt[7] = json_array['state']
-    patt[8] = json_array['skill_domain']
-    patt[9] = json_array['performance_domain']
-    patt[10] = json_array['skill_subdomain']
-    patt[11] = json_array['performance_subdomain']
-    patt[12] = json_array['time']
-    patt[13] = json_array['typeQ']
-
-    return patt
 
 ###### Dialog Agent ######
 
@@ -36,11 +8,13 @@ class Dialog_Agent:
 
     __pattern = []
     __dialog = ""
+    __userID = ""
     __username = ""
 
     def __init__(self, patt):
         self.__dialog = ""
-        self.__username = patt[0]
+        self.__userID = patt[0]
+        self.__username = "Joe" #get username with user ID
         # if typeQ patt[13] is empty
         if not patt[13] :
             patt[13] = self.getGreetings(patt)
@@ -49,28 +23,37 @@ class Dialog_Agent:
         
     def getGreetings(self,patt):
         # New User
-        if patt[8] == 0: # if skill is 0, then it's the FIRST TIME
+        if patt[8] == '0': # if skill is 0, then it's the FIRST TIME
             typeQ = "greetingsI"
             # New user history entry
-            print("New user history entry")
+            print(" ########## New user history entry ########## ")
             userH = {
-                    "userID" : self.__username,
-                    "phrases" : [],
-                    "time" : {
-                        "beginChatTime" : [datetime.now()],
-                        "endChatTime" : []
+                    "userID" : self.__userID,
+                    "phrases" : getAllPhrases(), # get phrases and its counters, from Dialogs DB
+                    "chatTime" : {
+                        "begin" : [datetime.now()],
+                        "end" : [datetime.now()] #TODO: tirar o datetime daqui, foi so p testar
                         }
                     }
 
             col_userHist.insert_one(userH) 
+
         # User exists
         else:
             typeQ = "greetingsA"
             
-            col_userHist.update_one({'userID': self.__username}, {'$push': {'time.beginChatTime': datetime.now()}})
+            # beginChatTime
+            col_userHist.update_one({'userID': self.__userID}, {'$push': {'chatTime.begin': datetime.now()}})
+
+            # user history
+            userH = col_userHist.find_one({"userID": self.__userID})
+
+            # Verifies if new phrases were added in Dialogs DataBases,
+            # to add them in user history as well
+            # TODO ???
+            
             # checking last chatted time
-            userH = col_userHist.find_one({"userID": self.__username})
-            lastChatTime = userH["time"]["endChatTime"][-1]
+            lastChatTime = userH["chatTime"]["end"][-1]
             # typeQ = greetingsT if last ChatTime (diff) between 5 minutes and 1 hour (60 minutes) later,
             # or 1 (7 days = 7 * 24 * 60 min = 10.080) week later
             diff = (datetime.now() - lastChatTime).total_seconds()
@@ -85,9 +68,9 @@ class Dialog_Agent:
     def run(self):
         ### MAKE DECISION - by converting pattern into a fact and filtering it with rules previously declared in the program ###
         # Init rules engine
-        print('Initializing engine rules')
-        #watch('RULES', 'FACTS')   
-        aux = RulesEngine(self.__username)   
+        # print('Initializing engine rules')
+        # watch('RULES', 'FACTS')   
+        aux = RulesEngine(self.__userID,self.__username)   
         aux.reset() 
 
 
@@ -107,14 +90,15 @@ class Dialog_Agent:
     def getDialog(self):
         return self.__dialog
         
+    def getUserID(self):
+        return self.__userID
+
     def getUsername(self):
         return self.__username
 
 
 
 #################################### MAIN ####################################
-
-### PATTERN PARSER ###
 
 '''
 Patterns for testing
@@ -134,11 +118,11 @@ patt7 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "
 patt = [patt1,patt2,patt3,patt4,patt5,patt6,patt7]
 
 # dialog agent
-#for i in patt:
-agent = Dialog_Agent(patt1)
-agent.run()
-dialog = agent.getDialog()
-if dialog:
-    pprint(dialog["Phrase"])
-else:
-    print("No dialog found")
+for p in patt:
+    agent = Dialog_Agent(p)
+    agent.run()
+    dialog = agent.getDialog()
+    if dialog:
+        print(dialog["Phrase"])
+    else:
+        print("No dialog found")

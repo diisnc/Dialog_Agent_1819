@@ -1,6 +1,3 @@
-import random
-from datetime import datetime
-import json
 import pymongo
 
 # Connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
@@ -54,58 +51,3 @@ list_answer_right_hard = bd_dialog["answer"]["right"]["hard"]
 list_answer_wrong_easy = bd_dialog["answer"]["wrong"]["easy"]
 # answer_wrong_hard
 list_answer_wrong_hard = bd_dialog["answer"]["wrong"]["hard"]
-
-
-def getGreetingsI():
-    return list_greetingsI
-
-def getGreetingsA():
-    return list_greetingsA
-
-def getGreetingsTSoon():
-    return list_greetingsTSoon
-
-def getGreetingsTLate():
-    return list_greetingsTLate
-
-def getDoubt():
-    return list_doubt
-
-def getFarewellBye():
-    return list_farewell_bye
-
-def getFarewellBadP():
-    return list_farewell_badP
-
-def getFarewellGoodP():
-    return list_farewell_goodP
-
-def getFarewellAvgP():
-    return list_farewell_avgP
-
-def getDomain():
-    return list_domain
-
-def getSubdomain():
-    return list_subdomain
-
-def getTimeout():
-    return list_time_out
-
-def getTimesoon():
-    return list_time_soon
-
-def getAnswerRightEasy():
-    return list_answer_right_easy
-
-def getAnswerRightHard():
-    return list_answer_right_hard
-
-def getAnswerWrongEasy():
-    return list_answer_wrong_easy
-
-def getAnswerWrongHard():
-    return list_answer_wrong_hard
-
-def getUserHist():
-    return user_hist

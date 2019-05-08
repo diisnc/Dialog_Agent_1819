@@ -1,107 +1,9 @@
-import random
-from datetime import datetime
 # PyKnow Rules Engine
 from pyknow import *
 from pprint import pprint
-# nltk package
-import re
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Collector Module
 from collector import *
-
-
-############################## Dialogs MongoDB ######################################
-# greetingsI
-list_greetingsI = getGreetingsI()
-# greetingsA
-list_greetingsA = getGreetingsA()
-# greetingsTSoon
-list_greetingsTSoon = getGreetingsTSoon()
-# greetingsTLate
-list_greetingsTLate = getGreetingsTLate()
-# doubt
-list_doubt = getDoubt()
-# farewell_bye
-list_farewell_bye = getFarewellBye()
-# farewell_badP
-list_farewell_badP = getFarewellBadP()
-# farewell_goodP
-list_farewell_goodP = getFarewellGoodP()
-# farewell_avgP
-list_farewell_avgP = getFarewellAvgP()
-# domain
-list_domain = getDomain()
-# subdomain
-list_subdomain = getSubdomain()
-# time_out
-list_time_out = getTimeout()
-# too_soon
-list_time_soon = getTimesoon()
-# answer_right_easy
-list_answer_right_easy = getAnswerRightEasy()
-# answer_right_hard
-list_answer_right_hard = getAnswerRightHard()
-# answer_wrong_easy
-list_answer_wrong_easy = getAnswerWrongEasy()
-# answer_wrong_hard
-list_answer_wrong_hard = getAnswerWrongHard()
-
-################################### Auxiliar Functions ###################################
-# Function that replaces a word with synonym
-def synonyms(sentence):
-    words = word_tokenize(sentence)
-
-    for i in range(0,len(words)):
-        l_w = words[i].lower()
-        synonyms = col_synonyms.find_one({}, {l_w}).get(l_w)
-        if synonyms:
-            new_word = random.choices(synonyms)[0]
-            if words[i].istitle() or words[i] == '_day_':
-                words[i] = new_word.capitalize()
-            else:
-                words[i] = new_word
-    
-    output = TreebankWordDetokenizer().detokenize(words)
-    return output
-
-# Funtion that replaces _name_ and _day_ by username and day
-def rep(mystring, username):
-    if "_name_" in mystring: 
-        mystring = mystring.replace("_name_", username)
-    if "_day_" in mystring:
-        now = datetime.now()
-        if(now.hour < 6 or now.hour > 20):
-            mystring = mystring.replace("_day_","Boa noite")
-        elif(now.hour < 12):
-            mystring = mystring.replace("_day_","Bom dia")
-        else:
-            mystring = mystring.replace("_day_","Boa tarde")
-
-    return mystring
-
-
-# Choose dialog element having into account the type and counter of the phrase
-def choose_dialog(list_typeQ, typesP):
-        chosen_dialogs = []
-        list_typeP = []
-        
-        # If type == "All" then choose random type
-        if typesP[0] == "All":
-            type = random.choice(list(list_typeQ.keys()))
-        else:
-            type = random.choice(typesP)
-
-
-        list_typeP = list_typeQ[type]
-
-        # TODO: Fazer increment do counter no MONGODB !!
-
-        # Choose random element from list
-        chosen_elem = random.choice(list_typeP)
-
-        return chosen_elem
-
+from auxiliary import *
 
 ############## Pattern Fact ##############
 class Pattern(Fact):  
@@ -124,11 +26,13 @@ class Rule_exe(Fact):
 class RulesEngine(KnowledgeEngine):
 
     __username = ""
+    __userID = ""
     __result = ""
 
     
-    def __init__(self,username):
+    def __init__(self,userID,username):
         __username = username
+        __userID = userID
         __result = ""
         super().__init__()
 
@@ -193,7 +97,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
 
 
     # Farewell badP
@@ -204,7 +108,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
 
 
      # Farewell avgP
@@ -215,7 +119,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
 
    
     # Farewell goodP
@@ -226,7 +130,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'time.endChatTime': datetime.now()}})
+        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
 
 
     # Domain
@@ -518,6 +422,8 @@ class RulesEngine(KnowledgeEngine):
     def getResult(self):
         return self.__result
 
+    def getUserID(self):
+       return self.__userID
 
     def getUsername(self):
        return self.__username
