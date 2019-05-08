@@ -1,8 +1,8 @@
 {
   "greetingsI": {
-    "Normal":[
+    "Normal": [
       {
-        "Phrase": "Então, por aqui?",
+        "0": "Então, por aqui?",
  
         "Answer": {
           "domain" : "Aqui estou. Preparado(a)!",
@@ -11,7 +11,7 @@
         }
       },
       {
-        "Phrase": "Então, tudo bem?",
+        "1": "Então, tudo bem?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto.",
@@ -20,7 +20,7 @@
         }
       },
       {
-        "Phrase": "Olá, tudo bem? Vai um teste?",
+        "2": "Olá, tudo bem? Vai um teste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -29,7 +29,7 @@
         }
       },
       {
-        "Phrase": "Então, como vai isso?",
+        "3": "Então, como vai isso?",
  
         "Answer": {
           "domain" : "Está tudo bem, vamos fazer um teste!",
@@ -38,7 +38,7 @@
         }
       },
       {
-        "Phrase": "Caro(a) _name_, vamos começar!",
+        "4": "Caro(a) _name_, vamos começar!",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -47,9 +47,9 @@
         }
       }
     ],
-    "Serious":[
+    "Serious": [
       {
-        "Phrase": "Olá. Pronto(a) para o teste?",
+        "0": "Olá. Pronto(a) para o teste?",
  
         "Answer": {
           "domain" : "Sim, claro.",
@@ -58,7 +58,7 @@
         }
       },
       {
-        "Phrase": "Boas. Vamos trabalhar?",
+        "1": "Boas. Vamos trabalhar?",
  
         "Answer": {
           "domain" : "Sim, oupa!",
@@ -67,7 +67,7 @@
         }
       },
       {
-        "Phrase": "Vamos começar?",
+        "2": "Vamos começar?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -76,9 +76,9 @@
         }
       }
     ],
-    "Funny":[
+    "Funny": [
       {  
-        "Phrase": "Olá patanisca, já estudaste?",
+        "0": "Olá patanisca, já estudaste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -87,7 +87,7 @@
         }
       },
       {
-        "Phrase": "Então, a que devo a tua visita?",
+        "1": "Então, a que devo a tua visita?",
  
         "Answer": {
           "domain" : "Vim aqui fazer uma avaliação!",
@@ -96,7 +96,7 @@
         }
       },
       {
-        "Phrase": "Olá, bem acordado(a)?",
+        "2": "Olá, bem acordado(a)?",
  
         "Answer": {
           "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
@@ -105,9 +105,9 @@
         }
       }
     ],
-    "Mock":[
+    "Mock": [
       {
-        "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
+        "0": "_day_. Pronto(a) para trabalhar, caramelo?",
  
         "Answer": {
           "domain" : "Sempre!",
@@ -116,7 +116,7 @@
         }
       },
       {
-        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+        "1": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -127,9 +127,9 @@
     ]
   },
   "greetingsA": {
-    "Normal":[
+    "Normal": [
       {
-        "Phrase": "Encontramo-nos de novo?",
+        "0": "Encontramo-nos de novo?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -138,7 +138,7 @@
         }
       },
       {
-        "Phrase": "Então, como estão a correr as aulas?",
+        "1": "Então, como estão a correr as aulas?",
  
         "Answer": {
           "domain" : "Bem! Vamos a isto.",
@@ -147,7 +147,7 @@
         }
       },
       {
-        "Phrase": "Então, por aqui?",
+        "2": "Então, por aqui?",
  
         "Answer": {
           "domain" : "Aqui estou. Preparado(a)!",
@@ -156,7 +156,7 @@
         }
       },
       {
-        "Phrase": "Então, tudo bem?",
+        "3": "Então, tudo bem?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto.",
@@ -165,7 +165,7 @@
         }
       },
       {
-        "Phrase": "Olá, tudo bem? Vai um teste?",
+        "4": "Olá, tudo bem? Vai um teste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -174,7 +174,7 @@
         }
       },
       {
-        "Phrase": "Então, como vai isso?",
+        "5": "Então, como vai isso?",
  
         "Answer": {
           "domain" : "Está tudo bem, vamos fazer um teste!",
@@ -183,7 +183,7 @@
         }
       },
       {
-        "Phrase": "Olá, bem acordado(a)?",
+        "6": "Olá, bem acordado(a)?",
  
         "Answer": {
           "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
@@ -192,7 +192,7 @@
         }
       },
       {
-        "Phrase": "Tudo bem? Vamos a mais um teste?",
+        "7": "Tudo bem? Vamos a mais um teste?",
  
         "Answer": {
           "domain" : "Sim, estou preparado(a).",
@@ -201,9 +201,9 @@
         }
       }
     ],
-    "Serious":[
+    "Serious": [
       {
-        "Phrase": "Já estás melhor preparado(a)?",
+        "0": "Já estás melhor preparado(a)?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -212,7 +212,7 @@
         }
       },
       {
-        "Phrase": "Olá! (outra vez...)",
+        "1": "Olá! (outra vez...)",
  
         "Answer": {
           "domain" : "É verdade, vamos a isto!",
@@ -221,7 +221,7 @@
         }
       },
       {
-        "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
+        "2": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
  
         "Answer": {
           "domain" : "Sim, estou pronto(a).",
@@ -230,7 +230,7 @@
         }
       },
     {
-      "Phrase": "Saudações. Pronto para o teste (agora a sério...)?",
+      "3": "Saudações. Pronto para o teste (agora a sério...)?",
       "Answer": {
         "domain" : "Bora lá.",
         "bye": "Afinal não quero...",
@@ -238,9 +238,9 @@
       }
     }
     ],
-    "Funny":[
+    "Funny": [
       {  
-        "Phrase": "Oh _name_, já estudaste?",
+        "0": "Oh _name_, já estudaste?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -249,9 +249,9 @@
         }
       }
     ],
-    "Mock":[
+    "Mock": [
       {
-        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+        "0": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -260,7 +260,7 @@
         }
       },
       {
-        "Phrase": "Então, vens agora chatear-me?",
+        "1": "Então, vens agora chatear-me?",
  
         "Answer": {
           "domain" : "Preciso de avaliar!",
@@ -269,7 +269,7 @@
         }
       },
       {
-        "Phrase": "Bons olhos te vejam, pensei já não precisavas de vir mais!",
+        "2": "Bons olhos te vejam, pensei já não precisavas de vir mais!",
  
         "Answer": {
           "domain" : "Preciso de me avaliar.",
@@ -278,7 +278,7 @@
         }
       },
       {
-        "Phrase": "Então Einstein, vamos a mais um teste?",
+        "3": "Então Einstein, vamos a mais um teste?",
  
         "Answer": {
           "domain" : "Eu sei tudo!",
@@ -292,7 +292,7 @@
     "soon": {
       "Normal" : [
         {
-          "Phrase": "Por cá outra vez? Isso é que é empenho!",
+          "0": "Por cá outra vez? Isso é que é empenho!",
    
           "Answer": {
             "domain" : "Sim!",
@@ -301,7 +301,7 @@
           }
         },
         {
-          "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
+          "1": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Siga!",
@@ -310,7 +310,7 @@
           }
         },
         {
-          "Phrase": "Viva! Outra vez por cá?",
+          "2": "Viva! Outra vez por cá?",
    
           "Answer": {
             "domain" : "É verdade, vamos a isto!",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "Phrase": "Então, aqui outra vez? (-_-)",
+          "3": "Então, aqui outra vez? (-_-)",
    
           "Answer": {
             "domain" : "Cá estou eu!",
@@ -332,7 +332,7 @@
     "late": {
       "Normal" : [
         {
-          "Phrase": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
+          "0": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
    
           "Answer": {
             "domain" : "Sim!",
@@ -341,7 +341,7 @@
           }        
         },
         {
-          "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
+          "1": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
    
           "Answer": {
             "domain" : "Sim!",
@@ -350,7 +350,7 @@
           }
         },
         {
-          "Phrase": "Pensei que tinhas morrido! Vieste para trabalhar?",
+          "2": "Pensei que tinhas morrido! Vieste para trabalhar?",
    
           "Answer": {
             "domain" : "Sim, pronto para trabalhar!",
@@ -359,7 +359,7 @@
           }
         },
         {
-          "Phrase": "Então, foste de ferias? Vamos lá praticar!",
+          "3": "Então, foste de ferias? Vamos lá praticar!",
    
           "Answer": {
             "domain" : "Estou pronto!",
@@ -368,7 +368,7 @@
           }
         },
         {
-          "Phrase": "Ao tempo _name_! Vamos trabalhar?",
+          "4": "Ao tempo _name_! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Vamos lá!",
@@ -377,7 +377,7 @@
           }
         },
         {
-          "Phrase": "Ao tempo que não te via! Que tens andado a fazer? Estou a brincar, não quero saber! Vamos trabalhar?",
+          "5": "Ao tempo que não te via! Que tens andado a fazer? Estou a brincar, não quero saber! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Voltei para trabalhar!",
@@ -386,7 +386,7 @@
           }
         },
         {
-          "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
+          "6": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
    
           "Answer": {
             "domain" : "É verdade, vamos a isto!",
@@ -398,134 +398,134 @@
     }
   },
   "doubt": {
-    "Normal":[
+    "Normal": [
     {
-      "Phrase": "Queres continuar? Podes sempre voltar mais tarde...",
+      "0": "Queres continuar? Podes sempre voltar mais tarde...",
       "Answer": {
         "domain" : "Tenho a certeza, vamos ao teste!",
         "bye": "Afinal não quero."
       }
     },
     {
-      "Phrase": "Queres estudar mais um bocado, ou continuas para o teste?",
+      "1": "Queres estudar mais um bocado, ou continuas para o teste?",
       "Answer": {
         "domain" : "Sigo para o teste",
         "bye": "Estudar mais um pouco não vai fazer mal."
       }
     },
       {
-      "Phrase": "Estás seguro que queres continuar?",
+      "2": "Estás seguro que queres continuar?",
       "Answer": {
         "domain" : "Seguríssimo.",
         "bye": "Nem por isso."
       }
     },
     {
-      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+      "3": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos continuar para o teste.",
         "bye": "Nem por isso."
       }
     },
     {
-      "Phrase": "Tens a certeza que queres desistir?",
+      "4": "Tens a certeza que queres desistir?",
       "Answer": {
         "domain" : "Não, vamos continuar para o teste.",
         "bye": "Sim, quero."
       }
     },
     {
-      "Phrase": "Tens a certeza que queres continuar?",
+      "5": "Tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Sim, vamos continuar.",
         "bye": "Nem por isso... Quero sair."
       }
     }
     ],
-    "Serious":[
+    "Serious": [
     {  
-      "Phrase": "Tens a certeza que queres iniciar o teste?",
+      "0": "Tens a certeza que queres iniciar o teste?",
       "Answer": {
         "domain" : "Sim.",
         "bye" : "Não."
       }
     },
     {
-      "Phrase": "Precisas de estudar mais?",
+      "1": "Precisas de estudar mais?",
       "Answer": {
         "domain" : "Não, estou preparado(a).",
         "bye": "Sim, quero sair."
       }
     },
     {
-      "Phrase": "Agora a sério, tens a certeza que queres continuar?",
+      "2": "Agora a sério, tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Sim, quero fazer o teste!",
         "bye": "Para o ano há mais."
       }
     },
     {
-      "Phrase": "Estás seguro que queres iniciar o teste?",
+      "3": "Estás seguro que queres iniciar o teste?",
       "Answer": {
         "domain" : "Sim, bora lá!",
         "bye": "Afinal não quero fazer o teste."
       }
     }
     ],
-    "Funny":[
+    "Funny": [
     {
-      "Phrase": "Queres mesmo fazer o teste ou é para ficar para o ano?",
+      "0": "Queres mesmo fazer o teste ou é para ficar para o ano?",
       "Answer": {
         "domain" : "Teste, teste, teste!",
         "bye": "Para o ano, assim tenho mais tempo."
       }
     },
     {
-      "Phrase": "Logo vi que ias ceder à pressão... Desejas continuar?",
+      "1": "Logo vi que ias ceder à pressão... Desejas continuar?",
       "Answer": {
         "domain" : "Desejo sim senhor",
         "bye": "Não, continuamos para a próxima."
       }
     },
     {
-      "Phrase": "Queres ir procrastinar mais um bocado, ou queres mesmo continuar?",
+      "2": "Queres ir procrastinar mais um bocado, ou queres mesmo continuar?",
       "Answer": {
         "domain" : "Continuamos.",
         "bye": "Procrastinar? Não sei o que é, mas parece divertido!"
       }
     },
     {
-      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+      "3": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos continuar para o teste.",
         "bye": "Nem por isso."
       }
     }
     ],
-    "Mock":[
+    "Mock": [
     {
-      "Phrase": "Fica para o ano?",
+      "0": "Fica para o ano?",
       "Answer": {
         "domain" : "Não, quero fazer o teste!",
         "bye": "Para o ano há mais."
       }
     },
     {
-      "Phrase": "Sabia que não ias aguentar a pressão... Queres continuar?",
+      "1": "Sabia que não ias aguentar a pressão... Queres continuar?",
       "Answer": {
         "domain" : "Sim, vamos continuar.",
         "bye": "Vemo-nos na próxima vez."
       }
     },
     {
-      "Phrase": "Vi logo que ias desistir... Tens a certeza que queres continuar?",
+      "2": "Vi logo que ias desistir... Tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Desistir? Nem pensar!",
         "bye": "Fica para a próxima."
       }
     },
     {
-      "Phrase": "Queres continuar com o teste ou é melhor ires estudar mais, Einstein?",
+      "3": "Queres continuar com o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos ao teste!",
         "bye": "Preciso de estudar mais."
@@ -535,150 +535,150 @@
   },
   "farewell": {
     "bye": {
-      "Normal": {
-        "0": "Vemo-nos mais tarde!",
-        "1": "\"See you later, aligator...\"",
-        "2": "Adeus!"
-      },
-      "Serious": {  
-        "0": "Até à próxima.",
-        "1": "Vemo-nos depois.",
-        "2": "Tchau."
-      },
-      "Funny": {
-        "0": "Até para o ano!",
-        "1": "Adeus, boa Páscoa",
-        "2": "Vai lá, bom Natal.",
-        "3": "\"See you later, aligator...\"",
-        "4": "Até à próxima caramelo!"
-      },
-      "Mock": {
-        "0": "Estava ver que nunca mais me via livre de ti, adeus!",
-        "1": "Já estavas a demorar a ir embora...",
-        "2": "Vou ter saudades tuas..."
-      },
-      "Incentive": {
-        "0": "Até à próxima!",
-        "1": "Prometes que me voltas a visitar, please?",
-        "2": "Até amanhã. Vens amanhã, certo?"
-      }
+      "Normal": [
+        {"0": "Vemo-nos mais tarde!"},
+        {"1": "\"See you later, aligator...\""},
+        {"2": "Adeus!"}
+      ],
+      "Serious": [  
+        {"0": "Até à próxima."},
+        {"1": "Vemo-nos depois."},
+        {"2": "Tchau."}
+      ],
+      "Funny": [
+        {"0": "Até para o ano!"},
+        {"1": "Adeus, boa Páscoa"},
+        {"2": "Vai lá, bom Natal."},
+        {"3": "\"See you later, aligator...\""},
+        {"4": "Até à próxima caramelo!"}
+      ],
+      "Mock": [
+        {"0": "Estava ver que nunca mais me via livre de ti, adeus!"},
+        {"1": "Já estavas a demorar a ir embora..."},
+        {"2": "Vou ter saudades tuas..."}
+      ],
+      "Incentive": [
+        {"0": "Até à próxima!"},
+        {"1": "Prometes que me voltas a visitar, please?"},
+        {"2": "Até amanhã. Vens amanhã, certo?"}
+      ]
     },
     "badP": {
-      "Normal": {
-        "0": "Precisas de estudar mais, até à próxima!",
-        "1": "A tua performance não foi muito boa... Vê se melhoras!",
-        "2": "Isto não foi lá muito bom... Tens que estudar mais!",
-        "3": "Tchau, estuda mais para a próxima!"
-      },
-      "Serious": {  
-        "0": "Estás reprovado...",
-        "1": "Até à próxima. Se houver...",
-        "2": "Isto foi péssimo, adeus!",
-        "3": "Nem vou comentar este teste, adeus."
-      },
-      "Funny": {
-        "0": "\"The force is not with you.\"",
-        "1": "Vai estudar, melga.",
-        "2": "Terrível, nem vou comentar manz!",
-        "3": "Pior teste que já vi, vai estudar artista.",
-        "4": "Para os dias bons: sorrisos. Para os dias maus: paciência. Para todos os dias: fé. Despeço-me com votos de muita fé e paciência para ti."
-      },
-      "Mock": {  
-        "0": "Não pescas nada disto!",
-        "1": "Não percebes nada disto!",
-        "2": "Põe-te a andar!",
-        "3": "Andamos a brincar? Vergonha..." 
-      },
-      "Incentive": {
-        "0": "Isto não te correu muito bem, mas para a próxima corre melhor!",
-        "1": "Proibido desistir. Respira fundo e volta!",
-        "2": "Não desistas, se leres o livro isto vai correr bem."
-      }
+      "Normal": [
+        {"0": "Precisas de estudar mais, até à próxima!"},
+        {"1": "A tua performance não foi muito boa... Vê se melhoras!"},
+        {"2": "Isto não foi lá muito bom... Tens que estudar mais!"},
+        {"3": "Tchau, estuda mais para a próxima!"}
+      ],
+      "Serious": [  
+        {"0": "Estás reprovado..."},
+        {"1": "Até à próxima. Se houver..."},
+        {"2": "Isto foi péssimo, adeus!"},
+        {"3": "Nem vou comentar este teste, adeus."}
+      ],
+      "Funny": [
+        {"0": "\"The force is not with you.\""},
+        {"1": "Vai estudar, melga."},
+        {"2": "Terrível, nem vou comentar manz!"},
+        {"3": "Pior teste que já vi, vai estudar artista."},
+        {"4": "Para os dias bons: sorrisos. Para os dias maus: paciência. Para todos os dias: fé. Despeço-me com votos de muita fé e paciência para ti."}
+      ],
+      "Mock": [  
+        {"0": "Não pescas nada disto!"},
+        {"1": "Não percebes nada disto!"},
+        {"2": "Põe-te a andar!"},
+        {"3": "Andamos a brincar? Vergonha..."} 
+      ],
+      "Incentive": [
+        {"0": "Isto não te correu muito bem, mas para a próxima corre melhor!"},
+        {"1": "Proibido desistir. Respira fundo e volta!"},
+        {"2": "Não desistas, se leres o livro isto vai correr bem."}
+      ]
     },
     "goodP": {
-      "Normal":{
-        "0": "Vá, és muito bom, vai-te embora...",
-        "1": "Uau, quero ver se para a próxima te corre tão bem!",
-        "2": "Muito bem, quando queres estudas. Adeus!"
-      },
-      "Serious": {
-        "0": "Muito bem, adeus!",
-        "1": "Boa performance, see ya!",
-        "2": "Bom teste, até à próxima."
-      },
-      "Funny": {
-        "0": "Bom trabalho! Onde estão as cábulas?",
-        "1": "És muita bom, quero ver se na próxima repetes a proeza!",
-        "2": "Corre riscos. Se der certo, felicidade. Se não, sabedoria. Deves estar muito feliz com este teste, adeus!",
-        "3": "Viver não é esperar a tempestade passar. É aprender a dançar na chuva. Até fizeste break dance neste teste! Até à próxima."
-      },
-      "Mock": {
-        "0": "Epa, és muita bom. Adeus!",
-        "1": "Para a próxima não permito que acertes tantas perguntas, niguém é melhor do que eu!",
-        "2": "Tchau aí einstein!"
-      },
-      "Incentive": {
-        "0":  "Nada mal 😉",
-        "1": "É para o 20.",
-        "2": "Nice!",
-        "3": "Muito bem!",
-        "4": "Boa!"
-      }
+      "Normal": [
+        {"0": "Vá, és muito bom, vai-te embora..."},
+        {"1": "Uau, quero ver se para a próxima te corre tão bem!"},
+        {"2": "Muito bem, quando queres estudas. Adeus!"}
+      ],
+      "Serious": [
+        {"0": "Muito bem, adeus!"},
+        {"1": "Boa performance, see ya!"},
+        {"2": "Bom teste, até à próxima."}
+      ],
+      "Funny": [
+        {"0": "Bom trabalho! Onde estão as cábulas?"},
+        {"1": "És muita bom, quero ver se na próxima repetes a proeza!"},
+        {"2": "Corre riscos. Se der certo, felicidade. Se não, sabedoria. Deves estar muito feliz com este teste, adeus!"},
+        {"3": "Viver não é esperar a tempestade passar. É aprender a dançar na chuva. Até fizeste break dance neste teste! Até à próxima."}
+      ],
+      "Mock": [
+        {"0": "Epa, és muita bom. Adeus!"},
+        {"1": "Para a próxima não permito que acertes tantas perguntas, niguém é melhor do que eu!"},
+        {"2": "Tchau aí einstein!"}
+      ],
+      "Incentive": [
+        {"0":  "Nada mal 😉"},
+        {"1": "É para o 20."},
+        {"2": "Nice!"},
+        {"3": "Muito bem!"},
+        {"4": "Boa!"}
+      ]
     },
     "avgP": {
-      "Normal": {
-        "0": "Isto não foi nem bom nem mau... Estuda mais na próxima para ver se chegas ao meu nível",
-        "1": "Se estudasses pelo livro isto tinha sido melhor... Adeus!",
-        "2": "Meeh, podia ser pior. Bye!"
-      },
-      "Serious": {
-        "0": "Devias estudar mais, adeus.",
-        "1": "Podia ser pior, até à próxima!",
-        "2": "Dá para melhorar, talvez numa próxima."
-      },
-      "Funny": {
-        "0": "Se for pra desistir, desiste de ser fraco. Mas não desistas destes testes porque estás quase lá!",
-        "1": "Se queres ter algo que nunca tiveste, faz algo que nunca fizeste. Para a próxima estuda mais para ver aquele 20 que nunca viste...",
-        "2": "A determinação de hoje é o sucesso de amanhã. Mas só de amanhã, porque hoje não foi grande coisa. Até à próxima!",
-        "3": "Até que nem foi mau artista! See ya.",
-        "4": "Vai do jeito que puderes, mas não deixes de vir! Para a próxima é melhor artista."
-      },
-      "Mock":{
-        "0": "Meeh, podia ser melhor. Ciao.",
-        "1": "Eu não sei como, mas vais chegar lá em breve. Adeus.",
-        "2": "Amanhã é dia de conquistar mais do que hoje. Espero eu, porque isto não foi grande coisa.",
-        "3": "Isto nem foi carne, nem foi peixe. Vai estudar caramelo(a)."
-      },
-      "Incentive": {
-        "0": "Não está bom... Mas também não está mau. Até à próxima!",
-        "1": "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
-        "2": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
-        "3": "Erros são provas de que estás a tentar. Não desistas!"    
-      }
+      "Normal": [
+        {"0": "Isto não foi nem bom nem mau... Estuda mais na próxima para ver se chegas ao meu nível"},
+        {"1": "Se estudasses pelo livro isto tinha sido melhor... Adeus!"},
+        {"2": "Meeh, podia ser pior. Bye!"}
+      ],
+      "Serious": [
+        {"0": "Devias estudar mais, adeus."},
+        {"1": "Podia ser pior, até à próxima!"},
+        {"2": "Dá para melhorar, talvez numa próxima."}
+      ],
+      "Funny": [
+        {"0": "Se for pra desistir, desiste de ser fraco. Mas não desistas destes testes porque estás quase lá!"},
+        {"1": "Se queres ter algo que nunca tiveste, faz algo que nunca fizeste. Para a próxima estuda mais para ver aquele 20 que nunca viste..."},
+        {"2": "A determinação de hoje é o sucesso de amanhã. Mas só de amanhã, porque hoje não foi grande coisa. Até à próxima!"},
+        {"3": "Até que nem foi mau artista! See ya."},
+        {"4": "Vai do jeito que puderes, mas não deixes de vir! Para a próxima é melhor artista."}
+      ],
+      "Mock": [
+        {"0": "Meeh, podia ser melhor. Ciao."},
+        {"1": "Eu não sei como, mas vais chegar lá em breve. Adeus."},
+        {"2": "Amanhã é dia de conquistar mais do que hoje. Espero eu, porque isto não foi grande coisa."},
+        {"3": "Isto nem foi carne, nem foi peixe. Vai estudar caramelo(a)."}
+      ],
+      "Incentive": [
+        {"0": "Não está bom... Mas também não está mau. Até à próxima!"},
+        {"1": "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima..."},
+        {"2": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!"},
+        {"3": "Erros são provas de que estás a tentar. Não desistas!"}  
+      ]
     }
   },
   "domain": {
-    "Normal":{
-      "0": "O que é que queres tentar hoje?",
-      "1": "Queres ser avaliado(a) em que área?",
-      "2": "Qual é a tua escolha hoje?"
-    },
-    "Serious":{  
-      "0": "Escolhe o tema para avaliação:",
-      "1": "O que é que queres estudar hoje?",
-      "2": "Seleciona a área onde queres ser avaliado(a)."
-    },
-    "Funny": {  
-      "0": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
-      "1": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
-      "2": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
-      "3": "Aqui está a ementa!"
-    },
-    "Mock": {
-      "0": "O que vai ser hoje, caramelo?",
-      "1": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!",
-      "2": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!",
-      "3": "Então caramelo, o que vais escolher?"
-    }
+    "Normal": [
+      {"0": "O que é que queres tentar hoje?"},
+      {"1": "Queres ser avaliado(a) em que área?"},
+      {"2": "Qual é a tua escolha hoje?"}
+    ],
+    "Serious": [ 
+      {"0": "Escolhe o tema para avaliação:"},
+      {"1": "O que é que queres estudar hoje?"},
+      {"2": "Seleciona a área onde queres ser avaliado(a)."}
+    ],
+    "Funny": [  
+      {"0": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!"},
+      {"1": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração."},
+      {"2": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho."},
+      {"3": "Aqui está a ementa!"}
+    ],
+    "Mock": [
+      {"0": "O que vai ser hoje, caramelo?"},
+      {"1": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!"},
+      {"2": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!"},
+      {"3": "Então caramelo, o que vais escolher?"}
+    ]
   }
 }

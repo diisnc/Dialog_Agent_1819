@@ -1,386 +1,386 @@
 {
 	"subdomain": {
-		"Normal": {
-		    "0": "Boa escolha. Escolhe agora um subtema.",
-		    "1": "Faz agora um SELECT do subtema",
-		    "2": "Pronto para algumas \"queries\"? Seleciona o subtema."
-		},
-		"Serious": {
-			"0": "Seleciona a área de avaliação.",
-			"1": "Faz agora um SELECT do subtema.",
-			"2": "Pronto para algumas \"queries\"? Seleciona o subtema."
-		},
-		"Funny": {  
-			"0": "És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência.",
-			"1": "A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema.",
-			"2": "A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente",
-			"3": "Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado.",
-			"4": "Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?",
-			"5": "Estás tramado... Escolhe um subdomínio.",
-			"6": "Isso parece difícil. Escolhe um subtema.",
-			"7": "Ui... Seleciona um subdomínio.",
-			"8": "No que te foste meter... Escolhe um subdomínio.",
-			"9": "Faz agora um SELECT do subtema.",
-			"10": "Pronto para algumas \"queries\"? Seleciona o subtema."
-		},
-		"Mock": {
-			"0": "Então pensas que sabes muito sobre isto? Escolhe lá um subtema!",
-		    "1": "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!",
-		    "2": "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"
-		}
+		"Normal": [
+		    {"0": "Boa escolha. Escolhe agora um subtema."},
+		    {"1": "Faz agora um SELECT do subtema"},
+		    {"2": "Pronto para algumas \"queries\"? Seleciona o subtema."}
+		],
+		"Serious": [
+			{"0": "Seleciona a área de avaliação."},
+			{"1": "Faz agora um SELECT do subtema."},
+			{"2": "Pronto para algumas \"queries\"? Seleciona o subtema."}
+		],
+		"Funny": [  
+			{"0": "És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência."},
+			{"1": "A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema."},
+			{"2": "A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente"},
+			{"3": "Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado."},
+			{"4": "Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?"},
+			{"5": "Estás tramado... Escolhe um subdomínio."},
+			{"6": "Isso parece difícil. Escolhe um subtema."},
+			{"7": "Ui... Seleciona um subdomínio."},
+			{"8": "No que te foste meter... Escolhe um subdomínio."},
+			{"9": "Faz agora um SELECT do subtema."},
+			{"10": "Pronto para algumas \"queries\"? Seleciona o subtema."}
+		],
+		"Mock": [
+			{"0": "Então pensas que sabes muito sobre isto? Escolhe lá um subtema!"},
+		    {"1": "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!"},
+		    {"2": "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"}
+		]
 	},
 	"time": {
 		"timeout": {
 			"goodP": {
-				"Normal": {
-			        "0": "Já descobriste?",
-			        "1": "Ainda demoras?",
-			        "2": "Vamos lá...",
-			        "3": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "4": "Então? A \"query\" bloqueou?"
-			 	},
-				"Serious": {
-			        "0": "Então, bloqueaste?",
-			       	"1": "Estou a interromper alguma coisa?",
-			        "2": "Só estás aqui porque queres, por isso responde.",
-			        "3": "Ninguém te obriga a estar aqui...",
-			        "4": "Mas isto é para hoje?",
-			        "5": "Vais demorar muito?",
-			        "6": "Há que despachar, que eu tenho mais que fazer.",
-			        "7": "Não tenho o dia todo!",
-			        "8": "Já esta na hora, _name_",
-			        "9": "Vamos lá _name_, tenho mais que fazer!",
-			        "10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "11": "Então? A \"query\" bloqueou?"
-			    },
-				"Funny": {
-			        "0": "De certeza que ainda és tu?",
-			        "1": "Estou a interromper o teu intervalo?",
-			        "2": "Estou a interromper a conversa?",
-			        "3": "A tua resposta vem a pé?",
-			        "4": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "6": "Então? A \"query\" bloqueou?"
-			    },
-				"Mock": {
-			        "0": "Tanto trabalho para agora adormeceres?",
-			        "1": "E se gastasses o tempo a responder às perguntas?",
-			        "2": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
-			        "3": "Não queres um cafezinho?",  
-			        "4": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "5": "Então? A \"query\" bloqueou?",
-			        "6": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-				}
+				"Normal": [
+			        {"0": "Já descobriste?"},
+			        {"1": "Ainda demoras?"},
+			        {"2": "Vamos lá..."},
+			        {"3": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
+			        {"4": "Então? A \"query\" bloqueou?"}
+			 	],
+				"Serious": [
+			        {"0": "Então, bloqueaste?"},
+			       	{"1": "Estou a interromper alguma coisa?"},
+			        {"2": "Só estás aqui porque queres, por isso responde."},
+			        {"3": "Ninguém te obriga a estar aqui..."},
+			        {"4": "Mas isto é para hoje?"},
+			        {"5": "Vais demorar muito?"},
+			        {"6": "Há que despachar, que eu tenho mais que fazer."},
+			        {"7": "Não tenho o dia todo!"},
+			        {"8": "Já esta na hora, _name_"},
+			        {"9": "Vamos lá _name_, tenho mais que fazer!"},
+			        {"10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
+			        {"11": "Então? A \"query\" bloqueou?"}
+			    ],
+				"Funny": [
+			        {"0": "De certeza que ainda és tu?"},
+			        {"1": "Estou a interromper o teu intervalo?"},
+			        {"2": "Estou a interromper a conversa?"},
+			        {"3": "A tua resposta vem a pé?"},
+			        {"4": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
+			        {"6": "Então? A \"query\" bloqueou?"}
+			    ],
+				"Mock": [
+			        {"0": "Tanto trabalho para agora adormeceres?"},
+			        {"1": "E se gastasses o tempo a responder às perguntas?"},
+			        {"2": "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
+			        {"3": "Não queres um cafezinho?"},  
+			        {"4": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"5": "Então? A \"query\" bloqueou?"},
+			        {"6": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+				]
 			},
 			"badP": {
-				"Normal": {
-			        "0": "Entretanto adormeço...",
-			        "1": "Já descobriste?",
-			        "2": "Ainda demoras?",
-			        "3": "Vamos lá...",
-			        "4": "Então? A \"query\" bloqueou?",
-			        "5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			   	},
-				"Serious": {
-			        "0": "Então? ¯\\_(-_-)_/¯",
-			        "1": "Só estás aqui porque queres, por isso responde...",
-			        "2": "Ninguém te obriga a estar aqui...",
-			        "3": "Mas isto é para hoje?",
-			        "4": "Vais demorar muito?",
-			        "5": "Há que despachar, que eu tenho mais que fazer.",
-			        "6": "Não tenho o dia todo!",
-			        "7": "Já esta na hora, _name_.",
-			        "8": "Vamos lá _name_, tenho mais que fazer!",
-			        "9": "Então? A \"query\" bloqueou?",
-			        "10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    },
-				"Funny": {
-			        "0": "Estou a interromper o teu intervalo?",
-			        "1": "Estou a interromper a conversa?",
-			        "2": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
-			        "3": "Estou a interromper alguma coisa?",
-			        "4": "Não queres um cafezinho?",
-			        "5": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "6": "Então? A \"query\" bloqueou?",
-			        "7": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    },
-				"Mock": {
-					"0": "O lanchinho está bom?",
-			        "1": "E se gastasses o tempo a responder às perguntas?",
-			        "2": "A tua resposta vem a pé?",
-			        "3": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "4": "Então? A \"query\" bloqueou?",
-			        "5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    }
+				"Normal": [
+			        {"0": "Entretanto adormeço..."},
+			        {"1": "Já descobriste?"},
+			        {"2": "Ainda demoras?"},
+			        {"3": "Vamos lá..."},
+			        {"4": "Então? A \"query\" bloqueou?"},
+			        {"5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			   	],
+				"Serious": [
+			        {"0": "Então? ¯\\_(-_-)_/¯"},
+			        {"1": "Só estás aqui porque queres, por isso responde..."},
+			        {"2": "Ninguém te obriga a estar aqui..."},
+			        {"3": "Mas isto é para hoje?"},
+			        {"4": "Vais demorar muito?"},
+			        {"5": "Há que despachar, que eu tenho mais que fazer."},
+			        {"6": "Não tenho o dia todo!"},
+			        {"7": "Já esta na hora, _name_."},
+			        {"8": "Vamos lá _name_, tenho mais que fazer!"},
+			        {"9": "Então? A \"query\" bloqueou?"},
+			        {"10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ],
+				"Funny": [
+			        {"0": "Estou a interromper o teu intervalo?"},
+			        {"1": "Estou a interromper a conversa?"},
+			        {"2": "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
+			        {"3": "Estou a interromper alguma coisa?"},
+			        {"4": "Não queres um cafezinho?"},
+			        {"5": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"6": "Então? A \"query\" bloqueou?"},
+			        {"7": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ],
+				"Mock": [
+					{"0": "O lanchinho está bom?"},
+			        {"1": "E se gastasses o tempo a responder às perguntas?"},
+			        {"2": "A tua resposta vem a pé?"},
+			        {"3": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"4": "Então? A \"query\" bloqueou?"},
+			        {"5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ]
 			},
 			"aveP": {
-				"Normal": {
-			        "0": "Já descobriste?",
-			        "1": "Ainda demoras?",
-			        "2": "Vamos lá...",
-			        "3": "Então? A \"query\" bloqueou?",
-			        "4": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    },
-				"Serious": {  
-			        "0":  "Olá? Estás ai?",
-			        "1": "Só estás aqui porque queres, por isso responde...",
-			        "2": "Ninguém te obriga a estar aqui...",
-			        "3": "Mas isto é para hoje?",
-			        "4": "Vais demorar muito?",
-			        "5": "Há que despachar porque eu tenho mais que fazer.",
-			        "6": "Não tenho o dia todo!",
-			        "7": "Já esta na hora, _name_.",
-			        "8": "Vamos lá _name_, tenho mais que fazer!",
-			        "9": "Então? A \"query\" bloqueou?",
-			        "10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    },
-				"Funny": {
-			        "0": "Estou a interromper o teu intervalo?",
-			        "1": "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
-			        "2": "Estou a interromper alguma coisa?",
-			        "4": "Não queres um cafezinho?",
-			        "5": "Estou a interromper a conversa?",
-			        "6": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "7": "Então? A \"query\" bloqueou?",
-			        "8": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    },
-				"Mock": {  
-			        "0":  "Oh patanisca, é para hoje?",
-			        "1": "E se gastasses o tempo a responder às perguntas?",
-			        "2": "A tua resposta vem a pé?",
-			        "3": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "4": "Então? A \"query\" bloqueou?",
-			        "5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
-			    }
+				"Normal": [
+			        {"0": "Já descobriste?"},
+			        {"1": "Ainda demoras?"},
+			        {"2": "Vamos lá..."},
+			        {"3": "Então? A \"query\" bloqueou?"},
+			        {"4": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ],
+				"Serious": [  
+			        {"0":  "Olá? Estás ai?"},
+			        {"1": "Só estás aqui porque queres, por isso responde..."},
+			        {"2": "Ninguém te obriga a estar aqui..."},
+			        {"3": "Mas isto é para hoje?"},
+			        {"4": "Vais demorar muito?"},
+			        {"5": "Há que despachar porque eu tenho mais que fazer."},
+			        {"6": "Não tenho o dia todo!"},
+			        {"7": "Já esta na hora, _name_."},
+			        {"8": "Vamos lá _name_, tenho mais que fazer!"},
+			        {"9": "Então? A \"query\" bloqueou?"},
+			        {"10": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ],
+				"Funny": [
+			        {"0": "Estou a interromper o teu intervalo?"},
+			        {"1": "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
+			        {"2": "Estou a interromper alguma coisa?"},
+			        {"4": "Não queres um cafezinho?"},
+			        {"5": "Estou a interromper a conversa?"},
+			        {"6": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"7": "Então? A \"query\" bloqueou?"},
+			        {"8": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ],
+				"Mock": [  
+			        {"0":  "Oh patanisca, é para hoje?"},
+			        {"1": "E se gastasses o tempo a responder às perguntas?"},
+			        {"2": "A tua resposta vem a pé?"},
+			        {"3": "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
+			        {"4": "Então? A \"query\" bloqueou?"},
+			        {"5": "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			    ]
 			}
 		},
 	"toosoon": {
 			"goodP": {
-				"Normal": {
-			    	"0": "Foi bom... bom demais...",
-			    	"1": "Esse SELECT foi rápido demais..."
-			    },
-				"Serious": {
-			    	"0": "Não acredito que sejas assim tão rápido a responder..."
-				},
-				"Funny": {
-			        "0": "Estás \"on fire\", começo a duvidar...",
-			        "1": "Muito bem! Mas como sabes, é impossível saberes mais do que eu.",
-  			      	"2": "Esse SELECT foi muito rápido!",
-			        "3": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"
-			  	},
-				"Mock": {  
-  	          		"0": "Ou és muito bom ou essa resposta foi à sorte.",
-  			      	"1": "Esse SELECT foi muito rápido!",
-			        "2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-  	          		"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-				}
+				"Normal": [
+			    	{"0": "Foi bom... bom demais..."},
+			    	{"1": "Esse SELECT foi rápido demais..."}
+			    ],
+				"Serious": [
+			    	{"0": "Não acredito que sejas assim tão rápido a responder..."}
+				],
+				"Funny": [
+			        {"0": "Estás \"on fire\", começo a duvidar..."},
+			        {"1": "Muito bem! Mas como sabes, é impossível saberes mais do que eu."},
+  			      	{"2": "Esse SELECT foi muito rápido!"},
+			        {"3": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"}
+			  	],
+				"Mock": [  
+  	          		{"0": "Ou és muito bom ou essa resposta foi à sorte."},
+  			      	{"1": "Esse SELECT foi muito rápido!"},
+			        {"2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
+  	          		{"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+				]
 			},
 			"badP": {
-				"Normal": {
-		        	"0": "Não vale a pena tentar adivinhar a resposta...",
-  			    	"1": "Esse SELECT foi muito rápido!"
-  			  	},
-				"Serious": {  
-			        "0": "Isto não é para responder à sorte!",
-  			      	"1": "Esse SELECT foi muito rápido!"
-  			  	},
-				"Funny": {
-    		        "0": "Parece que responder à sorte não está a funcionar!",
-    			    "1": "Esse SELECT foi muito rápido!",
-  			        "2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-    	    	  	"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-  				},
-				"Mock": {
-		        	"0": "Não comeces a javardar e a responder à toa!",
-  			    	"1": "Esse SELECT foi muito rápido!",
-			     	"2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-  	          		"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-				}
+				"Normal": [
+		        	{"0": "Não vale a pena tentar adivinhar a resposta..."},
+  			    	{"1": "Esse SELECT foi muito rápido!"}
+  			  	],
+				"Serious": [  
+			        {"0": "Isto não é para responder à sorte!"},
+  			      	{"1": "Esse SELECT foi muito rápido!"}
+  			  	],
+				"Funny": [
+    		        {"0": "Parece que responder à sorte não está a funcionar!"},
+    			    {"1": "Esse SELECT foi muito rápido!"},
+  			        {"2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
+    	    	  	{"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+  				],
+				"Mock": [
+		        	{"0": "Não comeces a javardar e a responder à toa!"},
+  			    	{"1": "Esse SELECT foi muito rápido!"},
+			     	{"2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
+  	          		{"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+				]
 			},
 			"aveP": {
-				"Normal": {
-		        	"0": "Não comeces a javardar e a responder à toa!",
-  			    	"1": "Esse SELECT foi muito rápido!"
-  			    },
-				"Serious": {
-		          	"0": "Responder à sorte não vale a pena...",
-  			    	"1": "Esse SELECT foi muito rápido!"
-  			    },
-				"Funny": {
-	          		"0": "Carregaste sem querer?",
-	          		"1": "\"Miss click\"?",
-			      	"2": "Esse SELECT foi muito rápido!",
-		          	"3": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-	          		"4": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-	        	},
-				"Mock": {
-      	        	"0": "Oh artista, sabias mesmo a resposta?",
-    			    "1": "Esse SELECT foi muito rápido!",
-  			        "2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-    	          	"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
-    	        }
+				"Normal": [
+		        	{"0": "Não comeces a javardar e a responder à toa!"},
+  			    	{"1": "Esse SELECT foi muito rápido!"}
+  			    ],
+				"Serious": [
+		          	{"0": "Responder à sorte não vale a pena..."},
+  			    	{"1": "Esse SELECT foi muito rápido!"}
+  			    ],
+				"Funny": [
+	          		{"0": "Carregaste sem querer?"},
+	          		{"1": "\"Miss click\"?"},
+			      	{"2": "Esse SELECT foi muito rápido!"},
+		          	{"3": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
+	          		{"4": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+	        	],
+				"Mock": [
+      	        	{"0": "Oh artista, sabias mesmo a resposta?"},
+    			    {"1": "Esse SELECT foi muito rápido!"},
+  			        {"2": "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
+    	          	{"3": "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+    	        ]
 			}
 		}
 	},
 	"answer": {
 		"right": {
 			"easy": {
-				"Normal": {
-			        "0": "Ok, deste uma vista de olhos à matéria...",
-			        "1": "Certíssimo, meu caro(a).",
-			        "2": "Elementar, meu caro Watson!"
-			   	},
-				"Serious": {
-			        "0": "Esta era trivial..."
-			    },
-				"Funny": {
-			        "0": "Esta era fácil, mas leva lá a bicicleta!",
-			        "1": "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas...",
-			        "2": "Fiquei emocionado com essa resposta. Certo!",
-			        "3": "Caracteres não conseguem expressar o tamanho da minha felicidade!",
-			        "4": "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões..."
-			   	},
-				"Mock": {
-			       	"0": "Muito bem! Sabes o básico",
-			       	"1": "Uau, parece que estudaste... O básico!"
-			    },
-				"Incentive": {
-			          "0": "Soma e segue!",
-			          "1": "Epá, não brincas em serviço! Muito bem!",
-			          "2": "Muito bem!",
-			          "3": "Bem jogado _name_!",
-			          "4": "Muito bem, _name_!",
-			          "5": "Bem jogado!",
-			          "6": "Até que não era difícil, mas já merecias mais um valor!"
-			    }
+				"Normal": [
+			        {"0": "Ok, deste uma vista de olhos à matéria..."},
+			        {"1": "Certíssimo, meu caro(a)."},
+			        {"2": "Elementar, meu caro Watson!"}
+			   	],
+				"Serious": [
+			        {"0": "Esta era trivial..."}
+			    ],
+				"Funny": [
+			        {"0": "Esta era fácil, mas leva lá a bicicleta!"},
+			        {"1": "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas..."},
+			        {"2": "Fiquei emocionado com essa resposta. Certo!"},
+			        {"3": "Caracteres não conseguem expressar o tamanho da minha felicidade!"},
+			        {"4": "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões..."}
+			   	],
+				"Mock": [
+			       	{"0": "Muito bem! Sabes o básico"},
+			       	{"1": "Uau, parece que estudaste... O básico!"}
+			    ],
+				"Incentive": [
+			        {"0": "Soma e segue!"},
+			        {"1": "Epá, não brincas em serviço! Muito bem!"},
+			        {"2": "Muito bem!"},
+			        {"3": "Bem jogado _name_!"},
+			        {"4": "Muito bem, _name_!"},
+			        {"5": "Bem jogado!"},
+			        {"6": "Até que não era difícil, mas já merecias mais um valor!"}
+			    ]
 			},
 			"hard": {
-				"Normal": {
-			        "0": "Acertaste esta pergunta?! Uau...",
-			        "1": "Isso é sorte ou inteligência?"
-			    },
-				"Serious": {
-		          	"0": "Com esta fiquei surpreendido.",
-		          	"1": "Nada mau, nada mau mesmo."
-		   		},
-				"Funny": {
-			        "0": "Fiquei emocionado com essa resposta. Certo!",
-			        "1": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
-			        "2": "Temos aqui um Einstein...",
-				    "3": "Incrível, parece que estudaste!",
-			        "4": "De onde veio tanta inteligência?",
-			        "5": "Até perco a fala com tanta inteligência!"
-			  	},
-				"Mock": {
-			        "0": "Um relógio avariado está certo duas vezes por dia!",
-			        "1": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho..."
-			   	},
-				"Incentive": {
-			        "0": "Bem jogado _name_!",
-			        "1": "Muito bem, _name_!",
-			        "2": "Bem jogado!",
-			        "3": "Que craque!",
-			        "4": "Incrível, parece que percebes do assunto!",
-			        "5": "Uau, não estava à espera!"
-			    }
+				"Normal": [
+			        {"0": "Acertaste esta pergunta?! Uau..."},
+			        {"1": "Isso é sorte ou inteligência?"}
+			    ],
+				"Serious": [
+		          	{"0": "Com esta fiquei surpreendido."},
+		          	{"1": "Nada mau, nada mau mesmo."}
+		   		],
+				"Funny": [
+			        {"0": "Fiquei emocionado com essa resposta. Certo!"},
+			        {"1": "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂"},
+			        {"2": "Temos aqui um Einstein..."},
+				    {"3": "Incrível, parece que estudaste!"},
+			        {"4": "De onde veio tanta inteligência?"},
+			        {"5": "Até perco a fala com tanta inteligência!"}
+			  	],
+				"Mock": [
+			        {"0": "Um relógio avariado está certo duas vezes por dia!"},
+			        {"1": "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho..."}
+			   	],
+				"Incentive": [
+			        {"0": "Bem jogado _name_!"},
+			        {"1": "Muito bem, _name_!"},
+			        {"2": "Bem jogado!"},
+			        {"3": "Que craque!"},
+			        {"4": "Incrível, parece que percebes do assunto!"},
+			        {"5": "Uau, não estava à espera!"}
+			    ]
 			}
 		},
 		"wrong": {
 			"easy": {
-				"Normal": {
-			        "0": "Resposta errada.",
-			        "1": "\"Fatal error\"",
-			        "2": "Que tristeza...",
-			        "3": "Não é bem assim...",
-			        "4": "Errado!",
-			        "5": "Falhanço total...",
-			        "6": "Parece que precisas de estudar... A pergunta era fácil!",
-			        "7": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "8": "Essa tua resposta deu-me TRIGGER!"
-				},
-				"Serious": {
-			        "0": "Resposta errada...",
-			        "1": "Não era bem isso.",
-			        "2": "Está mal!",
-			        "3": "A vida não é triste. Tem é momentos tristes, e este é um deles...",
-			        "4": "Fico triste com respostas destas.",
-			        "5": "Não estás atento(a).",
-			        "6": "Não estudaste nada!",
-			        "7": "Nada disso!",
-			        "8": "Não estudas e depois é isto.",
-			        "9": "Assim não vais lá...",
-			        "10": "Estou a perder a esperança.",
-			        "11": "Nem lá perto...",
-			        "12": "Esperava mais de ti... A pergunta era trivial.",
-			        "13": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "14": "Essa tua resposta deu-me TRIGGER!"
-			   },
-				"Funny": {
-			        "0": "A sério? Cansas-me a beleza.",
-			        "1": "Parece que a sorte acabou!",
-			        "2": "Não estudes que não é preciso!",
-			        "3": "Claramente não fizeste os tpc's!",
-			        "4": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "5": "Essa tua resposta deu-me TRIGGER!",
-			        "6": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
-			    },
-				"Mock": {
-			        "0": "A sério? -.-",
-			        "1": "Não pescas nada disto...",
-			        "2": "Errado, artista!",
-			        "3": "Não é essa a resposta, mas estás lá perto. Perto de reprovar!",
-			        "4": "Tentaste... Mas sabes que podes sempre dedicar-te à pesca 😉",
-			        "5": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "6": "Essa tua resposta deu-me TRIGGER!",
-			        "7": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
-			    },
-				"Incentive": {
-			        "0": "Esta era fácil, estavas distraído? Na próxima consegues acertar.",
-			        "1": "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte 😉",
-			        "2": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
-			   	}
+				"Normal": [
+			        {"0": "Resposta errada."},
+			        {"1": "\"Fatal error\""},
+			        {"2": "Que tristeza..."},
+			        {"3": "Não é bem assim..."},
+			        {"4": "Errado!"},
+			        {"5": "Falhanço total..."},
+			        {"6": "Parece que precisas de estudar... A pergunta era fácil!"},
+			        {"7": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"8": "Essa tua resposta deu-me TRIGGER!"}
+				],
+				"Serious": [
+			        {"0": "Resposta errada..."},
+			        {"1": "Não era bem isso."},
+			        {"2": "Está mal!"},
+			        {"3": "A vida não é triste. Tem é momentos tristes, e este é um deles..."},
+			        {"4": "Fico triste com respostas destas."},
+			        {"5": "Não estás atento(a)."},
+			        {"6": "Não estudaste nada!"},
+			        {"7": "Nada disso!"},
+			        {"8": "Não estudas e depois é isto."},
+			        {"9": "Assim não vais lá..."},
+			        {"10": "Estou a perder a esperança."},
+			        {"11": "Nem lá perto..."},
+			        {"12": "Esperava mais de ti... A pergunta era trivial."},
+			        {"13": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"14": "Essa tua resposta deu-me TRIGGER!"}
+			   ],
+				"Funny": [
+			        {"0": "A sério? Cansas-me a beleza."},
+			        {"1": "Parece que a sorte acabou!"},
+			        {"2": "Não estudes que não é preciso!"},
+			        {"3": "Claramente não fizeste os tpc's!"},
+			        {"4": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"5": "Essa tua resposta deu-me TRIGGER!"},
+			        {"6": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			    ],
+				"Mock": [
+			        {"0": "A sério? -.-"},
+			        {"1": "Não pescas nada disto..."},
+			        {"2": "Errado, artista!"},
+			        {"3": "Não é essa a resposta, mas estás lá perto. Perto de reprovar!"},
+			        {"4": "Tentaste... Mas sabes que podes sempre dedicar-te à pesca 😉"},
+			        {"5": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"6": "Essa tua resposta deu-me TRIGGER!"},
+			        {"7": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			    ],
+				"Incentive": [
+			        {"0": "Esta era fácil, estavas distraído? Na próxima consegues acertar."},
+			        {"1": "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte 😉"},
+			        {"2": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"}
+			   	]
 			},
 			"hard": {
-				"Normal": {
-			        "0": "Mal!",
-			        "1": "A pergunta era difícil, e tu fraquejaste.",
-			        "2": "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar.",
-			        "3": "Errado. Era uma pergunta difícil, não te censuro.",
-			        "4": "Falhanço total...",
-			        "5": "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!",
-			        "6": "Errado, mas admito que a pergunta não era fácil... ",
-			        "7": "\"Fatal error\"",
-			        "8": "Resposta errada... Mas não te critico, era difícil!",
-			        "9": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "10": "Essa tua resposta deu-me TRIGGER!"
-			   	},
-				"Serious": {
-			        "0": "Resposta errada...",
-			        "1": "Não era bem isso.",
-			        "2": "Está mal!",
-			        "3": "Nada disso!",
-			        "4": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "5": "Essa tua resposta deu-me TRIGGER!"
-			   	},
-				"Funny": {
-			        "0": "Não estudas pelo livro e depois é isto.",
-			        "1": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "2": "Essa tua resposta deu-me TRIGGER!",
-			        "3": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
-			    },
-				"Mock": {
-			        "0": "As maiores dificuldades são filhas da preguiça!",
-			        "1": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "2": "Essa tua resposta deu-me TRIGGER!",
-			        "3": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
-			    },
-				"Incentive": {
-			        "0": "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
-			        "1": "Não era bem isso. Com mais estudo vais lá.",
-			        "2": "Esta era dificil, não te sintas mal. A próxima vai correr melhor!",
-			        "3": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
-				}
+				"Normal": [
+			        {"0": "Mal!"},
+			        {"1": "A pergunta era difícil, e tu fraquejaste."},
+			        {"2": "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar."},
+			        {"3": "Errado. Era uma pergunta difícil, não te censuro."},
+			        {"4": "Falhanço total..."},
+			        {"5": "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!"},
+			        {"6": "Errado, mas admito que a pergunta não era fácil... "},
+			        {"7": "\"Fatal error\""},
+			        {"8": "Resposta errada... Mas não te critico, era difícil!"},
+			        {"9": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"10": "Essa tua resposta deu-me TRIGGER!"}
+			   	],
+				"Serious": [
+			        {"0": "Resposta errada..."},
+			        {"1": "Não era bem isso."},
+			        {"2": "Está mal!"},
+			        {"3": "Nada disso!"},
+			        {"4": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"5": "Essa tua resposta deu-me TRIGGER!"}
+			   	],
+				"Funny": [
+			        {"0": "Não estudas pelo livro e depois é isto."},
+			        {"1": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"2": "Essa tua resposta deu-me TRIGGER!"},
+			        {"3": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			    ],
+				"Mock": [
+			        {"0": "As maiores dificuldades são filhas da preguiça!"},
+			        {"1": "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
+			        {"2": "Essa tua resposta deu-me TRIGGER!"},
+			        {"3": "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			    ],
+				"Incentive": [
+			        {"0": "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!"},
+			        {"1": "Não era bem isso. Com mais estudo vais lá."},
+			        {"2": "Esta era dificil, não te sintas mal. A próxima vai correr melhor!"},
+			        {"3": "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"}
+				]
 			}
 		}
 	}
