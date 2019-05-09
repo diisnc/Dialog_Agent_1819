@@ -75,7 +75,7 @@ def choose_dialog(list_typeQ, typeP):
         chosen_dialogs = []
         list_typeP = []
 
-        # If type == "All" then choose random type
+        # CHOOSE TYPE: If type == "All" then choose randomly
         if typeP[0] == "All":
             type = random.choice(list(list_typeQ.keys()))
         else:
@@ -86,8 +86,7 @@ def choose_dialog(list_typeQ, typeP):
         # Choose random element from list
         chosen_elem = random.choice(list_typeP)
 
-        # TODO: Fazer increment do counter no MONGODB !!
-        # use counters of the user history -> smallest counter phrases are chosen
+        # TODO: Fazer novo choose dialog, onde se gera automaticamente as frases
 
         return chosen_elem
 

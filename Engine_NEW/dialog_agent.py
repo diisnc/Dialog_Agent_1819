@@ -29,31 +29,21 @@ class Dialog_Agent:
             print(" ########## New user history entry ########## ")
             userH = {
                     "userID" : self.__userID,
-                    "phrases" : getAllPhrases(), # get phrases and its counters, from Dialogs DB
-                    "chatTime" : {
-                        "begin" : [datetime.now()],
-                        "end" : [datetime.now()] #TODO: tirar o datetime daqui, foi so p testar
-                        }
+                    "endChatTime" : [] 
                     }
 
             col_userHist.insert_one(userH) 
 
         # User exists
         else:
+            print(" ########## User history exists ########## ")
             typeQ = "greetingsA"
             
-            # beginChatTime
-            col_userHist.update_one({'userID': self.__userID}, {'$push': {'chatTime.begin': datetime.now()}})
-
             # user history
             userH = col_userHist.find_one({"userID": self.__userID})
 
-            # Verifies if new phrases were added in Dialogs DataBases,
-            # to add them in user history as well
-            # TODO ???
-            
             # checking last chatted time
-            lastChatTime = userH["chatTime"]["end"][-1]
+            lastChatTime = userH["endChatTime"][-1]
             # typeQ = greetingsT if last ChatTime (diff) between 5 minutes and 1 hour (60 minutes) later,
             # or 1 (7 days = 7 * 24 * 60 min = 10.080) week later
             diff = (datetime.now() - lastChatTime).total_seconds()
@@ -105,17 +95,18 @@ Patterns for testing
 '''
 
 patt1 = ["1", "1", "", "", "", "", "4", "123456", "0", "0", "0", "0", "0", ""]
-patt2 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "doubt"]
-patt3 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "domain"]
-patt4 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "subdomain"]
-patt5 = ["1", "1", "1", "1", "0", "3", "4", "123456", "4", "3", "3", "4", "3", "answer"]
-patt6 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "answer"]
-patt7 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "farewell"]
+patt2 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "bye"]
+patt3 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", ""]
+patt4 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "domain"]
+patt5 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "subdomain"]
+patt6 = ["1", "1", "1", "1", "0", "3", "4", "123456", "4", "3", "3", "4", "3", "answer"]
+patt7 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "answer"]
+patt8 = ["1", "1", "1", "1", "1", "3", "4", "123456", "4", "4", "3", "4", "3", "farewell"]
 
 # pattern
 #patt = pattern_reader("pattern_example.json")
 
-patt = [patt1,patt2,patt3,patt4,patt5,patt6,patt7]
+patt = [patt1,patt2,patt3,patt4,patt5,patt6,patt7,patt8]
 
 # dialog agent
 for p in patt:

@@ -31,9 +31,9 @@ class RulesEngine(KnowledgeEngine):
 
     
     def __init__(self,userID,username):
-        __username = username
-        __userID = userID
-        __result = ""
+        self.__username = username
+        self.__userID = userID
+        self.__result = ""
         super().__init__()
 
 
@@ -97,8 +97,8 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
-
+        userH = col_userHist.find_one({"userID": self.__userID})
+        col_userHist.update_one({'userID': self.__userID}, {'$push': {'endChatTime': datetime.now()}})
 
     # Farewell badP
     @Rule(Pattern(typeQ = 'farewell', student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience = 1)
@@ -108,8 +108,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
-
+        col_userHist.update_one({'userID': self.__userID}, {'$push': {'endChatTime': datetime.now()}})
 
      # Farewell avgP
     @Rule(Pattern(typeQ = 'farewell', student_lvl = '3'), Rule_exe(executed = False), salience = 1)
@@ -119,7 +118,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
+        col_userHist.update_one({'userID': self.__userID}, {'$push': {'endChatTime': datetime.now()}})
 
    
     # Farewell goodP
@@ -130,7 +129,7 @@ class RulesEngine(KnowledgeEngine):
         dialog["Phrase"] = rep(synonyms(dialog["Phrase"]),self.__username)
         self.__result = dialog
         #last login
-        col_userHist.update_one({'userID': self.__username}, {'$push': {'chatTime.end': datetime.now()}})
+        col_userHist.update_one({'userID': self.__userID}, {'$push': {'endChatTime': datetime.now()}})
 
 
     # Domain
