@@ -1,0 +1,114 @@
+{
+  "greetingsI": [
+    {  
+      "Phrase": "Olá patanisca, já estudaste?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto!",
+        "bye" : "Nem por isso, acho que preciso de mais tempo.",
+        "doubt": "Estudar? Há teste?"
+      }
+    },
+    {
+      "Phrase": "@day. Pronto(a) para trabalhar, caramelo?",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sempre!",
+        "bye": "Nem por isso...",
+        "doubt": "Chamaste caramelo a quem?"
+      }
+    },
+    {
+      "Phrase": "Olá. Pronto(a) para o teste?",
+      "Type": "Serious",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, claro.",
+        "bye": "Não...",
+        "doubt": "Há nota mínima?"
+      }
+    },
+    {
+      "Phrase": "Então, por aqui?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Aqui estou. Preparado(a)!",
+        "bye": "Enganei-me,*miss click*.",
+        "doubt": "Aparentemente..."
+      }
+    },
+    {
+      "Phrase": "Então, tudo bem?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto.",
+        "bye": "Não, não está tudo bem.",
+        "doubt": "Meh"
+      }
+    },
+    {
+      "Phrase": "Olá, tudo bem? Vai um teste?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Sim, vamos a isto!",
+        "bye": "Nem por isso, acho que preciso de mais tempo.",
+        "doubt": "Tem de ser, não é?"
+      }
+    },
+    {
+      "Phrase": "Então, como vai isso?",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Está tudo bem, vamos fazer um teste!",
+        "bye": "Afinal quero sair.",
+        "doubt": "Tem de ser, não é?"
+      }
+      },
+    {
+      "Phrase": "Então, a que devo a tua visita?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Vim aqui fazer uma avaliação!",
+        "bye": "Afinal quero sair.",
+        "doubt": "Não é obvio?"
+      }
+    },
+    {
+      "Phrase": "Olá, bem acordado(a)?",
+      "Type": "Funny",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
+        "bye": "Afinal quero dormir mais um pouco.",
+        "doubt": "Tenho cara de sono?"
+      }
+    },
+    {
+      "Phrase": "Caro(a) @name, vamos começar!",
+      "Type": "Normal",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou preparado(a)!",
+        "bye": "Afinal quero estudar mais um pouco.",
+        "doubt": "Que remédio!"
+      }
+    },
+    {
+      "Phrase": "Olá @name, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+      "Type": "Mock",
+      "Counter": 0,
+      "Answer": {
+        "domain" : "Estou preparado(a)!",
+        "bye": "Afinal quero estudar mais um pouco.",
+        "doubt": "Que remédio!"
+      }
+    }   
+  ]
+}

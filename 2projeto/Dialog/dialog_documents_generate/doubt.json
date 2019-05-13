@@ -1,0 +1,166 @@
+{
+	"doubt": [
+	    {  
+	      "Phrase": "Tens a certeza que queres iniciar o teste?",
+	      "Type": "Serious",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sim.",
+	        "bye" : "Não."
+	      }
+	    },
+	    {
+	      "Phrase": "Precisas de estudar mais?",
+	      "Type": "Serious",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Não, estou preparado(a).",
+	        "bye": "Sim, quero sair."
+	      }
+	    },
+	    {
+	      "Phrase": "Fica para o ano?",
+	      "Type": "Mock",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Não, quero fazer o teste!",
+	        "bye": "Para o ano há mais."
+	      }
+	    },
+	    {
+	      "Phrase": "Agora a sério, tens a certeza que queres continuar?",
+	      "Type": "Serious",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sim, quero fazer o teste!",
+	        "bye": "Para o ano há mais."
+	      }
+	    },
+	    {
+	      "Phrase": "Estás seguro que queres iniciar o teste?",
+	      "Type": "Serious",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sim, bora lá!",
+	        "bye": "Afinal não quero fazer o teste."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres continuar? Podes sempre voltar mais tarde...",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Tenho a certeza, vamos ao teste!",
+	        "bye": "Afinal não quero."
+	      }
+	    },
+	    {
+	      "Phrase": "Sabia que não ias aguentar a pressão... Queres continuar?",
+	      "Type": "Mock",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sim, vamos continuar.",
+	        "bye": "Vemo-nos na próxima vez."
+	      }
+	    },
+	    {
+	      "Phrase": "Vi logo que ias desistir... Tens a certeza que queres continuar?",
+	      "Type": "Mock",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Desistir? Nem pensar!",
+	        "bye": "Fica para a próxima."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres continuar com o teste ou é melhor ires estudar mais, Einstein?",
+	      "Type": "Mock",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Vamos ao teste!",
+	        "bye": "Preciso de estudar mais."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres mesmo fazer o teste ou é para ficar para o ano?",
+	      "Type": "Funny",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Teste, teste, teste!",
+	        "bye": "Para o ano, assim tenho mais tempo."
+	      }
+	    },
+	    {
+	      "Phrase": "Logo vi que ias ceder à pressão... Desejas continuar?",
+	      "Type": "Funny",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Desejo sim senhor",
+	        "bye": "Não, continuamos para a próxima."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres estudar mais um bocado, ou continuas para o teste?",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sigo para o teste",
+	        "bye": "Estudar mais um pouco não vai fazer mal."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres ir procrastinar mais um bocado, ou queres mesmo continuar?",
+	      "Type": "Funny",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Continuamos.",
+	        "bye": "Procrastinar? Não sei o que é, mas parece divertido!"
+	      }
+	    },
+	    {
+	      "Phrase": "Estás seguro que queres continuar?",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Seguríssimo.",
+	        "bye": "Nem por isso."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Vamos continuar para o teste.",
+	        "bye": "Nem por isso."
+	      }
+	    },
+	    {
+	      "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
+	      "Type": "Funny",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Vamos continuar para o teste.",
+	        "bye": "Nem por isso."
+	      }
+	    },
+	    {
+	      "Phrase": "Tens a certeza que queres desistir?",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Não, vamos continuar para o teste.",
+	        "bye": "Sim, quero."
+	      }
+	    },
+	    {
+	      "Phrase": "Tens a certeza que queres continuar?",
+	      "Type": "Normal",
+	      "Counter": 0,
+	      "Answer": {
+	        "domain" : "Sim, vamos continuar.",
+	        "bye": "Nem por isso... Quero sair."
+	      }
+	    }
+	]	
+}

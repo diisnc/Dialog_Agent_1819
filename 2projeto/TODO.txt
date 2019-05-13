@@ -1,0 +1,12 @@
+TODO 
+	- É necessário guardar o histórico do utilizador ( frases anteriormente ditas e último login ) --> noção do tempo
+	- Fazer desenho da arvore de decisao
+	- Ficheiro config
+		- ser capaz de alterar as regras atraves do modelo de config ??
+		- ficheiro json
+		- existe a possíbilidade de nao querer um certo tipo de diálogo para um determinado domínio ( orientado ao domínio )
+	- Coleção tem de seguir a seguinte estrutura  \dialog	\geral
+								\dominio1
+								\dominio2	
+
+	- Manager tem de modificar o typeQ do padrão de acordo com a resposta do utilizador	
