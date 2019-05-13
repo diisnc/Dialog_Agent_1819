@@ -44,7 +44,7 @@
 				"Serious": [
 			        "Então, bloqueaste?",
 			       	"Estou a interromper alguma coisa?",
-			       	"Não vais responder?"
+			       	"Não vais responder?",
 			        "É para hoje?",
 			        "Vais demorar muito?",
 			        "Não tenho o dia todo!",
@@ -319,7 +319,7 @@
 				"Incentive": [
 			        "Esta era fácil, estavas distraído? Na próxima acertas.",
 			        "Vê se tens mais concentração na pergunta seguinte 😉",
-			        "Vê se te concentras melhor!"
+			        "Vê se te concentras melhor!",
 			        "Não te preocupes, continua a povoar essa tua BD e na próxima saberás a resposta certa!"
 			   	]
 			},

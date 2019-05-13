@@ -14,7 +14,7 @@ class Dialog_Agent:
     def __init__(self, patt):
         self.__dialog = ""
         self.__userID = patt[0]
-        self.__username = "Joe" #get username with user ID
+        self.__username = "Joe" # TODO : get username with user ID
         # if typeQ patt[13] is empty
         if not patt[13] :
             patt[13] = self.getGreetings(patt)
