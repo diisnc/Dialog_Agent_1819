@@ -3,29 +3,31 @@
 		"Normal": [
 		    "Boa escolha. Escolhe agora um subtema.",
 		    "Faz agora um SELECT do subtema",
-		    "Pronto para algumas \"queries\"? Seleciona o subtema."
+		    "Pronto para algumas \"queries\"? Seleciona o subtema.",
+		    "Faz a tua escolha.",
+		    "Escolhe o subtema!",
+		    "Escolhe o subtema que queres."    
 		],
 		"Serious": [
 			"Seleciona a área de avaliação.",
 			"Faz agora um SELECT do subtema.",
-			"Pronto para algumas \"queries\"? Seleciona o subtema."
+			"Pronto para algumas \"queries\"? Seleciona o subtema.",
+			"Faz a tua escolha.",
+			"Escolhe o subtema!",
+		    "Escolhe o subtema que queres." 
 		],
 		"Funny": [  
-			"És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência.",
-			"A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema.",
-			"A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente",
-			"Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado.",
-			"Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?",
 			"Estás tramado... Escolhe um subdomínio.",
 			"Isso parece difícil. Escolhe um subtema.",
-			"Ui... Seleciona um subdomínio.",
+			"Hmm... Seleciona um subdomínio.",
 			"No que te foste meter... Escolhe um subdomínio.",
 			"Faz agora um SELECT do subtema.",
-			"Pronto para algumas \"queries\"? Seleciona o subtema."
+			"Pronto para algumas \"queries\"? Seleciona o subtema.",
+			"Escolhe lá um subtema!"
 		],
 		"Mock": [
-			"Então pensas que sabes muito sobre isto? Escolhe lá um subtema!",
-		    "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!",
+			"Então, vamos ver se percebes disto... Escolhe lá um subtema!",
+		    "Então, vamos lá ver quantas erras. Escolhe um subtema!",
 		    "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"
 		]
 	},
@@ -35,41 +37,38 @@
 				"Normal": [
 			        "Já descobriste?",
 			        "Ainda demoras?",
-			        "Vamos lá...",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "Então? A \"query\" bloqueou?"
+			        "Vamos lá!",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!",
+			        "Então? A transação bloqueou?"
 			 	],
 				"Serious": [
 			        "Então, bloqueaste?",
 			       	"Estou a interromper alguma coisa?",
-			        "Só estás aqui porque queres, por isso responde.",
-			        "Ninguém te obriga a estar aqui...",
-			        "Mas isto é para hoje?",
+			       	"Não vais responder?"
+			        "É para hoje?",
 			        "Vais demorar muito?",
-			        "Há que despachar, que eu tenho mais que fazer.",
 			        "Não tenho o dia todo!",
-			        "Já esta na hora, _name_",
-			        "Vamos lá _name_, tenho mais que fazer!",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "Então? A \"query\" bloqueou?"
+			        "Já esta na hora, _name_ .",
+			        "Vamos lá, _name_ !",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!",
+			        "Então? A transação bloqueou?"
 			    ],
 				"Funny": [
 			        "De certeza que ainda és tu?",
 			        "Estou a interromper o teu intervalo?",
 			        "Estou a interromper a conversa?",
 			        "A tua resposta vem a pé?",
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
-			        "Então? A \"query\" bloqueou?"
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!",
+			        "Então? A transação bloqueou?"
 			    ],
 				"Mock": [
 			        "Tanto trabalho para agora adormeceres?",
 			        "E se gastasses o tempo a responder às perguntas?",
-			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
-			        "Não queres um cafezinho?",  
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Não queres um cafézinho?",  
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 				]
 			},
 			"badP": {
@@ -78,39 +77,35 @@
 			        "Já descobriste?",
 			        "Ainda demoras?",
 			        "Vamos lá...",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			   	],
 				"Serious": [
 			        "Então? ¯\\_(-_-)_/¯",
-			        "Só estás aqui porque queres, por isso responde...",
-			        "Ninguém te obriga a estar aqui...",
-			        "Mas isto é para hoje?",
+			        "É para hoje?",
 			        "Vais demorar muito?",
-			        "Há que despachar, que eu tenho mais que fazer.",
 			        "Não tenho o dia todo!",
 			        "Já esta na hora, _name_.",
 			        "Vamos lá _name_, tenho mais que fazer!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ],
 				"Funny": [
 			        "Estou a interromper o teu intervalo?",
 			        "Estou a interromper a conversa?",
-			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
 			        "Estou a interromper alguma coisa?",
-			        "Não queres um cafezinho?",
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Não queres um cafézinho?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ],
 				"Mock": [
 					"O lanchinho está bom?",
 			        "E se gastasses o tempo a responder às perguntas?",
 			        "A tua resposta vem a pé?",
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ]
 			},
 			"avgP": {
@@ -118,39 +113,35 @@
 			        "Já descobriste?",
 			        "Ainda demoras?",
 			        "Vamos lá...",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ],
 				"Serious": [  
-			         "Olá? Estás ai?",
+			        "Olá? Estás ai?",
 			        "Só estás aqui porque queres, por isso responde...",
-			        "Ninguém te obriga a estar aqui...",
-			        "Mas isto é para hoje?",
 			        "Vais demorar muito?",
-			        "Há que despachar porque eu tenho mais que fazer.",
 			        "Não tenho o dia todo!",
 			        "Já esta na hora, _name_.",
-			        "Vamos lá _name_, tenho mais que fazer!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Vamos lá _name_ !",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ],
 				"Funny": [
 			        "Estou a interromper o teu intervalo?",
-			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
 			        "Estou a interromper alguma coisa?",
-			        "Não queres um cafezinho?",
+			        "Não queres um cafézinho?",
 			        "Estou a interromper a conversa?",
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ],
 				"Mock": [  
-			         "Oh patanisca, é para hoje?",
+			        "Oh caramelo, é para hoje?",
 			        "E se gastasses o tempo a responder às perguntas?",
 			        "A tua resposta vem a pé?",
-			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
-			        "Então? A \"query\" bloqueou?",
-			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
+			        "Então? A transação bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 			    ]
 			}
 		},
@@ -161,19 +152,20 @@
 			    	"Esse SELECT foi rápido demais..."
 			    ],
 				"Serious": [
-			    	"Não acredito que sejas assim tão rápido a responder..."
+			    	"Não acredito que sejas assim tão rápido a responder...",
+			    	"Não podes ser tão rápido a responder."
 				],
 				"Funny": [
 			        "Estás \"on fire\", começo a duvidar...",
-			        "Muito bem! Mas como sabes, é impossível saberes mais do que eu.",
+			        "Muito bem! Mas é impossível saberes mais do que eu.",
   			      	"Esse SELECT foi muito rápido!",
-			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"
+			        "Ui! Estou a ver que tens o TRIGGER mais rápido de sempre!"
 			  	],
 				"Mock": [  
   	          		"Ou és muito bom ou essa resposta foi à sorte.",
   			      	"Esse SELECT foi muito rápido!",
-			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-  	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
+			        "Ui! Estou a ver que tens o TRIGGER mais rápido de sempre!",
+  	          		"Estou a ver que os índices da tua \"base de dados\" são muito bons... Demasiado bons!"
 				]
 			},
 			"badP": {
@@ -186,21 +178,22 @@
   			      	"Esse SELECT foi muito rápido!"
   			  	],
 				"Funny": [
-    		        "Parece que responder à sorte não está a funcionar!",
+    		        "Responder à sorte não costuma funcionar!",
+    		        "Depressa e bem, há pouco quem!",
     			    "Esse SELECT foi muito rápido!",
-  			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-    	    	  	"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
+  			        "Ui! Estou a ver que tens o TRIGGER mais rápido se sempre!",
+    	    	  	"Estou a ver que os índices da tua \"base de dados\" são muito bons... Demasiado bons!"
   				],
 				"Mock": [
-		        	"Não comeces a javardar e a responder à toa!",
+		        	"Não comeces a responder à toa!",
   			    	"Esse SELECT foi muito rápido!",
-			     	"Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-  	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
+			     	"Ui! Estou a ver que tens o TRIGGER mais rápido de sempre.",
+  	          		"Estou a ver que os índices da tua \"base de dados\" são muito bons... Demasiado bons!"
 				]
 			},
 			"avgP": {
 				"Normal": [
-		        	"Não comeces a javardar e a responder à toa!",
+		        	"Não comeces a responder à toa!",
   			    	"Esse SELECT foi muito rápido!"
   			    ],
 				"Serious": [
@@ -209,16 +202,15 @@
   			    ],
 				"Funny": [
 	          		"Carregaste sem querer?",
-	          		"\"Miss click\"?",
 			      	"Esse SELECT foi muito rápido!",
-		          	"Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
+		          	"Ui! Estou a ver que tens o TRIGGER mais rápido de sempre!",
+	          		"Estou a ver que os índices da tua \"base de dados\" são muito bons... Demasiado bons!"
 	        	],
 				"Mock": [
       	        	"Oh artista, sabias mesmo a resposta?",
     			    "Esse SELECT foi muito rápido!",
-  			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
-    	          	"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
+  			        "Ui! Estou a ver que tens o TRIGGER mais rápido de sempre!",
+    	          	"Estou a ver que os índices da tua \"base de dados\" são muito bons... Demasiado bons!"
     	        ]
 			}
 		}
@@ -229,25 +221,24 @@
 				"Normal": [
 			        "Ok, deste uma vista de olhos à matéria...",
 			        "Certíssimo, meu caro(a).",
-			        "Elementar, meu caro Watson!"
+			        "Esta era fácil."
 			   	],
 				"Serious": [
-			        "Esta era trivial..."
+			        "Esta era trivial...",
+			        "Esta era fácil."
 			    ],
 				"Funny": [
-			        "Esta era fácil, mas leva lá a bicicleta!",
+			        "Esta era fácil, mas ficas com os louros!",
 			        "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas...",
-			        "Fiquei emocionado com essa resposta. Certo!",
-			        "Caracteres não conseguem expressar o tamanho da minha felicidade!",
-			        "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões..."
+			        "Fiquei impressionado com essa resposta. Certo!",
+			        "Quero ver quando subir a dificuldade das questões..."
 			   	],
 				"Mock": [
-			       	"Muito bem! Sabes o básico",
+			       	"Muito bem! Sabes o básico.",
 			       	"Uau, parece que estudaste... O básico!"
 			    ],
 				"Incentive": [
-			        "Soma e segue!",
-			        "Epá, não brincas em serviço! Muito bem!",
+			        "Não brincas em serviço! Muito bem!",
 			        "Muito bem!",
 			        "Bem jogado _name_!",
 			        "Muito bem, _name_!",
@@ -257,7 +248,7 @@
 			},
 			"hard": {
 				"Normal": [
-			        "Acertaste esta pergunta?! Uau...",
+			        "Acertaste esta pergunta?! Muito bem.",
 			        "Isso é sorte ou inteligência?"
 			    ],
 				"Serious": [
@@ -265,16 +256,13 @@
 		          	"Nada mau, nada mau mesmo."
 		   		],
 				"Funny": [
-			        "Fiquei emocionado com essa resposta. Certo!",
-			        "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
-			        "Temos aqui um Einstein...",
-				    "Incrível, parece que estudaste!",
-			        "De onde veio tanta inteligência?",
-			        "Até perco a fala com tanta inteligência!"
+			        "Fiquei impressionado com essa resposta. Certo!",
+				    "Parece que estudaste!",
+			        "De onde veio tanta inteligência?"
 			  	],
 				"Mock": [
 			        "Um relógio avariado está certo duas vezes por dia!",
-			        "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho..."
+			        "Estás num bom caminho para ser tão bom como eu..."
 			   	],
 				"Incentive": [
 			        "Bem jogado _name_!",
@@ -282,7 +270,7 @@
 			        "Bem jogado!",
 			        "Que craque!",
 			        "Incrível, parece que percebes do assunto!",
-			        "Uau, não estava à espera!"
+			        "Não estava à espera!"
 			    ]
 			}
 		},
@@ -291,95 +279,84 @@
 				"Normal": [
 			        "Resposta errada.",
 			        "\"Fatal error\"",
-			        "Que tristeza...",
 			        "Não é bem assim...",
 			        "Errado!",
-			        "Falhanço total...",
 			        "Parece que precisas de estudar... A pergunta era fácil!",
-			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "Essa tua resposta deu-me TRIGGER!"
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."
 				],
 				"Serious": [
 			        "Resposta errada...",
 			        "Não era bem isso.",
 			        "Está mal!",
-			        "A vida não é triste. Tem é momentos tristes, e este é um deles...",
 			        "Fico triste com respostas destas.",
 			        "Não estás atento(a).",
 			        "Não estudaste nada!",
 			        "Nada disso!",
-			        "Não estudas e depois é isto.",
 			        "Assim não vais lá...",
 			        "Estou a perder a esperança.",
 			        "Nem lá perto...",
 			        "Esperava mais de ti... A pergunta era trivial.",
-			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "Essa tua resposta deu-me TRIGGER!"
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."
 			   ],
 				"Funny": [
-			        "A sério? Cansas-me a beleza.",
+			        "A sério?",
 			        "Parece que a sorte acabou!",
-			        "Não estudes que não é preciso!",
 			        "Claramente não fizeste os tpc's!",
 			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
 			        "Essa tua resposta deu-me TRIGGER!",
-			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
+			        "Acho que precisas de fazer uns INSERTs nas tuas tabelas para conseguires responder corretamente!"
 			    ],
 				"Mock": [
-			        "A sério? -.-",
-			        "Não pescas nada disto...",
+			        "A sério?",
+			        "Não percebes nada disto...",
 			        "Errado, artista!",
-			        "Não é essa a resposta, mas estás lá perto. Perto de reprovar!",
-			        "Tentaste... Mas sabes que podes sempre dedicar-te à pesca 😉",
+			        "Não é essa a resposta, mas estás lá perto. Ou não.",
+			        "Tentaste...",
 			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
 			        "Essa tua resposta deu-me TRIGGER!",
-			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
+			        "Acho que precisas de fazer uns INSERTs nas tuas tabelas para conseguires responder corretamente!"
 			    ],
 				"Incentive": [
-			        "Esta era fácil, estavas distraído? Na próxima consegues acertar.",
-			        "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte 😉",
-			        "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
+			        "Esta era fácil, estavas distraído? Na próxima acertas.",
+			        "Vê se tens mais concentração na pergunta seguinte 😉",
+			        "Vê se te concentras melhor!"
+			        "Não te preocupes, continua a povoar essa tua BD e na próxima saberás a resposta certa!"
 			   	]
 			},
 			"hard": {
 				"Normal": [
 			        "Mal!",
-			        "A pergunta era difícil, e tu fraquejaste.",
-			        "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar.",
+			        "Erraste, mas a pergunta era difícil...",
 			        "Errado. Era uma pergunta difícil, não te censuro.",
-			        "Falhanço total...",
-			        "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!",
 			        "Errado, mas admito que a pergunta não era fácil... ",
 			        "\"Fatal error\"",
 			        "Resposta errada... Mas não te critico, era difícil!",
-			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "Essa tua resposta deu-me TRIGGER!"
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."
 			   	],
 				"Serious": [
 			        "Resposta errada...",
 			        "Não era bem isso.",
 			        "Está mal!",
 			        "Nada disso!",
-			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
-			        "Essa tua resposta deu-me TRIGGER!"
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."
 			   	],
 				"Funny": [
-			        "Não estudas pelo livro e depois é isto.",
+			        "Não estudas pelo livro, os resultados estão à vista.",
 			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
 			        "Essa tua resposta deu-me TRIGGER!",
-			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
+			        "Acho que precisas de fazer uns INSERTs nas tuas tabelas para conseguires responder corretamente!"
 			    ],
 				"Mock": [
-			        "As maiores dificuldades são filhas da preguiça!",
 			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
 			        "Essa tua resposta deu-me TRIGGER!",
-			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
+			        "Acho que precisas de fazer uns INSERTs nas tuas tabelas para conseguires responder corretamente!",
+			        "Não chega ir às teóricas. Tens que ler o livro!"
 			    ],
 				"Incentive": [
-			        "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
+			        "Resposta errada, mas vais superar!",
 			        "Não era bem isso. Com mais estudo vais lá.",
 			        "Esta era dificil, não te sintas mal. A próxima vai correr melhor!",
-			        "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
+			        "Não te preocupes, continua a povoar essa tua BD e na próxima saberás a resposta certa!"
 				]
 			}
 		}
