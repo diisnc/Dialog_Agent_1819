@@ -2,8 +2,7 @@
   "greetingsI": {
     "Normal": [
       { 
-        "ID" : 0,
-        "Phrase": "Então, és novo por aqui?",
+          "Phrase": "Então, és novo por aqui?",
  
         "Answer": {
           "domain" : "Sou sim e estou preparado(a)!",
@@ -12,8 +11,7 @@
         }
       },
       { 
-        "ID" : 1,
-        "Phrase": "Então, tudo bem?",
+          "Phrase": "Então, tudo bem?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto.",
@@ -22,8 +20,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "Olá, tudo bem? Vai um teste?",
+          "Phrase": "Olá, tudo bem? Vai um teste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -32,8 +29,7 @@
         }
       },
       {
-        "ID" : 3,
-        "Phrase": "Então, como vai isso?",
+          "Phrase": "Então, como vai isso?",
  
         "Answer": {
           "domain" : "Está tudo bem, vamos fazer um teste!",
@@ -42,8 +38,7 @@
         }
       },
       {
-        "ID" : 4,
-        "Phrase": "Caro(a) _name_, vamos começar!",
+          "Phrase": "Caro(a) _name_, vamos começar!",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -52,8 +47,7 @@
         }
       },
       {
-        "ID" : 5,
-        "Phrase": "Ah! É bom ver caras novas!",
+          "Phrase": "Ah! É bom ver caras novas!",
  
         "Answer": {
           "domain" : "Olá para ti também!",
@@ -64,8 +58,7 @@
     ],
     "Serious": [
       {
-        "ID" : 0,
-        "Phrase": "Olá. Pronto(a) para o teste?",
+          "Phrase": "Olá. Pronto(a) para o teste?",
  
         "Answer": {
           "domain" : "Sim, claro.",
@@ -74,8 +67,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Boas. Vamos trabalhar?",
+          "Phrase": "Boas. Vamos trabalhar?",
  
         "Answer": {
           "domain" : "Sim, oupa!",
@@ -84,8 +76,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "Vamos começar?",
+          "Phrase": "Vamos começar?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -96,8 +87,7 @@
     ],
     "Funny": [
       {  
-        "ID" : 0,
-        "Phrase": "Olá patanisca, já estudaste?",
+          "Phrase": "Olá patanisca, já estudaste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -106,8 +96,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Então, a que devo a tua visita?",
+          "Phrase": "Então, a que devo a tua visita?",
  
         "Answer": {
           "domain" : "Vim aqui fazer uma avaliação!",
@@ -116,8 +105,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "Olá, bem acordado(a)?",
+          "Phrase": "Olá, bem acordado(a)?",
  
         "Answer": {
           "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
@@ -128,8 +116,7 @@
     ],
     "Mock": [
       {
-        "ID" : 0,
-        "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
+          "Phrase": "_day_. Pronto(a) para trabalhar, caramelo?",
  
         "Answer": {
           "domain" : "Sempre!",
@@ -138,8 +125,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+          "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -152,8 +138,7 @@
   "greetingsA": {
     "Normal": [
       {
-        "ID" : 0,
-        "Phrase": "Encontramo-nos de novo?",
+          "Phrase": "Encontramo-nos de novo?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -162,8 +147,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Então, como estão a correr as aulas?",
+          "Phrase": "Então, como estão a correr as aulas?",
  
         "Answer": {
           "domain" : "Bem! Vamos a isto.",
@@ -172,8 +156,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "Então, por aqui?",
+          "Phrase": "Então, por aqui?",
  
         "Answer": {
           "domain" : "Aqui estou. Preparado(a)!",
@@ -182,8 +165,7 @@
         }
       },
       {
-        "ID" : 3,
-        "Phrase": "Então, tudo bem?",
+          "Phrase": "Então, tudo bem?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto.",
@@ -192,8 +174,7 @@
         }
       },
       {
-        "ID" : 4,
-        "Phrase": "Olá, tudo bem? Vai um teste?",
+          "Phrase": "Olá, tudo bem? Vai um teste?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -202,8 +183,7 @@
         }
       },
       {
-        "ID" : 5,
-        "Phrase": "Então, como vai isso?",
+          "Phrase": "Então, como vai isso?",
  
         "Answer": {
           "domain" : "Está tudo bem, vamos fazer um teste!",
@@ -212,8 +192,7 @@
         }
       },
       {
-        "ID" : 6,
-        "Phrase": "Olá, bem acordado(a)?",
+          "Phrase": "Olá, bem acordado(a)?",
  
         "Answer": {
           "domain" : "Estou desperto(a) e pronto(a) para trabalhar!",
@@ -222,8 +201,7 @@
         }
       },
       {
-        "ID" : 7,
-        "Phrase": "Tudo bem? Vamos a mais um teste?",
+          "Phrase": "Tudo bem? Vamos a mais um teste?",
  
         "Answer": {
           "domain" : "Sim, estou preparado(a).",
@@ -234,8 +212,7 @@
     ],
     "Serious": [
       {
-        "ID" : 0,
-        "Phrase": "Já estás preparado(a)?",
+          "Phrase": "Já estás preparado(a)?",
  
         "Answer": {
           "domain" : "Sim, vamos a isto!",
@@ -244,8 +221,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Olá! (outra vez...)",
+          "Phrase": "Olá! (outra vez...)",
  
         "Answer": {
           "domain" : "É verdade, vamos a isto!",
@@ -254,8 +230,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
+          "Phrase": "_day_. Pronto(a) para trabalhar, desta vez a sério?",
  
         "Answer": {
           "domain" : "Sim, estou pronto(a).",
@@ -264,7 +239,6 @@
         }
       },
     {
-      "ID" : 3,
       "Phrase": "Saudações. Pronto para o teste (agora a sério...)?",
       "Answer": {
         "domain" : "Bora lá.",
@@ -275,8 +249,7 @@
     ],
     "Funny": [
       {  
-        "ID" : 0,
-        "Phrase": "Oh _name_, já estudaste?",
+          "Phrase": "Oh _name_, já estudaste?",
  
         "Answer": {
           "domain" : "Sim.",
@@ -287,8 +260,7 @@
     ],
     "Mock": [
       {
-        "ID" : 0,
-        "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
+          "Phrase": "Olá _name_, tudo bem? Se não estiver não é preciso dizer, sem problema.",
  
         "Answer": {
           "domain" : "Estou preparado(a)!",
@@ -297,8 +269,7 @@
         }
       },
       {
-        "ID" : 1,
-        "Phrase": "Então, vens agora chatear-me?",
+          "Phrase": "Então, vens agora chatear-me?",
  
         "Answer": {
           "domain" : "Preciso de avaliar!",
@@ -307,8 +278,7 @@
         }
       },
       {
-        "ID" : 2,
-        "Phrase": "Bons olhos te vejam, pensei já não precisavas de vir mais!",
+          "Phrase": "Bons olhos te vejam, pensei já não precisavas de vir mais!",
  
         "Answer": {
           "domain" : "Preciso de me avaliar.",
@@ -317,8 +287,7 @@
         }
       },
       {
-        "ID" : 3,
-        "Phrase": "Então Einstein, vamos a mais um teste?",
+          "Phrase": "Então Einstein, vamos a mais um teste?",
  
         "Answer": {
           "domain" : "Eu sei tudo!",
@@ -332,8 +301,7 @@
     "soon": {
       "Normal" : [
         {
-          "ID" : 0,
-          "Phrase": "Por cá outra vez? Isso é que é empenho!",
+              "Phrase": "Por cá outra vez? Isso é que é empenho!",
    
           "Answer": {
             "domain" : "Sim!",
@@ -342,8 +310,7 @@
           }
         },
         {
-          "ID" : 1,
-          "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
+              "Phrase": "Ora cá está uma pessoa que não desiste fácil! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Siga!",
@@ -352,8 +319,7 @@
           }
         },
         {
-          "ID" : 2,
-          "Phrase": "Viva! Outra vez por cá?",
+              "Phrase": "Viva! Outra vez por cá?",
    
           "Answer": {
             "domain" : "É verdade, vamos a isto!",
@@ -362,8 +328,7 @@
           }
         },
         {
-          "ID" : 3,
-          "Phrase": "Então, aqui outra vez? (-_-)",
+              "Phrase": "Então, aqui outra vez? (-_-)",
    
           "Answer": {
             "domain" : "Cá estou eu!",
@@ -376,8 +341,7 @@
     "late": {
       "Normal" : [
         {
-          "ID" : 0,
-          "Phrase": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
+              "Phrase": "Então caramelo, pensava que nunca mais voltavas! Pronto?",
    
           "Answer": {
             "domain" : "Sim!",
@@ -386,8 +350,7 @@
           }        
         },
         {
-          "ID" : 1,
-          "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
+              "Phrase": "Tive saudades tuas.*cough cough*. Vai mais um teste?",
    
           "Answer": {
             "domain" : "Sim!",
@@ -396,8 +359,7 @@
           }
         },
         {
-          "ID" : 2,
-          "Phrase": "Pensei que tinhas morrido! Vieste para trabalhar?",
+              "Phrase": "Pensei que tinhas morrido! Vieste para trabalhar?",
    
           "Answer": {
             "domain" : "Sim, pronto para trabalhar!",
@@ -406,8 +368,7 @@
           }
         },
         {
-          "ID" : 3,
-          "Phrase": "Então, foste de ferias? Vamos lá praticar!",
+              "Phrase": "Então, foste de ferias? Vamos lá praticar!",
    
           "Answer": {
             "domain" : "Estou pronto!",
@@ -416,8 +377,7 @@
           }
         },
         {
-          "ID" : 4,
-          "Phrase": "Ao tempo _name_! Vamos trabalhar?",
+              "Phrase": "Ao tempo _name_! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Vamos lá!",
@@ -426,8 +386,7 @@
           }
         },
         {
-          "ID" : 5,
-          "Phrase": "Ao tempo que não te via! Que tens andado a fazer? Estou a brincar, não quero saber! Vamos trabalhar?",
+              "Phrase": "Ao tempo que não te via! Que tens andado a fazer? Estou a brincar, não quero saber! Vamos trabalhar?",
    
           "Answer": {
             "domain" : "Voltei para trabalhar!",
@@ -436,8 +395,7 @@
           }
         },
         {
-          "ID" : 6,
-          "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
+              "Phrase": "Olá outra vez. Admito que tive saudades tuas... *cough cough*",
    
           "Answer": {
             "domain" : "É verdade, vamos a isto!",
@@ -451,7 +409,6 @@
   "doubt": {
     "Normal": [
     {
-      "ID" : 0,
       "Phrase": "Queres continuar? Podes sempre voltar mais tarde...",
       "Answer": {
         "domain" : "Tenho a certeza, vamos ao teste!",
@@ -459,7 +416,6 @@
       }
     },
     {
-      "ID" : 1,
       "Phrase": "Queres estudar mais um bocado, ou continuas para o teste?",
       "Answer": {
         "domain" : "Sigo para o teste",
@@ -467,7 +423,6 @@
       }
     },
     {
-      "ID" : 2,
       "Phrase": "Estás seguro que queres continuar?",
       "Answer": {
         "domain" : "Seguríssimo.",
@@ -475,7 +430,6 @@
       }
     },
     {
-      "ID" : 3,
       "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos continuar para o teste.",
@@ -483,7 +437,6 @@
       }
     },
     {
-      "ID" : 4,
       "Phrase": "Tens a certeza que queres desistir?",
       "Answer": {
         "domain" : "Não, vamos continuar para o teste.",
@@ -491,7 +444,6 @@
       }
     },
     {
-      "ID" : 5,
       "Phrase": "Tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Sim, vamos continuar.",
@@ -501,7 +453,6 @@
     ],
     "Serious": [
     {  
-      "ID" : 0,
       "Phrase": "Tens a certeza que queres iniciar o teste?",
       "Answer": {
         "domain" : "Sim.",
@@ -509,7 +460,6 @@
       }
     },
     {
-      "ID" : 1,
       "Phrase": "Precisas de estudar mais?",
       "Answer": {
         "domain" : "Não, estou preparado(a).",
@@ -517,7 +467,6 @@
       }
     },
     {
-      "ID" : 2,
       "Phrase": "Agora a sério, tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Sim, quero fazer o teste!",
@@ -525,7 +474,6 @@
       }
     },
     {
-      "ID" : 3,
       "Phrase": "Estás seguro que queres iniciar o teste?",
       "Answer": {
         "domain" : "Sim, bora lá!",
@@ -535,7 +483,6 @@
     ],
     "Funny": [
     {
-      "ID" : 0,
       "Phrase": "Queres mesmo fazer o teste ou é para ficar para o ano?",
       "Answer": {
         "domain" : "Teste, teste, teste!",
@@ -543,7 +490,6 @@
       }
     },
     {
-      "ID" : 1,
       "Phrase": "Logo vi que ias ceder à pressão... Desejas continuar?",
       "Answer": {
         "domain" : "Desejo sim senhor",
@@ -551,7 +497,6 @@
       }
     },
     {
-      "ID" : 2,
       "Phrase": "Queres ir procrastinar mais um bocado, ou queres mesmo continuar?",
       "Answer": {
         "domain" : "Continuamos.",
@@ -559,7 +504,6 @@
       }
     },
     {
-      "ID" : 3,
       "Phrase": "Queres mesmo fazer o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos continuar para o teste.",
@@ -569,7 +513,6 @@
     ],
     "Mock": [
     {
-      "ID" : 0,
       "Phrase": "Fica para o ano?",
       "Answer": {
         "domain" : "Não, quero fazer o teste!",
@@ -577,7 +520,6 @@
       }
     },
     {
-      "ID" : 1,
       "Phrase": "Sabia que não ias aguentar a pressão... Queres continuar?",
       "Answer": {
         "domain" : "Sim, vamos continuar.",
@@ -585,7 +527,6 @@
       }
     },
     {
-      "ID" : 2,
       "Phrase": "Vi logo que ias desistir... Tens a certeza que queres continuar?",
       "Answer": {
         "domain" : "Desistir? Nem pensar!",
@@ -593,7 +534,6 @@
       }
     },
     {
-      "ID" : 3,
       "Phrase": "Queres continuar com o teste ou é melhor ires estudar mais, Einstein?",
       "Answer": {
         "domain" : "Vamos ao teste!",
@@ -605,149 +545,149 @@
   "farewell": {
     "bye": {
       "Normal": [
-        {"ID" : 0,"Phrase": "Vemo-nos mais tarde!"},
-        {"ID" : 1, "Phrase": "\"See you later, aligator...\""},
-        {"ID" : 2, "Phrase": "Adeus!"}
+        "Vemo-nos mais tarde!",
+        "\"See you later, aligator...\"",
+        "Adeus!"
       ],
       "Serious": [  
-        {"ID" : 0, "Phrase": "Até à próxima."},
-        {"ID" : 1, "Phrase": "Vemo-nos depois."},
-        {"ID" : 2, "Phrase": "Tchau."}
+        "Até à próxima.",
+        "Vemo-nos depois.",
+        "Tchau."
       ],
       "Funny": [
-        {"ID" : 0, "Phrase": "Até para o ano!"},
-        {"ID" : 1, "Phrase": "Adeus, boa Páscoa"},
-        {"ID" : 2, "Phrase": "Vai lá, bom Natal."},
-        {"ID" : 3, "Phrase": "\"See you later, aligator...\""},
-        {"ID" : 4, "Phrase": "Até à próxima caramelo!"}
+        "Até para o ano!",
+        "Adeus, boa Páscoa",
+        "Vai lá, bom Natal.",
+        "\"See you later, aligator...\"",
+        "Até à próxima caramelo!"
       ],
       "Mock": [
-        {"ID" : 0, "Phrase": "Estava ver que nunca mais me via livre de ti, adeus!"},
-        {"ID" : 1, "Phrase": "Já estavas a demorar a ir embora..."},
-        {"ID" : 2, "Phrase": "Vou ter saudades tuas..."}
+        "Estava ver que nunca mais me via livre de ti, adeus!",
+        "Já estavas a demorar a ir embora...",
+        "Vou ter saudades tuas..."
       ],
       "Incentive": [
-        {"ID" : 0, "Phrase": "Até à próxima!"},
-        {"ID" : 1, "Phrase": "Prometes que me voltas a visitar, please?"},
-        {"ID" : 2, "Phrase": "Até amanhã. Vens amanhã, certo?"}
+        "Até à próxima!",
+        "Prometes que me voltas a visitar, please?",
+        "Até amanhã. Vens amanhã, certo?"
       ]
-    },
+    ,
     "badP": {
       "Normal": [
-        {"ID" : 0, "Phrase": "Precisas de estudar mais, até à próxima!"},
-        {"ID" : 1, "Phrase": "A tua performance não foi muito boa... Vê se melhoras!"},
-        {"ID" : 2, "Phrase": "Isto não foi lá muito bom... Tens que estudar mais!"},
-        {"ID" : 3, "Phrase": "Tchau, estuda mais para a próxima!"}
+        "Precisas de estudar mais, até à próxima!",
+        "A tua performance não foi muito boa... Vê se melhoras!",
+        "Isto não foi lá muito bom... Tens que estudar mais!",
+        "Tchau, estuda mais para a próxima!"
       ],
       "Serious": [  
-        {"ID" : 0, "Phrase": "Estás reprovado..."},
-        {"ID" : 1, "Phrase": "Até à próxima. Se houver..."},
-        {"ID" : 2, "Phrase": "Isto foi péssimo, adeus!"},
-        {"ID" : 3, "Phrase": "Nem vou comentar este teste, adeus."}
+        "Estás reprovado...",
+        "Até à próxima. Se houver...",
+        "Isto foi péssimo, adeus!",
+        "Nem vou comentar este teste, adeus."
       ],
       "Funny": [
-        {"ID" : 0, "Phrase": "\"The force is not with you.\""},
-        {"ID" : 1, "Phrase": "Vai estudar, melga."},
-        {"ID" : 2, "Phrase": "Terrível, nem vou comentar manz!"},
-        {"ID" : 3, "Phrase": "Pior teste que já vi, vai estudar artista."},
-        {"ID" : 4, "Phrase": "Para os dias bons: sorrisos. Para os dias maus: paciência. Para todos os dias: fé. Despeço-me com votos de muita fé e paciência para ti."}
+        "\"The force is not with you.\"",
+        "Vai estudar, melga.",
+        "Terrível, nem vou comentar manz!",
+        "Pior teste que já vi, vai estudar artista.",
+        "Para os dias bons: sorrisos. Para os dias maus: paciência. Para todos os dias: fé. Despeço-me com votos de muita fé e paciência para ti."
       ],
       "Mock": [  
-        {"ID" : 0, "Phrase": "Não pescas nada disto!"},
-        {"ID" : 1, "Phrase": "Não percebes nada disto!"},
-        {"ID" : 2, "Phrase": "Põe-te a andar!"},
-        {"ID" : 3, "Phrase": "Andamos a brincar? Vergonha..."} 
+        "Não pescas nada disto!",
+        "Não percebes nada disto!",
+        "Põe-te a andar!",
+        "Andamos a brincar? Vergonha..." 
       ],
       "Incentive": [
-        {"ID" : 0, "Phrase": "Isto não te correu muito bem, mas para a próxima corre melhor!"},
-        {"ID" : 1, "Phrase": "Proibido desistir. Respira fundo e volta!"},
-        {"ID" : 2, "Phrase": "Não desistas, se leres o livro isto vai correr bem."}
+        "Isto não te correu muito bem, mas para a próxima corre melhor!",
+        "Proibido desistir. Respira fundo e volta!",
+        "Não desistas, se leres o livro isto vai correr bem."
       ]
-    },
+    ,
     "goodP": {
       "Normal": [
-        {"ID" : 0, "Phrase": "Vá, és muito bom, vai-te embora..."},
-        {"ID" : 1, "Phrase": "Uau, quero ver se para a próxima te corre tão bem!"},
-        {"ID" : 2, "Phrase": "Muito bem, quando queres estudas. Adeus!"}
+        "Vá, és muito bom, vai-te embora...",
+        "Uau, quero ver se para a próxima te corre tão bem!",
+        "Muito bem, quando queres estudas. Adeus!"
       ],
       "Serious": [
-        {"ID" : 0, "Phrase": "Muito bem, adeus!"},
-        {"ID" : 1, "Phrase": "Boa performance, see ya!"},
-        {"ID" : 2, "Phrase": "Bom teste, até à próxima."}
+        "Muito bem, adeus!",
+        "Boa performance, see ya!",
+        "Bom teste, até à próxima."
       ],
       "Funny": [
-        {"ID" : 0, "Phrase": "Bom trabalho! Onde estão as cábulas?"},
-        {"ID" : 1, "Phrase": "És muita bom, quero ver se na próxima repetes a proeza!"},
-        {"ID" : 2, "Phrase": "Corre riscos. Se der certo, felicidade. Se não, sabedoria. Deves estar muito feliz com este teste, adeus!"},
-        {"ID" : 3, "Phrase": "Viver não é esperar a tempestade passar. É aprender a dançar na chuva. Até fizeste break dance neste teste! Até à próxima."}
+        "Bom trabalho! Onde estão as cábulas?",
+        "És muita bom, quero ver se na próxima repetes a proeza!",
+        "Corre riscos. Se der certo, felicidade. Se não, sabedoria. Deves estar muito feliz com este teste, adeus!",
+        "Viver não é esperar a tempestade passar. É aprender a dançar na chuva. Até fizeste break dance neste teste! Até à próxima."
       ],
       "Mock": [
-        {"ID" : 0, "Phrase": "Epa, és muita bom. Adeus!"},
-        {"ID" : 1, "Phrase": "Para a próxima não permito que acertes tantas perguntas, ninguém é melhor do que eu!"},
-        {"ID" : 2, "Phrase": "Tchau aí einstein!"}
+        "Epa, és muita bom. Adeus!",
+        "Para a próxima não permito que acertes tantas perguntas, ninguém é melhor do que eu!",
+        "Tchau aí einstein!"
       ],
       "Incentive": [
-        {"ID" : 0, "Phrase":  "Nada mal 😉"},
-        {"ID" : 1, "Phrase": "É para o 20."},
-        {"ID" : 2, "Phrase": "Nice!"},
-        {"ID" : 3, "Phrase": "Muito bem!"},
-        {"ID" : 4, "Phrase": "Boa!"}
+         "Nada mal 😉",
+        "É para o 20.",
+        "Nice!",
+        "Muito bem!",
+        "Boa!"
       ]
-    },
+    ,
     "avgP": {
       "Normal": [
-        {"ID" : 0, "Phrase": "Isto não foi nem bom nem mau... Estuda mais na próxima para ver se chegas ao meu nível"},
-        {"ID" : 1, "Phrase": "Se estudasses pelo livro isto tinha sido melhor... Adeus!"},
-        {"ID" : 2, "Phrase": "Meeh, podia ser pior. Bye!"}
+        "Isto não foi nem bom nem mau... Estuda mais na próxima para ver se chegas ao meu nível",
+        "Se estudasses pelo livro isto tinha sido melhor... Adeus!",
+        "Meeh, podia ser pior. Bye!"
       ],
       "Serious": [
-        {"ID" : 0, "Phrase": "Devias estudar mais, adeus."},
-        {"ID" : 1, "Phrase": "Podia ser pior, até à próxima!"},
-        {"ID" : 2, "Phrase": "Dá para melhorar, talvez numa próxima."}
+        "Devias estudar mais, adeus.",
+        "Podia ser pior, até à próxima!",
+        "Dá para melhorar, talvez numa próxima."
       ],
       "Funny": [
-        {"ID" : 0, "Phrase": "Se for pra desistir, desiste de ser fraco. Mas não desistas destes testes porque estás quase lá!"},
-        {"ID" : 1, "Phrase": "Se queres ter algo que nunca tiveste, faz algo que nunca fizeste. Para a próxima estuda mais para ver aquele 20 que nunca viste..."},
-        {"ID" : 2, "Phrase": "A determinação de hoje é o sucesso de amanhã. Mas só de amanhã, porque hoje não foi grande coisa. Até à próxima!"},
-        {"ID" : 3, "Phrase": "Até que nem foi mau artista! See ya."},
-        {"ID" : 4, "Phrase": "Vai do jeito que puderes, mas não deixes de vir! Para a próxima é melhor artista."}
+        "Se for pra desistir, desiste de ser fraco. Mas não desistas destes testes porque estás quase lá!",
+        "Se queres ter algo que nunca tiveste, faz algo que nunca fizeste. Para a próxima estuda mais para ver aquele 20 que nunca viste...",
+        "A determinação de hoje é o sucesso de amanhã. Mas só de amanhã, porque hoje não foi grande coisa. Até à próxima!",
+        "Até que nem foi mau artista! See ya.",
+        "Vai do jeito que puderes, mas não deixes de vir! Para a próxima é melhor artista."
       ],
       "Mock": [
-        {"ID" : 0, "Phrase": "Meeh, podia ser melhor. Ciao."},
-        {"ID" : 1, "Phrase": "Eu não sei como, mas vais chegar lá em breve. Adeus."},
-        {"ID" : 2, "Phrase": "Amanhã é dia de conquistar mais do que hoje. Espero eu, porque isto não foi grande coisa."},
-        {"ID" : 3, "Phrase": "Isto nem foi carne, nem foi peixe. Vai estudar caramelo(a)."}
+        "Meeh, podia ser melhor. Ciao.",
+        "Eu não sei como, mas vais chegar lá em breve. Adeus.",
+        "Amanhã é dia de conquistar mais do que hoje. Espero eu, porque isto não foi grande coisa.",
+        "Isto nem foi carne, nem foi peixe. Vai estudar caramelo(a)."
       ],
       "Incentive": [
-        {"ID" : 0, "Phrase": "Não está bom... Mas também não está mau. Até à próxima!"},
-        {"ID" : 1, "Phrase": "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima..."},
-        {"ID" : 2, "Phrase": "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!"},
-        {"ID" : 3, "Phrase": "Erros são provas de que estás a tentar. Não desistas!"}  
+        "Não está bom... Mas também não está mau. Até à próxima!",
+        "Não percas a esperança, há hipótese para melhorar. Talvez numa próxima...",
+        "Calma patanisca, com trabalho chegas lá. Boa sorte para a próxima!",
+        "Erros são provas de que estás a tentar. Não desistas!"  
       ]
     }
-  },
+  ,
   "domain": {
     "Normal": [
-      {"ID" : 0, "Phrase": "O que é que queres tentar hoje?"},
-      {"ID" : 1, "Phrase": "Queres ser avaliado(a) em que área?"},
-      {"ID" : 2, "Phrase": "Qual é a tua escolha hoje?"}
+      "O que é que queres tentar hoje?",
+      "Queres ser avaliado(a) em que área?",
+      "Qual é a tua escolha hoje?"
     ],
     "Serious": [ 
-      {"ID" : 0, "Phrase": "Escolhe o tema para avaliação:"},
-      {"ID" : 1, "Phrase": "O que é que queres estudar hoje?"},
-      {"ID" : 2, "Phrase": "Seleciona a área onde queres ser avaliado(a)."}
+      "Escolhe o tema para avaliação:",
+      "O que é que queres estudar hoje?",
+      "Seleciona a área onde queres ser avaliado(a)."
     ],
     "Funny": [  
-      {"ID" : 0, "Phrase": "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!"},
-      {"ID" : 1, "Phrase": "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração."},
-      {"ID" : 2, "Phrase": "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho."},
-      {"ID" : 3, "Phrase": "Aqui está a ementa!"}
+      "As escolhas mais difíceis requerem as vontades mais fortes. Força nessa escolha!",
+      "O coração sabe exatamente do que precisamos, somos nós que dificultamos as escolhas. Segue o teu coração.",
+      "Às vezes são as escolhas erradas que te levam ao rumo certo. Escolhe o teu caminho.",
+      "Aqui está a ementa!"
     ],
     "Mock": [
-      {"ID" : 0, "Phrase": "O que vai ser hoje, caramelo?"},
-      {"ID" : 1, "Phrase": "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!"},
-      {"ID" : 2, "Phrase": "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!"},
-      {"ID" : 3, "Phrase": "Então caramelo, o que vais escolher?"}
+      "O que vai ser hoje, caramelo?",
+      "Tu és livre para fazer tuas escolhas, mas depois não te queixes artista!",
+      "Lembra-te: as tuas escolhas têm 50% de hipótese de darem certo, mas também 50% de chance de darem errado. Neste caso, provavelmente vai dar asneira!",
+      "Então caramelo, o que vais escolher?"
     ]
   }
 }

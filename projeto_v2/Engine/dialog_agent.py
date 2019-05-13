@@ -29,7 +29,7 @@ class Dialog_Agent:
             print(" ########## New user history entry ########## ")
             userH = {
                     "userID" : self.__userID,
-                    "beginChatTime" : [],
+                    "beginChatTime" : [datetime.now()],
                     "endChatTime" : [] 
                     }
 

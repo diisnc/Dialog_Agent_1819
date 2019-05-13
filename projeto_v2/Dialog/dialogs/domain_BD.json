@@ -1,224 +1,224 @@
 {
 	"subdomain": {
 		"Normal": [
-		    {"ID": 0, "Phrase" : "Boa escolha. Escolhe agora um subtema."},
-		    {"ID": 1, "Phrase" : "Faz agora um SELECT do subtema"},
-		    {"ID": 2, "Phrase" : "Pronto para algumas \"queries\"? Seleciona o subtema."}
+		    "Boa escolha. Escolhe agora um subtema.",
+		    "Faz agora um SELECT do subtema",
+		    "Pronto para algumas \"queries\"? Seleciona o subtema."
 		],
 		"Serious": [
-			{"ID": 0, "Phrase" : "Seleciona a área de avaliação."},
-			{"ID": 1, "Phrase" : "Faz agora um SELECT do subtema."},
-			{"ID": 2, "Phrase" : "Pronto para algumas \"queries\"? Seleciona o subtema."}
+			"Seleciona a área de avaliação.",
+			"Faz agora um SELECT do subtema.",
+			"Pronto para algumas \"queries\"? Seleciona o subtema."
 		],
 		"Funny": [  
-			{"ID": 0, "Phrase" : "És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência."},
-			{"ID": 1, "Phrase" : "A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema."},
-			{"ID": 2, "Phrase" : "A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente"},
-			{"ID": 3, "Phrase" : "Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado."},
-			{"ID": 4, "Phrase" : "Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?"},
-			{"ID": 5, "Phrase" : "Estás tramado... Escolhe um subdomínio."},
-			{"ID": 6, "Phrase" : "Isso parece difícil. Escolhe um subtema."},
-			{"ID": 7, "Phrase" : "Ui... Seleciona um subdomínio."},
-			{"ID": 8, "Phrase" : "No que te foste meter... Escolhe um subdomínio."},
-			{"ID": 9, "Phrase" : "Faz agora um SELECT do subtema."},
-			{"ID": 10, "Phrase" : "Pronto para algumas \"queries\"? Seleciona o subtema."}
+			"És livre de fazer as tuas escolhas, mas és prisioneiro das consequências... Escolhe a consequência.",
+			"A vida é a soma de todas as tuas escolhas. Por isso, escolhe um subtema.",
+			"A vida é feita de escolhas. Quando dás um passo à frente, inevitavelmente alguma coisa fica para trás. Escolhe o teu passo em frente",
+			"Eu posso cuidar de ti, mas não posso fazer as tuas escolhas. Indica um subtema para seres avaliado.",
+			"Escolhas são árvores, as mágoas são os frutos. Qual vai ser a tua árvore?",
+			"Estás tramado... Escolhe um subdomínio.",
+			"Isso parece difícil. Escolhe um subtema.",
+			"Ui... Seleciona um subdomínio.",
+			"No que te foste meter... Escolhe um subdomínio.",
+			"Faz agora um SELECT do subtema.",
+			"Pronto para algumas \"queries\"? Seleciona o subtema."
 		],
 		"Mock": [
-			{"ID": 0, "Phrase" : "Então pensas que sabes muito sobre isto? Escolhe lá um subtema!"},
-		    {"ID": 1, "Phrase" : "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!"},
-		    {"ID": 2, "Phrase" : "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"}
+			"Então pensas que sabes muito sobre isto? Escolhe lá um subtema!",
+		    "Ora bem, vamos lá ver o quanto te vais espalhar neste tema. Escolhe um subtema!",
+		    "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"
 		]
 	},
 	"time": {
 		"timeout": {
 			"goodP": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Já descobriste?"},
-			        {"ID": 1, "Phrase" : "Ainda demoras?"},
-			        {"ID": 2, "Phrase" : "Vamos lá..."},
-			        {"ID": 3, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
-			        {"ID": 4, "Phrase" : "Então? A \"query\" bloqueou?"}
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Vamos lá...",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			        "Então? A \"query\" bloqueou?"
 			 	],
 				"Serious": [
-			        {"ID": 0, "Phrase" : "Então, bloqueaste?"},
-			       	{"ID": 1, "Phrase" : "Estou a interromper alguma coisa?"},
-			        {"ID": 2, "Phrase" : "Só estás aqui porque queres, por isso responde."},
-			        {"ID": 3, "Phrase" : "Ninguém te obriga a estar aqui..."},
-			        {"ID": 4, "Phrase" : "Mas isto é para hoje?"},
-			        {"ID": 5, "Phrase" : "Vais demorar muito?"},
-			        {"ID": 6, "Phrase" : "Há que despachar, que eu tenho mais que fazer."},
-			        {"ID": 7, "Phrase" : "Não tenho o dia todo!"},
-			        {"ID": 8, "Phrase" : "Já esta na hora, _name_"},
-			        {"ID": 9, "Phrase" : "Vamos lá _name_, tenho mais que fazer!"},
-			        {"ID": 10, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
-			        {"ID": 11, "Phrase" : "Então? A \"query\" bloqueou?"}
+			        "Então, bloqueaste?",
+			       	"Estou a interromper alguma coisa?",
+			        "Só estás aqui porque queres, por isso responde.",
+			        "Ninguém te obriga a estar aqui...",
+			        "Mas isto é para hoje?",
+			        "Vais demorar muito?",
+			        "Há que despachar, que eu tenho mais que fazer.",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_",
+			        "Vamos lá _name_, tenho mais que fazer!",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			        "Então? A \"query\" bloqueou?"
 			    ],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "De certeza que ainda és tu?"},
-			        {"ID": 1, "Phrase" : "Estou a interromper o teu intervalo?"},
-			        {"ID": 2, "Phrase" : "Estou a interromper a conversa?"},
-			        {"ID": 3, "Phrase" : "A tua resposta vem a pé?"},
-			        {"ID": 4, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 5, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""},
-			        {"ID": 6, "Phrase" : "Então? A \"query\" bloqueou?"}
+			        "De certeza que ainda és tu?",
+			        "Estou a interromper o teu intervalo?",
+			        "Estou a interromper a conversa?",
+			        "A tua resposta vem a pé?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"",
+			        "Então? A \"query\" bloqueou?"
 			    ],
 				"Mock": [
-			        {"ID": 0, "Phrase" : "Tanto trabalho para agora adormeceres?"},
-			        {"ID": 1, "Phrase" : "E se gastasses o tempo a responder às perguntas?"},
-			        {"ID": 2, "Phrase" : "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
-			        {"ID": 3, "Phrase" : "Não queres um cafezinho?"},  
-			        {"ID": 4, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 5, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 6, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Tanto trabalho para agora adormeceres?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+			        "Não queres um cafezinho?",  
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 				]
 			},
 			"badP": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Entretanto adormeço..."},
-			        {"ID": 1, "Phrase" : "Já descobriste?"},
-			        {"ID": 2, "Phrase" : "Ainda demoras?"},
-			        {"ID": 3, "Phrase" : "Vamos lá..."},
-			        {"ID": 4, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 5, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Entretanto adormeço...",
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Vamos lá...",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			   	],
 				"Serious": [
-			        {"ID": 0, "Phrase" : "Então? ¯\\_(-_-)_/¯"},
-			        {"ID": 1, "Phrase" : "Só estás aqui porque queres, por isso responde..."},
-			        {"ID": 2, "Phrase" : "Ninguém te obriga a estar aqui..."},
-			        {"ID": 3, "Phrase" : "Mas isto é para hoje?"},
-			        {"ID": 4, "Phrase" : "Vais demorar muito?"},
-			        {"ID": 5, "Phrase" : "Há que despachar, que eu tenho mais que fazer."},
-			        {"ID": 6, "Phrase" : "Não tenho o dia todo!"},
-			        {"ID": 7, "Phrase" : "Já esta na hora, _name_."},
-			        {"ID": 8, "Phrase" : "Vamos lá _name_, tenho mais que fazer!"},
-			        {"ID": 9, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 10, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Então? ¯\\_(-_-)_/¯",
+			        "Só estás aqui porque queres, por isso responde...",
+			        "Ninguém te obriga a estar aqui...",
+			        "Mas isto é para hoje?",
+			        "Vais demorar muito?",
+			        "Há que despachar, que eu tenho mais que fazer.",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_.",
+			        "Vamos lá _name_, tenho mais que fazer!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Estou a interromper o teu intervalo?"},
-			        {"ID": 1, "Phrase" : "Estou a interromper a conversa?"},
-			        {"ID": 2, "Phrase" : "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
-			        {"ID": 3, "Phrase" : "Estou a interromper alguma coisa?"},
-			        {"ID": 4, "Phrase" : "Não queres um cafezinho?"},
-			        {"ID": 5, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 6, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 7, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Estou a interromper o teu intervalo?",
+			        "Estou a interromper a conversa?",
+			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+			        "Estou a interromper alguma coisa?",
+			        "Não queres um cafezinho?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ],
 				"Mock": [
-					{"ID": 0, "Phrase" : "O lanchinho está bom?"},
-			        {"ID": 1, "Phrase" : "E se gastasses o tempo a responder às perguntas?"},
-			        {"ID": 2, "Phrase" : "A tua resposta vem a pé?"},
-			        {"ID": 3, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 4, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 5, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+					"O lanchinho está bom?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "A tua resposta vem a pé?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ]
 			},
 			"avgP": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Já descobriste?"},
-			        {"ID": 1, "Phrase" : "Ainda demoras?"},
-			        {"ID": 2, "Phrase" : "Vamos lá..."},
-			        {"ID": 3, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 4, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Vamos lá...",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ],
 				"Serious": [  
-			        {"ID": 0, "Phrase" :  "Olá? Estás ai?"},
-			        {"ID": 1, "Phrase" : "Só estás aqui porque queres, por isso responde..."},
-			        {"ID": 2, "Phrase" : "Ninguém te obriga a estar aqui..."},
-			        {"ID": 3, "Phrase" : "Mas isto é para hoje?"},
-			        {"ID": 4, "Phrase" : "Vais demorar muito?"},
-			        {"ID": 5, "Phrase" : "Há que despachar porque eu tenho mais que fazer."},
-			        {"ID": 6, "Phrase" : "Não tenho o dia todo!"},
-			        {"ID": 7, "Phrase" : "Já esta na hora, _name_."},
-			        {"ID": 8, "Phrase" : "Vamos lá _name_, tenho mais que fazer!"},
-			        {"ID": 9, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 10, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			         "Olá? Estás ai?",
+			        "Só estás aqui porque queres, por isso responde...",
+			        "Ninguém te obriga a estar aqui...",
+			        "Mas isto é para hoje?",
+			        "Vais demorar muito?",
+			        "Há que despachar porque eu tenho mais que fazer.",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_.",
+			        "Vamos lá _name_, tenho mais que fazer!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Estou a interromper o teu intervalo?"},
-			        {"ID": 1, "Phrase" : "Olha que se estiveres à conversa, esse tema não vai sair no teste!"},
-			        {"ID": 2, "Phrase" : "Estou a interromper alguma coisa?"},
-			        {"ID": 4, "Phrase" : "Não queres um cafezinho?"},
-			        {"ID": 5, "Phrase" : "Estou a interromper a conversa?"},
-			        {"ID": 6, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 7, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 8, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			        "Estou a interromper o teu intervalo?",
+			        "Olha que se estiveres à conversa, esse tema não vai sair no teste!",
+			        "Estou a interromper alguma coisa?",
+			        "Não queres um cafezinho?",
+			        "Estou a interromper a conversa?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ],
 				"Mock": [  
-			        {"ID": 0, "Phrase" :  "Oh patanisca, é para hoje?"},
-			        {"ID": 1, "Phrase" : "E se gastasses o tempo a responder às perguntas?"},
-			        {"ID": 2, "Phrase" : "A tua resposta vem a pé?"},
-			        {"ID": 3, "Phrase" : "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!"},
-			        {"ID": 4, "Phrase" : "Então? A \"query\" bloqueou?"},
-			        {"ID": 5, "Phrase" : "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""}
+			         "Oh patanisca, é para hoje?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "A tua resposta vem a pé?",
+			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua cabeça!",
+			        "Então? A \"query\" bloqueou?",
+			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\""
 			    ]
 			}
 		},
 	"toosoon": {
 			"goodP": {
 				"Normal": [
-			    	{"ID": 0, "Phrase" : "Foi bom... bom demais..."},
-			    	{"ID": 1, "Phrase" : "Esse SELECT foi rápido demais..."}
+			    	"Foi bom... bom demais...",
+			    	"Esse SELECT foi rápido demais..."
 			    ],
 				"Serious": [
-			    	{"ID": 0, "Phrase" : "Não acredito que sejas assim tão rápido a responder..."}
+			    	"Não acredito que sejas assim tão rápido a responder..."
 				],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Estás \"on fire\", começo a duvidar..."},
-			        {"ID": 1, "Phrase" : "Muito bem! Mas como sabes, é impossível saberes mais do que eu."},
-  			      	{"ID": 2, "Phrase" : "Esse SELECT foi muito rápido!"},
-			        {"ID": 3, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"}
+			        "Estás \"on fire\", começo a duvidar...",
+			        "Muito bem! Mas como sabes, é impossível saberes mais do que eu.",
+  			      	"Esse SELECT foi muito rápido!",
+			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"
 			  	],
 				"Mock": [  
-  	          		{"ID": 0, "Phrase" : "Ou és muito bom ou essa resposta foi à sorte."},
-  			      	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"},
-			        {"ID": 2, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
-  	          		{"ID": 3, "Phrase" : "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+  	          		"Ou és muito bom ou essa resposta foi à sorte.",
+  			      	"Esse SELECT foi muito rápido!",
+			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+  	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
 				]
 			},
 			"badP": {
 				"Normal": [
-		        	{"ID": 0, "Phrase" : "Não vale a pena tentar adivinhar a resposta..."},
-  			    	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"}
+		        	"Não vale a pena tentar adivinhar a resposta...",
+  			    	"Esse SELECT foi muito rápido!"
   			  	],
 				"Serious": [  
-			        {"ID": 0, "Phrase" : "Isto não é para responder à sorte!"},
-  			      	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"}
+			        "Isto não é para responder à sorte!",
+  			      	"Esse SELECT foi muito rápido!"
   			  	],
 				"Funny": [
-    		        {"ID": 0, "Phrase" : "Parece que responder à sorte não está a funcionar!"},
-    			    {"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"},
-  			        {"ID": 2, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
-    	    	  	{"ID": 3, "Phrase" : "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+    		        "Parece que responder à sorte não está a funcionar!",
+    			    "Esse SELECT foi muito rápido!",
+  			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+    	    	  	"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
   				],
 				"Mock": [
-		        	{"ID": 0, "Phrase" : "Não comeces a javardar e a responder à toa!"},
-  			    	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"},
-			     	{"ID": 2, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
-  	          		{"ID": 3, "Phrase" : "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+		        	"Não comeces a javardar e a responder à toa!",
+  			    	"Esse SELECT foi muito rápido!",
+			     	"Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+  	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
 				]
 			},
 			"avgP": {
 				"Normal": [
-		        	{"ID": 0, "Phrase" : "Não comeces a javardar e a responder à toa!"},
-  			    	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"}
+		        	"Não comeces a javardar e a responder à toa!",
+  			    	"Esse SELECT foi muito rápido!"
   			    ],
 				"Serious": [
-		          	{"ID": 0, "Phrase" : "Responder à sorte não vale a pena..."},
-  			    	{"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"}
+		          	"Responder à sorte não vale a pena...",
+  			    	"Esse SELECT foi muito rápido!"
   			    ],
 				"Funny": [
-	          		{"ID": 0, "Phrase" : "Carregaste sem querer?"},
-	          		{"ID": 1, "Phrase" : "\"Miss click\"?"},
-			      	{"ID": 2, "Phrase" : "Esse SELECT foi muito rápido!"},
-		          	{"ID": 3, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
-	          		{"ID": 4, "Phrase" : "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+	          		"Carregaste sem querer?",
+	          		"\"Miss click\"?",
+			      	"Esse SELECT foi muito rápido!",
+		          	"Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+	          		"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
 	        	],
 				"Mock": [
-      	        	{"ID": 0, "Phrase" : "Oh artista, sabias mesmo a resposta?"},
-    			    {"ID": 1, "Phrase" : "Esse SELECT foi muito rápido!"},
-  			        {"ID": 2, "Phrase" : "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*"},
-    	          	{"ID": 3, "Phrase" : "Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"}
+      	        	"Oh artista, sabias mesmo a resposta?",
+    			    "Esse SELECT foi muito rápido!",
+  			        "Ui! Estou a ver que tens o TRIGGER mais rápido do faroeste *badum tss*",
+    	          	"Estou a ver que os indices da tua \"base de dados\" são muito bons... Demasiado bons!"
     	        ]
 			}
 		}
@@ -227,159 +227,159 @@
 		"right": {
 			"easy": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Ok, deste uma vista de olhos à matéria..."},
-			        {"ID": 1, "Phrase" : "Certíssimo, meu caro(a)."},
-			        {"ID": 2, "Phrase" : "Elementar, meu caro Watson!"}
+			        "Ok, deste uma vista de olhos à matéria...",
+			        "Certíssimo, meu caro(a).",
+			        "Elementar, meu caro Watson!"
 			   	],
 				"Serious": [
-			        {"ID": 0, "Phrase" : "Esta era trivial..."}
+			        "Esta era trivial..."
 			    ],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Esta era fácil, mas leva lá a bicicleta!"},
-			        {"ID": 1, "Phrase" : "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas..."},
-			        {"ID": 2, "Phrase" : "Fiquei emocionado com essa resposta. Certo!"},
-			        {"ID": 3, "Phrase" : "Caracteres não conseguem expressar o tamanho da minha felicidade!"},
-			        {"ID": 4, "Phrase" : "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões..."}
+			        "Esta era fácil, mas leva lá a bicicleta!",
+			        "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas...",
+			        "Fiquei emocionado com essa resposta. Certo!",
+			        "Caracteres não conseguem expressar o tamanho da minha felicidade!",
+			        "Estás quase um engenheiro... Quero ver quando subir a dificuldade das questões..."
 			   	],
 				"Mock": [
-			       	{"ID": 0, "Phrase" : "Muito bem! Sabes o básico"},
-			       	{"ID": 1, "Phrase" : "Uau, parece que estudaste... O básico!"}
+			       	"Muito bem! Sabes o básico",
+			       	"Uau, parece que estudaste... O básico!"
 			    ],
 				"Incentive": [
-			        {"ID": 0, "Phrase" : "Soma e segue!"},
-			        {"ID": 1, "Phrase" : "Epá, não brincas em serviço! Muito bem!"},
-			        {"ID": 2, "Phrase" : "Muito bem!"},
-			        {"ID": 3, "Phrase" : "Bem jogado _name_!"},
-			        {"ID": 4, "Phrase" : "Muito bem, _name_!"},
-			        {"ID": 5, "Phrase" : "Bem jogado!"},
-			        {"ID": 6, "Phrase" : "Até que não era difícil, mas já merecias mais um valor!"}
+			        "Soma e segue!",
+			        "Epá, não brincas em serviço! Muito bem!",
+			        "Muito bem!",
+			        "Bem jogado _name_!",
+			        "Muito bem, _name_!",
+			        "Bem jogado!",
+			        "Até que não era difícil, mas já merecias mais um valor!"
 			    ]
 			},
 			"hard": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Acertaste esta pergunta?! Uau..."},
-			        {"ID": 1, "Phrase" : "Isso é sorte ou inteligência?"}
+			        "Acertaste esta pergunta?! Uau...",
+			        "Isso é sorte ou inteligência?"
 			    ],
 				"Serious": [
-		          	{"ID": 0, "Phrase" : "Com esta fiquei surpreendido."},
-		          	{"ID": 1, "Phrase" : "Nada mau, nada mau mesmo."}
+		          	"Com esta fiquei surpreendido.",
+		          	"Nada mau, nada mau mesmo."
 		   		],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Fiquei emocionado com essa resposta. Certo!"},
-			        {"ID": 1, "Phrase" : "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂"},
-			        {"ID": 2, "Phrase" : "Temos aqui um Einstein..."},
-				    {"ID": 3, "Phrase" : "Incrível, parece que estudaste!"},
-			        {"ID": 4, "Phrase" : "De onde veio tanta inteligência?"},
-			        {"ID": 5, "Phrase" : "Até perco a fala com tanta inteligência!"}
+			        "Fiquei emocionado com essa resposta. Certo!",
+			        "Caracteres não conseguem expressar o tamanho da minha felicidade 🙂",
+			        "Temos aqui um Einstein...",
+				    "Incrível, parece que estudaste!",
+			        "De onde veio tanta inteligência?",
+			        "Até perco a fala com tanta inteligência!"
 			  	],
 				"Mock": [
-			        {"ID": 0, "Phrase" : "Um relógio avariado está certo duas vezes por dia!"},
-			        {"ID": 1, "Phrase" : "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho..."}
+			        "Um relógio avariado está certo duas vezes por dia!",
+			        "Nunca na vida vais ser tão inteligente como eu, mas estás num bom caminho..."
 			   	],
 				"Incentive": [
-			        {"ID": 0, "Phrase" : "Bem jogado _name_!"},
-			        {"ID": 1, "Phrase" : "Muito bem, _name_!"},
-			        {"ID": 2, "Phrase" : "Bem jogado!"},
-			        {"ID": 3, "Phrase" : "Que craque!"},
-			        {"ID": 4, "Phrase" : "Incrível, parece que percebes do assunto!"},
-			        {"ID": 5, "Phrase" : "Uau, não estava à espera!"}
+			        "Bem jogado _name_!",
+			        "Muito bem, _name_!",
+			        "Bem jogado!",
+			        "Que craque!",
+			        "Incrível, parece que percebes do assunto!",
+			        "Uau, não estava à espera!"
 			    ]
 			}
 		},
 		"wrong": {
 			"easy": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Resposta errada."},
-			        {"ID": 1, "Phrase" : "\"Fatal error\""},
-			        {"ID": 2, "Phrase" : "Que tristeza..."},
-			        {"ID": 3, "Phrase" : "Não é bem assim..."},
-			        {"ID": 4, "Phrase" : "Errado!"},
-			        {"ID": 5, "Phrase" : "Falhanço total..."},
-			        {"ID": 6, "Phrase" : "Parece que precisas de estudar... A pergunta era fácil!"},
-			        {"ID": 7, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 8, "Phrase" : "Essa tua resposta deu-me TRIGGER!"}
+			        "Resposta errada.",
+			        "\"Fatal error\"",
+			        "Que tristeza...",
+			        "Não é bem assim...",
+			        "Errado!",
+			        "Falhanço total...",
+			        "Parece que precisas de estudar... A pergunta era fácil!",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!"
 				],
 				"Serious": [
-			        {"ID": 0, "Phrase" : "Resposta errada..."},
-			        {"ID": 1, "Phrase" : "Não era bem isso."},
-			        {"ID": 2, "Phrase" : "Está mal!"},
-			        {"ID": 3, "Phrase" : "A vida não é triste. Tem é momentos tristes, e este é um deles..."},
-			        {"ID": 4, "Phrase" : "Fico triste com respostas destas."},
-			        {"ID": 5, "Phrase" : "Não estás atento(a)."},
-			        {"ID": 6, "Phrase" : "Não estudaste nada!"},
-			        {"ID": 7, "Phrase" : "Nada disso!"},
-			        {"ID": 8, "Phrase" : "Não estudas e depois é isto."},
-			        {"ID": 9, "Phrase" : "Assim não vais lá..."},
-			        {"ID": 10, "Phrase" : "Estou a perder a esperança."},
-			        {"ID": 11, "Phrase" : "Nem lá perto..."},
-			        {"ID": 12, "Phrase" : "Esperava mais de ti... A pergunta era trivial."},
-			        {"ID": 13, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 14, "Phrase" : "Essa tua resposta deu-me TRIGGER!"}
+			        "Resposta errada...",
+			        "Não era bem isso.",
+			        "Está mal!",
+			        "A vida não é triste. Tem é momentos tristes, e este é um deles...",
+			        "Fico triste com respostas destas.",
+			        "Não estás atento(a).",
+			        "Não estudaste nada!",
+			        "Nada disso!",
+			        "Não estudas e depois é isto.",
+			        "Assim não vais lá...",
+			        "Estou a perder a esperança.",
+			        "Nem lá perto...",
+			        "Esperava mais de ti... A pergunta era trivial.",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!"
 			   ],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "A sério? Cansas-me a beleza."},
-			        {"ID": 1, "Phrase" : "Parece que a sorte acabou!"},
-			        {"ID": 2, "Phrase" : "Não estudes que não é preciso!"},
-			        {"ID": 3, "Phrase" : "Claramente não fizeste os tpc's!"},
-			        {"ID": 4, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 5, "Phrase" : "Essa tua resposta deu-me TRIGGER!"},
-			        {"ID": 6, "Phrase" : "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			        "A sério? Cansas-me a beleza.",
+			        "Parece que a sorte acabou!",
+			        "Não estudes que não é preciso!",
+			        "Claramente não fizeste os tpc's!",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!",
+			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
 			    ],
 				"Mock": [
-			        {"ID": 0, "Phrase" : "A sério? -.-"},
-			        {"ID": 1, "Phrase" : "Não pescas nada disto..."},
-			        {"ID": 2, "Phrase" : "Errado, artista!"},
-			        {"ID": 3, "Phrase" : "Não é essa a resposta, mas estás lá perto. Perto de reprovar!"},
-			        {"ID": 4, "Phrase" : "Tentaste... Mas sabes que podes sempre dedicar-te à pesca 😉"},
-			        {"ID": 5, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 6, "Phrase" : "Essa tua resposta deu-me TRIGGER!"},
-			        {"ID": 7, "Phrase" : "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			        "A sério? -.-",
+			        "Não pescas nada disto...",
+			        "Errado, artista!",
+			        "Não é essa a resposta, mas estás lá perto. Perto de reprovar!",
+			        "Tentaste... Mas sabes que podes sempre dedicar-te à pesca 😉",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!",
+			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
 			    ],
 				"Incentive": [
-			        {"ID": 0, "Phrase" : "Esta era fácil, estavas distraído? Na próxima consegues acertar."},
-			        {"ID": 1, "Phrase" : "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte 😉"},
-			        {"ID": 2, "Phrase" : "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"}
+			        "Esta era fácil, estavas distraído? Na próxima consegues acertar.",
+			        "Como assim, falhaste algo tão trivial? Vê se tens mais concentração na seguinte 😉",
+			        "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
 			   	]
 			},
 			"hard": {
 				"Normal": [
-			        {"ID": 0, "Phrase" : "Mal!"},
-			        {"ID": 1, "Phrase" : "A pergunta era difícil, e tu fraquejaste."},
-			        {"ID": 2, "Phrase" : "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar."},
-			        {"ID": 3, "Phrase" : "Errado. Era uma pergunta difícil, não te censuro."},
-			        {"ID": 4, "Phrase" : "Falhanço total..."},
-			        {"ID": 5, "Phrase" : "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!"},
-			        {"ID": 6, "Phrase" : "Errado, mas admito que a pergunta não era fácil... "},
-			        {"ID": 7, "Phrase" : "\"Fatal error\""},
-			        {"ID": 8, "Phrase" : "Resposta errada... Mas não te critico, era difícil!"},
-			        {"ID": 9, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 10, "Phrase" : "Essa tua resposta deu-me TRIGGER!"}
+			        "Mal!",
+			        "A pergunta era difícil, e tu fraquejaste.",
+			        "Quanto mais difícil a subida, mais bonita é a vista lá de cima. Não vais chegar lá hoje, mas continua a tentar.",
+			        "Errado. Era uma pergunta difícil, não te censuro.",
+			        "Falhanço total...",
+			        "Não chega ir às teóricas. Se tivesses lido o livro sabias a resposta!",
+			        "Errado, mas admito que a pergunta não era fácil... ",
+			        "\"Fatal error\"",
+			        "Resposta errada... Mas não te critico, era difícil!",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!"
 			   	],
 				"Serious": [
-			        {"ID": 0, "Phrase" : "Resposta errada..."},
-			        {"ID": 1, "Phrase" : "Não era bem isso."},
-			        {"ID": 2, "Phrase" : "Está mal!"},
-			        {"ID": 3, "Phrase" : "Nada disso!"},
-			        {"ID": 4, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 5, "Phrase" : "Essa tua resposta deu-me TRIGGER!"}
+			        "Resposta errada...",
+			        "Não era bem isso.",
+			        "Está mal!",
+			        "Nada disso!",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!"
 			   	],
 				"Funny": [
-			        {"ID": 0, "Phrase" : "Não estudas pelo livro e depois é isto."},
-			        {"ID": 1, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 2, "Phrase" : "Essa tua resposta deu-me TRIGGER!"},
-			        {"ID": 3, "Phrase" : "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			        "Não estudas pelo livro e depois é isto.",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!",
+			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
 			    ],
 				"Mock": [
-			        {"ID": 0, "Phrase" : "As maiores dificuldades são filhas da preguiça!"},
-			        {"ID": 1, "Phrase" : "Acho que precisas de fazer uns UPDATEs nas tuas tabelas."},
-			        {"ID": 2, "Phrase" : "Essa tua resposta deu-me TRIGGER!"},
-			        {"ID": 3, "Phrase" : "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"}
+			        "As maiores dificuldades são filhas da preguiça!",
+			        "Acho que precisas de fazer uns UPDATEs nas tuas tabelas.",
+			        "Essa tua resposta deu-me TRIGGER!",
+			        "Acho que precisas de fazer uns INSERTs nessa cabeça, para conseguires responder corretamente!"
 			    ],
 				"Incentive": [
-			        {"ID": 0, "Phrase" : "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!"},
-			        {"ID": 1, "Phrase" : "Não era bem isso. Com mais estudo vais lá."},
-			        {"ID": 2, "Phrase" : "Esta era dificil, não te sintas mal. A próxima vai correr melhor!"},
-			        {"ID": 3, "Phrase" : "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"}
+			        "Aceitar um momento dificil é o começo para superá-lo. Resposta errada, mas vais superar!",
+			        "Não era bem isso. Com mais estudo vais lá.",
+			        "Esta era dificil, não te sintas mal. A próxima vai correr melhor!",
+			        "Não te preocupes, continua a povoar essa tua base de dados e na próxima saberás a resposta certa!"
 				]
 			}
 		}
