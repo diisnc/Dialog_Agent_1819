@@ -1,4 +1,0 @@
-# git ignore
-**/Pattern/__pycache__
-**/Engine_NEW/__pycache__
-**/.vscode
