@@ -57,5 +57,7 @@
 "triste":["triste", "aborrecido", "descontente", "desanimado"],
 "aborrecido":["triste", "aborrecido", "descontente", "desanimado"],
 "descontente":["triste", "aborrecido", "descontente", "desanimado"],
-"desanimado":["triste", "aborrecido", "descontente", "desanimado"]
+"desanimado":["triste", "aborrecido", "descontente", "desanimado"],
+"começar":["iniciar", "começar"],
+"iniciar":["iniciar", "começar"],
 }

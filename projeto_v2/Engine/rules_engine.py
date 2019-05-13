@@ -27,13 +27,14 @@ class RulesEngine(KnowledgeEngine):
 
     __username = ""
     __userID = ""
-    __result = ""
+    __result = {}
 
     
     def __init__(self,userID,username):
         self.__username = username
         self.__userID = userID
-        self.__result = ""
+        self.__result = {   "Phrase" : "",
+                            "Answer" : ""}
         super().__init__()
 
 
