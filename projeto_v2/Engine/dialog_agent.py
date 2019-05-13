@@ -39,6 +39,9 @@ class Dialog_Agent:
         else:
             print(" ########## User history exists ########## ")
             typeQ = "greetingsA"
+
+            # begin chattime
+            col_userHist.update_one({'userID': self.__userID}, {'$push': {'beginChatTime': datetime.now()}})
             
             # user history
             userH = col_userHist.find_one({"userID": self.__userID})
