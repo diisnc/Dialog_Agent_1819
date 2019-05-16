@@ -10,6 +10,8 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 # Collector Module
 from collector import *
+# Generator Module
+from generator import *
 
 ################################### Auxiliary Functions ###################################
 
@@ -71,24 +73,32 @@ def rep(mystring, username):
 
 
 # Choose dialog element having into account the type and counter of the phrase
-def choose_dialog(list_typeQ, typeP):
-        chosen_dialogs = []
-        list_typeP = []
+def choose_dialog(list_typeQ, types, username, tag, subtag):
+
+        dataset = []
 
         # CHOOSE TYPE: If type == "All" then choose randomly
-        if typeP[0] == "All":
-            type = random.choice(list(list_typeQ.keys()))
-        else:
-            type = random.choice(typeP)        
+        if types[0] == "All":
+            types = list(list_typeQ.keys()) 
 
-        list_typeP = list_typeQ[type]
+        if not tag :
+            for t in types:
+                dataset += list_typeQ[t]
+        # GREETINGS & DOUBT
+        # Phrases
+        elif tag == "Phrases":
+            for t in types:
+                dataset += list_typeQ[t][tag]
+        # Answers
+        elif tag: 
+            for t in types:
+                dataset += list_typeQ[t][tag][subtag]
 
-        # Choose random element from list
-        chosen_elem = random.choice(list_typeP)
-
-        # TODO: Fazer novo choose dialog, onde se gera automaticamente as frases
-
-        return chosen_elem
+        # Result
+        randomResult =  generate(dataset)
+        randomResult =  rep(synonyms(randomResult), username)
+        
+        return randomResult
 
 
 ############## MAIN TEST ##############
@@ -163,6 +173,3 @@ def getAllPhrases():
     phrases += getPhrases(list_answer_wrong_hard,"answer|wrong|hard")
 
     return phrases
-
-
-# print(choose_dialog(list_greetingsI,["All"]))

@@ -14,7 +14,8 @@ N = 3
 i = 0
 occurrences = defaultdict(Counter)
 
-def build():
+def build(dataset):
+
     for line in dataset:
         line = line + ' __END'
         words = re.split(r'\s+', line)
@@ -24,7 +25,7 @@ def build():
             occurrences[t[0:-1]][t[-1]] += 1
 
 
-def generate():
+def gen():
     sentence = list(random.choices(list(occurrences['__BEGIN']), occurrences['__BEGIN'].values())[0])
     while sentence[-1] != '__END':
         state = (sentence[-2], sentence[-1])
@@ -33,19 +34,25 @@ def generate():
 
 
 
-def generator(dataset):
-print('A construir gerador...')
- = list_greetingsI["Normal"]["Phrases"]+ list_greetingsI["Serious"]["Phrases"] + list_greetingsI["Mock"]["Phrases"]
-print(len(dataset))
-build()
+def generate(dataset):
 
-print('A gerar frases...')
+    sentences = []
 
-for i in range(0,10):
-    sentence = generate()+'\n'
-    
-    if isinstance(sentence, str) and sentence != '':
-        print(str(i) + " - " + sentence)
+    # Build gnerator
+    build(dataset)
 
-print('Concluido!')
+    # Generates 50 sentences
+    for i in range(0,50):
+        sentence = gen()+'\n'
+        
+        if isinstance(sentence, str) and sentence != '':
+            sentences.append(sentence)
+
+    # Chooses one random sentence
+    result = random.choice(sentences)
+
+    occurrences.clear()
+
+    return result
+
 

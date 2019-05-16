@@ -1,5 +1,5 @@
 {
-"olá":["viva","saudações", "olá","_day_"],
+"olá":["viva","olá","_day_"],
 "saudações":["viva","saudações","então", "olá","_day_"],
 "viva":["viva","saudações","então", "olá","_day_"],
 "então":["então", "olá","_day_"],
@@ -12,7 +12,7 @@
 "artista":["artista","caramelo", "caro(a)", "_name_"],
 "_name_":["artista","caramelo", "_name_"],
 "xau":["xau", "adeus", "despeço-me", "vai lá"],
-"adeus":["xau", "adeus", "despeço-me", "vai lá"],
+"adeus":["adeus", "despeço-me", "vai lá"],
 "despeço-me":["xau", "adeus", "despeço-me", "vai lá"],
 "vai lá":["xau", "adeus", "despeço-me", "vai lá"],
 "errado":["errado", "nada disso", "incorreto", "mal"],
