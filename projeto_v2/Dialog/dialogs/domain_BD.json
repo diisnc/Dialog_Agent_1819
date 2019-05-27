@@ -45,9 +45,11 @@
 			"Agora só falta escolheres o subtema!",
 			"Escolhe um subtema que não te arrependas!",
 			"Escolhe um subtema e prepara-te!",
-			"Espero que não vás pela mais fácil! Escolhe a subárea."
+			"Espero que não vás pela mais fácil! Escolhe a subárea.",
 			"Agora tenta não arrepender-te e escolhe o subtema!",
 			"Respira fundo e escolhe o subtema.",
+			"Espero que estejas pronto! Escolhe o subtema.",
+			"Espero que tenhas estudado! Escolho o subtema.",
 			"Escolhe lá um subtema!"
 		],
 		"Mock": [
@@ -55,7 +57,10 @@
 		    "Então, vamos lá ver quantas erras. Escolhe um subtema!",
 		    "Espero que estejas pronto para o que aí vem! Indica o subtema que pretendes.",
 		    "Escolhe o subtema mas não contes com a minha ajuda!",
-		    "Não te esqueças que não há ajudas! Escolhe a subárea.",
+			"Não te esqueças que não há ajudas! Escolhe a subárea.",
+			"Vamos lá ver quantas perguntas consegues acertar! Escolhe o subtema.",
+			"Vamos ver se estás com sorte hoje! Escolhe o subtema que pretendes discutir.",
+			"Escolhe um subtema, mas não te precipites!",
 		    "Vamos lá ver se não deste DROP à tua \"base de dados\". Escolhe uma área de avaliação!"
 		]
 	},
@@ -75,7 +80,7 @@
 			        "Tens de ser mais rápido a responder.",
 			        "Agora não podes vacilar, continua!",
 			        "Vamos lá!",
-			        "Tenta ser mais rápido nas respostas."
+			        "Tenta ser mais rápido nas respostas.",
 			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!",
 			        "Então? A transação bloqueou?"
 			 	],
@@ -104,7 +109,11 @@
 			        "Espero que tenhas ido à casa de banho! Continua!",
 			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
 			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!",
-			        "Ficaste sem bateria?",
+					"Ficaste sem bateria?",
+					"Foste ver o tempo lá fora?",
+					"Não estás numa aula teórica, responde!",
+					"Não sabia que esta pergunta era difícil...",
+					"Será que a pergunta é dificil?",
 			        "Então? A transação bloqueou?"
 			    ],
 				"Mock": [
@@ -113,7 +122,10 @@
 			        "Não queres um cafézinho?",  
 			        "Estou a ver que deste DELETE a todos os dados que tinhas sobre esta área... Ao menos não fizeste DROP da tua memória!",
 			        "Então? A transação bloqueou?",
-			        "Não é assim tão difícil!",
+					"Não é assim tão difícil!",
+					"O tempo disponível para responder não é assim tão grande",
+					"É comum responder mais rápido!",
+					"Precisas de um empurrãozinho?",
 			        "Estou a ver que esta \"query\" está a demorar muito tempo a correr. Cuidado com o \"timeout\"!"
 				]
 			},
