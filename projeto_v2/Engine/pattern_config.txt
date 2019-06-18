@@ -8,7 +8,7 @@ Ranges (15 characteristics)
 	subdomain: 		INT				[subdomain: 'A','B','C','D','E',...]
 	answer:			0-1				[0 - falhou, 1 - acertou] 
 	question_lvl:	1-5				[1 - Mais fácil, 5 - Mais difícil]
-	student_lvl:	1-5		'A'-'E'	['A' - Melhor nível, 'E' - Pior nível]
+	student_lvl:	1-5		'A'-'E'	['A'(1) - Melhor nível, 'E'(5) - Pior nível]
 	state 			INT	 			[nome do processo ocupante]
 	skill: 			1-5 			[skill: TERRIBLE 1, BAD 2, AVERAGE 3, GOOD 4, EXCELLENT 5 ] 
 					(igual escala para domínios e subdomínios) 																												 ---> 5 skills

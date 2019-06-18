@@ -108,7 +108,7 @@ class RulesEngine(KnowledgeEngine):
         col_userHist.update_one({'userID': self.__userID}, {'$push': {'endChatTime': datetime.now()}})
 
     # Farewell badP
-    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('4') | L('5')), Rule_exe(executed = False), salience = 1)
     def f_badP (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_farewell_badP,["All"],self.__username, "", "")
@@ -125,7 +125,7 @@ class RulesEngine(KnowledgeEngine):
 
    
     # Farewell goodP
-    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience = 1)
+    @Rule(Pattern(typeQ = 'farewell', student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience = 1)
     def f_goodP (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_farewell_goodP,["All"],self.__username, "", "")
@@ -286,7 +286,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Answer - Wrong answer, easy question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
     def wrong_easy_goodSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_easy,["Mock","Serious"],self.__username, "", "")
@@ -298,13 +298,13 @@ class RulesEngine(KnowledgeEngine):
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_easy,["Incentive"],self.__username, "", "")
 
     # Answer - Wrong answer, easy question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('4') | L('5')), Rule_exe(executed = False), salience=1)
     def wrong_easy_badSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_easy,["Normal","Funny"],self.__username, "", "")
 
     # Answer - Wrong answer, hard question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
     def wrong_hard_goodSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_hard,["Normal","Funny"],self.__username, "", "")
@@ -316,13 +316,13 @@ class RulesEngine(KnowledgeEngine):
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_hard,["Incentive"],self.__username, "", "")
 
     # Answer - Wrong answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '0', question_lvl = L('4') | L('5'), student_lvl = L('4') | L('5')), Rule_exe(executed = False), salience=1)
     def wrong_hard_badSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_wrong_hard,["Serious","Mock"],self.__username, "", "")
 
     # Answer - right answer, easy question, good student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
     def right_easy_goodSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_right_easy,["Mock","Normal"],self.__username, "", "")
@@ -334,14 +334,14 @@ class RulesEngine(KnowledgeEngine):
         self.__result["Phrase"] = choose_dialog(list_answer_right_easy,["Funny","Serious"],self.__username, "", "")
 
     # Answer - right answer, easy question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('1') | L('2') | L('3'), student_lvl = L('4') | L('5')), Rule_exe(executed = False), salience=1)
     def right_easy_badSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_right_easy,["Incentive"],self.__username, "", "")
 
 
-    # Answer - right answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('5') | L('4')), Rule_exe(executed = False), salience=1)
+    # Answer - right answer, hard question, good student
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('1') | L('2')), Rule_exe(executed = False), salience=1)
     def right_hard_goodSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_right_hard,["Serious","Funny"],self.__username, "", "")
@@ -354,7 +354,7 @@ class RulesEngine(KnowledgeEngine):
 
 
     # Answer - right answer, hard question, bad student
-    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('2') | L('1')), Rule_exe(executed = False), salience=1)
+    @Rule(Pattern(typeQ = 'answer',  answer = '1', question_lvl = L('4') | L('5'), student_lvl = L('4') | L('5')), Rule_exe(executed = False), salience=1)
     def right_hard_badSt (self):
         self.modify(self.facts[1], executed= True)
         self.__result["Phrase"] = choose_dialog(list_answer_right_hard,["Incentive","Normal"],self.__username, "", "")
