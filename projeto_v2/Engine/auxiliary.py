@@ -22,7 +22,7 @@ def pattern_reader(file):
     # [1, 1, 1, 1, 1, 3, 4, 123443, 4, 4, 3, 4, 3, 'greetingsI']
     patt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-    patt[0] = json_array['username']
+    patt[0] = json_array['userid']
     patt[1] = json_array['language']
     patt[2] = json_array['domain']
     patt[3] = json_array['subdomain']

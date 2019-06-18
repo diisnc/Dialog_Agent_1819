@@ -1,8 +1,8 @@
 Pattern Configuration 
-	[username | language | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time | (typeQ) | lastChatTime]
+	[userid | language | domain |subdomain | answer | question_lvl | student_lvl | state | skill_domain | performance_domain | skill_subdomain | performance_subdomain| time | (typeQ) | lastChatTime]
 
 Ranges (15 characteristics)
-	username: 		INT 			
+	userid: 		INT 			
 	language: 		1-9 	INT		[language: PT, EN, ES, DE, FR, RU] ---> 6 languages
 	domain: 		'XX' 	INT		[domain: 'Base Dados', 'Biologia', 'Fisica', 'Informatica', 'Enfermagem',...] 					
 	subdomain: 		INT				[subdomain: 'A','B','C','D','E',...]
