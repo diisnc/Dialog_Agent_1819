@@ -1,0 +1,347 @@
+{
+	"subdomain": {
+		"Normal": [
+		    "Boa escolha. Escolhe agora um subtema.",
+		    "Faz a tua escolha.",
+		    "Escolhe o subtema!",
+		    "Decide que subtema pretendes abordar.",
+		    "Que subtema queres tratar?",
+		    "Agora, escolhe o subtema que pretendes.",
+		    "Indica que subtema tencionas desenvolver.",
+		    "Que subtema queres discutir?",
+		    "Indica o subtema que pretendes avaliar.",
+		    "Escolhe um dos subtemas para prosseguir.",
+		    "Completa a tua decisão escolhendo o subtema.",
+		    "Para continuar, escolhe um subtema.",
+		    "Escolhe o subtema que queres."    
+		],
+		"Serious": [
+			"Seleciona a área de avaliação.",
+			"Faz a tua escolha.",
+			"Escolhe o subtema!",
+			"Continua dizendo o tema que pretendes.",
+			"Que subtema queres abordar?",
+			"Indica o tema que pretendes.",
+			"Agora, escolhe o subtema.",
+			"Que subtema pretendes desenvolver?",
+			"Decide que subtema pretendes.",
+			"Escolhe o subtema para prosseguir.",
+			"Seleciona a subárea que pretendes.",
+			"Que subárea pretendes retratar?",
+			"Qual é o subtema que queres discutir?",
+		    "Escolhe o subtema que queres." 
+		],
+		"Funny": [  
+			"Estás tramado... Escolhe um subdomínio.",
+			"Isso parece difícil. Escolhe um subtema.",
+			"Hmm... Seleciona um subdomínio.",
+			"No que te foste meter... Escolhe um subdomínio.",
+			"Agora só falta escolheres o subtema!",
+			"Escolhe um subtema que não te arrependas!",
+			"Escolhe um subtema e prepara-te!",
+			"Espero que não vás pela mais fácil! Escolhe a subárea.",
+			"Agora tenta não arrepender-te e escolhe o subtema!",
+			"Respira fundo e escolhe o subtema.",
+			"Espero que estejas pronto! Escolhe o subtema.",
+			"Espero que tenhas estudado! Escolho o subtema.",
+			"Escolhe lá um subtema!"
+		],
+		"Mock": [
+			"Então, vamos ver se percebes disto... Escolhe lá um subtema!",
+		    "Então, vamos lá ver quantas erras. Escolhe um subtema!",
+		    "Espero que estejas pronto para o que aí vem! Indica o subtema que pretendes.",
+		    "Escolhe o subtema mas não contes com a minha ajuda!",
+			"Não te esqueças que não há ajudas! Escolhe a subárea.",
+			"Vamos lá ver quantas perguntas consegues acertar! Escolhe o subtema.",
+			"Vamos ver se estás com sorte hoje! Escolhe o subtema que pretendes discutir.",
+			"Escolhe um subtema, mas não te precipites!"
+		]
+	},
+	"time": {
+		"timeout": {
+			"goodP": {
+				"Normal": [
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Deu erro?",
+			        "Ainda estás aí?",
+			        "Não fiques por aqui!",
+			        "Agora falta pouco, continua!",
+			        "Estavas a ir bem! Continua...",
+			        "Aguenta mais um pouco!",
+			        "Tenta responder mais rápido.",
+			        "Tens de ser mais rápido a responder.",
+			        "Agora não podes vacilar, continua!",
+			        "Vamos lá!",
+			        "Tenta ser mais rápido nas respostas."
+			 	],
+				"Serious": [
+			        "Então, bloqueaste?",
+			       	"Estou a interromper alguma coisa?",
+			       	"Não vais responder?",
+			        "É para hoje?",
+			        "Não podes demorar muito a responder.",
+			        "Não podes ser lento a responder.",
+			        "Esta pergunta não precisa de tanto tempo de resposta.",
+			        "Tens de ser mais prespicaz!",
+			        "Tens de ser mais rápido!",
+			        "Vais demorar muito?",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_ .",
+			        "Vamos lá, _name_ !"
+			    ],
+				"Funny": [
+			        "De certeza que ainda és tu?",
+			        "Estou a interromper o teu intervalo?",
+			        "Estou a interromper a conversa?",
+			        "A tua resposta vem a pé?",
+			        "Espero que tenhas ido à casa de banho! Continua!",
+					"Ficaste sem bateria?",
+					"Foste ver o tempo lá fora?",
+					"Não estás numa aula teórica, responde!",
+					"Não sabia que esta pergunta era difícil...",
+					"Será que a pergunta é dificil?"
+			    ],
+				"Mock": [
+			        "Tanto trabalho para agora adormeceres?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "Não queres um cafézinho?", 
+					"Não é assim tão difícil!",
+					"O tempo disponível para responder não é assim tão grande",
+					"É comum responder mais rápido!",
+					"Precisas de um empurrãozinho?"
+				]
+			},
+			"badP": {
+				"Normal": [
+			        "Entretanto adormeço...",
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Vamos lá..."
+			   	],
+				"Serious": [
+			        "Então? ¯\\_(-_-)_/¯",
+			        "É para hoje?",
+			        "Vais demorar muito?",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_.",
+			        "Vamos lá _name_, tenho mais que fazer!"
+			    ],
+				"Funny": [
+			        "Estou a interromper o teu intervalo?",
+			        "Estou a interromper a conversa?",
+			        "Estou a interromper alguma coisa?",
+			        "Não queres um cafézinho?"
+			    ],
+				"Mock": [
+					"O lanchinho está bom?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "A tua resposta vem a pé?"
+			    ]
+			},
+			"avgP": {
+				"Normal": [
+			        "Já descobriste?",
+			        "Ainda demoras?",
+			        "Vamos lá..."
+			    ],
+				"Serious": [  
+			        "Olá? Estás ai?",
+			        "Só estás aqui porque queres, por isso responde...",
+			        "Vais demorar muito?",
+			        "Não tenho o dia todo!",
+			        "Já esta na hora, _name_.",
+			        "Vamos lá _name_ !"
+			    ],
+				"Funny": [
+			        "Estou a interromper o teu intervalo?",
+			        "Estou a interromper alguma coisa?",
+			        "Não queres um cafézinho?",
+			        "Estou a interromper a conversa?"
+			    ],
+				"Mock": [  
+			        "Oh caramelo, é para hoje?",
+			        "E se gastasses o tempo a responder às perguntas?",
+			        "A tua resposta vem a pé?"
+			    ]
+			}
+		},
+	"toosoon": {
+			"goodP": {
+				"Normal": [
+			    	"Foi bom... bom demais...",
+			    	"Esse SELECT foi rápido demais..."
+			    ],
+				"Serious": [
+			    	"Não acredito que sejas assim tão rápido a responder...",
+			    	"Não podes ser tão rápido a responder."
+				],
+				"Funny": [
+			        "Estás demasiado bom, começo a duvidar...",
+			        "Muito bem! Mas é impossível saberes mais do que eu."
+			  	],
+				"Mock": [  
+  	          		"Ou és muito bom ou essa resposta foi à sorte."
+				]
+			},
+			"badP": {
+				"Normal": [
+		        	"Não vale a pena tentar adivinhar a resposta..."
+  			  	],
+				"Serious": [  
+			        "Isto não é para responder à sorte!"
+  			  	],
+				"Funny": [
+    		        "Responder à sorte não costuma funcionar!",
+    		        "Depressa e bem, há pouco quem!"
+  				],
+				"Mock": [
+		        	"Não comeces a responder à toa!"
+				]
+			},
+			"avgP": {
+				"Normal": [
+		        	"Não comeces a responder à toa!"
+  			    ],
+				"Serious": [
+		          	"Responder à sorte não vale a pena..."
+  			    ],
+				"Funny": [
+	          		"Carregaste sem querer?"
+	        	],
+				"Mock": [
+      	        	"Oh artista, sabias mesmo a resposta?"
+    	        ]
+			}
+		}
+	},
+	"answer": {
+		"right": {
+			"easy": {
+				"Normal": [
+			        "Ok, deste uma vista de olhos à matéria...",
+			        "Certíssimo, meu caro(a).",
+			        "Esta era fácil."
+			   	],
+				"Serious": [
+			        "Esta era trivial...",
+			        "Esta era fácil."
+			    ],
+				"Funny": [
+			        "Esta era fácil, mas ficas com os louros!",
+			        "Estás a arrasar! Vou ter que subir a dificuldade destas perguntas...",
+			        "Fiquei impressionado com essa resposta. Certo!",
+			        "Quero ver quando subir a dificuldade das questões..."
+			   	],
+				"Mock": [
+			       	"Muito bem! Sabes o básico.",
+			       	"Uau, parece que estudaste... O básico!"
+			    ],
+				"Incentive": [
+			        "Não brincas em serviço! Muito bem!",
+			        "Muito bem!",
+			        "Bem jogado _name_!",
+			        "Muito bem, _name_!",
+			        "Bem jogado!",
+			        "Até que não era difícil, mas já merecias mais um valor!"
+			    ]
+			},
+			"hard": {
+				"Normal": [
+			        "Acertaste esta pergunta?! Muito bem.",
+			        "Isso é sorte ou inteligência?"
+			    ],
+				"Serious": [
+		          	"Com esta fiquei surpreendido.",
+		          	"Nada mau, nada mau mesmo."
+		   		],
+				"Funny": [
+			        "Fiquei impressionado com essa resposta. Certo!",
+				    "Parece que estudaste!",
+			        "De onde veio tanta inteligência?"
+			  	],
+				"Mock": [
+			        "Um relógio avariado está certo duas vezes por dia!",
+			        "Estás num bom caminho para ser tão bom como eu..."
+			   	],
+				"Incentive": [
+			        "Bem jogado _name_!",
+			        "Muito bem, _name_!",
+			        "Bem jogado!",
+			        "Que craque!",
+			        "Incrível, parece que percebes do assunto!",
+			        "Não estava à espera!"
+			    ]
+			}
+		},
+		"wrong": {
+			"easy": {
+				"Normal": [
+			        "Resposta errada.",
+			        "\"Fatal error\"",
+			        "Não é bem assim...",
+			        "Errado!",
+			        "Parece que precisas de estudar... A pergunta era fácil!"
+				],
+				"Serious": [
+			        "Resposta errada...",
+			        "Não era bem isso.",
+			        "Está mal!",
+			        "Fico triste com respostas destas.",
+			        "Não estás atento(a).",
+			        "Não estudaste nada!",
+			        "Nada disso!",
+			        "Assim não vais lá...",
+			        "Estou a perder a esperança.",
+			        "Nem lá perto...",
+			        "Esperava mais de ti... A pergunta era trivial."
+			   ],
+				"Funny": [
+			        "A sério?",
+			        "Parece que a sorte acabou!",
+			        "Claramente não fizeste os tpc's!"
+			    ],
+				"Mock": [
+			        "A sério?",
+			        "Não percebes nada disto...",
+			        "Errado, artista!",
+			        "Não é essa a resposta, mas estás lá perto. Ou não.",
+			        "Tentaste..."
+			    ],
+				"Incentive": [
+			        "Esta era fácil, estavas distraído? Na próxima acertas.",
+			        "Vê se tens mais concentração na pergunta seguinte 😉",
+			        "Vê se te concentras melhor!"
+			   	]
+			},
+			"hard": {
+				"Normal": [
+			        "Mal!",
+			        "Erraste, mas a pergunta era difícil...",
+			        "Errado. Era uma pergunta difícil, não te censuro.",
+			        "Errado, mas admito que a pergunta não era fácil... ",
+			        "\"Fatal error\"",
+			        "Resposta errada... Mas não te critico, era difícil!"
+			   	],
+				"Serious": [
+			        "Resposta errada...",
+			        "Não era bem isso.",
+			        "Está mal!",
+			        "Nada disso!"
+			   	],
+				"Funny": [
+			        "Não estudas pelo livro, os resultados estão à vista."
+			    ],
+				"Mock": [
+			        "Não chega ir às teóricas. Tens que ler o livro!"
+			    ],
+				"Incentive": [
+			        "Resposta errada, mas vais superar!",
+			        "Não era bem isso. Com mais estudo vais lá.",
+			        "Esta era dificil, não te sintas mal. A próxima vai correr melhor!",
+			        "Não te preocupes, continua a povoar essa tua BD e na próxima saberás a resposta certa!"
+				]
+			}
+		}
+	}
+}
