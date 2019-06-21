@@ -14,6 +14,7 @@ N = 3
 i = 0
 occurrences = defaultdict(Counter)
 
+# Build words dictionary
 def build(dataset):
 
     for line in dataset:
@@ -24,7 +25,7 @@ def build(dataset):
         for t in seq:
             occurrences[t[0:-1]][t[-1]] += 1
 
-
+# Generate sentences
 def gen():
     sentence = list(random.choices(list(occurrences['__BEGIN']), occurrences['__BEGIN'].values())[0])
     while sentence[-1] != '__END':
@@ -33,7 +34,7 @@ def gen():
     return ' '.join(sentence[:-1])
 
 
-
+# Start generator
 def generate(dataset):
 
     sentences = []

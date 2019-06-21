@@ -29,7 +29,7 @@ class RulesEngine(KnowledgeEngine):
     __userID = ""
     __result = {}
 
-    
+    # Initialize Rules Engine
     def __init__(self,userID,username):
         self.__username = username
         self.__userID = userID
